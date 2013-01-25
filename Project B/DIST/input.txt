@@ -1,0 +1,100 @@
+Parkings  // ID, capacity
+1 257 // Yellow Parking Lot (1 of 5 exits)
+2 257 // Yellow Parking Lot (1 of 5 exits)
+3 257 // Yellow Parking Lot (1 of 5 exits)
+4 257 // Yellow Parking Lot (1 of 5 exits)
+5 256 // Yellow Parking Lot (1 of 5 exits)
+6 500 // Marshalling Yard (1 of 3 exits, estimate)
+7 500 // Marshalling Yard (1 of 3 exits, estimate)
+8 500 // Marshalling Yard (1 of 3 exits, estimate)
+10 2000 // Red Parking Lot
+11 41 // Silver Parking Lot (1 of 2 exits)
+12 41 // Silver Parking Lot (1 of 2 exits)
+13 290 // Orange Parking Lot (1 of 2 exits)
+14 290 // Orange Parking Lot (1 of 2 exits)
+15 300 // Brown Parking Lot
+16 1000 // West Off Campus Parking Lot (1 of 2 exits, estimate)
+17 1000 // West Off Campus Parking Lot (1 of 2 exits, estimate)
+18 50 // Green Parking Lot (1 of 4 exits)
+19 50 // Green Parking Lot (1 of 4 exits)
+20 50 // Green Parking Lot (1 of 4 exits)
+21 50 // Green Parking Lot (1 of 4 exits)
+22 20 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+23 20 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+24 30 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+25 30 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+26 50 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+27 50 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+28 50 // East Off Campus Parking Lot (1 of 7 exits, estimate)
+29 361 // Blue Parking Lot (1 of 2 exits)
+30 361 // Blue Parking Lot (1 of 2 exits)
+
+Destinations  // ID, intersection ID, name
+1 201 I-20 // I-20 East/West
+2 283 I-20 // I-20 East/West
+3 135 I-75 // I-75 South
+4 284 I-75 // I-75 North/South
+5 32 I-75 // I-75 North/South
+6 9 I-75 // I-75 North
+
+
+Paths  // ID, start (parking), roads on path..., destination
+1 P1 225 158 159 160 161 162 163 164 166 51 12 D6 // Yellow Parking Lot to I-75 North
+2 P1 225 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Yellow Parking Lot to I-20
+3 P2 191 193 224 225 158 159 160 161 162 163 164 166 51 12 D6 // Yellow Parking Lot to I-75 North
+4 P2 191 193 224 225 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Yellow Parking Lot to I-20
+5 P3 187 186 185 184 183 159 160 161 162 163 164 166 51 12 D6 // Yellow Parking Lot to I-75 North
+6 P3 187 186 185 184 183 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Yellow Parking Lot to I-20
+7 P4 185 184 183 159 160 161 162 163 164 166 51 12 D6 // Yellow Parking Lot to I-75 North
+8 P4 185 184 183 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Yellow Parking Lot to I-20
+9 P5 184 183 159 160 161 162 163 164 166 51 12 D6 // Marshalling Yard to I-75 North
+10 P5 184 183 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Marshalling Yard to I-20
+11 P6 160 161 162 163 164 166 51 12 D6 // Marshalling Yard to I-75 North
+12 P6 159 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Marshalling Yard to I-20
+13 P7 183 159 160 161 162 163 164 166 51 12 D6 // Yellow Parking Lot to I-75 North
+14 P7 183 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Yellow Parking Lot to I-20
+15 P8 186 185 184 183 159 160 161 162 163 164 166 51 12 D6 // Marshalling Yard to I-75 North
+16 P8 186 185 184 183 158 141 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Marshalling Yard to I-20
+17 P10 155 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 D1 // Red Parking Lot to I-20
+18 P10 154 155 68 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Red Parking Lot to I-75 South
+19 P10 154 153 152 151 150 149 148 147 146 145 144 143 142 141 158 159 160 161 162 163 164 166 51 12 D6 // Red Parking Lot to I-75 North
+20 P11 152 153 155 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 D1 // Orange Parking Lot to I-20
+21 P11 152 153 155 68 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Orange Parking Lot to I-75 South
+22 P12 150 156 124 94 126 214 215 216 210 211 212 213 37 38 39 40 41 D3 // Silver Parking Lot to I-75 South
+23 P12 149 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Silver Parking Lot to I-20
+24 P13 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 D1 // Orange Parking Lot to I-20
+25 P13 68 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Orange Parking Lot to I-75 South
+26 P14 153 155 68 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Silver Parking Lot to I-75 South
+27 P14 153 155 68 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Silver Parking Lot to I-75 South
+28 P15 69 70 71 72 73 74 75 76 77 78 79 80 81 82 D1 // Brown Parking Lot to I-20
+29 P15 69 105 203 127 206 207 208 209 210 211 212 213 37 38 39 40 41 D3 // Brown Parking Lot to I-75 South
+30 P16 31 2 5 6 7 45 218 219 220 221 222 223 D5 // West Off Campus Parking Lot to I-75 North/South
+31 P16 201 200 199 107 73 74 75 76 77 78 79 80 81 82 D1 // West Off Campus Parking Lot to I-20
+32 P17 42 29 17 18 19 20 21 22 57 220 221 222 223 D5 // West Off Campus Parking Lot to I-75 North/South
+33 P17 43 125 95 96 97 98 99 100 101 102 D2 // West Off Campus Parking Lot to I-20
+34 P18 229 228 227 44 45 218 219 220 221 222 223 D5 // Green Parking Lot to I-75 North/South
+35 P18 229 228 227 226 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // Green Parking Lot to I-20
+36 P19 228 227 44 45 218 219 220 221 222 223 D5 // Green Parking Lot to I-75 North/South
+37 P19 228 227 226 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // Green Parking Lot to I-20
+38 P20 233 234 227 44 45 218 219 220 221 222 223 D5 // Green Parking Lot to I-75 North/South
+39 P20 233 234 227 226 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // Green Parking Lot to I-20
+40 P21 234 227 44 45 218 219 220 221 222 223 D5 // Green Parking Lot to I-75 North/South
+41 P21 234 227 226 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // Green Parking Lot to I-20
+42 P22 6 7 45 218 219 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+43 P22 5 2 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+44 P23 1 5 6 7 45 218 219 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+45 P23 1 2 3 4 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+46 P24 15 16 17 18 19 20 21 22 57 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+47 P24 15 16 29 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+48 P25 18 19 20 21 22 57 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+49 P25 17 29 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+50 P26 4 29 17 18 19 20 21 22 57 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+51 P26 4 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+52 P27 16 17 18 19 20 21 22 57 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+53 P27 16 29 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+54 P28 14 15 16 17 18 19 20 21 22 57 220 221 222 223 D5 // East Off Campus Parking Lot to I-75 North/South
+55 P28 14 15 16 29 42 43 125 95 96 97 98 99 100 101 102 D2 // East Off Campus Parking Lot to I-20
+56 P29 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Blue Parking Lot to I-20
+57 P29 142 141 158 159 160 161 162 163 164 166 51 12 D6 // Blue Parking Lot to I-75 North
+58 P30 142 143 144 145 146 147 148 157 83 84 85 86 87 88 89 90 91 92 93 81 82 D1 // Blue Parking Lot to I-20
+59 P30 141 158 159 160 161 162 163 164 166 51 12 D6 // Blue Parking Lot to I-75 North

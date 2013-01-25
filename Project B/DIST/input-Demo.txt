@@ -1,0 +1,15 @@
+Parkings  // ID, capacity
+1  10000
+2  20000
+
+Destinations  // ID, intersection number, name
+1  5 I-20
+2  4 I-75
+3  2 I-85
+
+Paths  // ID, start (parking), roads on path..., destination
+1  P1 1 4 7 D1
+2  P1 1 3   D3
+3  P2 2 4 5 D2
+4  P1 1 4 5 D2
+5  P2 2 4 7 D1

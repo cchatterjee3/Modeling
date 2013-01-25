@@ -1,0 +1,284 @@
+Author,Road Segment ID,Bounding Street #1,Bounding Street #2,Intersection #1 ID,Intersection #2 ID,Intersection #1 Latitude,Intersection #1 Longtitude,Intersection #2 Latitude,Intersection #2 Longtitude,Road Segment Street,Lanes in each direction,Lanes in Street #1 -> Street #2 direction,Lanes in Street #2 -> Street #1 direction,Length (m)
+Yi Wei,1,Parking Lot Exit #23,Centennial Olympic Park Dr NW,P23,51,"33d45'29.64""N","84d23'33.57""W","33d45'30.09""N","84d23'34.18""W",Walton St NW,4,2,2,24
+Yi Wei,2,Walton St NW,Marietta St NW,51,52,"33d45'30.09""N","84d23'34.18""W","33d45'28.29""N","84d23'36.59""W",Centennial Olympic Park Dr NW,4,2,2,84
+Yi Wei,3,Centennial Olympic Park Dr NW,Parking Lot Exit #26,52,P26,"33d45'28.29""N","84d23'36.59""W","33d45'27.72""N","84d23'36.02""W",Marietta St NW,6,3,3,22
+Yi Wei,4,Centennial Olympic Park Dr NW,Spring St NW,P26,44,"33d45'27.72""N","84d23'36.02""W","33d45'25.14""N","84d23'33.44""W",Marietta St NW,6,3,3,106
+Yi Wei,5,Walton St NW,Nassau St NW,51,50,"33d45'30.09""N","84d23'34.18""W","33d45'31.90""N","84d23'31.96""W",Centennial Olympic Park Dr NW,4,4,0,79
+Yi Wei,6,Nassau St NW,Luckie St NW,50,49,"33d45'31.90""N","84d23'31.96""W","33d45'33.00""N","84d23'31.50""W",Centennial Olympic Park Dr NW,4,4,0,36
+Yi Wei,7,Luckie St NW,Andrew Young International Blvd NW,49,53,"33d45'33.00""N","84d23'31.50""W","33d45'34.85""N","84d23'31.53""W",Centennial Olympic Park Dr NW,4,4,0,60
+Yi Wei,8,Andrew Young International Blvd NW,John Portman Blvd,53,54,"33d45'34.85""N","84d23'31.53""W","33d45'39.45""N","84d23'31.33""W",Centennial Olympic Park Dr NW,4,4,0,147
+Yi Wei,9,John Portman Blvd,Baker St NW,54,55,"33d45'39.45""N","84d23'31.33""W","33d45'44.00""N","84d23'31.32""W",Centennial Olympic Park Dr NW,4,4,0,142
+Yi Wei,10,Baker St NW,Simpson St NW,55,56,"33d45'44.00""N","84d23'31.32""W","33d45'47.93""N","84d23'31.31""W",Centennial Olympic Park Dr NW,4,4,0,122
+Yi Wei,11,Simpson St NW,Ivan Allen Jr Blvd,56,8,"33d45'47.93""N","84d23'31.31""W","33d45'52.67""N","84d23'30.96""W",Centennial Olympic Park Dr NW,4,4,0,144
+Yi Wei,12,Centennial Olympic Park Dr NW,William St NW,8,9,"33d45'52.67""N","84d23'30.96""W","33d45'52.62""N","84d23'25.31""W",Ivan Allen Jr Blvd,4,2,2,147
+Yi Wei,13,Parking Lot Exit #23,Parking Lot Exit #28,P23,P28,"33d45'29.64""N","84d23'33.57""W","33d45'28.51""N","84d23'32.39""W",Walton St NW,4,2,2,47
+Yi Wei,14,Parking Lot Exit #28,Parking Lot Exit #24,P28,P24,"33d45'28.51""N","84d23'32.39""W","33d45'27.72""N","84d23'31.55""W",Walton St NW,4,2,2,31
+Yi Wei,15,Parking Lot Exit #24,Parking Lot Exit #27,P24,P27,"33d45'27.72""N","84d23'31.55""W","33d45'27.41""N","84d23'31.24""W",Walton St NW,4,2,2,13
+Yi Wei,16,Parking Lot Exit #27,Spring St NW,P27,45,"33d45'27.41""N","84d23'31.24""W","33d45'26.96""N","84d23'30.86""W",Walton St NW,4,2,2,17
+Yi Wei,17,Walton St NW,Parking Lot Exit #25,45,P25,"33d45'26.96""N","84d23'30.86""W","33d45'27.53""N","84d23'30.09""W",Spring St NW,4,2,2,23
+Yi Wei,18,Parking Lot Exit #25,Nassau St NW,P25,46,"33d45'27.53""N","84d23'30.09""W","33d45'27.83""N","84d23'29.70""W",Spring St NW,4,2,2,17
+Yi Wei,19,Nassau St NW,Polar St NW,46,47,"33d45'27.83""N","84d23'29.70""W","33d45'28.42""N","84d23'28.78""W",Spring St NW,4,2,2,30
+Yi Wei,20,Polar St NW,Luckie St NW,47,48,"33d45'28.42""N","84d23'28.78""W","33d45'30.12""N","84d23'26.39""W",Spring St NW,4,2,2,80
+Yi Wei,21,Luckie St NW,William St NW,48,14,"33d45'30.12""N","84d23'26.39""W","33d45'31.62""N","84d23'24.26""W",Spring St NW,4,2,2,72
+Yi Wei,22,William St NW,Margarat Mitchell Sq NW,14,15,"33d45'31.62""N","84d23'24.26""W","33d45'33.25""N","84d23'22.01""W",Spring St NW,4,2,2,79
+Yi Wei,23,Spring St NW,Ells St,15,37,"33d45'33.25""N","84d23'22.01""W","33d45'30.18""N","84d23'18.85""W",Margarat Mitchell Sq NW,4,2,2,127
+Yi Wei,24,Margarat Mitchell Sq NW,Peachtree St NE,37,36,"33d45'30.18""N","84d23'18.85""W","33d45'30.16""N","84d23'15.37""W",Ells St,4,4,0,90
+Yi Wei,25,Peachtree St NE,Peachtree Center Ave NE,36,35,"33d45'30.16""N","84d23'15.37""W","33d45'30.06""N","84d23'9.92""W",Ells St,4,4,0,137
+Yi Wei,26,Peachtree Center Ave NE,Courtland St NE,35,34,"33d45'30.06""N","84d23'9.92""W","33d45'29.98""N","84d23'3.26""W",Ells St,4,4,0,170
+Yi Wei,27,Courtland St NE,Piedmont Ave NE,34,33,"33d45'29.98""N","84d23'3.26""W","33d45'29.99""N","84d22'55.93""W",Ells St,4,4,0,186
+Yi Wei,28,Piedmont Ave NE,I75-S,33,284,"33d45'29.99""N","84d22'55.93""W","33d45'29.88""N","84d22'51.68""W",Ells St,4,4,0,119
+Yi Wei,29,Marietta St NW,Walton St NW,44,45,"33d45'25.14""N","84d23'33.44""W","33d45'26.96""N","84d23'30.86""W",Spring St NW,4,2,2,90
+Yi Wei,30,Parking Lot Exit #22,Centennial Olympic Park Dr NW,P22,50,"33d45'31.21""N","84d23'31.43""W","33d45'31.90""N","84d23'31.96""W",Nassau St NW,4,4,0,26
+Yi Wei,31,Parking Lot Exit #16,Marietta St NW,P16,52,"33d45'25.32""N","84d23'40.54""W","33d45'28.29""N","84d23'36.59""W",Centennial Olympic Park Dr NW,4,2,2,143
+Yi Wei,32,Spring St NW,Cone St NW,44,43,"33d45'25.14""N","84d23'33.44""W","33d45'23.09""N","84d23'31.57""W",Marietta St NW,6,3,3,80
+Yi Wei,33,Cone St NW,Forsyth St SW,43,92,"33d45'23.09""N","84d23'31.57""W","33d45'19.16""N","84d23'27.81""W",Marietta St NW,6,3,3,153
+Yi Wei,34,Forsyth St SW,Broad St NW,92,106,"33d45'19.16""N","84d23'27.81""W","33d45'17.60""N","84d23'25.94""W",Marietta St NW,6,3,3,73
+Yi Wei,35,Broad St NW,Edgewood Ave SE,106,112,"33d45'17.60""N","84d23'25.94""W","33d45'16.08""N","84d23'24.40""W",Marietta St NW,6,3,3,100
+Yi Wei,36,Marietta St NW,Pryor St SE,112,110,"33d45'16.08""N","84d23'24.40""W","33d45'16.18""N","84d23'18.63""W",Edgewood Ave SE,4,2,2,108
+Yi Wei,37,Pryor St SE,Peachtree Center Ave SE,110,121,"33d45'16.18""N","84d23'18.63""W","33d45'15.90""N","84d23'11.39""W",Edgewood Ave SE,4,2,2,194
+Yi Wei,38,Peachtree Center Ave SE,Courtland St NE,121,124,"33d45'15.90""N","84d23'11.39""W","33d45'15.92""N","84d23'3.66""W",Edgewood Ave SE,4,2,2,196
+Yi Wei,39,Courtland St NE,Piedmont Ave NE,124,127,"33d45'15.92""N","84d23'3.66""W","33d45'15.90""N","84d22'56.27""W",Edgewood Ave SE,4,2,2,188
+Yi Wei,40,Piedmont Ave NE,Jesse Hill Jr Dr NE,127,134,"33d45'15.90""N","84d22'56.27""W","33d45'15.68""N","84d22'49.18""W",Edgewood Ave SE,4,2,2,185
+Yi Wei,41,Jesse Hill Jr Dr NE,I75S,134,135,"33d45'15.68""N","84d22'49.18""W","33d45'15.55""N","84d22'45.95""W",Edgewood Ave SE,4,2,2,82
+Yi Wei,42,Marietta St NW,Parking Lot Exit #17,44,P17,"33d45'25.14""N","84d23'33.44""W","33d45'17.58""N","84d23'37.78""W",Spring St NW,4,2,2,261
+Yi Wei,43,Parking Lot Exit #17,Alabama St SW,P17,91,"33d45'17.58""N","84d23'37.78""W","33d45'16.25""N","84d23'38.53""W",Spring St NW,4,2,2,46
+Yi Wei,44,Marietta St NW,Centennial Olympic Park Dr NW,75,53,"33d45'32.34""N","84d23'39.63""W","33d45'34.85""N","84d23'31.53""W",Andrew Young International Blvd NW,4,2,2,241
+Yi Wei,45,Centennial Olympic Park Dr NW,William St NW,53,13,"33d45'34.85""N","84d23'31.53""W","33d45'34.85""N","84d23'26.09""W",Andrew Young International Blvd NW,4,2,2,138
+Yi Wei,46,Centennial Olympic Park Dr NW,William St NW,54,285,"33d45'39.45""N","84d23'31.33""W","33d45'39.43""N","84d23'26.04""W",John Portman Blvd,4,4,0,137
+Yi Wei,47,Luckie St NW,Centennial Olympic Park Dr NW,79,55,"33d45'42.97""N","84d23'42.31""W","33d45'44.00""N","84d23'31.32""W",Baker St NW,4,2,2,298
+Yi Wei,48,Centennial Olympic Park Dr NW,William St NW,55,12,"33d45'44.00""N","84d23'31.32""W","33d45'44.00""N","84d23'25.96""W",Baker St NW,4,2,2,139
+Yi Wei,49,Centennial Olympic Park Dr NW,William St NW,56,11,"33d45'47.93""N","84d23'31.31""W","33d45'47.94""N","84d23'25.80""W",Simpson St NW,2,2,0,135
+Yi Wei,50,Centennial Olympic Park Dr NW,William St NW,57,10,"33d45'50.24""N","84d23'30.72""W","33d45'50.43""N","84d23'25.33""W",Peachtree Place NW,4,2,2,148
+Yi Wei,51,Lovejoy St NW,Centennial Olympic Park Dr NW,7,8,"33d45'52.51""N","84d23'34.99""W","33d45'52.67""N","84d23'30.96""W",Ivan Allen Jr Blvd,4,2,2,106
+Yi Wei,52,Ivan Allen Jr Blvd,Mills St NW,8,276,"33d45'52.67""N","84d23'30.96""W","33d45'54.99""N","84d23'30.85""W",Centennial Olympic Park Dr NW,4,2,2,73
+Yi Wei,53,Spring St NW,Cone St NW,45,42,"33d45'26.96""N","84d23'30.86""W","33d45'25.06""N","84d23'28.90""W",Walton St NW,4,2,2,78
+Yi Wei,54,Spring St NW,Cone St NW,47,41,"33d45'28.42""N","84d23'28.78""W","33d45'26.57""N","84d23'26.70""W",Poplar St NW,1,1,0,80
+Yi Wei,55,Spring St NW,Cone St NW,48,40,"33d45'30.12""N","84d23'26.39""W","33d45'28.14""N","84d23'24.53""W",Luckie St NW,2,0,2,78
+Yi Wei,56,Spring St NW,Cone St NW,14,39,"33d45'31.62""N","84d23'24.26""W","33d45'29.67""N","84d23'22.27""W",William St NW,1,1,0,82
+Yi Wei,57,Margarat Mitchell Sq NW,Andrew Young International Blvd NW,15,17,"33d45'33.25""N","84d23'22.01""W","33d45'34.80""N","84d23'20.65""W",Spring St NW,4,4,0,61
+Yi Wei,58,Margarat Mitchell Sq NW,William St NW,38,39,"33d45'31.24""N","84d23'20.04""W","33d45'29.67""N","84d23'22.27""W",Cone St NW,4,2,2,74
+Yi Wei,59,Margarat Mitchell Sq NW,William St NW,72,97,"33d45'29.25""N","84d23'18.21""W","33d45'27.87""N","84d23'20.38""W",Fairlie St NW,2,0,2,70
+Yi Wei,60,Andrew Young International Blvd NW,Ellis St NW,25,36,"33d45'34.77""N","84d23'15.31""W","33d45'30.16""N","84d23'15.37""W",Peachtree St NE,4,2,2,144
+Yi Wei,61,Ellis St NW,Margarat Mitchell Sq NW,36,70,"33d45'30.16""N","84d23'15.37""W","33d45'28.11""N","84d23'15.56""W",Peachtree St NE,4,2,2,67
+Yi Wei,62,Andrew Young International Blvd NW,Ellis St NW,26,35,"33d45'34.67""N","84d23'9.81""W","33d45'30.06""N","84d23'9.92""W",Peachtree Center Ave NE,4,0,4,146
+Yi Wei,63,Ellis St NW,John Wesley Dobbs Ave NE,35,67,"33d45'30.06""N","84d23'9.92""W","33d45'25.59""N","84d23'10.04""W",Peachtree Center Ave NE,4,4,0,139
+Yi Wei,64,Andrew Young International Blvd NW,Ellis St NW,31,34,"33d45'34.61""N","84d23'3.15""W","33d45'29.98""N","84d23'3.26""W",Courtland St NE,4,4,0,147
+Yi Wei,65,Ellis St NW,John Wesley Dobbs Ave NE,34,66,"33d45'29.98""N","84d23'3.26""W","33d45'25.48""N","84d23'3.29""W",Courtland St NE,4,4,0,138
+Yi Wei,66,Andrew Young International Blvd NW,Ellis St NW,32,33,"33d45'34.51""N","84d22'55.89""W","33d45'29.99""N","84d22'55.93""W",Piedmont Ave NE,4,0,4,139
+Yi Wei,67,Ellis St NW,John Wesley Dobbs Ave NE,33,125,"33d45'29.99""N","84d22'55.93""W","33d45'25.34""N","84d22'56.08""W",Piedmont Ave NE,4,0,4,144
+Marat,68,Parking Lot Exit #13,Parking Lot Exit #15,P13,P15,"33d45'17.24""N","84d23'57.97""W","33d45'16.78""N","84d23'57.95""W",Mangum St NW,4,2,2,17
+Marat,69,Parking Lot Exit #15,Mitchell St SW,P15,232,"33d45'16.78""N","84d23'57.95""W","33d45'13.58""N","84d23'58.48""W",Mangum St NW,4,2,2,93
+Marat,70,Mitchell St SW,Markham St SW,232,231,"33d45'13.58""N","84d23'58.48""W","33d45'10.02""N","84d23'59.59""W",Mangum St SW,2,1,1,115
+Marat,71,Markham St SW,Chapel St SW,231,230,"33d45'10.02""N","84d23'59.59""W","33d45'8.19""N","84d23'59.70""W",Mangum St SW,2,1,1,54
+Marat,72,Mangum St SW,Centennial Olympic Park Dr,230,195,"33d45'8.19""N","84d23'59.70""W","33d45'8.28""N","84d23'56.87""W",Chapel St SW,2,1,1,66
+Marat,73,Chapel St SW,Nelson St SW,195,194,"33d45'8.28""N","84d23'56.87""W","33d45'3.96""N","84d24'0.31""W",Centennial Olympic Park Dr,4,2,2,154
+Marat,74,Nelson St SW,Haynes St SW,194,193,"33d45'3.96""N","84d24'0.31""W","33d45'0.60""N","84d24'3.40""W",Centennial Olympic Park Dr,4,2,2,134
+Marat,75,Haynes St SW,Stonewall St SW,193,222,"33d45'0.60""N","84d24'3.40""W","33d44'58.05""N","84d24'5.72""W",Walker St SW,3,2,1,100
+Marat,76,Stonewall St SW,Fair St SW,222,221,"33d44'58.05""N","84d24'5.72""W","33d44'55.09""N","84d24'8.58""W",Walker St SW,3,2,1,118
+Marat,77,Fair St SW,Larkin St SW,221,217,"33d44'55.09""N","84d24'8.58""W","33d44'52.49""N","84d24'10.17""W",Walker St SW,3,2,1,90
+Marat,78,Larkin St SW,Peters St SW,217,212,"33d44'52.49""N","84d24'10.17""W","33d44'43.95""N","84d24'13.56""W",Walker St SW,3,2,1,274
+Marat,79,Trendholm St SW,Hills Ave SW,212,210,"33d44'43.95""N","84d24'13.56""W","33d44'42.53""N","84d24'15.06""W",Peters St SW,6,3,3,57
+Marat,80,Hills Ave SW,McDaniel St SW,210,208,"33d44'42.53""N","84d24'15.06""W","33d44'40.78""N","84d24'17.06""W",Peters St SW,6,3,3,69
+Marat,81,Peters St SW,Whitehall St SW,208,200,"33d44'40.78""N","84d24'17.06""W","33d44'36.71""N","84d24'14.35""W",McDaniel St SW,5,3,2,147
+Marat,82,Whitehall St SW, I-20 Entrance,200,201,"33d44'36.71""N","84d24'14.35""W","33d44'35.25""N","84d24'13.80""W",McDaniel St SW,5,3,2,45
+Marat,83,Martin Luther King Jr Dr SW,Mitchell St SW,237,233,"33d45'16.47""N","84d24'10.07""W","33d45'13.80""N","84d24'10.07""W",Northside Dr NW,5,3,2,60
+Marat,84,Mitchell St SW,Markham St SW,233,234,"33d45'13.80""N","84d24'10.07""W","33d45'10.24""N","84d24'10.21""W",Northside Dr NW,5,3,2,102
+Marat,85,Markham St SW,Tatnall St SW,234,227,"33d45'10.24""N","84d24'10.21""W","33d45'2.75""N","84d24'11.02""W",Northside Dr NW,5,3,2,226
+Marat,86,Tatnall St SW,Nelson St SW,227,224,"33d45'2.75""N","84d24'11.02""W","33d45'0.71""N","84d24'12.86""W",Northside Dr NW,5,3,2,77
+Marat,87,Nelson St SW,Stonewall St SW,224,223,"33d45'0.71""N","84d24'12.86""W","33d44'59.17""N","84d24'13.97""W",Northside Dr NW,5,3,2,58
+Marat,88,Stonewall St SW,Fair St SW,223,220,"33d44'59.17""N","84d24'13.97""W","33d44'55.85""N","84d24'16.34""W",Northside Dr NW,5,3,2,118
+Marat,89,Fair St SW,Larkin St SW,220,218,"33d44'55.85""N","84d24'16.34""W","33d44'52.71""N","84d24'18.49""W",Northside Dr NW,5,3,2,113
+Marat,90,Larkin St SW,Trenholm St SW,218,213,"33d44'52.71""N","84d24'18.49""W","33d44'49.36""N","84d24'20.77""W",Northside Dr NW,5,3,2,114
+Marat,91,Trenholm St SW,Hills Ave SW,213,211,"33d44'49.36""N","84d24'20.77""W","33d44'47.70""N","84d24'22.28""W",Northside Dr NW,5,3,2,58
+Marat,92,Hills Ave SW,McDaniel St SW,211,209,"33d44'47.70""N","84d24'22.28""W","33d44'46.39""N","84d24'23.64""W",Northside Dr NW,5,3,2,57
+Marat,93,Northside Dr NW,Peters St SW,209,208,"33d44'46.39""N","84d24'23.64""W","33d44'40.78""N","84d24'17.06""W",McDaniel St SW,2,1,1,238
+Marat,94,Centennial Olympic Park Dr,Spring St SW,88,89,"33d45'16.14""N","84d23'54.97""W","33d45'12.26""N","84d23'41.41""W",Martin Luther King Jr Dr SW,5,2,3,370
+Marat,95,Martin Luther King Jr Dr SW,Mitchell St SW,89,90,"33d45'12.26""N","84d23'41.41""W","33d45'8.43""N","84d23'44.41""W", Spring St SW,4,2,2,130
+Marat,96,Mitchell St SW,Nelson St SW,90,197,"33d45'8.43""N","84d23'44.41""W","33d45'6.20""N","84d23'46.26""W",Spring St SW,4,2,2,69
+Marat,97,Nelson St SW,Peters St SW,197,186,"33d45'6.20""N","84d23'46.26""W","33d45'1.88""N","84d23'49.61""W",Spring St SW,4,2,2,135
+Marat,98,Peters St SW,Garnett St SW,186,187,"33d45'1.88""N","84d23'49.61""W","33d45'0.54""N","84d23'50.67""W",Spring St SW,4,2,2,31
+Marat,99,Garnett St SW,Brotherton St SW,187,282,"33d45'0.54""N","84d23'50.67""W","33d44'56.16""N","84d23'52.90""W",Spring St SW,4,2,2,130
+Marat,100,Brotherton St SW,Packard St SW,282,271,"33d44'56.16""N","84d23'52.90""W","33d44'53.74""N","84d23'53.04""W",Spring St SW,4,2,2,70
+Marat,101,Packard St SW,Forsyth St SW (connection),271,191,"33d44'53.74""N","84d23'53.04""W","33d44'51.35""N","84d23'52.13""W",Spring St SW,4,2,2,77
+Marat,102,Forsyth St SW (connection),I-20 Entrance,191,283,"33d44'51.35""N","84d23'52.13""W","33d44'44.81""N","84d23'52.84""W",Spring St SW,4,2,2,194
+Marat,103,Mangum St SW,Haynes St SW,232,277,"33d45'13.58""N","84d23'58.48""W","33d45'13.59""N","84d24'5.50""W",Mitchell St SW,2,1,1,172
+Marat,104,Haynes St SW,Northside Dr SW,277,233,"33d45'13.59""N","84d24'5.50""W","33d45'13.80""N","84d24'10.07""W",Mitchell St SW,2,1,1,117
+Marat,105,Mangum St SW,Elliott St SW,232,293,"33d45'13.58""N","84d23'58.48""W","33d45'12.64""N","84d23'52.90""W",Mitchell St SW,4,4,0,145
+Marat,106,Mangum St SW,Haynes St SW,230,228,"33d45'8.19""N","84d23'59.70""W","33d45'6.78""N","84d24'5.69""W",Chapel St SW,2,1,1,153
+Marat,107,Chapel St SW,Martin Luther King Jr Dr SW,195,88,"33d45'8.28""N","84d23'56.87""W","33d45'16.14""N","84d23'54.97""W",Centennial Olympic Park Dr,5,2,3,245
+Marat,108,Centennial Olympic Park Dr,Elliott St SW,195,196,"33d45'8.28""N","84d23'56.87""W","33d45'8.27""N","84d23'52.86""W",Nelson St SW,2,1,1,85
+Marat,109,Walker St SW,Haynes St SW,194,226,"33d45'3.96""N","84d24'0.31""W","33d45'2.75""N","84d24'4.49""W",Nelson St SW,2,1,1,87
+Marat,110,Nelson St SW,Walker St SW,226,193,"33d45'2.75""N","84d24'4.49""W","33d45'0.60""N","84d24'3.40""W",Haynes St SW,2,1,1,59
+Marat,111,Walker St SW,Bradbury St SW,193,267,"33d45'0.60""N","84d24'3.40""W","33d44'57.73""N","84d24'0.33""W",Haynes St SW,2,1,1,116
+Marat,112,Bradbury St SW,Peters St SW,267,192,"33d44'57.73""N","84d24'0.33""W","33d44'56.82""N","84d23'59.27""W",Haynes St SW,2,1,1,40
+Marat,113,Walker St SW,Bradbury St SW,221,268,"33d44'55.09""N","84d24'8.58""W","33d44'53.43""N","84d24'5.75""W",Fair St SW,2,1,1,85
+Marat,114,Bradbury St SW,Peters St SW,268,215,"33d44'53.43""N","84d24'5.75""W","33d44'52.59""N","84d24'4.24""W",Fair St SW,2,1,1,47
+Marat,115,Walker St SW,Northside Dr SW,221,220,"33d44'55.09""N","84d24'8.58""W","33d44'55.85""N","84d24'16.34""W",Fair St SW,2,1,1,172
+Marat,116,Walker St SW,Larkin Pl SW,217,216,"33d44'52.49""N","84d24'10.17""W","33d44'52.54""N","84d24'14.94""W",Larkin St SW,2,1,1,112
+Marat,117,Walker St SW,Fair St SW,212,215,"33d44'43.95""N","84d24'13.56""W","33d44'52.59""N","84d24'4.24""W",Peters St SW,4,2,2,333
+Marat,118,Peters St SW,Lowes Alley SW,212,214,"33d44'43.95""N","84d24'13.56""W","33d44'47.05""N","84d24'17.54""W",Trenholm St SW,2,1,1,129
+Marat,119,Lowes Alley SW,Northside Dr SW,214,213,"33d44'47.05""N","84d24'17.54""W","33d44'49.36""N","84d24'20.77""W",Trenholm St SW,2,1,1,103
+Marat,120,Peters St SW,Northside Dr SW,210,211,"33d44'42.53""N","84d24'15.06""W","33d44'47.70""N","84d24'22.28""W",Hills Ave SW,2,1,1,221
+Marat,121,McDaniel St SW,Spelman Ln SW,208,207,"33d44'40.78""N","84d24'17.06""W","33d44'36.44""N","84d24'27.19""W",Peters St SW,4,2,2,285
+Marat,122,McDaniel St SW,Northside Dr SW,200,286,"33d44'36.71""N","84d24'14.35""W","33d44'31.68""N","84d24'29.34""W",Whitehall St SW,4,2,2,249
+Marat,123,McDaniel St SW,Spring St SW,200,199,"33d44'36.71""N","84d24'14.35""W","33d44'46.46""N","84d23'54.59""W",Whitehall St SW,4,2,2,590
+Marat,124,Haynes St NW,Centennial Olympic Park Dr,236,88,"33d45'16.50""N","84d24'5.16""W","33d45'16.14""N","84d23'54.97""W",Martin Luther King Jr Dr SW,4,2,2,237
+Marat,125,Martin Luther King Jr Dr SW,Alabama St SW,89,91,"33d45'12.26""N","84d23'41.41""W","33d45'16.25""N","84d23'38.53""W",Spring St NW,5,3,2,121
+Marat,126,Spring St SW,Forsyth St SW,89,178,"33d45'12.26""N","84d23'41.41""W","33d45'9.88""N","84d23'36.55""W",Martin Luther King Jr Dr SW,4,2,2,127
+Marat,127,Spring St SW,Forsyth St SW,90,179,"33d45'8.43""N","84d23'44.41""W","33d45'5.91""N","84d23'39.66""W",Mitchell St SW,4,2,2,127
+Marat,128,Spring St SW,Forsyth St SW,186,181,"33d45'1.88""N","84d23'49.61""W","33d45'1.87""N","84d23'42.70""W",Trinity Ave SW,4,2,2,157
+Marat,129,Spring St SW,Haynes St SW,186,192,"33d45'1.88""N","84d23'49.61""W","33d44'56.82""N","84d23'59.27""W",Peters St SW,4,2,2,273
+Marat,130,Spring St SW,Forsyth St SW,282,184,"33d44'56.16""N","84d23'52.90""W","33d44'53.92""N","84d23'48.80""W",Brotherton St SW,4,2,2,105
+Marat,131,Northside Dr SW,Beckwith Ct SW,233,259,"33d45'13.80""N","84d24'10.07""W","33d45'13.77""N","84d24'15.96""W",Mitchell St SW,2,1,1,129
+Marat,132,Northside Dr SW,Haynes St SW,234,229,"33d45'10.24""N","84d24'10.21""W","33d45'10.09""N","84d24'5.48""W",Markham St SW,2,1,1,105
+Marat,133,Northside Dr SW,Chapel St SW,227,228,"33d45'2.75""N","84d24'11.02""W","33d45'6.78""N","84d24'5.69""W",Haynes St SW,2,1,1,185
+Marat,134,Northside Dr SW,Nelson St SW,227,225,"33d45'2.75""N","84d24'11.02""W","33d45'1.57""N","84d24'9.10""W",Tatnall St SW,2,1,1,50
+Marat,135,Northside Dr SW,Tatnall St SW,224,225,"33d45'0.71""N","84d24'12.86""W","33d45'1.57""N","84d24'9.10""W",Nelson St SW,2,1,1,95
+Marat,136,Northside Dr SW,Bailey St SW,223,260,"33d44'59.17""N","84d24'13.97""W","33d45'1.33""N","84d24'16.89""W",Stonewall St SW,2,1,1,90
+Marat,137,Northside Dr SW,Bailey St SW,220,261,"33d44'55.85""N","84d24'16.34""W","33d44'56.47""N","84d24'20.94""W",Atlanta Student Movement Blvd,2,1,1,99
+Marat,138,Northside Dr SW,Dora St SW,218,262,"33d44'52.71""N","84d24'18.49""W","33d44'52.73""N","84d24'32.55""W",Larkin St SW,2,1,1,344
+Marat,139,Northside Dr SW,Dora St SW,209,263,"33d44'46.39""N","84d24'23.64""W","33d44'47.99""N","84d24'30.65""W",Greensterry Ave SW,2,1,1,181
+Marat,140,McDaniel St SW,Spelman Ln SW,209,206,"33d44'46.39""N","84d24'23.64""W","33d44'39.42""N","84d24'30.28""W",Northside Dr SW,5,3,2,244
+Marat,141,Ivan Allen Jr Blvd,Parking Lot Exit #30,1,P30,"33d45'48.19""N","84d24'10.66""W","33d45'43.94""N","84d24'9.70""W",Northside Dr NW,5,3,2,129
+Marat,142,Parking Lot Exit #30,Parking Lot Exit #29,P30,P29,"33d45'43.94""N","84d24'9.70""W","33d45'42.50""N","84d24'9.72""W",Northside Dr NW,5,3,2,46
+Marat,143,Parking Lot Exit #29,Thurmond St NW,P29,245,"33d45'42.50""N","84d24'9.72""W","33d45'40.00""N","84d24'9.84""W",Northside Dr NW,5,3,2,83
+Marat,144,Thurmond St NW,Spencer St NW,245,244,"33d45'40.00""N","84d24'9.84""W","33d45'35.95""N","84d24'10.00""W",Northside Dr NW,5,3,2,125
+Marat,145,Spencer St NW,Foundry St NW,244,243,"33d45'35.95""N","84d24'10.00""W","33d45'33.05""N","84d24'10.10""W",Northside Dr NW,5,3,2,90
+Marat,146,Foundry St NW,Magnolia St NW,243,241,"33d45'33.05""N","84d24'10.10""W","33d45'28.79""N","84d24'10.02""W",Northside Dr NW,5,3,2,129
+Marat,147,Magnolia St NW,Rhodes St NW,241,298,"33d45'28.79""N","84d24'10.02""W","33d45'24.61""N","84d24'10.13""W",Northside Dr NW,5,3,2,131
+Marat,148,Rhodes St NW,Carter St NW,298,240,"33d45'24.61""N","84d24'10.13""W","33d45'22.60""N","84d24'9.99""W",Northside Dr NW,5,3,2,64
+Marat,149,Carter St NW,Parking Lot Exit #12,240,P12,"33d45'22.60""N","84d24'9.99""W","33d45'22.37""N","84d24'6.67""W",Georgia Dome Dr NW,4,2,2,82
+Marat,150,Parking Lot Exit #12,Haynes St NW,P12,239,"33d45'22.37""N","84d24'6.67""W","33d45'22.05""N","84d24'5.15""W",Georgia Dome Dr NW,4,2,2,41
+Marat,151,Haynes St NW,Parking Lot Exit #11,239,P11,"33d45'22.05""N","84d24'5.15""W","33d45'22.54""N","84d24'0.41""W",Georgia Dome Dr NW,4,2,2,120
+Marat,152,Parking Lot Exit #11,Parking Lot Exit #14,P11,P14,"33d45'22.54""N","84d24'0.41""W","33d45'22.65""N","84d23'59.99""W",Georgia Dome Dr NW,4,2,2,11
+Marat,153,Parking Lot Exit #14,Magnum St NW,P14,238,"33d45'22.65""N","84d23'59.99""W","33d45'22.66""N","84d23'57.97""W",Georgia Dome Dr NW,4,2,2,52
+Marat,154,Georgia Dome Rd NW,Parking Lot Exit #10,238,P10,"33d45'22.66""N","84d23'57.97""W","33d45'23.47""N","84d23'57.98""W",Magnum St NW,4,2,2,35
+Marat,155,Georgia Dome Rd NW,Parking Lot Exit #13,238,P13,"33d45'22.66""N","84d23'57.97""W","33d45'17.24""N","84d23'57.97""W",Magnum St NW,4,2,2,168
+Marat,156,Georgia Dome Rd NW,Martin Luther King Jr Dr SW,239,236,"33d45'22.05""N","84d24'5.15""W","33d45'16.50""N","84d24'5.16""W",Haynes St NW,2,1,1,171
+Marat,157,Carter St NW,Martin Luther King Jr Dr SW,240,237,"33d45'22.60""N","84d24'9.99""W","33d45'16.47""N","84d24'10.07""W",Northside Dr NW,5,3,2,190
+Marat,158,Northside Dr NW,Gray St NW,1,3,"33d45'48.19""N","84d24'10.66""W","33d45'49.17""N","84d24'5.92""W",Ivan Allen Jr Blvd,4,2,2,126
+Marat,159,Gray St NW,Parking Lot Exit #6,3,P6,"33d45'49.17""N","84d24'5.92""W","33d45'49.70""N","84d24'0.58""W",Ivan Allen Jr Blvd,4,2,2,141
+Marat,160,Parking Lot Exit #6,Marietta St NW,P6,5,"33d45'49.70""N","84d24'0.58""W","33d45'51.20""N","84d23'50.13""W",Ivan Allen Jr Blvd,4,2,2,275
+Marat,161,Marietta St NW,Luckie St NW,5,6,"33d45'51.20""N","84d23'50.13""W","33d45'52.38""N","84d23'46.16""W",Ivan Allen Jr Blvd,4,2,2,109
+Marat,162,Luckie St NW,McAfee St,6,296,"33d45'52.38""N","84d23'46.16""W","33d45'52.63""N","84d23'43.27""W",Ivan Allen Jr Blvd,4,2,2,75
+Marat,163,McAfee St,McAfee St NW,296,287,"33d45'52.63""N","84d23'43.27""W","33d45'52.54""N","84d23'40.53""W",Ivan Allen Jr Blvd,4,2,2,71
+Marat,164,McAfee St NW,Coca-Cola Dr,287,74,"33d45'52.54""N","84d23'40.53""W","33d45'52.39""N","84d23'36.70""W",Ivan Allen Jr Blvd,4,2,2,74
+Marat,165,Coca-Cola Dr,World of Coca-Cola,74,288,"33d45'52.39""N","84d23'36.70""W","33d45'50.87""N","84d23'37.57""W",Coca-Cola Dr,3,1,2,51
+Marat,166,Coca-Cola Dr,Lovejoy St NW,74,7,"33d45'52.39""N","84d23'36.70""W","33d45'52.51""N","84d23'34.99""W",Ivan Allen Jr Blvd,4,2,2,44
+Marat,167,Ivan Allen Jr Blvd,Mills St NW,7,275,"33d45'52.51""N","84d23'34.99""W","33d45'54.92""N","84d23'35.04""W",Lovejoy St NW,2,1,1,75
+Marat,168,Ivan Allen Jr Blvd,Mills St NW,287,274,"33d45'52.54""N","84d23'40.53""W","33d45'54.96""N","84d23'40.47""W",McAfee St NW,2,1,1,74
+Marat,169,Ivan Allen Jr Blvd,Mills St NW,296,289,"33d45'52.63""N","84d23'43.27""W","33d45'55.05""N","84d23'43.19""W",McAfee St,2,1,1,75
+Marat,170,Ivan Allen Jr Blvd,Mills St NW,6,273,"33d45'52.38""N","84d23'46.16""W","33d45'55.04""N","84d23'46.05""W",Luckie St NW,4,2,2,80
+Marat,171,Ivan Allen Jr Blvd,Mills St NW,5,272,"33d45'51.20""N","84d23'50.13""W","33d45'55.12""N","84d23'50.47""W",Marietta St NW,4,2,2,122
+Marat,172,Ivan Allen Jr Blvd,Simpson St NW,6,80,"33d45'52.38""N","84d23'46.16""W","33d45'48.00""N","84d23'46.19""W",Luckie St NW,4,2,2,133
+Marat,173,Ivan Allen Jr Blvd,Simpson St NW,5,81,"33d45'51.20""N","84d23'50.13""W","33d45'48.04""N","84d23'49.72""W",Marietta St NW,4,2,2,98
+Marat,174,Northside Dr NW,Edwards St NW,1,247,"33d45'48.19""N","84d24'10.66""W","33d45'48.14""N","84d24'13.19""W",Simpson St NW,4,2,2,66
+Marat,175,Northside Dr NW,Simpson St NW,246,247,"33d45'51.14""N","84d24'12.96""W","33d45'48.14""N","84d24'13.19""W",Edwards St NW,2,1,1,93
+Marat,176,Northside Dr NW,Maple Pl NW,245,250,"33d45'40.00""N","84d24'9.84""W","33d45'40.04""N","84d24'17.02""W",Thurmond St NW,2,1,1,185
+Marat,177,Northside Dr NW,Electric Ave NW,244,251,"33d45'35.95""N","84d24'10.00""W","33d45'35.94""N","84d24'15.36""W",Spencer St NW,2,1,1,138
+Marat,178,Northside Dr NW,Electric Ave NW,243,253,"33d45'33.05""N","84d24'10.10""W","33d45'33.01""N","84d24'15.35""W",Foundry St NW,2,1,1,135
+Marat,179,Northside Dr NW,Postell St NW,241,290,"33d45'28.79""N","84d24'10.02""W","33d45'28.88""N","84d24'12.90""W",Magnolia St NW,2,1,1,73
+Marat,180,Northside Dr NW,Postell St NW,298,255,"33d45'24.61""N","84d24'10.13""W","33d45'24.54""N","84d24'12.97""W",Rhodes St NW,2,1,1,74
+Marat,181,Northside Dr NW,Electric Ave NW,240,257,"33d45'22.60""N","84d24'9.99""W","33d45'22.69""N","84d24'16.09""W",Carter St NW,2,1,1,138
+Marat,182,Northside Dr NW,Maple St NW,237,258,"33d45'16.47""N","84d24'10.07""W","33d45'16.48""N","84d24'19.66""W",Martin Luther King Jr Dr SW,5,3,2,244
+Marat,183,Ivan Allen Jr Blvd,Parking Lot Exit #7,3,P7,"33d45'49.17""N","84d24'5.92""W","33d45'50.71""N","84d24'6.04""W",Gray St NW,2,1,1,46
+Marat,184,Parking Lot Exit #7,Parking Lot Exit #5,P7,P5,"33d45'50.71""N","84d24'6.04""W","33d45'50.66""N","84d24'6.04""W",Gray St NW,2,1,1,1
+Marat,185,Parking Lot Exit #5,Parking Lot Exit #4,P5,P4,"33d45'50.66""N","84d24'6.04""W","33d45'52.95""N","84d24'6.06""W",Gray St NW,2,1,1,70
+Marat,186,Parking Lot Exit #4,Parking Lot Exit #8,P4,P8,"33d45'52.95""N","84d24'6.06""W","33d45'53.57""N","84d24'6.02""W",Gray St NW,2,1,1,20
+Marat,187,Parking Lot Exit #8,Parking Lot Exit #3,P8,P3,"33d45'53.57""N","84d24'6.02""W","33d45'53.77""N","84d24'6.05""W",Gray St NW,2,1,1,6
+Marat,188,Parking Lot Exit #3,John St NW,P3,281,"33d45'53.77""N","84d24'6.05""W","33d45'58.15""N","84d24'6.00""W",Gray St NW,2,1,1,139
+Marat,189,Gray St NW,Northside Dr SW,281,2,"33d45'58.15""N","84d24'6.00""W","33d45'57.71""N","84d24'17.04""W",John St NW,2,1,1,286
+Marat,190,John St NW,Parking Lot Exit #2,2,P2,"33d45'57.71""N","84d24'17.04""W","33d45'55.30""N","84d24'15.63""W",Northside Dr NW,4,2,2,82
+Marat,191,Parking Lot Exit #2,Western Ave NW,P2,291,"33d45'55.30""N","84d24'15.63""W","33d45'53.64""N","84d24'14.47""W",Northside Dr NW,4,2,2,59
+Marat,192,Northside Dr NW,Maple St NW,291,292,"33d45'53.64""N","84d24'14.47""W","33d45'53.54""N","84d24'19.40""W",Western Ave NW,2,1,1,128
+Marat,193,Western Ave NW,Jones Ave NW,291,246,"33d45'53.64""N","84d24'14.47""W","33d45'51.14""N","84d24'12.96""W",Northside Dr NW,4,2,2,89
+Marat,194,Northside Dr NW,Maple St NW,246,248,"33d45'51.14""N","84d24'12.96""W","33d45'51.07""N","84d24'18.58""W",Jones Ave NW,4,2,2,143
+Marat,195,Haynes St NW,Mitchell St SW,236,235,"33d45'16.50""N","84d24'5.16""W","33d45'16.31""N","84d24'6.18""W",Martin Luther King Jr Dr SW,5,3,2,25
+Marat,196,Mitchell St SW,Northside Dr NW,235,237,"33d45'16.31""N","84d24'6.18""W","33d45'16.47""N","84d24'10.07""W",Martin Luther King Jr Dr SW,5,3,2,99
+Marat,197,Martin Luther King Jr Dr SW,Mangum St SW,235,232,"33d45'16.31""N","84d24'6.18""W","33d45'13.58""N","84d23'58.48""W",Mitchell St SW,3,1,2,220
+Marat,198,Mangum St SW,Haynes St SW,231,229,"33d45'10.02""N","84d23'59.59""W","33d45'10.09""N","84d24'5.48""W",Markham St SW,2,1,1,152
+Marat,199,Martin Luther King Jr Dr SW,Andrew Young International Blvd NW,88,86,"33d45'16.14""N","84d23'54.97""W","33d45'19.61""N","84d23'53.11""W",Centennial Olympic Park Dr NW,5,2,3,117
+Marat,200,Andrew Young International Blvd NW,Philips Dr,86,87,"33d45'19.61""N","84d23'53.11""W","33d45'21.31""N","84d23'50.51""W",Centennial Olympic Park Dr NW,5,2,3,85
+Marat,201,Philips Dr,Parking Lot Exit #16,87,P16,"33d45'21.31""N","84d23'50.51""W","33d45'25.32""N","84d23'40.54""W",Centennial Olympic Park Dr NW,5,2,3,283
+Marat,202,Northside Dr SW,Larking Pl SW,216,218,"33d44'52.54""N","84d24'14.94""W","33d44'52.71""N","84d24'18.49""W",Larkin St SW,2,1,1,89
+Marat,203,Elliott St SW,Spring St SW,293,90,"33d45'12.64""N","84d23'52.90""W","33d45'8.43""N","84d23'44.41""W",Mitchell St SW,4,2,2,252
+Marat,204,Mitchell St SW,Nelson St SW,293,196,"33d45'12.64""N","84d23'52.90""W","33d45'8.27""N","84d23'52.86""W",Elliott St SW,4,2,2,134
+Marat,205,Elliott St SW,Spring St SW,196,197,"33d45'8.27""N","84d23'52.86""W","33d45'6.20""N","84d23'46.26""W",Nelson St SW,2,1,1,181
+Marat,206,Forsyth St SW,Broad St SW,179,174,"33d45'5.91""N","84d23'39.66""W","33d45'4.51""N","84d23'37.36""W",Mitchell St SW,4,2,2,72
+Marat,207,Broad St SW,Peachtree St SW,174,172,"33d45'4.51""N","84d23'37.36""W","33d45'3.22""N","84d23'34.98""W",Mitchell St SW,4,2,2,74
+Marat,208,Peachtree St SW,Pryor St SW,172,171,"33d45'3.22""N","84d23'34.98""W","33d45'0.83""N","84d23'30.63""W",Mitchell St SW,4,2,2,132
+Marat,209,Mitchell St SW,Martin Luther King Jr Dr SE,171,154,"33d45'0.83""N","84d23'30.63""W","33d45'4.94""N","84d23'27.49""W",Pryor St SW,4,2,2,149
+Marat,210,Martin Luther King Jr Dr SE,Alabama St SW,154,152,"33d45'4.94""N","84d23'27.49""W","33d45'8.86""N","84d23'24.47""W",Pryor St SW,4,2,2,143
+Marat,211,Alabama St SW,Wall St SE,152,116,"33d45'8.86""N","84d23'24.47""W","33d45'11.76""N","84d23'22.29""W",Pryor St SW,4,2,2,106
+Marat,212,Wall St SE,Decatur St SE,116,114,"33d45'11.76""N","84d23'22.29""W","33d45'13.84""N","84d23'20.49""W",Pryor St SW,4,2,2,80
+Marat,213,Decatur St SE,Edgewood Ave SE,114,110,"33d45'13.84""N","84d23'20.49""W","33d45'16.18""N","84d23'18.63""W",Pryor St SW,4,2,2,84
+Marat,214,Forsyth St SW,Broad St SW,178,175,"33d45'9.88""N","84d23'36.55""W","33d45'8.61""N","84d23'34.18""W",Martin Luther King Jr Dr SW,5,3,2,72
+Marat,215,Broad St SW,Peachtree St SW,175,156,"33d45'8.61""N","84d23'34.18""W","33d45'7.25""N","84d23'31.80""W",Martin Luther King Jr Dr SW,5,3,2,74
+Marat,216,Peachtree St SW,Pryor St SW,156,154,"33d45'7.25""N","84d23'31.80""W","33d45'4.94""N","84d23'27.49""W",Martin Luther King Jr Dr SW,5,3,2,132
+Marat,217,Pryor St SW,Central Ave SW,154,153,"33d45'4.94""N","84d23'27.49""W","33d45'2.76""N","84d23'23.53""W",Martin Luther King Jr Dr SE,5,3,2,123
+Marat,218,Williams St NW,Margaret Mitchell Square NW,13,16,"33d45'34.85""N","84d23'26.09""W","33d45'34.73""N","84d23'23.57""W",Andrew Young International Blvd NW,4,2,2,64
+Marat,219,Margaret Mitchell Square NW,Spring St NW,16,17,"33d45'34.73""N","84d23'23.57""W","33d45'34.80""N","84d23'20.65""W",Andrew Young International Blvd NW,4,2,2,75
+Marat,220,Spring St NW,Peachtree St NE,17,25,"33d45'34.80""N","84d23'20.65""W","33d45'34.77""N","84d23'15.31""W",Andrew Young International Blvd NW,4,2,2,138
+Marat,221,Peachtree St NE,Peachtree Center Ave NE,25,26,"33d45'34.77""N","84d23'15.31""W","33d45'34.67""N","84d23'9.81""W",Andrew Young International Blvd NE,4,2,2,142
+Marat,222,Peachtree Center Ave NE,Courtland St NE,26,31,"33d45'34.67""N","84d23'9.81""W","33d45'34.61""N","84d23'3.15""W",Andrew Young International Blvd NE,4,2,2,172
+Marat,223,Courtland St NE,Piedmont Ave NE,31,32,"33d45'34.61""N","84d23'3.15""W","33d45'34.51""N","84d22'55.89""W",Andrew Young International Blvd NE,4,2,2,187
+Marat,224,Jones Ave NW,Parking Lot Exit #1,246,P1,"33d45'51.14""N","84d24'12.96""W","33d45'50.55""N","84d24'11.76""W",Northside Dr NW,5,3,2,29
+Marat,225,Parking Lot Exit #1,Ivan Allen Jr Blvd,P1,1,"33d45'50.55""N","84d24'11.76""W","33d45'48.19""N","84d24'10.66""W",Northside Dr NW,5,3,2,63
+Marat,226,Centennial Olympic Park Dr NW,Andrew Young International Blvd NW,52,75,"33d45'28.29""N","84d23'36.59""W","33d45'32.34""N","84d23'39.63""W",Marietta St NW,4,2,2,149
+Marat,227,Andrew Young International Blvd NW,Foundry St NW,75,76,"33d45'32.34""N","84d23'39.63""W","33d45'36.26""N","84d23'41.74""W",Marietta St NW,4,2,2,132
+Marat,228,Foundry St NW,Parking Lot Exit #19,76,P19,"33d45'36.26""N","84d23'41.74""W","33d45'38.05""N","84d23'42.97""W",Marietta St NW,4,2,2,64
+Marat,229,Parking Lot Exit #19,Parking Lot Exit #18,P19,P18,"33d45'38.05""N","84d23'42.97""W","33d45'39.03""N","84d23'43.88""W",Marietta St NW,4,2,2,38
+Marat,230,Parking Lot Exit #18,Baker St NW,P18,78,"33d45'39.03""N","84d23'43.88""W","33d45'40.69""N","84d23'45.61""W",Marietta St NW,4,2,2,67
+Marat,231,Baker St NW,Latimer St NW,78,82,"33d45'40.69""N","84d23'45.61""W","33d45'42.94""N","84d23'47.18""W",Marietta St NW,4,2,2,81
+Marat,232,Latimer St NW,Simpson St NW,82,81,"33d45'42.94""N","84d23'47.18""W","33d45'48.04""N","84d23'49.72""W",Marietta St NW,4,2,2,170
+Marat,233,Parking Lot Exit #20,Parking Lot Exit #21,P20,P21,"33d45'35.10""N","84d23'43.39""W","33d45'35.26""N","84d23'43.13""W",Foundry St NW,2,1,1,9
+Marat,234,Parking Lot Exit #21,Marietta St NW,P21,76,"33d45'35.26""N","84d23'43.13""W","33d45'36.26""N","84d23'41.74""W",Foundry St NW,2,1,1,48
+Marat,235,Marietta St NW,Walton St NW,43,42,"33d45'23.09""N","84d23'31.57""W","33d45'25.06""N","84d23'28.90""W",Cone St NW,4,2,2,93
+Marat,236,Walton St NW,Poplar St NW,42,41,"33d45'25.06""N","84d23'28.90""W","33d45'26.57""N","84d23'26.70""W",Cone St NW,4,2,2,74
+Marat,237,Poplar St NW,Luckie St NW,41,40,"33d45'26.57""N","84d23'26.70""W","33d45'28.14""N","84d23'24.53""W",Cone St NW,4,2,2,75
+Marat,238,Luckie St NW,William St NW,40,39,"33d45'28.14""N","84d23'24.53""W","33d45'29.67""N","84d23'22.27""W",Cone St NW,4,2,2,76
+Marat,239,Parking Lot Exit #22,Springs St NW,P22,47,"33d45'31.21""N","84d23'31.43""W","33d45'28.42""N","84d23'28.78""W",Nassau St NW,2,1,1,115
+Marat,240,Centennial Olympic Park Dr NW,Springs St NW,49,48,"33d45'33.00""N","84d23'31.50""W","33d45'30.12""N","84d23'26.39""W",Luckie St NW,2,1,1,160
+Marat,241,Centennial Olympic Park Dr NW,Forsyth St SW,91,177,"33d45'16.25""N","84d23'38.53""W","33d45'13.86""N","84d23'33.40""W",Alabama St SW,4,2,2,149
+Marat,242,Springs St SW,Forsyth St SW,197,198,"33d45'6.20""N","84d23'46.26""W","33d45'3.66""N","84d23'41.31""W",Nelson St SW,2,1,1,150
+Marat,243,Springs St SW,Forsyth St SW,187,185,"33d45'0.54""N","84d23'50.67""W","33d44'57.83""N","84d23'45.77""W",Garnett St SW,4,2,2,151
+Marat,244,Springs St SW,Forsyth St SW,191,190,"33d44'51.35""N","84d23'52.13""W","33d44'51.40""N","84d23'50.55""W",Unnamed connection,2,1,1,40
+Marat,245,Haynes St SW,Castleberry St SW,192,269,"33d44'56.82""N","84d23'59.27""W","33d44'54.65""N","84d24'1.73""W",Peters St SW,4,2,2,92
+Marat,246,Castleberry St SW,Fair St SW,269,215,"33d44'54.65""N","84d24'1.73""W","33d44'52.59""N","84d24'4.24""W",Peters St SW,4,2,2,91
+Marat,247,Williams St NW,Spring St NW,285,18,"33d45'39.43""N","84d23'26.04""W","33d45'39.48""N","84d23'20.53""W",John Portman Blvd,4,2,2,142
+Marat,248,Spring St NW,Peachtree St NE,18,24,"33d45'39.48""N","84d23'20.53""W","33d45'39.44""N","84d23'15.27""W",John Portman Blvd,4,2,2,135
+Marat,249,Peachtree St NE,Peachtree Center Ave NE,24,27,"33d45'39.44""N","84d23'15.27""W","33d45'39.27""N","84d23'9.75""W",John Portman Blvd,4,2,2,143
+Marat,250,Peachtree Center Ave NE,Courtland St NE,27,30,"33d45'39.27""N","84d23'9.75""W","33d45'39.19""N","84d23'3.04""W",John Portman Blvd,4,2,2,174
+Marat,251,Courtland St NE,Piedmont Ave NE,30,73,"33d45'39.19""N","84d23'3.04""W","33d45'39.19""N","84d22'55.79""W",John Portman Blvd,4,2,2,186
+Marat,252,Andrew Young International Blvd NW,John Portman Blvd,13,285,"33d45'34.85""N","84d23'26.09""W","33d45'39.43""N","84d23'26.04""W",William St NW,4,2,2,142
+Marat,253,John Portman Blvd,Baker St NW,285,12,"33d45'39.43""N","84d23'26.04""W","33d45'44.00""N","84d23'25.96""W",William St NW,4,2,2,140
+Marat,254,Baker St NW,Simpson St NW,12,11,"33d45'44.00""N","84d23'25.96""W","33d45'47.94""N","84d23'25.80""W",William St NW,4,2,2,121
+Marat,255,Simpson St NW,West Peachtree Pl NW,11,10,"33d45'47.94""N","84d23'25.80""W","33d45'50.43""N","84d23'25.33""W",William St NW,4,2,2,78
+Marat,256,West Peachtree Pl NW,Ivan Allen Jr Blvd,10,9,"33d45'50.43""N","84d23'25.33""W","33d45'52.62""N","84d23'25.31""W",William St NW,4,2,2,64
+Marat,257,Peachtree St NE,Forsyth St NW,102,98,"33d45'24.89""N","84d23'17.25""W","33d45'26.01""N","84d23'18.48""W",William St NW,2,1,1,46
+Marat,258,Forsyth St NW,Fairlie St NW,98,97,"33d45'26.01""N","84d23'18.48""W","33d45'27.87""N","84d23'20.38""W",William St NW,2,1,1,75
+Marat,259,Fairlie St NW,Cone St NW,97,39,"33d45'27.87""N","84d23'20.38""W","33d45'29.67""N","84d23'22.27""W",William St NW,2,1,1,73
+Marat,260,Spring St NW,Andrew Young International Blvd NW,14,13,"33d45'31.62""N","84d23'24.26""W","33d45'34.85""N","84d23'26.09""W",William St NW,4,2,2,114
+Marat,261,Spring St NW,Andrew Young International Blvd NW,15,16,"33d45'33.25""N","84d23'22.01""W","33d45'34.73""N","84d23'23.57""W",Margaret Mitchell Square NW,4,2,2,61
+Marat,262,Andrew Young International Blvd NW,John Portman Blvd,17,18,"33d45'34.80""N","84d23'20.65""W","33d45'39.48""N","84d23'20.53""W",Spring St NW,4,2,2,143
+Marat,263,John Portman Blvd,Baker St NW,18,19,"33d45'39.48""N","84d23'20.53""W","33d45'43.96""N","84d23'20.53""W",Spring St NW,4,2,2,138
+Marat,264,Baker St NW,Simpson St NW,19,20,"33d45'43.96""N","84d23'20.53""W","33d45'48.06""N","84d23'20.46""W",Spring St NW,4,2,2,126
+Marat,265,Simpson St NW,West Peachtree Pl NW,20,21,"33d45'48.06""N","84d23'20.46""W","33d45'50.53""N","84d23'20.38""W",Spring St NW,4,2,2,75
+Marat,266,West Peachtree Pl NW,Ivan Allen Jr Blvd,21,22,"33d45'50.53""N","84d23'20.38""W","33d45'52.82""N","84d23'20.33""W",Spring St NW,4,2,2,69
+Marat,267,Andrew Young International Blvd NW,John Portman Blvd,25,24,"33d45'34.77""N","84d23'15.31""W","33d45'39.44""N","84d23'15.27""W",West Peachtree St NW,4,2,2,142
+Marat,268,John Portman Blvd,Baker St NW,24,23,"33d45'39.44""N","84d23'15.27""W","33d45'43.90""N","84d23'15.21""W",West Peachtree St NW,4,2,2,139
+Marat,269,Baker St NW,Simpson St NW,23,61,"33d45'43.90""N","84d23'15.21""W","33d45'47.88""N","84d23'15.26""W",West Peachtree St NW,4,2,2,123
+Marat,270,Simpson St NW,West Peachtree Pl NW,61,60,"33d45'47.88""N","84d23'15.26""W","33d45'50.09""N","84d23'15.10""W",West Peachtree St NW,4,2,2,69
+Marat,271,West Peachtree Pl NW,Porter Pl NE,60,63,"33d45'50.09""N","84d23'15.10""W","33d45'52.04""N","84d23'15.13""W",West Peachtree St NW,4,2,2,61
+Marat,272,Porter Pl NE,Ivan Allen Jr Blvd,63,59,"33d45'52.04""N","84d23'15.13""W","33d45'52.96""N","84d23'15.02""W",West Peachtree St NW,4,2,2,28
+Marat,273,Andrew Young International Blvd NE,John Portman Blvd,26,27,"33d45'34.67""N","84d23'9.81""W","33d45'39.27""N","84d23'9.75""W",Peachtree Center Ave NE,4,2,2,142
+Marat,274,John Portman Blvd,Baker St NW,27,28,"33d45'39.27""N","84d23'9.75""W","33d45'43.79""N","84d23'9.66""W",Peachtree Center Ave NE,4,2,2,141
+Marat,275,Baker St NW,Porter Pl NE,28,64,"33d45'43.79""N","84d23'9.66""W","33d45'50.55""N","84d23'9.98""W",Peachtree Center Ave NE,4,2,2,211
+Marat,276,Porter Pl NE,Ralph McGill Blvd NE,64,65,"33d45'50.55""N","84d23'9.98""W","33d45'52.18""N","84d23'8.68""W",Peachtree Center Ave NE,4,2,2,58
+Marat,277,Andrew Young International Blvd NE,John Portman Blvd,31,30,"33d45'34.61""N","84d23'3.15""W","33d45'39.19""N","84d23'3.04""W",Courtland St NE,5,3,2,141
+Marat,278,John Portman Blvd,Baker St NW,30,29,"33d45'39.19""N","84d23'3.04""W","33d45'43.77""N","84d23'2.95""W",Courtland St NE,5,3,2,141
+Marat,279,Centennial Olympic Park Dr NW,Andrew Young International Blvd NW,86,85,"33d45'19.61""N","84d23'53.11""W","33d45'28.60""N","84d23'57.07""W",Andrew Young International Blvd NW,4,2,2,320
+Marat,280,Centennial Olympic Park Dr NW,Andrew Young International Blvd NW,87,84,"33d45'21.31""N","84d23'50.51""W","33d45'28.70""N","84d23'50.26""W",Philips Dr,2,1,1,229
+Marat,281,Marietta St NW,Luckie St NW,78,79,"33d45'40.69""N","84d23'45.61""W","33d45'42.97""N","84d23'42.31""W",Baker St NW,4,2,2,109
+Marat,282,Philips Dr,Marietta St NW,84,75,"33d45'28.70""N","84d23'50.26""W","33d45'32.34""N","84d23'39.63""W",Andrew Young International Blvd NW,4,2,2,308
+Marat,283,Andrew Young International Blvd NW,Philips Dr,85,84,"33d45'28.60""N","84d23'57.07""W","33d45'28.70""N","84d23'50.26""W",Andrew Young International Blvd NW,4,2,2,170
