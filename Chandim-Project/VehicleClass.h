@@ -9,8 +9,17 @@ class VehicleClass()
          int sDestination; //starting location
          int length; //vehicle length
          int ID; //car ID for simulation purpose
+         dir currentDirection; //current direction
   public:
          //VehicleClass(int ID, int sDestination...)     !!Constructor
          //!!Constructor
+         void updateDirection (dir Direction)
+         {
+              currentDirection = Direction;     
+         }
          
+         dir getDirection ()
+         {
+             return currentDirection;    
+         }
 };

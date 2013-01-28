@@ -4,6 +4,11 @@
 
 using namespace std;
 
+void CreateTopology()
+{
+          
+}
+
 int main()
 {
     getch();

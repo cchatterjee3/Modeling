@@ -18,8 +18,13 @@ class IntersectionwithSignal
          VehicleQueue* NBO;
          VehicleQueue* SBO;
          VehicleQueue* SBI;
-         bool state[2]; // busy or not
+         bool state; // busy or not
+         
          
   public:    
-         void Arrival();//    
+         //void VehicleArrival(VehicleClass* vehicle);//Add to queue
+         void VehiclePass(VehicleClass* vehicle); //Vehicle passes through intersection
+         void VehicleDeparture (VehicleClass* vehicle); //Depart
+         void addVehicletoQueue(VehicleQueue* joinqueue); //Adds to outgoing queue or removes vehicles 
+         void changeSignalTrigger(); //checks its own signals 
 };
