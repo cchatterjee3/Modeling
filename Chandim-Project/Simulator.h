@@ -1,4 +1,5 @@
 #include <iostream>
+#include "CommonDefs.h"
 
 class Simulator
 {
@@ -9,7 +10,7 @@ class Simulator
              void Stop(); //Stop executing events
              static void Run(); //Start executing events
              static void StopAt(Time_t); //define stopping time  
-             void getNow(){
+             Time_t getNow(){
                   return Now;     
              }   
 };
