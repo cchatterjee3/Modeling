@@ -1,14 +1,14 @@
 #pragma once
-<<<<<<< HEAD
+
 #include "CommonDefs.h"
 
-class IntersectionwithSignal;
-=======
+
+
 
 #include "CommonDefs.h"
 #include "VehicleClass.h"
 //#include "IntersectionwithSignal.h"
->>>>>>> 93ee5eea49a9a2ad2de3187ff3497fb2c36d760f
+
 
 class IntersectionwithSignal;
 
