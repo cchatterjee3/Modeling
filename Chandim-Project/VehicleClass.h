@@ -1,6 +1,10 @@
+#pragma once
+
 #define DEF_VLENGTH
 
-class VehicleClass()
+#include "CommonDefs.h"
+
+class VehicleClass
 {
   private:
          Time_t startTime;
@@ -15,7 +19,7 @@ class VehicleClass()
          //!!Constructor
          void updateDirection (dir Direction)
          {
-              currentDirection = Direction;     
+              currentDirection = Direction;
          }
          
          dir getDirection ()

@@ -12,5 +12,6 @@ class IntersectionwithoutSignal
           VehicleQueue* NBI;
           VehicleQueue* NBO;
           VehicleQueue* SBO;
-          VehicleQueue* SBI;    
+          VehicleQueue* SBI;
+          
 };

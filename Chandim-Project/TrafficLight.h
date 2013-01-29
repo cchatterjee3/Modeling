@@ -1,6 +1,10 @@
+#pragma once
+
 #include "CommonDefs.h"
+#include "VehicleClass.h"
+//#include "IntersectionwithSignal.h"
 
-
+class IntersectionwithSignal;
 
 class TrafficLight
 {
@@ -18,7 +22,18 @@ class TrafficLight
               state getState()
               {
                     return curstate;      
-              }     
-              
-              state cyclestate(); //cyclestate
-}
+              }
+			  //constructors
+			  TrafficLight();
+			  // (type, initialState GLT, YLT, RLT, GTR, YTR, RTR)
+			  // put zeros if any was inapplicable
+			  TrafficLight(int typ, state initialState, int Ph1, int Ph2, int Ph3, int Ph4, int Ph5, int Ph6);
+
+			  //destructor
+			  ~TrafficLight();
+          
+			  //cyclestate
+              state cyclestate(); 
+
+
+};
