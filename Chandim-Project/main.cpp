@@ -9,7 +9,7 @@
 
 using namespace std;
 
-//class Simulator;
+class Simulator;
 extern Simulator* sim = new Simulator();
 
 int main()
