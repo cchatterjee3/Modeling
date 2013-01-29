@@ -13,7 +13,7 @@ VehicleQueue* ebi, VehicleQueue* ebo, VehicleQueue* wbi, VehicleQueue* wbo,
 VehicleQueue* nbi, VehicleQueue* nbo, VehicleQueue* sbi, VehicleQueue* sbo)
 {
 	//initialize state
-	state=stat;
+	busy=stat;
 
 	//initialize routing table
 	memcpy(routingtable, table, 12*sizeof(dir));

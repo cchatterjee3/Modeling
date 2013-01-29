@@ -1,7 +1,10 @@
+#include <iostream>
 #include "TrafficLight.h"
 #include "IntersectionwithSignal.h"
 
 #include <memory.h>
+
+void schedule(void);
 
 IntersectionwithSignal::IntersectionwithSignal()
 {
@@ -59,6 +62,12 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
 	
+	switch (vehicle->getDirection())
+	{
+		case N:
+			schedule();
+			break;
+	}
 }
 void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
@@ -72,5 +81,89 @@ void IntersectionwithSignal::changeSignalTrigger() //checks its own signals
 {
 	
 }
+int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its own signals 
+{
+	//test whether a certain queue can start sending vehicles out
+	//-1: Q is empty
+	// 0: Light is not green for the first member of Queue
+	//+1: Yes, the queue is not empty and the trafficc light is green
+	
+	bool canGo;
 
+	if(Q->empty())
+	{
+		return -1;
+	}
+	VehicleClass* NextVeh; // define a Vehicle pointer
+	dir dest=this->routingtable[NextVeh->getDestination()];
+	//--------------------------------------------
+	if(Q==EBI)
+	{
+		switch(dest)
+		{
+			case S:
+				canGo=(EB->getState()==GTR);
+				break;
+			case E:
+				canGo=(EB->getState()==GTR);
+				break;
+			case N:
+				canGo=(EB->getState()==GLT); // or, the other direction is not busy(debug)
+				break;
+		}
+	}
+	//--------------------------------------------
+	else if(Q==WBI)
+	{
+		switch(dest)
+		{
+			case N:
+				canGo=(WB->getState()==GTR);
+				break;
+			case W:
+				canGo=(WB->getState()==GTR);
+				break;
+			case S:
+				canGo=(WB->getState()==GLT);
+				break;
+		}
+	}
+	//--------------------------------------------
+	else if(Q==NBI)
+	{
+		switch(dest)
+		{
+			case E:
+				canGo=(NB->getState()==GTR);
+				break;
+			case N:
+				canGo=(NB->getState()==GTR);
+				break;
+			case W:
+				canGo=(NB->getState()==GLT);
+				break;
+		}
+	}
+	//--------------------------------------------
+	else if(Q==SBI)
+	{
+		switch(dest)
+		{
+			case W:
+				canGo=(SB->getState()==GTR);
+				break;
+			case S:
+				canGo=(SB->getState()==GTR);
+				break;
+			case E:
+				canGo=(SB->getState()==GLT);
+				break;
+		}
+	}
+	if(canGo==true)
+		return 1;
+	else
+		return 0;
+
+}
 
