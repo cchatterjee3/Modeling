@@ -129,5 +129,7 @@ calender_queue::calender_queue()
 
 	Qsize=0;
 	cur_time_frame =0;
+	bucket_count = 72000;
+	time_frame_size =0.1;
 
 }
