@@ -1,6 +1,7 @@
 
 #include <queue>
 #include "CommonDefs.h"
+#include "TrafficLight.h"
 
 
 //#include "TrafficLight.h"
