@@ -1,3 +1,6 @@
+#ifndef __CQ_H__
+#define __CQ_H__
+
 
 #include <iostream>
 #include <list>
@@ -25,6 +28,7 @@ class calender_queue
              std::vector<bucket>  buckets;
 
              int Qsize; //number in prioqueue
+             int bucket_count;
              double time_frame_size;
              int cur_time_frame; // It keeps index of bucket, from which last event was popped
              
@@ -32,7 +36,7 @@ class calender_queue
       public:
              void enqueue(EventBase*); //Insert into priority queue
              
-             EventBase* dequeue(EventBase*); //Dequeues event pointed to by EventBase *
+             void dequeue(EventBase*); //Dequeues event pointed to by EventBase *
              
              EventBase* PopNext(); //Pops Next event
 
@@ -42,6 +46,11 @@ class calender_queue
              
              //Checks if there are anymore events left in the queue to be scheduled
              int isEmpty();
+
+             int get_bucket_count();
              
              calender_queue(); //Constructor      
 };
+
+
+#endif

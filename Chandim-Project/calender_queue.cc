@@ -28,7 +28,7 @@ void calender_queue::enqueue(EventBase* E1)
 
 }
 
-EventBase* calender_queue::dequeue(EventBase* E1)
+void calender_queue::dequeue(EventBase* E1)
 {
 	//This function removes an arbitrary event E1 from
 	//calender queue
@@ -111,6 +111,11 @@ void calender_queue::remove_event(int i,EventBase* E1)
 {
 	buckets[i].remove(E1);
 	Qsize--;
+}
+
+int calender_queue::get_bucket_count()
+{
+	return bucket_count;
 }
 
 calender_queue::calender_queue()
