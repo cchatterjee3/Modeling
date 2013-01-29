@@ -55,3 +55,4 @@ class Simulator
               static Time_t Now();
               static Simulator* instance;
 };
+
