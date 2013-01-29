@@ -1,5 +1,7 @@
+#pragma once
 #include "CommonDefs.h"
 
+class IntersectionwithSignal;
 
 
 class TrafficLight

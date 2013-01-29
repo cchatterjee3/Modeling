@@ -1,4 +1,5 @@
 #include <queue>
+#include "TrafficLight.h"
 
 class IntersectionwithSignal
 {

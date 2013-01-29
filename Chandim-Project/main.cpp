@@ -2,6 +2,7 @@
 #include <iostream>
 #include <conio.h>
 #include "Simulator.h"
+#include "Topology.h"
 
 using namespace std;
 
