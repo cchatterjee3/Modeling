@@ -35,11 +35,12 @@ class IntersectionwithSignal
          void VehicleDeparture (VehicleClass* vehicle); //Depart
          void addVehicletoQueue(VehicleQueue* joinqueue); //Adds to outgoing queue or removes vehicles 
          void changeSignalTrigger(); //checks its own signals 
+         int QCanGo(VehicleQueue* Q);
          
-         int getID()
-         {
-         	return ID;
-         }
+//         int getID()
+//         {
+//         	return ID;
+//         }
          
          //constructor:
         IntersectionwithSignal(int id, bool stat,dir *table,
