@@ -3,8 +3,10 @@
 #include "IntersectionwithSignal.h"
 
 #include <memory.h>
+#include "Simulator.h"
+extern Simulator* sim ;
 
-void schedule(void);
+//void schedule(void);
 
 IntersectionwithSignal::IntersectionwithSignal()
 {
@@ -65,7 +67,9 @@ void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes
 	switch (vehicle->getDirection())
 	{
 		case N:
-			schedule();
+			//Simulator::Schedule(1, IntersectionwithSignal::VehiclePass(vehicle), IntersectionwithSignal ,VehicleClass* vehicle);
+			//sim->
+			sim->Schedule(1, (&this)::VehiclePass,this, vehicle);			
 			break;
 	}
 }
