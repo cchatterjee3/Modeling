@@ -27,7 +27,7 @@ class IntersectionwithSignal
          VehicleQueue* NBO;
          VehicleQueue* SBI;
          VehicleQueue* SBO;
-         bool state; // busy or not
+         bool busy; // busy or not
          
   public:
          //void VehicleArrival(VehicleClass* vehicle);//Add to queue
@@ -36,8 +36,13 @@ class IntersectionwithSignal
          void addVehicletoQueue(VehicleQueue* joinqueue); //Adds to outgoing queue or removes vehicles 
          void changeSignalTrigger(); //checks its own signals 
          
+         int getID()
+         {
+         	return ID;
+         }
+         
          //constructor:
-        IntersectionwithSignal( bool stat,dir *table,
+        IntersectionwithSignal(int id, bool stat,dir *table,
 		VehicleQueue* ebi, VehicleQueue* ebo, VehicleQueue* wbi, VehicleQueue* wbo, 
 		VehicleQueue* nbi, VehicleQueue* nbo, VehicleQueue* sbi, VehicleQueue* sbo);
 		
