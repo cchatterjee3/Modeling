@@ -21,7 +21,7 @@ class VehicleClass
          //!!Constructor
          void updateDirection (dir Direction)
          {
-              currentDirection = Direction;
+              currentDirection = Direction;     
          }
          
          dir getDirection ()
