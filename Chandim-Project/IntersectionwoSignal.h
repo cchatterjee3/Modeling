@@ -19,7 +19,7 @@ class IntersectionwithoutSignal
          //void VehicleArrival(VehicleClass* vehicle);//Add to queue
          void VehiclePass(VehicleClass* vehicle); //Vehicle passes through intersection
          void VehicleDeparture (VehicleClass* vehicle); //Depart
-         void addVehicletoQueue(VehicleQueue* joinqueue); //Adds to outgoing queue or removes vehicles 
+         void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle); //Adds to outgoing queue or removes vehicles 
          //constructor:
         IntersectionwithoutSignal( bool stat,dir *table,
 		VehicleQueue* ebi, VehicleQueue* ebo, VehicleQueue* wbi, VehicleQueue* wbo, 
@@ -28,6 +28,6 @@ class IntersectionwithoutSignal
         IntersectionwithoutSignal();
          //destructor:
         ~IntersectionwithoutSignal();
-  	
+
 };
 

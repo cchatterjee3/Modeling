@@ -65,7 +65,7 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
 	dir dest;
-	//schedule another vehicle deprature in service time
+	//schedule vehicle deprature in service time
 	sim->Schedule(PassTime, &IntersectionwithSignal::VehicleDeparture, this, vehicle);//(debug)
 	//checking if there is another car in Queue and the light is green
 	switch(QCanGo(vehicle->getLastQ()))
