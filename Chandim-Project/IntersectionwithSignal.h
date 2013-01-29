@@ -1,8 +1,6 @@
 
 #include <queue>
-
-#define TPassTime = 3.0 //time to go straight in seconds
-#define LPassTime = 2.0 //time to turn left in seconds
+#include "CommonDefs.h"
 
 
 //#include "TrafficLight.h"
@@ -28,14 +26,17 @@ class IntersectionwithSignal
          VehicleQueue* SBI;
          VehicleQueue* SBO;
          bool busy; // busy or not
-         
+         bool busyNB; bool busySB; bool busyEB; bool busyWB;
   public:
+  		IntersectionwithSignal* NInter;//(debug)
+  		IntersectionwithSignal* SInter;//(debug)
+		
          //void VehicleArrival(VehicleClass* vehicle);//Add to queue
          void VehiclePass(VehicleClass* vehicle); //Vehicle passes through intersection
          void VehicleDeparture (VehicleClass* vehicle); //Depart
-         void addVehicletoQueue(VehicleQueue* joinqueue); //Adds to outgoing queue or removes vehicles 
+         void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle); //Adds to outgoing queue or removes vehicles 
          void changeSignalTrigger(); //checks its own signals 
-         int QCanGo(VehicleQueue* Q);
+         int QCanGo(VehicleQueue* Q );
          
 //         int getID()
 //         {

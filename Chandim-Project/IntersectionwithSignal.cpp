@@ -1,16 +1,17 @@
 #include <iostream>
+#include <queue>
 #include "TrafficLight.h"
 #include "IntersectionwithSignal.h"
+#include "CommonDefs.h"
 
 #include <memory.h>
 #include "Simulator.h"
-extern Simulator* sim ;
 
-//void schedule(void);
+extern Simulator* sim ;
 
 IntersectionwithSignal::IntersectionwithSignal()
 {
-	
+	busy=false;
 }
 
 IntersectionwithSignal::IntersectionwithSignal(int id, bool stat,dir *table,
@@ -63,33 +64,97 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 
 void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
-	
-	switch (vehicle->getDirection())
+	dir dest;
+	//schedule another vehicle deprature in service time
+	sim->Schedule(PassTime, &IntersectionwithSignal::VehicleDeparture, this, vehicle);//(debug)
+	//checking if there is another car in Queue and the light is green
+	switch(QCanGo(vehicle->getLastQ()))
 	{
-		case N:
-			//Simulator::Schedule(1, IntersectionwithSignal::VehiclePass(vehicle), IntersectionwithSignal ,VehicleClass* vehicle);
-			//sim->
-			sim->Schedule(1, (&this)::VehiclePass,this, vehicle);			
+		case 1:
+			this->busy=true;
+			//schedule another vehicle pass in service time
+			sim->Schedule(PassTime, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 			break;
 	}
 }
 void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
-	
+	//freeing intersection
+	this->busy=false;
+
+	//scheduling next queue join
+	dir dest=this->routingtable[vehicle->getDestination()]; // finds routing direction
+	if(dest==N)
+	{
+		//schedule north intersection addVehicletoQueue
+	}
+	else if (dest==S)
+	{
+		//schedule south intersection addVehicletoQueue
+	}
+	else
+	{
+		// schedule exit
+	}
 }
-void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue) //Adds to outgoing queue or removes vehicles 
+void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
-	
+	joinqueue->push(*vehicle);
+	if(  QCanGo(joinqueue)==1  )
+	{
+		VehicleClass* vehicle=&(joinqueue->front());
+		joinqueue->pop();
+		//schedule vehicle pass in startToPass time
+		vehicle->setLastQ(joinqueue);
+		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
 }
 void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
 {
-	
+	//check each Q to see if they can go, schedule a pass if they could
+	//checks EBI
+	VehicleClass* vehicle;
+	if(QCanGo(EBI)==1)
+	{
+		vehicle=&(EBI->front());
+		EBI->pop();
+		//schedule vehicle pass in startToPass time
+		vehicle->setLastQ(EBI);
+		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
+	//checks WBI
+	if(QCanGo(EBI)==1)
+	{
+		vehicle=&(WBI->front());
+		WBI->pop();
+		//schedule vehicle pass in startToPass time
+		vehicle->setLastQ(WBI);
+		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
+	//checks NBI
+	if(QCanGo(NBI)==1)
+	{
+		vehicle=&(NBI->front());
+		NBI->pop();
+		//schedule vehicle pass in startToPass time
+		vehicle->setLastQ(NBI);
+		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
+	//checks SBI
+	if(QCanGo(SBI)==1)
+	{
+		vehicle=&(SBI->front());
+		SBI->pop();
+		//schedule vehicle pass in startToPass time
+		vehicle->setLastQ(SBI);
+		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
 }
-int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its own signals 
+int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a specific Queue
 {
 	//test whether a certain queue can start sending vehicles out
 	//-1: Q is empty
-	// 0: Light is not green for the first member of Queue
+	// 0: Light is not green for the direction of the first member of Queue
 	//+1: Yes, the queue is not empty and the trafficc light is green
 	
 	bool canGo;
@@ -98,7 +163,7 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its own signals
 	{
 		return -1;
 	}
-	VehicleClass* NextVeh; // define a Vehicle pointer
+	VehicleClass* NextVeh=&(Q->front()); // define a Vehicle pointer
 	dir dest=this->routingtable[NextVeh->getDestination()];
 	//--------------------------------------------
 	if(Q==EBI)
