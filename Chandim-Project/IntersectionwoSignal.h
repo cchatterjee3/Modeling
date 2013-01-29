@@ -4,7 +4,7 @@ class IntersectionwithoutSignal
 {
   private:
           int ID;
-          bool state; // busy or not
+          bool busy; // busy or not
           VehicleQueue* EBI;
           VehicleQueue* EBO;
           VehicleQueue* WBI;
