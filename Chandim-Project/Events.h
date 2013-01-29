@@ -3,6 +3,8 @@
 #define __EVENTS_H__
 
 #include "CommonDefs.h"
+#include <set>
+#include <iostream>
 
 class EventBase
 {
@@ -13,7 +15,7 @@ class EventBase
              {
                   return time;     
              }
-      private:
+      //private:
               Time_t time; //TimeStamp for the event
 };
 
@@ -112,9 +114,11 @@ class event_compare
 {
       public:
              inline bool operator()(EventBase* const& l, const EventBase* const& r) const {
-                    if (l.getTime() < r.getTime()) return true;
+                    if (l->time < r->time) return true;
                     return false;       
              }      
-}
+};
+
+typedef std::multiset <EventBase*, event_compare> EventSet_t;
 
 #endif

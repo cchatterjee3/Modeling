@@ -1,6 +1,6 @@
 #define DEF_VLENGTH
 
-class VehicleClass()
+class VehicleClass
 {
   private:
          Time_t startTime;
