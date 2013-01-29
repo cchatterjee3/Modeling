@@ -119,6 +119,6 @@ class event_compare
              }      
 };
 
-typedef std::multiset <EventBase*, event_compare> EventSet_t;
+typedef calendar_queue EventSet_t;
 
 #endif

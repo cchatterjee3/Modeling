@@ -5,7 +5,7 @@
 using namespace std;
 
 Time_t Simulator::now = 0;
-EventSet_t Simulator::events;
+EventSet_t Simulator::events ;
 bool Simulator::stopped = false;
 Simulator* Simulator::instance =0;
 
