@@ -4,7 +4,7 @@ Name=ModelingPeachtree
 <<<<<<< HEAD
 UnitCount=11
 =======
-UnitCount=16
+UnitCount=17
 >>>>>>> 93ee5eea49a9a2ad2de3187ff3497fb2c36d760f
 Type=1
 Ver=1
@@ -216,6 +216,16 @@ BuildCmd=
 
 [Unit16]
 FileName=calender_queue.cc
+CompileCpp=1
+Folder=cpp
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit17]
+FileName=TrafficLight.cpp
 CompileCpp=1
 Folder=cpp
 Compile=1

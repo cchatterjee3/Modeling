@@ -10,10 +10,10 @@
 
 #define TOTAL_TIME 120*60
 // Number of total buckets
-#define BUCKET_COUNT 1000000
-#define BUCKET_SIZE 0.0001
+#define BUCKET_COUNT 72000
+#define BUCKET_SIZE 0.1
 #define CALENDER_PERIOD BUCKET_COUNT*BUCKET_SIZE 
-
+class EventBase;
 using namespace std;
 
 typedef std::list<EventBase*> bucket;
@@ -34,7 +34,7 @@ class calender_queue
              
              
       public:
-             void enqueue(EventBase*); //Insert into priority queue
+             void insert(EventBase*); //Insert into priority queue
              
              void dequeue(EventBase*); //Dequeues event pointed to by EventBase *
              

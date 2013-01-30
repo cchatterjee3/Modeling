@@ -5,6 +5,9 @@
 #include "CommonDefs.h"
 #include <set>
 #include <iostream>
+#include "calender_queue.h"
+
+using namespace std;
 
 class EventBase
 {
@@ -36,6 +39,7 @@ public:
 template <typename T, typename OBJ>
 void Event0<T, OBJ>::CallHandler()
 {
+     cout<<"Inside CallHandler"<<endl;
   (obj->*handler)();
 }   
 
@@ -119,6 +123,6 @@ class event_compare
              }      
 };
 
-typedef calendar_queue EventSet_t;
+
 
 #endif

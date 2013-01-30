@@ -23,16 +23,19 @@ void Simulator::Stop()
 void Simulator::Run()
 {
     cout << "Simluator Started" << endl;
-  while (!stopped && !events.empty())
+  while (!stopped && !events.isEmpty())
     {
+        cout<<"Before Popping event"<<events.isEmpty()<<endl;
       // Get the next event
-      EventBase* currentEvent = *events.begin();
+      EventBase* currentEvent = events.PopNext();;
       // Remove from queue
-      events.erase(events.begin());
+      cout<<"After Popping event "<<events.isEmpty()<<" "<<currentEvent->getTime()<<endl;
       // Advance Simulation Time
       now = currentEvent->time;  // Advance simulation time to time of event
       // call the event
+      cout<<"Before CallHandler "<<now<<endl;
       currentEvent->CallHandler();
+      cout<<"After CallHandler"<<endl;
     }  
 }
 

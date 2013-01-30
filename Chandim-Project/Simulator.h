@@ -1,6 +1,9 @@
 #include <iostream>
 #include "CommonDefs.h"
 #include "Events.h"
+#include "calender_queue.h"
+
+typedef calender_queue EventSet_t;
 
 class Simulator
 {

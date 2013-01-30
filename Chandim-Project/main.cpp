@@ -10,12 +10,13 @@
 using namespace std;
 
 class Simulator;
-extern Simulator* sim = new Simulator();
+Simulator* sim = new Simulator();
 
 int main()
 {
     //sim = new Simulator();
     sim->StopAt(100);
+    sim->Run();
     getch();
     return 0;
 }

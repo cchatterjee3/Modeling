@@ -3,17 +3,19 @@
 
 #define DEBUG 
 
-void calender_queue::enqueue(EventBase* E1)
+void calender_queue::insert(EventBase* E1)
 {
 	// This function adds the event *E1 in the calender queue
-
+       
 
 	//Finding out which bukcet this event belongs to
 	Time_t t1 = E1->getTime();
+	
 	int bucket_id = (int) (fmod(t1,  CALENDER_PERIOD)/BUCKET_SIZE);
 	/*
 
 	*/
+	cout<<"Inserted event into "<<bucket_id<<endl;
 	bucket* cur_bucket;
 	cur_bucket = &buckets[bucket_id];
 	
@@ -51,24 +53,37 @@ EventBase* calender_queue::PopNext()
 	//if  Q is empty return NULL
 	EventBase* E1;
 	E1 = NULL;
+	cout<<"Inside PopNext "<<Qsize<<endl;
+	cout<<cur_time_frame<<endl;
 	if(Qsize==0) return E1;
 
 	//Now search for the next events from  
-	 
+	 int count = 0;
 	while(E1==NULL)
 	{	int cur_bucket = cur_time_frame%BUCKET_COUNT;
+ 	    //cout <<"Inside While LOOP Iteration number:"<<count<<endl;  
 		EventBase* temp;
+		
 		temp = next_event(cur_bucket);
-		if (temp->getTime()< (cur_time_frame+1)*time_frame_size)
+		if (temp!=NULL)
 		{
-			remove_event(cur_bucket,temp);
-			E1 = temp; 
-			return E1;
-		}
+            if (temp->getTime()< (cur_time_frame+1)*time_frame_size)
+    		{
+                //cout<<"DANGER"<<endl;
+    			remove_event(cur_bucket,temp);
+    			E1 = temp; 
+    			return E1;
+    		}
+    		else
+    		{
+    			cur_time_frame++;
+    		}
+        }
 		else
 		{
 			cur_time_frame++;
 		}
+		count++;
 	}
 	
 
@@ -89,6 +104,8 @@ int  calender_queue::isEmpty()
 
 EventBase* calender_queue::next_event(int bucket_id)
 {
+    if (buckets[bucket_id].empty() == true)
+       return NULL;
 	bucket::iterator it;
 	Time_t min_t;
 	EventBase* mint_Event;
