@@ -9,27 +9,12 @@
 
 extern Simulator* sim ;
 
-IntersectionwithSignal::IntersectionwithSignal()
+IntersectionwithSignal::IntersectionwithSignal(){
+
+};
+
+IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 {
-	busy=false;
-}
-
-IntersectionwithSignal::IntersectionwithSignal(int id, bool stat,dir *table,
-VehicleQueue* ebi, VehicleQueue* ebo, VehicleQueue* wbi, VehicleQueue* wbo, 
-VehicleQueue* nbi, VehicleQueue* nbo, VehicleQueue* sbi, VehicleQueue* sbo)
-{
-	//initialize state
-	ID=id;
-	busy=stat;
-
-	//initialize routing table
-	memcpy(routingtable, table, 12*sizeof(dir));
-	//for (int i=0;i<12;i++)
-	//	routingtable[i]=table[i];
-
-
-	EBI=ebi;	EBO=ebo;	WBI=wbi;	WBO=wbo;	
-	NBI=nbi;	NBO=nbo;	SBI=sbi;	SBO=sbo;	
 
 	//setting each traffic light's type
 	int EBtype, WBtype, NBtype, SBtype;
@@ -48,13 +33,11 @@ VehicleQueue* nbi, VehicleQueue* nbo, VehicleQueue* sbi, VehicleQueue* sbo)
 	}
 
 
-	if( 1==1 ) //for all intersections for now // needs info from input data
-	{
-		EB=new TrafficLight(EBtype, (state)0, 1, 1, 1, 1, 1, 1);
-		WB=new TrafficLight(WBtype, (state)0, 1, 1, 1, 1, 1, 1);
-		NB=new TrafficLight(NBtype, (state)0, 1, 1, 1, 1, 1, 1);
-		SB=new TrafficLight(SBtype, (state)0, 1, 1, 1, 1, 1, 1);
-	}
+	EB=new TrafficLight(EBtype, (state)0, 1, 1, 1, 1, 1, 1);
+	WB=new TrafficLight(WBtype, (state)0, 1, 1, 1, 1, 1, 1);
+	NB=new TrafficLight(NBtype, (state)0, 1, 1, 1, 1, 1, 1);
+	SB=new TrafficLight(SBtype, (state)0, 1, 1, 1, 1, 1, 1);
+	
 }
 
 IntersectionwithSignal::~IntersectionwithSignal(void)

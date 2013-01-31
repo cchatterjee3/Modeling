@@ -1,36 +1,20 @@
 #include "TrafficLight.h"
 #include "IntersectionwoSignal.h"
-
 #include <memory.h>
 #include "Simulator.h"
 extern Simulator* sim ;
 
-IntersectionwithoutSignal::IntersectionwithoutSignal()
+IntersectionwithoutSignal::IntersectionwithoutSignal(int nID) : Intersection(nID)
 {
-	busy=false;
 }
-
-IntersectionwithoutSignal::IntersectionwithoutSignal( bool stat,dir *table,
-VehicleQueue* ebi, VehicleQueue* ebo, VehicleQueue* wbi, VehicleQueue* wbo, 
-VehicleQueue* nbi, VehicleQueue* nbo, VehicleQueue* sbi, VehicleQueue* sbo)
+IntersectionwithoutSignal::IntersectionwithoutSignal( )
 {
-	//initialize state
-	busy=stat;
 
-	//initialize routing table
-	memcpy(routingtable, table, 12*sizeof(dir));
-	//for (int i=0;i<12;i++)
-	//	routingtable[i]=table[i];
-
-	EBI=ebi;	EBO=ebo;	WBI=wbi;	WBO=wbo;	
-	NBI=nbi;	NBO=nbo;	SBI=sbi;	SBO=sbo;	
 }
-
 IntersectionwithoutSignal::~IntersectionwithoutSignal(void)
 {
 	
 }
-
 void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
 	VehicleQueue* LastQ=vehicle->getLastQ();
@@ -52,7 +36,6 @@ void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle pas
 		}
 	}
 }
-
 void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
 	//freeing intersection
@@ -76,7 +59,6 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 	// schedule EB and westbound departures based on the intersection being busy
 	//not possible until define busy directions
 }
-
 void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 	joinqueue->push(*vehicle);

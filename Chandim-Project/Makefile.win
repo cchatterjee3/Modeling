@@ -1,33 +1,35 @@
-# Project: ModelingPeachtree
-# Makefile created by Dev-C++ 4.9.9.2
+# Project: Modeling
+# Makefile created by Dev-C++ 5.3.0.3
 
-CPP  = g++.exe
-CC   = gcc.exe
-WINDRES = windres.exe
-RES  = 
-OBJ  = main.o IntersectionwithSignal.o IntersectionwoSignal.o Simulator.o calender_queue.o TrafficLight.o $(RES)
-LINKOBJ  = main.o IntersectionwithSignal.o IntersectionwoSignal.o Simulator.o calender_queue.o TrafficLight.o $(RES)
-LIBS =  -L"C:/Dev-Cpp/lib"  -fmessage-length=0 
-INCS =  -I"C:/Dev-Cpp/include" 
-CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
-BIN  = ModelingPeachtree.exe
-CXXFLAGS = $(CXXINCS)   -fmessage-length=0
-CFLAGS = $(INCS)   -fmessage-length=0
-RM = rm -f
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o $(RES)
+LINKOBJ  = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include"
+BIN      = Modeling.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm -f
 
 .PHONY: all all-before all-after clean clean-custom
 
-all: all-before ModelingPeachtree.exe all-after
+all: all-before $(BIN) all-after
 
 
 clean: clean-custom
 	${RM} $(OBJ) $(BIN)
 
 $(BIN): $(OBJ)
-	$(CPP) $(LINKOBJ) -o "ModelingPeachtree.exe" $(LIBS)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-main.o: main.cpp
-	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+calender_queue.o: calender_queue.cc
+	$(CPP) -c calender_queue.cc -o calender_queue.o $(CXXFLAGS)
+
+Intersection.o: Intersection.cpp
+	$(CPP) -c Intersection.cpp -o Intersection.o $(CXXFLAGS)
 
 IntersectionwithSignal.o: IntersectionwithSignal.cpp
 	$(CPP) -c IntersectionwithSignal.cpp -o IntersectionwithSignal.o $(CXXFLAGS)
@@ -35,11 +37,11 @@ IntersectionwithSignal.o: IntersectionwithSignal.cpp
 IntersectionwoSignal.o: IntersectionwoSignal.cpp
 	$(CPP) -c IntersectionwoSignal.cpp -o IntersectionwoSignal.o $(CXXFLAGS)
 
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
 Simulator.o: Simulator.cpp
 	$(CPP) -c Simulator.cpp -o Simulator.o $(CXXFLAGS)
-
-calender_queue.o: calender_queue.cc
-	$(CPP) -c calender_queue.cc -o calender_queue.o $(CXXFLAGS)
 
 TrafficLight.o: TrafficLight.cpp
 	$(CPP) -c TrafficLight.cpp -o TrafficLight.o $(CXXFLAGS)
