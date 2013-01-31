@@ -2,13 +2,8 @@
 
 #include "CommonDefs.h"
 
-
-
-
 #include "CommonDefs.h"
 #include "VehicleClass.h"
-//#include "IntersectionwithSignal.h"
-
 
 class IntersectionwithSignal;
 

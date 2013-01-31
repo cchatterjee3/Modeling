@@ -8,6 +8,8 @@
 #define PassTime  3.0 //service time to go straight in seconds
 #define startToPass  0.5 //when a queue is empty and a vehicle arrives, it takes this much to depart
 #define LPassTime  2.0 //service time to turn left in seconds (debug)
+#define roadSegTime  4.0 //time to travel one road segment
+
 
 
 typedef double Time_t;

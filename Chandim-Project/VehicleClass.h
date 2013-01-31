@@ -17,6 +17,12 @@ class VehicleClass
          dir currentDirection; //current direction
          VehicleQueue* LastQ;
   public:
+  		void setEndTime(Time_t t){
+  			endTime= t;
+  		}
+  		int getID(){
+  			return this->ID;
+  		}
          //VehicleClass(int ID, int sDestination...)     !!Constructor
          //!!Constructor
          void updateDirection (dir Direction)
@@ -43,4 +49,7 @@ class VehicleClass
          {
              return fDestination;
          }
+         VehicleClass(int id, int Dest){ID=id; fDestination=Dest;};
+         VehicleClass(){};
+         ~VehicleClass(){};
 };
