@@ -47,6 +47,10 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 
 void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
+
+	cout << "In withSignal::VehiclePass with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	dir dest;
 	//schedule vehicle deprature in service time
 	sim->Schedule(PassTime, &IntersectionwithSignal::VehicleDeparture, this, vehicle);//(debug)
@@ -62,6 +66,10 @@ void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes
 }
 void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
+
+	cout << "In withSignal::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	//freeing intersection
 	this->busy=false;
 
@@ -82,6 +90,10 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 }
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
+
+	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	joinqueue->push(*vehicle);
 	if(  QCanGo(joinqueue)==1  )
 	{
@@ -94,6 +106,10 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 }
 void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
 {
+
+	cout << "In withSignal::changeSignalTrigger with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	//check each Q to see if they can go, schedule a pass if they could
 	//checks EBI
 	VehicleClass* vehicle;
@@ -135,6 +151,10 @@ void IntersectionwithSignal::changeSignalTrigger() //checks its own signals
 }
 int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a specific Queue
 {
+
+	cout << "In withSignal::QCanGo with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	//test whether a certain queue can start sending vehicles out
 	//-1: Q is empty
 	// 0: Light is not green for the direction of the first member of Queue

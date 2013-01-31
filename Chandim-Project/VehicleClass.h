@@ -17,6 +17,9 @@ class VehicleClass
          dir currentDirection; //current direction
          VehicleQueue* LastQ;
   public:
+  		int getID(){
+  			return this->ID;
+  		}
          //VehicleClass(int ID, int sDestination...)     !!Constructor
          //!!Constructor
          void updateDirection (dir Direction)

@@ -17,6 +17,9 @@ IntersectionwithoutSignal::~IntersectionwithoutSignal(void)
 }
 void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
+	cout << "In WithoutSignal::VehiclePass with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	VehicleQueue* LastQ=vehicle->getLastQ();
 	VehicleClass* nextVeh;
 
