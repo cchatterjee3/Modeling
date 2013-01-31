@@ -7,8 +7,8 @@ CXX  = g++
 CC   = g++
 
 
-OBJ  = main.o IntersectionwithSignal.o IntersectionwoSignal.o Simulator.o calender_queue.o \
-		TrafficLight.o VehicleClass.o
+OBJ  = main.o Simulator.o  IntersectionwithSignal.o IntersectionwoSignal.o Intersection.o VehicleClass.o  \
+		TrafficLight.o calender_queue.o
 BIN = ModelingPeachtree.exe
 
 .PHONY: all all-before all-after clean clean-custom
@@ -22,5 +22,3 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CXX) -o $(BIN) $(OBJ) $(LIBS)
 
-VehicleClass.o : VehicleClass.h
-	$(CXX) -o VehicleClass.o VehicleClass.h
