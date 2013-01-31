@@ -25,6 +25,8 @@ class _Topology
 	IntersectionwithoutSignal	*I4; //13th street
 	IntersectionwithSignal		*I5; //14th street
 
+	VehicleQueue* ExitQ;
+	
 	_Topology(){
 		I1=new IntersectionwithSignal	(1);
 		I2=new IntersectionwithSignal	(2);
@@ -37,6 +39,14 @@ class _Topology
 		I3->NInter=I4;	I3->SInter=I2;	
 		I4->NInter=I5;	I4->SInter=I3;	
 		I5->NInter=NULL;I5->SInter=I4;	
+		// setting exit Queue
+		I1->ExitQ=ExitQ;
+		I2->ExitQ=ExitQ;
+		I3->ExitQ=ExitQ;
+		I4->ExitQ=ExitQ;
+		I5->ExitQ=ExitQ;
+
+
 	}
 	
     //IntersectionwithSignal		I2(2); //11th street

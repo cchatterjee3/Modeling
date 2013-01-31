@@ -57,17 +57,14 @@ void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	dir dest;
+	busy=true;
+
 	//schedule vehicle deprature in service time
 	sim->Schedule(PassTime, &IntersectionwithSignal::VehicleDeparture, this, vehicle);//(debug)
-	//checking if there is another car in Queue and the light is green
-	switch(QCanGo(vehicle->getLastQ()))
-	{
-		case 1:
-			this->busy=true;
-			//schedule another vehicle pass in service time
-			sim->Schedule(PassTime, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
-			break;
-	}
+
+	cout << "--> VehicleDeparture scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+PassTime <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 }
 
 void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
@@ -79,20 +76,73 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 	//freeing intersection
 	this->busy=false;
 
+
 	//scheduling next queue join
 	dir dest=this->routingtable[vehicle->getDestination()]; // finds routing direction
 	if(dest==N)
 	{
+		if(ID==5)
+		{
+			// exit the system
+			vehicle->setEndTime(sim->getNow());
+			ExitQ->push(*vehicle);
+			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
+		}
 		//schedule north intersection addVehicletoQueue
+		else
+		{
+			//schedule next intersection join queue event
+			
+			cout << "joining northern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
+			cout << "press any key to continue..."<<endl;	cin.get() ;
+
+			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+				NInter , NInter->NBI , vehicle); //(debug)
+		}
 	}
 	else if (dest==S)
 	{
+		if(ID==1)
+		{
+			// exit the system
+			vehicle->setEndTime(sim->getNow());
+			ExitQ->push(*vehicle);
+			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
+		}
 		//schedule south intersection addVehicletoQueue
+		else
+		{
+			//schedule next intersection join queue event
+
+			cout << "joining southern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
+			cout << "press any key to continue..."<<endl;	cin.get() ;
+
+			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+				SInter , SInter->NBI , vehicle); //(debug)
+		}
 	}
 	else
 	{
-		// schedule exit
+		// exit the system
+		vehicle->setEndTime(sim->getNow());
+		ExitQ->push(*vehicle);
+
+	cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	}
+
+
+	//checking if there is another car in Queue and the light is green
+	switch(QCanGo(vehicle->getLastQ()))
+	{
+		case 1:
+			//schedule another vehicle pass in service time
+			sim->Schedule(PassTime, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+			break;
+	}
+
+
 }
 
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
@@ -101,34 +151,23 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
-		cout<< "here1" << endl;
-
 	joinqueue->push(*vehicle);
-
-		cout<< "here2" << endl;
-
+	vehicle->setLastQ(joinqueue);
 	int Qstate =QCanGo(joinqueue);
-	
-	cout << "i="<< Qstate<<endl;
-	
-	if(  Qstate==1  )
+
+	if(  Qstate==1 && !busy )
 	{
-		cout<< "here3" << endl;
 		VehicleClass* vehicle=&(joinqueue->front());
 		joinqueue->pop();
 		//schedule vehicle pass in startToPass time
 		vehicle->setLastQ(joinqueue);
 		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 
-		cout << "In withSignal, VehiclePass scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+startToPass <<endl;
+		cout << "--> VehiclePass scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+startToPass <<endl;
 		cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	}
-	else if(  Qstate==1  )
-	{
-		
-	}
-	
+
 }
 
 void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
@@ -194,8 +233,12 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 	{
 		return -1;
 	}
+	
 	VehicleClass* NextVeh=&(Q->front()); // define a Vehicle pointer
+	
+	
 	dir dest=this->routingtable[NextVeh->getDestination()];
+
 	//--------------------------------------------
 	if(Q==EBI)
 	{
@@ -228,11 +271,11 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 				break;
 		}
 	}
+
+
 	//--------------------------------------------
 	else if(Q==NBI)
 	{
-		cout << "there 1 "<<dest <<endl;	cin.get() ;
-		
 		switch(dest)
 		{
 			case E:

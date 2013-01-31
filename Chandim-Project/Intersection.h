@@ -26,6 +26,8 @@ public:
 	VehicleQueue* NBI;
 	VehicleQueue* SBI;
 
+	VehicleQueue* ExitQ;
+
 	Intersection* NInter;	//North Intersection
 	Intersection* SInter;	//South Intersection
 
