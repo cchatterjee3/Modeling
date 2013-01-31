@@ -24,7 +24,7 @@ int main()
 	for (int t=1;t<11;t++)
 	{
 		
-		VehicleClass* vehicle=new VehicleClass(VIDcounter++);
+		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 12);
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
 

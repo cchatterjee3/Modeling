@@ -46,7 +46,7 @@ class VehicleClass
          {
              return fDestination;
          }
-         VehicleClass(int id){ID=id;};
+         VehicleClass(int id, int Dest){ID=id; fDestination=Dest;};
          VehicleClass(){};
          ~VehicleClass(){};
 };

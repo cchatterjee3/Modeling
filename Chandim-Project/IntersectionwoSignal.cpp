@@ -7,16 +7,20 @@ extern Simulator* sim ;
 IntersectionwithoutSignal::IntersectionwithoutSignal(int nID) : Intersection(nID)
 {
 }
+
 IntersectionwithoutSignal::IntersectionwithoutSignal( )
 {
 
 }
+
 IntersectionwithoutSignal::~IntersectionwithoutSignal(void)
 {
 	
 }
+
 void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes through intersection
 {
+
 	cout << "In WithoutSignal::VehiclePass with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
@@ -39,8 +43,13 @@ void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle pas
 		}
 	}
 }
+
 void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
+
+	cout << "In WithoutSignal::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	//freeing intersection
 	this->busy=false;
 
@@ -62,8 +71,13 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 	// schedule EB and westbound departures based on the intersection being busy
 	//not possible until define busy directions
 }
+
 void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
+
+	cout << "In WithoutSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	joinqueue->push(*vehicle);
 	//check busy directions, schedule departure	
 }

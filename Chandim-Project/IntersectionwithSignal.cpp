@@ -33,11 +33,16 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 	}
 
 
-	EB=new TrafficLight(EBtype, (state)0, 1, 1, 1, 1, 1, 1);
-	WB=new TrafficLight(WBtype, (state)0, 1, 1, 1, 1, 1, 1);
-	NB=new TrafficLight(NBtype, (state)0, 1, 1, 1, 1, 1, 1);
-	SB=new TrafficLight(SBtype, (state)0, 1, 1, 1, 1, 1, 1);
-	
+	EB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
+	WB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
+	NB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
+	SB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
+/*
+	EB=new TrafficLight(EBtype, (state)3, 100, 100, 100, 100, 100, 100);
+	WB=new TrafficLight(WBtype, (state)3, 100, 100, 100, 100, 100, 100);
+	NB=new TrafficLight(NBtype, (state)3, 100, 100, 100, 100, 100, 100);
+	SB=new TrafficLight(SBtype, (state)3, 100, 100, 100, 100, 100, 100);
+*/	
 }
 
 IntersectionwithSignal::~IntersectionwithSignal(void)
@@ -64,6 +69,7 @@ void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle) //Vehicle passes
 			break;
 	}
 }
+
 void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
 
@@ -88,26 +94,47 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 		// schedule exit
 	}
 }
+
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 
 	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
+		cout<< "here1" << endl;
+
 	joinqueue->push(*vehicle);
-	if(  QCanGo(joinqueue)==1  )
+
+		cout<< "here2" << endl;
+
+	int Qstate =QCanGo(joinqueue);
+	
+	cout << "i="<< Qstate<<endl;
+	
+	if(  Qstate==1  )
 	{
+		cout<< "here3" << endl;
 		VehicleClass* vehicle=&(joinqueue->front());
 		joinqueue->pop();
 		//schedule vehicle pass in startToPass time
 		vehicle->setLastQ(joinqueue);
 		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+
+		cout << "In withSignal, VehiclePass scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+startToPass <<endl;
+		cout << "press any key to continue..."<<endl;	cin.get() ;
+
 	}
+	else if(  Qstate==1  )
+	{
+		
+	}
+	
 }
+
 void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
 {
 
-	cout << "In withSignal::changeSignalTrigger with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "In withSignal::changeSignalTrigger , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	//check each Q to see if they can go, schedule a pass if they could
@@ -149,10 +176,11 @@ void IntersectionwithSignal::changeSignalTrigger() //checks its own signals
 		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 	}
 }
+
 int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a specific Queue
 {
 
-	cout << "In withSignal::QCanGo with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "In withSignal::QCanGo  , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	//test whether a certain queue can start sending vehicles out
@@ -203,6 +231,8 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 	//--------------------------------------------
 	else if(Q==NBI)
 	{
+		cout << "there 1 "<<dest <<endl;	cin.get() ;
+		
 		switch(dest)
 		{
 			case E:
