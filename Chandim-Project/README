@@ -1,0 +1,25 @@
+Traffic Simulation of W.Peachtree Street
+
+-----------------------------------------------------------------
+Chandim Chatterjee
+Parsa Banihashemi
+Piyush Sao
+Last updated: February 1, 2013
+-----------------------------------------------------------------
+
+List of files
+-----------------
+
+
+Building the code
+-----------------
+  1. On Linux /Mac
+  	1.0 Requirements: gcc based g++ compiler version 4.3 or later, GNU Make
+	1.1 Change directory to src
+	1.2 issue "make"
+  
+  2. On Windows 
+   	2.0 
+
+Running the Simulation
+----------------------
