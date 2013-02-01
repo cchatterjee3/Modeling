@@ -39,7 +39,6 @@ public:
 template <typename T, typename OBJ>
 void Event0<T, OBJ>::CallHandler()
 {
-     cout<<"Inside CallHandler"<<endl;
   (obj->*handler)();
 }   
 

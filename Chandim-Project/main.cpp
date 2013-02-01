@@ -1,6 +1,5 @@
 
 #include <iostream>
-#include <conio.h>
 #include "Simulator.h"
 
 #include "IntersectionwithSignal.h"
@@ -34,7 +33,7 @@ int main()
 
     sim->StopAt(100);
     sim->Run();
-    getch();
+    cin.get() ;
     return 0;
 }
 

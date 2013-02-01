@@ -49,7 +49,13 @@ class calender_queue
 
              int get_bucket_count();
              
-             calender_queue(); //Constructor      
+             calender_queue(); //Constructor 
+             
+             int getQsize(); //returns Qsize
+             
+             int gettimeframe(); //returns current time frame    
+             
+             void check659bucket(); 
 };
 
 

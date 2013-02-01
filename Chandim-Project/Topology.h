@@ -40,6 +40,7 @@ class _Topology
 		I4->NInter=I5;	I4->SInter=I3;	
 		I5->NInter=NULL;I5->SInter=I4;	
 		// setting exit Queue
+		ExitQ = new VehicleQueue;
 		I1->ExitQ=ExitQ;
 		I2->ExitQ=ExitQ;
 		I3->ExitQ=ExitQ;
