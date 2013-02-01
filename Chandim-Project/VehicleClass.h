@@ -17,39 +17,25 @@ class VehicleClass
          dir currentDirection; //current direction
          VehicleQueue* LastQ;
   public:
-  		void setEndTime(Time_t t){
-  			endTime= t;
-  		}
-  		int getID(){
-  			return this->ID;
-  		}
+  		void setEndTime(Time_t t);
+  		int getID();
          //VehicleClass(int ID, int sDestination...)     !!Constructor
          //!!Constructor
-         void updateDirection (dir Direction)
-         {
-              currentDirection = Direction;     
-         }
+         void updateDirection (dir Direction);
          
-         dir getDirection ()
-         {
-             return currentDirection;    
-         }
+         
+         dir getDirection ();
+         
 
-         void setLastQ (VehicleQueue* Q)
-         {
-              LastQ = Q;
-         }
+         void setLastQ (VehicleQueue* Q);
          
-         VehicleQueue* getLastQ ()
-         {
-             return LastQ;    
-         }
          
-         int getDestination ()
-         {
-             return fDestination;
-         }
-         VehicleClass(int id, int Dest){ID=id; fDestination=Dest;};
-         VehicleClass(){};
-         ~VehicleClass(){};
+         VehicleQueue* getLastQ ();
+         
+         
+         int getDestination ();
+         
+         VehicleClass(int id, int Dest);
+         VehicleClass();
+         ~VehicleClass();
 };

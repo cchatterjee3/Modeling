@@ -15,7 +15,9 @@
 typedef double Time_t;
 enum state {GLT, YLT, RLT, GTR, YTR, RTR};
 enum dir {N, S, E, W};
-#include "VehicleClass.h"
+//#include "VehicleClass.h"
+class VehicleClass;
 typedef std::queue<VehicleClass> VehicleQueue;
+
 
 #endif
