@@ -33,13 +33,15 @@ class _Topology
 		I3=new IntersectionwithSignal	(3);
 		I4=new IntersectionwithoutSignal(4);
 		I5=new IntersectionwithSignal	(5);
+		
 		// setting connections
 		I1->NInter=I2;	I1->SInter=NULL;	
 		I2->NInter=I3;	I2->SInter=I1;	
 		I3->NInter=I4;	I3->SInter=I2;	
 		I4->NInter=I5;	I4->SInter=I3;	
 		I5->NInter=NULL;I5->SInter=I4;	
-		// setting exit Queue
+		
+        // setting exit Queue
 		ExitQ = new VehicleQueue;
 		I1->ExitQ=ExitQ;
 		I2->ExitQ=ExitQ;

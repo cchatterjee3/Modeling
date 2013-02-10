@@ -18,7 +18,7 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 
 	//setting each traffic light's type
 	int EBtype, WBtype, NBtype, SBtype;
-
+    
 	if( ID ==1 || ID ==5 )
 	{
 		EBtype=1; WBtype=1; NBtype=1; SBtype=1;
@@ -31,18 +31,39 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 	{
 		EBtype=0; WBtype=0; NBtype=0; SBtype=0;
 	}
-
-
-	EB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
-	WB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
-	NB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
-	SB=new TrafficLight(1, (state)3, 100, 100, 100, 100, 100, 100);
-/*
-	EB=new TrafficLight(EBtype, (state)3, 100, 100, 100, 100, 100, 100);
-	WB=new TrafficLight(WBtype, (state)3, 100, 100, 100, 100, 100, 100);
-	NB=new TrafficLight(NBtype, (state)3, 100, 100, 100, 100, 100, 100);
-	SB=new TrafficLight(SBtype, (state)3, 100, 100, 100, 100, 100, 100);
-*/	
+	
+	if (ID==1) 
+    {
+      //Traffic light on Peachtree and 10th
+	  EB=new TrafficLight(EBtype, (state)3, 8, 1.8, 1.8, 30, 3.8, 55);
+	  WB=new TrafficLight(WBtype, (state)3, 5, 3.6, 4.2, 28, 3.8, 55);
+	  NB=new TrafficLight(NBtype, (state)3, 7, 3.6, 2.2, 34.7, 3.6, 49.3);
+	  SB=new TrafficLight(SBtype, (state)3, 7, 3.6, 2.2, 34.7, 3.6, 49.3);
+    }
+    if (ID==2)
+    {
+      //Traffic light on Peachtree and 11th
+      EB=new TrafficLight(EBtype, (state)3, 0, 0, 0, 20.2, 3.6, 76.1);
+	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 20.3, 3.6, 76.2);
+	  NB=new TrafficLight(NBtype, (state)3, 0, 0, 0, 41.5, 3.2, 55.4);
+	  SB=new TrafficLight(SBtype, (state)3, 0, 0, 0, 41.5, 3.2, 55.4);            
+    }
+    if (ID==3)
+    {
+      //Traffic light on Peachtree and 12th
+      EB=new TrafficLight(EBtype, (state)3, 0, 0, 0, 27.3, 3.6, 69.2);
+	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 27.3, 3.6, 69.2);
+	  NB=new TrafficLight(NBtype, (state)3, 0, 0, 0, 60.9, 3.2, 35.7);
+	  SB=new TrafficLight(SBtype, (state)3, 0, 0, 0, 61.4, 3.2, 35.7);             
+    }
+    if (ID==5)
+    {
+      //Traffic light on Peachtree and 14th
+      EB=new TrafficLight(EBtype, (state)3, 9.8, 3.6, 87, 36.9, 3.7, 60.2);
+	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 22.4, 3.7, 74);
+	  NB=new TrafficLight(NBtype, (state)3, 8.8, 3.6, 3.6, 34.6, 3.2, 46.1);
+	  SB=new TrafficLight(SBtype, (state)3, 11.6, 3.6, 0.5, 36.6, 3.2, 45.3);          
+    }	
 }
 
 IntersectionwithSignal::~IntersectionwithSignal(void)
