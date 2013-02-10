@@ -7,6 +7,7 @@ Brief implementation of number genrator and utilities
 #define MINSTDM 2147483647
 #define MINSTDG 16807
 
+unsigned long gettime();
 
 class RandomNumGen
 {
@@ -22,6 +23,8 @@ class RandomNumGen
 	public:
 		//Constructor
 		RandomNumGen(); 	
+
+		RandomNumGen(unsigned long x0);
 
 		//Generates next number
 		double Next();			
