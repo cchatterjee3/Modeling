@@ -13,12 +13,13 @@ TrafficLight::TrafficLight()
 	type=0;
 }
 
-TrafficLight::TrafficLight(int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6)
+TrafficLight::TrafficLight(int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal* p)
 {
 	type	  = typ; 			//set the type
 	curstate  = initialState;	//set the initial state of the trafficlight
 	//setting the time intervals for each state
 	GLT=Ph1;	YLT=Ph2;	RLT=Ph3;	GTR=Ph4;	YTR=Ph5;	RTR=Ph6;
+	parent = p;
 	
     Time_t timetoNextSignal;
     switch (initialState)
@@ -54,7 +55,7 @@ TrafficLight::~TrafficLight()
 
 void TrafficLight:: cyclestate()
 {
-
+      
       //Cycles signal to next state	
       Time_t timetoNextSignal;
       state newstate;
@@ -83,9 +84,12 @@ void TrafficLight:: cyclestate()
           case 5:
                timetoNextSignal = RTR;
                break;        
-        }  
+        }
         curstate = newstate;
         cout<<"Traffic Light change on Intersection "<<parent->getID()<<" and current state is "<<curstate<<" and time is "<<sim->getNow()<<endl;
+        sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent);  
+        
+        
         sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
 //	return (state)(  (   (curstate+1)%((type+1)*3)  ) +  ((1-type)*3)  );
 }

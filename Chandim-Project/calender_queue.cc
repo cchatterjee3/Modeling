@@ -26,18 +26,7 @@ void calender_queue::insert(EventBase* E1)
 
 	*/
 	cout<<"Inserted event into "<<bucket_id<<endl;
-	if (bucket_id == 659)
-	{
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<"ATTENTION!!!!!!!!!!!!!!!!!:"<<endl;
-	   cout<<E1->getTime()<<endl;
-    } 
+	
 	bucket* cur_bucket;
 	cur_bucket = &buckets[bucket_id];
 	
@@ -47,8 +36,7 @@ void calender_queue::insert(EventBase* E1)
 	it = cur_bucket->end();
 	cur_bucket->insert(it,E1);*/
 	cur_bucket->push_back(E1);
-	if (bucket_id == 659)
-	   cout<<"Inside 659 Pulled out object after pushing "<<(*cur_bucket->begin())->getTime()<<endl;
+	
 	//Increment the size of array
 	Qsize++;
 
@@ -56,7 +44,7 @@ void calender_queue::insert(EventBase* E1)
 
 void calender_queue::check659bucket()
 {
-     cout<<"Check 659: "<<((*buckets[659].begin())->getTime())<<" "<<(buckets[659].size())<<endl;     
+         
 }
 void calender_queue::dequeue(EventBase* E1)
 {

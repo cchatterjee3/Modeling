@@ -32,9 +32,9 @@ void Simulator::Run()
       // Advance Simulation Time
       now = currentEvent->time;  // Advance simulation time to time of event
       // call the event
-      //cout<<"Before CallHandler "<<now<<endl;
+      cout<<"Before CallHandler "<<now<<endl;
       currentEvent->CallHandler();
-      //cout<<"After CallHandler"<<endl;
+      cout<<"After CallHandler"<<endl;
     }  
 }
 

@@ -32,7 +32,7 @@ class TrafficLight
 			  TrafficLight();
 			  // (type, initialState GLT, YLT, RLT, GTR, YTR, RTR)
 			  // put zeros if any was inapplicable
-			  TrafficLight(int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6);
+			  TrafficLight(int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal* p);
 
 			  //destructor
 			  ~TrafficLight();
