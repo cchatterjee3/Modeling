@@ -30,7 +30,10 @@ class RandomNumGen
 		double Next();			
 
 		//Resets the random number genrator
-		void Reset();				
+		void Reset();		
+
+		// Gives state of random genrator
+		unsigned long GetState();
 
 		//Desctructor
 		~RandomNumGen();
