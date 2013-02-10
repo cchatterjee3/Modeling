@@ -2,7 +2,7 @@ Traffic Simulation of W.Peachtree Street
 
 -----------------------------------------------------------------
 Chandim Chatterjee
-Parsa Banihashemi
+Seyed Parsa Banihashemi
 Piyush Sao
 Last updated: February 1, 2013
 -----------------------------------------------------------------
@@ -22,5 +22,4 @@ Building the code
    	2.0 Download and install free Dev C++ compiler
 	2.1 Open Modeling.dev project file and Clean, Compile and Execute
 
-Running the Simulation
-----------------------
+
