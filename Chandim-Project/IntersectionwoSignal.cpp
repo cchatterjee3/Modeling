@@ -53,7 +53,7 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 		{
 			// exit the system
 			vehicle->setEndTime(sim->getNow());
-			ExitQ->push(*vehicle);
+			ExitQ->push(vehicle);
 		}
 		//schedule north intersection addVehicletoQueue
 		else
@@ -74,7 +74,7 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 		{
 			// exit the system
 			vehicle->setEndTime(sim->getNow());
-			ExitQ->push(*vehicle);
+			ExitQ->push(vehicle);
 		}
 		//schedule south intersection addVehicletoQueue
 		else
@@ -93,7 +93,7 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 	{
 		// exit the system
 		vehicle->setEndTime(sim->getNow());
-		ExitQ->push(*vehicle);
+		ExitQ->push(vehicle);
 		cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
 	}
 
@@ -113,12 +113,12 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
 	cout << "In WithoutSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
-	joinqueue->push(*vehicle);
+	joinqueue->push(vehicle);
 	vehicle->setLastQ(joinqueue);
 
 	if(  !busy )
 	{
-		VehicleClass* vehicle=&(joinqueue->front());
+		VehicleClass* vehicle=joinqueue->front();
 		joinqueue->pop();
 		//schedule vehicle pass in startToPass time
 		vehicle->setLastQ(joinqueue);

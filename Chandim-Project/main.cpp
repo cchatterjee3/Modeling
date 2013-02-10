@@ -20,9 +20,9 @@ int main()
 	int VIDcounter=1;
 	VehicleQueue* joinqueue = Topology->I1->NBI;
 
-	for ( int t=1 ; t<100 ; t+=10 )
+	for ( int t=1 ; t<100 ; t+=100 )
 	{
-		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 1);
+		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 0, 6);
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
 

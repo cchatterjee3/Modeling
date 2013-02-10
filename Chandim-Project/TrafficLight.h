@@ -2,9 +2,12 @@
 
 #include "CommonDefs.h"
 
+//#include "IntersectionwithSignal.h"
 #include "CommonDefs.h"
 #include "VehicleClass.h"
+#include "Simulator.h"
 
+extern Simulator* sim ;
 class IntersectionwithSignal;
 
 class TrafficLight
@@ -35,7 +38,7 @@ class TrafficLight
 			  ~TrafficLight();
           
 			  //cyclestate
-              state cyclestate(); 
+              void cyclestate(); 
 
 
 };
