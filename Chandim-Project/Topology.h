@@ -1,3 +1,5 @@
+#pragma once
+
 #include "TrafficLight.h"
 #include "Intersection.h"
 #include "IntersectionwithSignal.h"
