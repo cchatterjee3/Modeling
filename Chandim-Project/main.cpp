@@ -7,6 +7,8 @@
 
 #include "Topology.h"
 
+#include "scheduleVehicles.h"
+
 using namespace std;
 
 class Simulator;
@@ -17,6 +19,7 @@ int main()
 	//Temporary Initialization Place
 	_Topology *Topology = new _Topology();
 
+	/*
 	int VIDcounter=1;
 	VehicleQueue* joinqueue = Topology->I1->NBI;
 
@@ -28,6 +31,9 @@ int main()
 
 	cout << Topology->I1->getID() << endl;
 	cin.get() ;
+*/
+
+	scheduleVehicles(Topology, 7200.0);
 
 
 
