@@ -4,7 +4,8 @@
 #include "TrafficLight.h"
 #include "Intersection.h"
 
-class TrafficLight;
+
+//class TrafficLight;
 
 class IntersectionwithSignal : public Intersection
 {

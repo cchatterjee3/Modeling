@@ -1,0 +1,279 @@
+% Part II
+
+    \section{\texorpdfstring{}{\thesection}}
+
+
+\largdb{Discretized one-dimensional differential equation of $u(x)$ with boundary values as follows}
+
+\begin{center}
+    $\left\{\begin{tabular}{l}
+        $-(a(x)u'(x))'+\lambda u(x)=x-\frac{1}{2}, \ x \in [0,1]$ \\
+        $u(0)=u(1)=0$ \\
+    \end{tabular}\right.$
+\end{center}
+
+
+\largdb{\noindent by centered difference scheme with $n$ interior mesh points. In $(2)$, $a(x)$ is a given function
+and $\lambda$ is a constant, taking the following choices:}
+
+\begin{tabular}{@{\hspace{0ex}}p{20em}}
+    $(1)~a(x)=2, \lambda=100,10,1,-1.$ \\
+    $(2)~a(x)=x, \lambda=1,10,100,1000.$
+\end{tabular}
+
+\largdb{Solve the resulting linear systems by the steepest descent method (search and study this
+algorithm if you do not know it) and conjugate gradient method. Explain the problem
+and procedures that you perform, and report and comment on the results you observed.
+If the methods do not work for certain choices of $a(x)$ and $\lambda$, what would you like to do
+to solve the problem.}
+
+\largdb{Note that you need to test your code with different size ($n = 100; 200; 400; 800; 1600; 3200$
+or larger if your computer permits) for both parts and comment on the results you obtain.}
+
+\el
+
+{\LARGE \textbf{Problem and Procedures:}}
+
+first, we use the steepest descent method, which uses the opposite of the Gradient path to reach to the minimum of $(Ax-b)$.
+
+This Algorithm is presented here:
+
+There are many optimizations done on this code, like
+\begin{itemize}
+    \item saving A*d once and using it later.
+    \item saving $d^T* d$ once and using it later.
+    \item calculating ${d^T* (A * d)}$ instead of ${(d^T* A) * d}$ which is very faster,
+    \item ...
+\end{itemize}
+
+    \begin{algorithm}[H]
+        \begin{algorithmic}[1]
+            \caption{Steepest Descent Method}
+            \State $\db{Input}(A,b,maxtry,tol)$
+            \State $d=b$
+            \State $x=0$
+            \For{$tries=1..maxtry$}
+                \State $\alpha=\frac{d^T* d}{d^T* A * d}$
+                \State $x=x+\alpha * d$
+                \Comment {Actually, every 100 steps, I calculate d this way: $d=b-A*x$}
+                \State $d=d-alpha*A*d$
+                \If{$(d^T* d)/n < tol$}
+                    \State \db{return}
+                \EndIf
+            \EndFor
+            \State \db{return}
+        \end{algorithmic}
+    \end{algorithm}
+
+Then, the conjugate gradient method Algorithm:
+
+The optimizations  also are applied here
+    \begin{algorithm}[H]
+        \begin{algorithmic}[1]
+            \caption{Conjugate Gradient Method}
+            \State $\db{Input}(A,b,maxtry,tol)$
+            \State $d=b$
+            \State $p=d$
+            \State $x=0$
+            \For{$tries=1..maxtry$}
+                \State $\alpha=\frac{d^T* d}{p^T* A * p}$
+                \State $x=x+\alpha * p$
+                \Comment {Actually, every 100 steps, I calculate d this way: $d=b-A*x$}
+                \State $D=d^T*d$
+                \State $d=d-alpha*A*p$
+                \State $\beta=d^T*d/D$
+                \State $p=r+\beta*p$
+                \If{$(d^T* d)/n < tol$}
+                    \State \db{return}
+                \EndIf
+            \EndFor
+            \State \db{return}
+        \end{algorithmic}
+    \end{algorithm}
+
+
+    
+{\LARGE \textbf{Solution Details:}}
+
+In the steepest descent method, as stated above, the convergence criterion is: $(d^T* d)/n < tol$
+
+In the conjugate gradient method, as stated above, the convergence criterion is the same: $(d^T* d)/n < tol$
+
+The maximum number of iterations for both is 100,000
+
+The tolerance is $10^{-7}$
+
+  
+\clearpage
+{\LARGE \textbf{Results:}}
+
+Here we can see the results for different cases:
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%       STEEPEST DECENT METHOD
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+
+{\Large \textbf{Steepest Decent Method (u versus x)}}
+
+The results for Case 1, $a(x)=2$ can be seen in Figure \ref{fig:fig2SD1}.
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_SD1} &
+        \includegraphics[width=3.4in]{figure2_SD2} \\
+        \includegraphics[width=3.4in]{figure2_SD3} &
+        \includegraphics[width=3.4in]{figure2_SD4} \\
+    \end{array}$
+    \caption{Steepest Decent Method, $a(x)=2$}
+    \label{fig:fig2SD1}
+\end{figure}
+
+We can see in the figure above that the steepest descent method has not converged properly for large matrices, because it takes a lot of steps to converge and the maximum is 100,000. that is because the solution path will be zig-zag with very small improvement at each step. The problem is reahing the minimum of (Ax-b) which is ill-conditioned as will be explained later and the surface shape is a very wide ellipse.
+
+\clearpage
+The results for Case 2, $a(x)=x$ can be seen in Figure \ref{fig:fig2SD5}.
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_SD5} &
+        \includegraphics[width=3.4in]{figure2_SD6} \\
+        \includegraphics[width=3.4in]{figure2_SD7} &
+        \includegraphics[width=3.4in]{figure2_SD8} \\
+    \end{array}$
+    \caption{Steepest Decent Method, $a(x)=x$}
+    \label{fig:fig2SD5}
+\end{figure}
+
+In case 2, only for $\lambda=100$, we see good solution. That is because of very low condition number in that case. The worst cases are always the ones with lowest $\lambda$ which make the biggest condition numbers.
+
+As we can see in the figures \ref{fig:fig2SD1} and \ref{fig:fig2SD5}, some cases still have not converged after 100,000 steps.
+
+
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+%       Conjugate Gradient Method
+%------------------------------------------------------------------------------
+%------------------------------------------------------------------------------
+\clearpage
+{\Large \textbf{Conjugate Gradient Method (u versus x)}}
+
+The results for Case 1, $a(x)=2$ can be seen in Figure \ref{fig:fig2CG1}.
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_CG1} &
+        \includegraphics[width=3.4in]{figure2_CG2} \\
+        \includegraphics[width=3.4in]{figure2_CG3} &
+        \includegraphics[width=3.4in]{figure2_CG4} \\
+    \end{array}$
+    \caption{Conjugate Gradient Method, $a(x)=2$}
+    \label{fig:fig2CG1}
+\end{figure}
+
+Here, we see that the CG method is very stronger and converges well in case 1.
+
+\clearpage
+The results for Case 2, $a(x)=x$ can be seen in Figure \ref{fig:fig2CG5}.
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_CG5} &
+        \includegraphics[width=3.4in]{figure2_CG6} \\
+        \includegraphics[width=3.4in]{figure2_CG7} &
+        \includegraphics[width=3.4in]{figure2_CG8} \\
+    \end{array}$
+    \caption{Conjugate Gradient Method, $a(x)=x$}
+    \label{fig:fig2CG5}
+\end{figure}
+
+As we can see in figure \ref{fig:fig2CG5}, the cases for $a(x)=x$ with $\lambda=1$ and $\lambda=10$ have convergence problems.
+
+\clearpage
+{\Large \textbf{The condition numbers}}
+
+The condition numbers are very important, because they determine the speed of convergence and accuracy.
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_cond11.eps} 
+        \includegraphics[width=3.4in]{figure2_cond12.eps} 
+    \end{array}$        
+    \caption{Condition numbers versus size, Case 1 and 2 }
+    \label{fig:fig2CG5}
+\end{figure}
+
+{\LARGE \textbf{Observations \slash~  Explanations:}}
+
+\begin{itemize}
+
+\item Some cases do not converge in 100,000 steps and are very ill-conditioned: 
+
+\item case 1: $\lambda=-1$, $\lambda=1$, and even to some extent, $\lambda=10$, are ill-conditioned. As we can see in Figure \ref{fig:fig2CG5}, the condition number for these 3 cases are all greater than $10^{+6}$, which is very high. The steepest descent method has problems in this case and does not converge in big matrices
+
+\item case 2: $\lambda=1$ and to some extent $\lambda=10$ have high condition numbers according to Figure \ref{fig:fig2CG5}. These are the worst cases and both methods fail at giving the proper answers for big matrices.
+
+\item The steepest descent method is very slow in all cases. In general, the steepest descent method with $cond(A)>10^5$ has convergence problems and in big matrices, it will not converge in 100,000 steps, even with small tolerance =$10^{-3}$
+
+\item The conjugate gradient method has problems for cases with $cond(A)>3*10^{6}$.
+
+\item Below, we can see a plot of the convergence iterations for both methods.
+
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_tries21.eps} 
+        \includegraphics[width=3.4in]{figure2_tries22.eps} 
+    \end{array}$        
+    \caption{Steepest Descent Method, Number of Iterations,  Cases 1 and 2 }
+    \label{fig:fig2SDtries}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_triesCG13.eps} 
+        \includegraphics[width=3.4in]{figure2_triesCG14.eps} 
+    \end{array}$        
+    \caption{Conjugate Gradient Method, Number of Iterations,  Cases 1 and 2 }
+    \label{fig:fig2CGtries}
+\end{figure}
+
+\item Tolerance is $10^{-5}$ for CG and $10^{-3}$ for SD. In Figures \ref{fig:fig2SDtries} and \ref{fig:fig2CGtries}, we observe the number iterations performed. Max number of iterations is 100,000.
+
+\item As we can see, the conjugate gradient does well on case 1, but will increase the number of iterations a lot when $\lambda=1,10$. That is because of high condition number.
+\item For CG, I suggest using a pre-conditioner for case 2, $\lambda=1,10$. we could also use more number of steps.
+\item. The reason for slow convergence is that the problem is ill-conditioned and the gradient is not directing to the peak. in CG, even when we are correcting our path, we still get the zig-zag convergence. This path goes back-and forth when approaching the answer and causes slow convergence in both cases. The gradient direction causes the most problems for the steepest descent method.
+    
+\item in the following figures, we see the convergence process of CG and SD for case 2.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=3.4in]{figure2_convCG1.eps} 
+    \caption{Conjugate gradient method, Convergence trend,  case 2, $\lambda=1,100$}
+    \label{fig:fig2CGconv1}
+\end{figure}
+
+\item In this figure, we observe that because of high condition number for $\lambda=1$, the convergence is very slower. A pre-conditioner would help a lot
+
+\begin{figure}[H]
+    \centering
+    $\begin{array}{cc}
+        \includegraphics[width=3.4in]{figure2_convSD1.eps} 
+        \includegraphics[width=3.4in]{figure2_convSD2.eps} 
+    \end{array}$        
+    \caption{Steepest Descent Method, Number of Iterations,  Case 2, $\lambda=1,1000$ }
+    \label{fig:fig2CGtries}
+\end{figure}
+
+\item In case 2, $\lambda=1$, the convergence process is very bad, as can be seen in the figure above. Again, that is because of the high condition number. using a preconditioner will help a lot.
+
+
+\end{itemize}

@@ -2,7 +2,7 @@
 FileName=Modeling.dev
 Name=Modeling
 Type=1
-Ver=2
+Ver=1
 ObjFiles=
 Includes=
 Libs=
@@ -29,7 +29,7 @@ IncludeVersionInfo=0
 SupportXPThemes=0
 CompilerSet=0
 CompilerSettings=0000000000000000001000000
-UnitCount=19
+UnitCount=20
 
 [VersionInfo]
 Major=1
@@ -232,6 +232,16 @@ BuildCmd=
 
 [Unit19]
 FileName=TrafficLight.cpp
+CompileCpp=1
+Folder=cpp
+Compile=1
+Link=1
+Priority=1000
+OverrideBuildCmd=0
+BuildCmd=
+
+[Unit20]
+FileName=VehicleClass.cpp
 CompileCpp=1
 Folder=cpp
 Compile=1
