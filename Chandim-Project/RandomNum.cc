@@ -3,6 +3,7 @@
 
 #include "RandomNum.h"
 
+#include <stdlib.h>
 
 unsigned long gettime(void)
 {
