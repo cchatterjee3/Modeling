@@ -1,0 +1,5 @@
+<map id="IntersectionwithSignal" name="IntersectionwithSignal">
+<area shape="rect" id="node2" href="$class_intersection.html" title="Intersection" alt="" coords="12,261,101,289"/>
+<area shape="rect" id="node5" href="$class_vehicle_queue.html" title="VehicleQueue" alt="" coords="5,6,109,34"/>
+<area shape="rect" id="node7" href="$class_traffic_light.html" title="TrafficLight" alt="" coords="189,261,275,289"/>
+</map>

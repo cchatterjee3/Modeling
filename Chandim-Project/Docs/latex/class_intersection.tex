@@ -1,0 +1,120 @@
+\hypertarget{class_intersection}{\section{Intersection Class Reference}
+\label{class_intersection}\index{Intersection@{Intersection}}
+}
+
+
+Inheritance diagram for Intersection\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{class_intersection__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Intersection\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{class_intersection__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_intersection_a6f0781ff95de3ebe87e0ca83a9594cbc}{{\bfseries Intersection} (int)}\label{class_intersection_a6f0781ff95de3ebe87e0ca83a9594cbc}
+
+\item 
+\hypertarget{class_intersection_af9ffdb4a85d4b9250cc74936068f8d2d}{int {\bfseries get\-I\-D} ()}\label{class_intersection_af9ffdb4a85d4b9250cc74936068f8d2d}
+
+\item 
+\hypertarget{class_intersection_afe2e42381c4cf467fca7d2217d92524c}{void {\bfseries Vehicle\-Pass} (\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle, int Turn)}\label{class_intersection_afe2e42381c4cf467fca7d2217d92524c}
+
+\item 
+\hypertarget{class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9}{void {\bfseries Vehicle\-Departure} (\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle)}\label{class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9}
+
+\item 
+\hypertarget{class_intersection_ab6a6b34e31effdf156c39dabf523e5e8}{void {\bfseries Evict\-Q} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$joinqueue)}\label{class_intersection_ab6a6b34e31effdf156c39dabf523e5e8}
+
+\item 
+\hypertarget{class_intersection_a6e55e3add20e9d49e5751ccf47832c12}{virtual void {\bfseries add\-Vehicleto\-Queue} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$joinqueue, \hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle)=0}\label{class_intersection_a6e55e3add20e9d49e5751ccf47832c12}
+
+\item 
+\hypertarget{class_intersection_ade54ec591355782db542061623096a2f}{virtual int {\bfseries Q\-Can\-Go} (int direction, int lane)=0}\label{class_intersection_ade54ec591355782db542061623096a2f}
+
+\item 
+\hypertarget{class_intersection_a5cd40e634a34880503bd314124f77e25}{int {\bfseries get\-Qdirection} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Q)}\label{class_intersection_a5cd40e634a34880503bd314124f77e25}
+
+\item 
+\hypertarget{class_intersection_a409b2d3138b034f5b416476ea229165d}{int {\bfseries get\-Qlane} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Q)}\label{class_intersection_a409b2d3138b034f5b416476ea229165d}
+
+\item 
+\hypertarget{class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a}{void {\bfseries Next\-Q\-Info} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$current\-Q, \hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle, \hyperlink{class_intersection}{Intersection} $\ast$\&Next\-Inter, \hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$\&Future\-Q, bool \&isfull, int \&Turn)}\label{class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_intersection_a8a64af1004807f4ac451bcf9bfa368a4}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries E\-B\-I1}}\label{class_intersection_a8a64af1004807f4ac451bcf9bfa368a4}
+
+\item 
+\hypertarget{class_intersection_a8db85628804847f2b98fd1edf5c28e34}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries E\-B\-I2}}\label{class_intersection_a8db85628804847f2b98fd1edf5c28e34}
+
+\item 
+\hypertarget{class_intersection_a7d4afb62f4051e6f25c0195de1d66442}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries W\-B\-I1}}\label{class_intersection_a7d4afb62f4051e6f25c0195de1d66442}
+
+\item 
+\hypertarget{class_intersection_a7f4c7a9c2344827a24aaa52955e56fac}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries W\-B\-I2}}\label{class_intersection_a7f4c7a9c2344827a24aaa52955e56fac}
+
+\item 
+\hypertarget{class_intersection_aba3182ae5b832420344bc8fccf5c285b}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries N\-B\-I1}}\label{class_intersection_aba3182ae5b832420344bc8fccf5c285b}
+
+\item 
+\hypertarget{class_intersection_af19480d80bcd05c9b3d6fff9e1e829d7}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries N\-B\-I2}}\label{class_intersection_af19480d80bcd05c9b3d6fff9e1e829d7}
+
+\item 
+\hypertarget{class_intersection_a0f60a7d5b4911fbc309ddecdab4a75e7}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries S\-B\-I1}}\label{class_intersection_a0f60a7d5b4911fbc309ddecdab4a75e7}
+
+\item 
+\hypertarget{class_intersection_a172b271e9434b824c4722b1589d77f55}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries S\-B\-I2}}\label{class_intersection_a172b271e9434b824c4722b1589d77f55}
+
+\item 
+\hypertarget{class_intersection_ac2ed4059bdd3c08bb3fd62eaf1a89f73}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries Qu} \mbox{[}4\mbox{]}\mbox{[}2\mbox{]}}\label{class_intersection_ac2ed4059bdd3c08bb3fd62eaf1a89f73}
+
+\item 
+\hypertarget{class_intersection_a87a7802a02ff65c92a6fd11c70144ca2}{dir {\bfseries routingtable} \mbox{[}12\mbox{]}}\label{class_intersection_a87a7802a02ff65c92a6fd11c70144ca2}
+
+\item 
+\hypertarget{class_intersection_a23e3dd72ef9a1e4fa82da6a503b61626}{int {\bfseries N\-B\-Ilength}}\label{class_intersection_a23e3dd72ef9a1e4fa82da6a503b61626}
+
+\item 
+\hypertarget{class_intersection_a11b364d7355af20e013e2217596588ec}{int {\bfseries S\-B\-Ilength}}\label{class_intersection_a11b364d7355af20e013e2217596588ec}
+
+\item 
+\hypertarget{class_intersection_a2456746faabd194633c2b133440449c6}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries Exit\-Q}}\label{class_intersection_a2456746faabd194633c2b133440449c6}
+
+\item 
+\hypertarget{class_intersection_a577edea4aa08d05052e6cbf7aa2ba9e2}{\hyperlink{class_intersection}{Intersection} $\ast$ {\bfseries N\-Inter}}\label{class_intersection_a577edea4aa08d05052e6cbf7aa2ba9e2}
+
+\item 
+\hypertarget{class_intersection_af6cfb23dbc2ad5b1d90752247dd07acf}{\hyperlink{class_intersection}{Intersection} $\ast$ {\bfseries S\-Inter}}\label{class_intersection_af6cfb23dbc2ad5b1d90752247dd07acf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_intersection_aec0f4beb4f24b87b7f47aa6e23b7f4dd}{int {\bfseries I\-D}}\label{class_intersection_aec0f4beb4f24b87b7f47aa6e23b7f4dd}
+
+\item 
+\hypertarget{class_intersection_a6c8f8ad77cc05de03282b613001a5729}{bool {\bfseries have\-Signal}}\label{class_intersection_a6c8f8ad77cc05de03282b613001a5729}
+
+\item 
+\hypertarget{class_intersection_ac7c8fd3e12e9df00670ae7c0f77d1e17}{bool {\bfseries busy}}\label{class_intersection_ac7c8fd3e12e9df00670ae7c0f77d1e17}
+
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+Intersection.\-h\item 
+Intersection.\-cpp\end{DoxyCompactItemize}

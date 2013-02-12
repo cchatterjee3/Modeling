@@ -1,0 +1,6 @@
+<map id="EventBase" name="EventBase">
+<area shape="rect" id="node3" href="$class_event0.html" title="Event0\&lt; T, OBJ \&gt;" alt="" coords="149,5,275,33"/>
+<area shape="rect" id="node5" href="$class_event1.html" title="Event1\&lt; T, OBJ, U1,\l T1 \&gt;" alt="" coords="141,57,283,101"/>
+<area shape="rect" id="node7" href="$class_event2.html" title="Event2\&lt; T, OBJ, U1,\l T1, U2, T2 \&gt;" alt="" coords="141,125,283,169"/>
+<area shape="rect" id="node9" href="$class_event3.html" title="Event3\&lt; T, OBJ, U1,\l T1, U2, T2, U3, T3 \&gt;" alt="" coords="139,193,285,237"/>
+</map>
