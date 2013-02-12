@@ -35,34 +35,34 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 	if (ID==1) 
     {
       //Traffic light on Peachtree and 10th
-	  EB=new TrafficLight(EBtype, (state)3, 8, 1.8, 1.8, 30, 3.8, 55, this);
-	  WB=new TrafficLight(WBtype, (state)3, 5, 3.6, 4.2, 28, 3.8, 55, this);
-	  NB=new TrafficLight(NBtype, (state)3, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
-	  SB=new TrafficLight(SBtype, (state)3, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
+	  EB=new TrafficLight(EBtype, (state)5, 8, 1.8, 1.8, 30, 3.8, 55, this);
+	  WB=new TrafficLight(WBtype, (state)5, 5, 3.6, 4.2, 28, 3.8, 55, this);
+	  NB=new TrafficLight(NBtype, (state)5, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
+	  SB=new TrafficLight(SBtype, (state)5, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
     }
     if (ID==2)
     {
       //Traffic light on Peachtree and 11th
-      EB=new TrafficLight(EBtype, (state)3, 0, 0, 0, 20.2, 3.6, 76.1, this);
-	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 20.3, 3.6, 76.2, this);
-	  NB=new TrafficLight(NBtype, (state)3, 0, 0, 0, 41.5, 3.2, 55.4, this);
-	  SB=new TrafficLight(SBtype, (state)3, 0, 0, 0, 41.5, 3.2, 55.4, this);            
+      EB=new TrafficLight(EBtype, (state)5, 0, 0, 0, 20.2, 3.6, 76.1, this);
+	  WB=new TrafficLight(WBtype, (state)5, 0, 0, 0, 20.3, 3.6, 76.2, this);
+	  NB=new TrafficLight(NBtype, (state)5, 0, 0, 0, 41.5, 3.2, 55.4, this);
+	  SB=new TrafficLight(SBtype, (state)5, 0, 0, 0, 41.5, 3.2, 55.4, this);            
     }
     if (ID==3)
     {
       //Traffic light on Peachtree and 12th
-      EB=new TrafficLight(EBtype, (state)3, 0, 0, 0, 27.3, 3.6, 69.2, this);
-	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 27.3, 3.6, 69.2, this);
-	  NB=new TrafficLight(NBtype, (state)3, 0, 0, 0, 60.9, 3.2, 35.7, this);
-	  SB=new TrafficLight(SBtype, (state)3, 0, 0, 0, 61.4, 3.2, 35.7, this);             
+      EB=new TrafficLight(EBtype, (state)5, 0, 0, 0, 27.3, 3.6, 69.2, this);
+	  WB=new TrafficLight(WBtype, (state)5, 0, 0, 0, 27.3, 3.6, 69.2, this);
+	  NB=new TrafficLight(NBtype, (state)5, 0, 0, 0, 60.9, 3.2, 35.7, this);
+	  SB=new TrafficLight(SBtype, (state)5, 0, 0, 0, 61.4, 3.2, 35.7, this);             
     }
     if (ID==5)
     {
       //Traffic light on Peachtree and 14th
-      EB=new TrafficLight(EBtype, (state)3, 9.8, 3.6, 87, 36.9, 3.7, 60.2, this);
-	  WB=new TrafficLight(WBtype, (state)3, 0, 0, 0, 22.4, 3.7, 74, this);
-	  NB=new TrafficLight(NBtype, (state)3, 8.8, 3.6, 3.6, 34.6, 3.2, 46.1, this);
-	  SB=new TrafficLight(SBtype, (state)3, 11.6, 3.6, 0.5, 36.6, 3.2, 45.3, this);          
+      EB=new TrafficLight(EBtype, (state)5, 9.8, 3.6, 87, 36.9, 3.7, 60.2, this);
+	  WB=new TrafficLight(WBtype, (state)5, 0, 0, 0, 22.4, 3.7, 74, this);
+	  NB=new TrafficLight(NBtype, (state)5, 8.8, 3.6, 3.6, 34.6, 3.2, 46.1, this);
+	  SB=new TrafficLight(SBtype, (state)5, 11.6, 3.6, 0.5, 36.6, 3.2, 45.3, this);          
     }	
 }
 
@@ -106,7 +106,7 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			// exit the system
 			vehicle->setEndTime(sim->getNow());
 			ExitQ->push(vehicle);
-			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
+			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<"SUCCESS!!!!!!"<<endl; cin.get();
 		}
 		//schedule north intersection addVehicletoQueue
 		else
@@ -127,7 +127,7 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			// exit the system
 			vehicle->setEndTime(sim->getNow());
 			ExitQ->push(vehicle);
-			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
+			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<"SUCCESS!!!!!!"<<endl; cin.get();
 		}
 		//schedule south intersection addVehicletoQueue
 		else
@@ -147,8 +147,8 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 		vehicle->setEndTime(sim->getNow());
 		ExitQ->push(vehicle);
 
-	cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;
+	    cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<"SUCCESS!!!!!!"<<endl; cin.get();
+     	cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	}
 
@@ -161,7 +161,6 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			sim->Schedule(PassTime, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 			break;
 	}
-
 
 }
 
@@ -187,14 +186,18 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 		cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	}
+    else
+    {
+        cout<<"Waiting at Signal at "<<this->getID()<<endl; cin.get();
+    }
 
 }
 
 void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
 {
 
-	cout << "In withSignal::changeSignalTrigger , Now="<<sim->getNow() <<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;
+	/*cout << "In withSignal::changeSignalTrigger , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;*/
 
 	//check each Q to see if they can go, schedule a pass if they could
 	//checks EBI
@@ -239,8 +242,8 @@ void IntersectionwithSignal::changeSignalTrigger() //checks its own signals
 int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a specific Queue
 {
 
-	cout << "In withSignal::QCanGo  , Now="<<sim->getNow() <<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;
+	/*cout << "In withSignal::QCanGo  , Now="<<sim->getNow() <<endl;
+	cout << "press any key to continue..."<<endl;	cin.get() ;*/
 
 	//test whether a certain queue can start sending vehicles out
 	//-1: Q is empty

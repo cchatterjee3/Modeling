@@ -22,19 +22,12 @@ void calender_queue::insert(EventBase* E1)
 	Time_t t1 = E1->getTime();
 	
 	int bucket_id = (int) (fmod(t1,  CALENDER_PERIOD)/BUCKET_SIZE);
-	/*
 
-	*/
-	cout<<"Inserted event into "<<bucket_id<<endl;
-	
 	bucket* cur_bucket;
 	cur_bucket = &buckets[bucket_id];
 	
 	//Add this event to the end of the present queue
 	
-	/*bucket::iterator it;
-	it = cur_bucket->end();
-	cur_bucket->insert(it,E1);*/
 	cur_bucket->push_back(E1);
 	
 	//Increment the size of array
@@ -70,7 +63,7 @@ EventBase* calender_queue::PopNext()
 	EventBase* E1;
 	E1 = NULL;
 	//cout<<"Inside PopNext "<<Qsize<<endl;
-	cout<<cur_time_frame<<endl;
+	//cout<<cur_time_frame<<endl;
 	if(Qsize==0) return E1;
     check659bucket();
 	//Now search for the next events from  
@@ -87,8 +80,6 @@ EventBase* calender_queue::PopNext()
     		{
                 //cout<<"DANGER"<<endl;
     			remove_event(cur_bucket,temp);
-    			if (cur_bucket == 659)
-    			   cout<<"Inside Danger Zone: "<<temp->getTime()<<endl;
     			E1 = temp; 
     			return E1;
     		}
@@ -144,11 +135,7 @@ EventBase* calender_queue::next_event(int bucket_id)
 
 void calender_queue::remove_event(int i,EventBase* E1)
 {
-     if (i == 659)
-        cout<<"Checking 659th bucket's size and contents:\n "<<E1->getTime()<<endl;
-     cout<<"before removing event "<<buckets[i].size()<<endl;
 	buckets[i].remove(E1);
-	cout<<"after removing event "<<buckets[i].size()<<endl;
 	Qsize--;
 }
 
