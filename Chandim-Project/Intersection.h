@@ -21,6 +21,11 @@ public:
 	VehicleQueue* WBI;
 	VehicleQueue* NBI;
 	VehicleQueue* SBI;
+	
+	int EBIlength;
+	int WBIlength;
+	int NBIlength;
+	int SBIlength;
 
 	VehicleQueue* ExitQ;
 

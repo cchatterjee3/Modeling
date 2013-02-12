@@ -24,6 +24,12 @@ Intersection::Intersection(int nID)
 		WBI=new VehicleQueue;
 		NBI=new VehicleQueue;
 		SBI=new VehicleQueue;
+		
+		EBIlength = 25;
+		WBIlength = 25;
+		SBIlength = 25;
+		NBIlength = 25;
+		
 		//initialize routing table
 		//memcpy(routingtable, table, 12*sizeof(dir));
 		switch (ID){

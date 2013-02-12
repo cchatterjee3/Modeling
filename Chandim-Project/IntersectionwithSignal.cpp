@@ -302,7 +302,7 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 		switch(dest)
 		{
 			case E:
-				canGo=(NB->getState()==GTR);
+				canGo=true;
 				break;
 			case N:
 				canGo=(NB->getState()==GTR);
