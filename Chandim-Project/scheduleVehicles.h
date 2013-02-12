@@ -1,3 +1,3 @@
 #include "Topology.h"
-void scheduleVehicles(	_Topology* Topology);
+void scheduleVehicles(	_Topology* Topology, double maxTime);
 

@@ -28,11 +28,12 @@ int main()
 		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 0, 6);
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
-*/
-	scheduleVehicles(Topology);
 
 	cout << Topology->I1->getID() << endl;
 	cin.get() ;
+*/
+
+	scheduleVehicles(Topology, 7200.0);
 
 
 
