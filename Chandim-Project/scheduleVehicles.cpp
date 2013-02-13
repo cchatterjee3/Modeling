@@ -9,9 +9,15 @@
 #include "Topology.h"
 #include "RandomNum.h"
 
-extern Simulator* sim ;
-RandomNumGen Ran;
+#ifdef __WIN32__
+        #include <time.h>
+        #include <windows.h>
+#endif
 
+
+extern Simulator* sim ;
+
+RandomNumGen Ran(0);
 
 
 void scheduleVehicles(	_Topology* Topology, double maxTime)
@@ -100,7 +106,7 @@ for (int i=0 ; i<12 ; ++i)
 }
 
 int VIDcounter=0;
-srand(time(0));  
+//srand(time(0));  
 
 int fdest; //final destination
 
@@ -109,9 +115,10 @@ for (int i=0 ; i<12 ; i++)
 	double T=0.0;
 	do{
 		//getting the random number
-		double t = -log(max(rand()/(RAND_MAX*1.0+1.0),.001))/lambda[i];
+//		double t = -log(max(rand()/(RAND_MAX*1.0+1.0),.001))/lambda[i];
+		double t = -log(Ran.Next())/lambda[i];
 		//getting the random destination:
-		double RandDest = max(rand()/(RAND_MAX*1.0+1.0),.001);
+		double RandDest = Ran.Next(); //generates a random number in (0,1)
 		bool foundDest=false;
 		for (int j=0 ; j<12 ; j++)
 		{
@@ -152,4 +159,3 @@ for (int i=0 ; i<12 ; i++)
 printf("Total Vehicles scheduled: %d\n",VIDcounter);
 
 }
-
