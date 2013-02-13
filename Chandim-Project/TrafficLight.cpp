@@ -86,7 +86,7 @@ void TrafficLight:: cyclestate()
                break;        
         }
         curstate = newstate;
-        cout<<"Traffic Light change on Intersection "<<parent->getID()<<" and current state is "<<curstate<<" and time is "<<sim->getNow()<<endl;
+        //cout<<"Traffic Light change on Intersection "<<parent->getID()<<" and current state is "<<curstate<<" and time is "<<sim->getNow()<<endl;
         sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent);  
         
         

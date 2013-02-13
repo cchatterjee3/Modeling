@@ -19,25 +19,25 @@ int main()
 	//Temporary Initialization Place
 	_Topology *Topology = new _Topology();
 
-	/*
+	
 	int VIDcounter=1;
-	VehicleQueue* joinqueue = Topology->I1->NBI;
+	VehicleQueue* joinqueue = Topology->I1->NBI2;
 
-	for ( int t=1 ; t<100 ; t+=100 )
+	for ( int t=0 ; t<100 ; t+=1000 )
 	{
-		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 0, 6);
+		VehicleClass* vehicle=new VehicleClass(VIDcounter++, 0, 4, sim->Now());
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
 
 	cout << Topology->I1->getID() << endl;
 	cin.get() ;
-*/
-
-	scheduleVehicles(Topology, 7200.0);
 
 
+	//scheduleVehicles(Topology, 7200.0);
 
-    sim->StopAt(100);
+
+
+    sim->StopAt(5000);
     sim->Run();
     cin.get() ;
     return 0;

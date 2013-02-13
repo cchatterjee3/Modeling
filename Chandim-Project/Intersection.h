@@ -14,13 +14,28 @@ class Intersection
 	bool haveSignal;
 
 	bool busy; // busy or not
-	dir routingtable[12]; //for routing cars
+	
 
 public:
-	VehicleQueue* EBI;
+	VehicleQueue* EBI1;
+	VehicleQueue* EBI2;
+	VehicleQueue* WBI1;
+	VehicleQueue* WBI2;
+	VehicleQueue* NBI1;
+	VehicleQueue* NBI2;
+	VehicleQueue* SBI1;
+	VehicleQueue* SBI2;
+	
+	dir routingtable[12]; //for routing cars
+	/*VehicleQueue* EBI;
 	VehicleQueue* WBI;
-	VehicleQueue* NBI;
 	VehicleQueue* SBI;
+	VehicleQueue* NBI;*/
+	
+	//int EBIlength;
+	//int WBIlength;
+	int NBIlength;
+	int SBIlength;
 
 	VehicleQueue* ExitQ;
 

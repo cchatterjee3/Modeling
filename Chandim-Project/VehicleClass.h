@@ -3,6 +3,7 @@
 #include "CommonDefs.h"
 
 class VehicleClass;
+class VehicleQueue;
 //typedef std::queue<VehicleClass> VehicleQueue;
 
 class VehicleClass
@@ -24,6 +25,7 @@ class VehicleClass
          void updateDirection (dir Direction);
          
          
+         
          dir getDirection ();
          
 
@@ -35,7 +37,7 @@ class VehicleClass
          
          int getDestination ();
          
-         VehicleClass(int id, int start, int Dest);
+         VehicleClass(int id, int start, int Dest, Time_t starttime);
          VehicleClass();
          ~VehicleClass();
 };

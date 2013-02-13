@@ -1,18 +1,24 @@
 //for get time of the day 
 #include <sys/time.h> 
+#ifdef __WIN32__
+#include <windows.h>
+#include <time.h>
+#endif
 
 #include "RandomNum.h"
 
-#include <stdlib.h>
 
 unsigned long gettime(void)
 {
 	//gives current time for genrating seed for random number
 
-	timeval tim;
+	/*timeval tim;
 	gettimeofday(&tim,NULL);
 	unsigned long t1=tim.tv_sec*1000000.0+tim.tv_usec;
-	return t1; 
+	return t1; */
+	
+	unsigned long int t1 = (long int) time(NULL);
+	return t1;
 }
 
 RandomNumGen::RandomNumGen()

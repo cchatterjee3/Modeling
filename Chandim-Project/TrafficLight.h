@@ -24,6 +24,11 @@ class TrafficLight
               int type; //0 if 3 states and 1 if 6 states
               IntersectionwithSignal* parent; // Intersection it belongs to
       public:
+              int getType()
+              {
+                return type;    
+              }
+              
               state getState()
               {
                     return curstate;      
