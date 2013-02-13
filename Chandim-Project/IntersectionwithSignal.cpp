@@ -64,7 +64,11 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 	  WB=new TrafficLight(WBtype, (state)5, 0, 0, 0, 22.4, 3.7, 74, this);
 	  NB=new TrafficLight(NBtype, (state)5, 8.8, 3.6, 3.6, 34.6, 3.2, 46.1, this);
 	  SB=new TrafficLight(SBtype, (state)5, 11.6, 3.6, 0.5, 36.6, 3.2, 45.3, this);          
-    }	
+    }
+
+	//set traffic lights array
+	TLight[0]=NB; TLight[1]=EB; TLight[2]=SB; TLight[3]=WB;
+
 }
 
 IntersectionwithSignal::~IntersectionwithSignal(void)
@@ -238,15 +242,10 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 
 }
 
-void IntersectionwithSignal::changeSignalTrigger() //checks its own signals 
+void EvictQ(int direction, int lane)
 {
+/*
 
-	/*cout << "In withSignal::changeSignalTrigger , Now="<<sim->getNow() <<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;*/
-
-	//check each Q to see if they can go, schedule a pass if they could
-	//checks EBI
-	VehicleClass* vehicle;
 	if(QCanGo(EBI)==1)
 	{
 		vehicle=EBI->front();
@@ -282,9 +281,182 @@ void IntersectionwithSignal::changeSignalTrigger() //checks its own signals
 		vehicle->setLastQ(SBI);
 		sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 	}
+
+*/
 }
 
-int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a specific Queue
+void IntersectionwithSignal::changeSignalTrigger( int LightID) //checks its own signals 
+{
+	//When a light changes, triggers the relevant Queues to send vehicles out.
+
+	if (TLight[LightID]->getState() == GTR)
+	{
+		this->EvictQ( LightID, 0);
+		this->EvictQ( LightID, 1);
+	}
+	else if (TLight[LightID]->getState() == GLT)
+	{
+		this->EvictQ( LightID, 1);
+	}
+}
+
+
+int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
+	//checks its signals for a specific Queue
+{
+
+	//test whether a certain queue can start sending vehicles out
+	//-1: Q is empty
+	// 0: Light is not green for the direction of the first member of Queue
+	//+1: Yes, the queue is not empty and the trafficc light is green for the first member
+	
+	bool canGo = false;
+	VehicleQueue* Q = Qu[Qdirection][lane];
+
+	if(Q->empty())
+		return -1;
+	
+	dir dest=this->routingtable[Q->front()->getDestination()];
+
+	if(lane==0)
+	{
+		switch (turn(dest, Qdirection))
+		{
+		case -1: //turning right
+
+	}
+
+	//--------------------------------------------
+	if(Q==EBI1)
+	{
+		switch(dest)
+		{
+			case S:
+				if (SBI1->isBusy()==false)
+				   canGo = true;
+				break;
+			case E:
+				canGo=(EB->getState()==GTR) && (!SBI1->isBusy()) && (!SBI2->isBusy()) && (!NBI2->isBusy()) && (!NBI1->isBusy());
+				break;
+		}	
+	}
+	else if (Q==EBI2)
+	{
+       switch (dest)
+       {
+         case E :
+            canGo=(EB->getState()==GTR) && (!SBI1->isBusy()) && (!SBI2->isBusy()) && (!NBI2->isBusy()) && (!NBI1->isBusy());
+	        break;  
+         case N:
+              if (EB->getType())
+                canGo = (EB->getState()==GLT); 
+              else
+              {
+                canGo = (!SBI1->isBusy() && (!SBI2->isBusy()) && (!NBI2->isBusy()) &&(!WBI1->isBusy()) && (!WBI2->isBusy()));   
+              }   
+       }     
+    }
+	//--------------------------------------------
+	if(Q==SBI1)
+	{
+		switch(dest)
+		{
+			case W:
+				if (WBI1->isBusy()==false)
+				   canGo = true;
+				break;
+			case S:
+				canGo=(SB->getState()==GTR) && (!WBI1->isBusy()) && (!WBI2->isBusy()) && (!EBI2->isBusy()) && (!EBI1->isBusy());
+				break;
+		}	
+	}
+	else if (Q==SBI2)
+	{
+       switch (dest)
+       {
+         case S :
+            canGo=(SB->getState()==GTR) && (!WBI1->isBusy()) && (!WBI2->isBusy()) && (!EBI2->isBusy()) && (!EBI1->isBusy());
+	        break;  
+         case E:
+              if (SB->getType())
+                canGo = (SB->getState()==GLT); 
+              else
+              {
+                canGo = (!WBI1->isBusy() && (!WBI2->isBusy()) && (!EBI2->isBusy()) &&(!NBI1->isBusy()) && (!NBI2->isBusy()));   
+              }   
+       }     
+    }
+    //--------------------------------------------
+	if(Q==WBI1)
+	{
+		switch(dest)
+		{
+			case N:
+				if (NBI1->isBusy()==false)
+				   canGo = true;
+				break;
+			case W:
+				canGo=(WB->getState()==GTR) && (!NBI1->isBusy()) && (!NBI2->isBusy()) && (!SBI2->isBusy()) && (!SBI1->isBusy());
+				break;
+		}	
+	}
+	else if (Q==WBI2)
+	{
+       switch (dest)
+       {
+         case W :
+            canGo=(WB->getState()==GTR) && (!NBI1->isBusy()) && (!NBI2->isBusy()) && (!SBI2->isBusy()) && (!SBI1->isBusy());
+	        break;  
+         case S:
+              if (WB->getType())
+                canGo = (WB->getState()==GLT); 
+              else
+              {
+                canGo = (!NBI1->isBusy() && (!NBI2->isBusy()) && (!SBI2->isBusy()) &&(!EBI1->isBusy()) && (!EBI2->isBusy()));   
+              }   
+       }     
+    }
+	//--------------------------------------------
+	if(Q==NBI1)
+	{
+		switch(dest)
+		{
+			case E:
+				if (EBI1->isBusy()==false)
+				   canGo = true;
+				break;
+			case N:
+				canGo=(NB->getState()==GTR) && (!EBI1->isBusy()) && (!EBI2->isBusy()) && (!WBI2->isBusy()) && (!WBI1->isBusy());
+				break;
+		}	
+	}
+	else if (Q==NBI2)
+	{
+       switch (dest)
+       {
+         case N :
+            canGo=(NB->getState()==GTR) && (!EBI1->isBusy()) && (!EBI2->isBusy()) && (!WBI2->isBusy()) && (!WBI1->isBusy());
+	        break;  
+         case W:
+              if (NB->getType())
+                canGo = (NB->getState()==GLT); 
+              else
+              {
+                canGo = (!EBI1->isBusy() && (!EBI2->isBusy()) && (!WBI2->isBusy()) &&(!SBI1->isBusy()) && (!SBI2->isBusy()));   
+              }   
+       }     
+    }
+	
+	if(canGo==true)
+		return 1;
+	else
+		return 0;
+
+}
+
+
+int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //First Version
+	//checks its signals for a specific Queue
 {
 
 	/*cout << "In withSignal::QCanGo  , Now="<<sim->getNow() <<endl;

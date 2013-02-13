@@ -5,7 +5,7 @@ brief definiation of for vehicle queue class ,defined in vehicleQueue.h
 
 #include "VehicleQueue.h"
 
-bool VehicleQueue::setBusy(bool b)
+void VehicleQueue::setBusy(bool b)
 {
   busy = b;     
 }
@@ -31,8 +31,9 @@ void VehicleQueue::push(VehicleClass* V1)
 	Q1.push(V1);
 }
 
-VehicleClass* VehicleQueue::pop()
+void VehicleQueue::pop()
 {
+
 	Q1.pop();
 }
 

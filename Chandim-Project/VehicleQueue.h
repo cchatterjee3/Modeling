@@ -24,11 +24,11 @@ class VehicleQueue
 
 		bool empty();
 		void push(VehicleClass*);
-		VehicleClass* pop();
+		void pop();
 		//int GetMaxLen();
 		int GetLen();
 		bool isBusy();
-		bool setBusy(bool);
+		void setBusy(bool);
 };
 
 #endif

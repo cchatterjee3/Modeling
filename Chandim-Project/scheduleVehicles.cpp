@@ -150,7 +150,7 @@ for (int i=0 ; i<12 ; i++)
 
 		
 		//generating a new vehicle
-		VehicleClass* vehicle=new VehicleClass(++VIDcounter, i, fdest);		
+		VehicleClass* vehicle=new VehicleClass(++VIDcounter, i, fdest, T);		
 		//scheduling all the vehicles
 		sim->Schedule(T, &Intersection::addVehicletoQueue, joininter[i], joinqueue[i], vehicle);
 	}while(T<maxTime); //less than 2 hours

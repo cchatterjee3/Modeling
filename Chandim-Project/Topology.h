@@ -5,6 +5,7 @@
 #include "IntersectionwithSignal.h"
 #include "IntersectionwoSignal.h"
 #include <iostream>
+#include "VehicleQueue.h"
 
 using namespace std;
 

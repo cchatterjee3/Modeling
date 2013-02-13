@@ -7,6 +7,10 @@
 
 //#include "TrafficLight.h"
 
+int Reg(int i);
+
+int turn(dir globalDir, int QDirection);
+
 class Intersection
 {
   protected:
@@ -25,6 +29,8 @@ public:
 	VehicleQueue* NBI2;
 	VehicleQueue* SBI1;
 	VehicleQueue* SBI2;
+
+	VehicleQueue* Qu[4][2];
 	
 	dir routingtable[12]; //for routing cars
 	/*VehicleQueue* EBI;

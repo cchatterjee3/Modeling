@@ -7,6 +7,97 @@
 
 using namespace std;
 
+int reg(int i)
+{
+	if(i>3)
+		return i-4;
+	else if (i<0)
+		return i+4;
+	else
+		return -1;
+}
+
+int turn(dir globalDir, int QDirection)
+{
+	//returns: 
+	//  0 :if vehicle is not turning
+	// -1 :if vehicle turning right
+	//  1 :if vehicle turning left
+	//-100:error
+
+	switch (QDirection)
+	{
+	case 0: //NorthBound
+		switch(globalDir)
+		{
+		case E:
+			return  0; //turn right
+			break;
+		case N:
+			return -1; //no turn, go forward
+			break;
+		case W:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 1: //EastBound
+		switch(globalDir)
+		{
+		case S:
+			return  0; //turn right
+			break;
+		case E:
+			return -1; //no turn, go forward
+			break;
+		case N:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 2: //SouthBound
+		switch(globalDir)
+		{
+		case W:
+			return  0; //turn right
+			break;
+		case S:
+			return -1; //no turn, go forward
+			break;
+		case E:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 3: //NorthBound
+		switch(globalDir)
+		{
+		case E:
+			return  0; //turn right
+			break;
+		case N:
+			return -1; //no turn, go forward
+			break;
+		case W:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	}
+}
+
 Intersection::Intersection(int nID)
 {
 		ID=nID;
@@ -76,7 +167,24 @@ Intersection::Intersection(int nID)
 			cout << "Intersection ID=" << ID << " created with    signal"<<endl;
 		else
 			cout << "Intersection ID=" << ID << " created without signal"<<endl;
-		
+
+		//setting up array of Queues:
+		/*
+			VehicleQueue* EBI1;
+	VehicleQueue* EBI2;
+	VehicleQueue* WBI1;
+	VehicleQueue* WBI2;
+	VehicleQueue* NBI1;
+	VehicleQueue* NBI2;
+	VehicleQueue* SBI1;
+	VehicleQueue* SBI2;
+
+	VehicleQueue* Q[4][2];
+
+	*/
+		Qu[0][0]=NBI1; Qu[1][0]=EBI1; Qu[2][0]=SBI1; Qu[3][0]=WBI1; 
+		Qu[0][1]=NBI2; Qu[1][1]=EBI2; Qu[2][1]=SBI2; Qu[3][1]=WBI2; 
+
 };
 
 Intersection::Intersection(){};

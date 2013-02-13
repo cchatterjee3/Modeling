@@ -45,6 +45,17 @@ TrafficLight::TrafficLight(int typ, state initialState, double Ph1, double Ph2, 
     }
      
 	sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
+
+	//get myID (debug)
+	if(this==parent->NB)
+		myid=0;
+	else if (this==parent->EB)
+		myid=1;
+	else if (this==parent->SB)
+		myid=2;
+	else if (this==parent->WB)
+		myid=3;
+
 }
 
 
@@ -87,7 +98,7 @@ void TrafficLight:: cyclestate()
         }
         curstate = newstate;
         //cout<<"Traffic Light change on Intersection "<<parent->getID()<<" and current state is "<<curstate<<" and time is "<<sim->getNow()<<endl;
-        sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent);  
+		sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent, this->myid);  
         
         
         sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);

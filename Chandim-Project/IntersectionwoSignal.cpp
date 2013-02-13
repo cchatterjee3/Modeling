@@ -2,9 +2,9 @@
 #include "IntersectionwoSignal.h"
 #include <memory.h>
 #include "Simulator.h"
-extern Simulator* sim ;
+#include "VehicleQueue.h"
 
-class VehicleQueue;
+extern Simulator* sim ;
 
 IntersectionwithoutSignal::IntersectionwithoutSignal(int nID) : Intersection(nID)
 {
