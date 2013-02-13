@@ -56,51 +56,51 @@ for (int i=0 ; i<12 ; ++i)
 	{
 		case 0:
 			joininter[i] = Topology->I1;
-			joinqueue[i] = Topology->I1->NBI;
+			joinqueue[i] = Topology->I1->NBI1; //(NBI->NBI1)
 			break;
 		case 1:
 			joininter[i] = Topology->I1;
-			joinqueue[i] = Topology->I1->EBI;
+			joinqueue[i] = Topology->I1->EBI1; //(NBI->NBI1)
 			break;
 		case 2:
 			joininter[i] = Topology->I2;
-			joinqueue[i] = Topology->I2->EBI;
+			joinqueue[i] = Topology->I2->EBI1; //(NBI->NBI1)
 			break;
 		case 3:
 			joininter[i] = Topology->I3;
-			joinqueue[i] = Topology->I3->EBI;
+			joinqueue[i] = Topology->I3->EBI1; //(NBI->NBI1)
 			break;
 		case 4:
 			joininter[i] = Topology->I4;
-			joinqueue[i] = Topology->I4->EBI;
+			joinqueue[i] = Topology->I4->EBI1; //(NBI->NBI1)
 			break;
 		case 5:
 			joininter[i] = Topology->I5;
-			joinqueue[i] = Topology->I5->EBI;
+			joinqueue[i] = Topology->I5->EBI1; //(NBI->NBI1)
 			break;
 		case 6:
 			joininter[i] = Topology->I5;
-			joinqueue[i] = Topology->I5->SBI;
+			joinqueue[i] = Topology->I5->SBI1; //(NBI->NBI1)
 			break;
 		case 7:
 			joininter[i] = Topology->I5;
-			joinqueue[i] = Topology->I5->WBI;
+			joinqueue[i] = Topology->I5->WBI1; //(NBI->NBI1)
 			break;
 		case 8:
 			joininter[i] = Topology->I4;
-			joinqueue[i] = Topology->I4->WBI;
+			joinqueue[i] = Topology->I4->WBI1; //(NBI->NBI1)
 			break;
 		case 9:
 			joininter[i] = Topology->I3;
-			joinqueue[i] = Topology->I3->WBI;
+			joinqueue[i] = Topology->I3->WBI1; //(NBI->NBI1)
 			break;
 		case 10:
 			joininter[i] = Topology->I2;
-			joinqueue[i] = Topology->I2->WBI;
+			joinqueue[i] = Topology->I2->WBI1; //(NBI->NBI1)
 			break;
 		case 11:
 			joininter[i] = Topology->I1;
-			joinqueue[i] = Topology->I1->WBI;
+			joinqueue[i] = Topology->I1->WBI1; //(NBI->NBI1)
 			break;
 	}
 }

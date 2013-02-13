@@ -4,6 +4,8 @@
 #include "Simulator.h"
 extern Simulator* sim ;
 
+class VehicleQueue;
+
 IntersectionwithoutSignal::IntersectionwithoutSignal(int nID) : Intersection(nID)
 {
 }
@@ -63,8 +65,8 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 			cout << "joining northern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
 			cout << "press any key to continue..."<<endl;	cin.get() ;
 
-			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
-				NInter , NInter->NBI , vehicle); //(debug)
+/*(NBI->NBI1)			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+				NInter , NInter->NBI , vehicle); //(debug) */
 			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
 		}
 	}
@@ -84,8 +86,8 @@ void IntersectionwithoutSignal::VehicleDeparture (VehicleClass* vehicle) //Depar
 			cout << "joining southern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
 			cout << "press any key to continue..."<<endl;	cin.get() ;
 
-			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
-				SInter , SInter->NBI , vehicle); //(debug)
+/*(NBI->NBI1)			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+				SInter , SInter->NBI , vehicle); //(debug) */
 			cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<endl;
 		}
 	}
