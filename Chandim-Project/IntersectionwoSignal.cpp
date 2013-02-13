@@ -26,7 +26,7 @@ void IntersectionwithoutSignal::VehiclePass(VehicleClass* vehicle) //Vehicle pas
 	cout << "In NoSignal::VehiclePass with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
-	dir dest;
+	//dir dest; (debug)
 	busy=true;
 
 	//schedule vehicle deprature in service time

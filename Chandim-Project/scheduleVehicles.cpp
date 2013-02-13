@@ -7,12 +7,17 @@
 
 #include "Simulator.h"
 #include "Topology.h"
-#include "RandomNum.h"
 
-#ifdef __WIN32__
-        #include <time.h>
-        #include <windows.h>
+/*
+#ifdef _WIN32
+	#include <windows.h>
+	#include <time.h>
+#else
+	#include <sys/time.h> 
 #endif
+*/
+
+#include "RandomNum.h"
 
 
 extern Simulator* sim ;

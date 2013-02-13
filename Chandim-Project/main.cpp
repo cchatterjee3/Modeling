@@ -29,6 +29,7 @@ int main()
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
 
+
 	cout << Topology->I1->getID() << endl;
 	cin.get() ;
 

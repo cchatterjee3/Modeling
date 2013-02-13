@@ -1,8 +1,9 @@
 //for get time of the day 
-#include <sys/time.h> 
-#ifdef __WIN32__
-#include <windows.h>
-#include <time.h>
+#ifdef _WIN32
+	#include <windows.h>
+	#include <time.h>
+#else
+	#include <sys/time.h> 
 #endif
 
 #include "RandomNum.h"

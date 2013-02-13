@@ -7,9 +7,6 @@
 
 //#include "TrafficLight.h"
 
-int Reg(int i);
-
-int turn(dir globalDir, int QDirection);
 
 class Intersection
 {

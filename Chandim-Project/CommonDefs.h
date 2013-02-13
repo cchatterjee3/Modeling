@@ -19,5 +19,8 @@ enum dir {N, S, E, W};
 class VehicleClass;
 //typedef std::queue<VehicleClass* > VehicleQueue;
 
+int reg(int i);
+int turn(dir globalDir, int QDirection);
+
 
 #endif

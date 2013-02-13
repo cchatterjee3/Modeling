@@ -1,3 +1,4 @@
+//#pragma once
 /*
 Brief implementation of number genrator and utilities 
 

@@ -7,97 +7,6 @@
 
 using namespace std;
 
-int reg(int i)
-{
-	if(i>3)
-		return i-4;
-	else if (i<0)
-		return i+4;
-	else
-		return -1;
-}
-
-int turn(dir globalDir, int QDirection)
-{
-	//returns: 
-	//  0 :if vehicle is not turning
-	// -1 :if vehicle turning right
-	//  1 :if vehicle turning left
-	//-100:error
-
-	switch (QDirection)
-	{
-	case 0: //NorthBound
-		switch(globalDir)
-		{
-		case E:
-			return  0; //turn right
-			break;
-		case N:
-			return -1; //no turn, go forward
-			break;
-		case W:
-			return +1; //turn left
-			break;
-		default:
-			return -100;
-		}
-		break;
-
-	case 1: //EastBound
-		switch(globalDir)
-		{
-		case S:
-			return  0; //turn right
-			break;
-		case E:
-			return -1; //no turn, go forward
-			break;
-		case N:
-			return +1; //turn left
-			break;
-		default:
-			return -100;
-		}
-		break;
-
-	case 2: //SouthBound
-		switch(globalDir)
-		{
-		case W:
-			return  0; //turn right
-			break;
-		case S:
-			return -1; //no turn, go forward
-			break;
-		case E:
-			return +1; //turn left
-			break;
-		default:
-			return -100;
-		}
-		break;
-
-	case 3: //NorthBound
-		switch(globalDir)
-		{
-		case E:
-			return  0; //turn right
-			break;
-		case N:
-			return -1; //no turn, go forward
-			break;
-		case W:
-			return +1; //turn left
-			break;
-		default:
-			return -100;
-		}
-		break;
-
-	}
-}
-
 Intersection::Intersection(int nID)
 {
 		ID=nID;
@@ -190,3 +99,95 @@ Intersection::Intersection(int nID)
 Intersection::Intersection(){};
 Intersection::~Intersection(){};
 
+int reg(int i)
+{
+	if(i>3)
+		return i-4;
+	else if (i<0)
+		return i+4;
+	else
+		return -1;
+}
+
+int turn(dir globalDir, int QDirection)
+{
+	//returns: 
+	//  0 : if vehicle must NOT turn
+	// -1 : if vehicle must turn right
+	//  1 : if vehicle must turn left
+	//-100: error
+
+	switch (QDirection)
+	{
+	case 0: //NorthBound
+		switch(globalDir)
+		{
+		case E:
+			return -1; //turn right
+			break;
+		case N:
+			return  0; //no turn, go forward
+			break;
+		case W:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 1: //EastBound
+		switch(globalDir)
+		{
+		case S:
+			return -1; //turn right
+			break;
+		case E:
+			return  0; //no turn, go forward
+			break;
+		case N:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 2: //SouthBound
+		switch(globalDir)
+		{
+		case W:
+			return -1; //turn right
+			break;
+		case S:
+			return  0; //no turn, go forward
+			break;
+		case E:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+
+	case 3: //WestBound
+		switch(globalDir)
+		{
+		case N:
+			return -1; //turn right
+			break;
+		case W:
+			return  0; //no turn, go forward
+			break;
+		case S:
+			return +1; //turn left
+			break;
+		default:
+			return -100;
+		}
+		break;
+	
+	default:
+		return -100;
+	}
+}

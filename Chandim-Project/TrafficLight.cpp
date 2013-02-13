@@ -13,7 +13,7 @@ TrafficLight::TrafficLight()
 	type=0;
 }
 
-TrafficLight::TrafficLight(int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal* p)
+TrafficLight::TrafficLight(int id, int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal* p)
 {
 	type	  = typ; 			//set the type
 	curstate  = initialState;	//set the initial state of the trafficlight
@@ -43,18 +43,14 @@ TrafficLight::TrafficLight(int typ, state initialState, double Ph1, double Ph2, 
            timetoNextSignal = RTR;
            break;        
     }
-     
-	sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
 
-	//get myID (debug)
-	if(this==parent->NB)
-		myid=0;
-	else if (this==parent->EB)
-		myid=1;
-	else if (this==parent->SB)
-		myid=2;
-	else if (this==parent->WB)
-		myid=3;
+	if(id>-1 && id<4)
+		myid=id;
+	else
+	{
+		printf("error in getting myid!\n");
+		exit(1);
+	}
 
 }
 
@@ -98,6 +94,7 @@ void TrafficLight:: cyclestate()
         }
         curstate = newstate;
         //cout<<"Traffic Light change on Intersection "<<parent->getID()<<" and current state is "<<curstate<<" and time is "<<sim->getNow()<<endl;
+		
 		sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent, this->myid);  
         
         
