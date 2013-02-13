@@ -3,6 +3,7 @@
 #include "TrafficLight.h"
 #include "IntersectionwithSignal.h"
 #include "CommonDefs.h"
+#include "VehicleQueue.h"
 
 #include <memory.h>
 #include "Simulator.h"
@@ -116,8 +117,30 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			cout << "joining northern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
 			cout << "press any key to continue..."<<endl;	cin.get() ;
 
-			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
-				NInter , NInter->NBI , vehicle); //(debug)
+            dir futuredir = NInter->routingtable[vehicle->getDestination()];
+            switch (futuredir)
+            {
+               case N:
+                 if (NInter->NBI1->GetLen()<NInter->NBI2->GetLen()) 
+                 {
+    			    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  NInter , NInter->NBI1 , vehicle); //(debug)
+                 }
+                 else
+                 {
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  NInter , NInter->NBI2 , vehicle);   
+                 }
+                 break;
+               case E:
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  NInter , NInter->NBI1 , vehicle); 
+    				  break;
+               case W:
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  NInter , NInter->NBI2 , vehicle); 
+    				  break;
+            }
 		}
 	}
 	else if (dest==S)
@@ -137,8 +160,30 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			cout << "joining southern intersection ID="<< vehicle->getID()<<" , next intersection ID: "<<NInter->getID()<< " in time "<<sim->getNow()+roadSegTime  <<endl;
 			cout << "press any key to continue..."<<endl;	cin.get() ;
 
-			sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
-				SInter , SInter->SBI , vehicle); //(debug)
+			dir futuredir = SInter->routingtable[vehicle->getDestination()];
+            switch (futuredir)
+            {
+               case N:
+                 if (SInter->SBI1->GetLen()<SInter->SBI2->GetLen()) 
+                 {
+    			    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  SInter , SInter->SBI1 , vehicle); //(debug)
+                 }
+                 else
+                 {
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  SInter , SInter->SBI2 , vehicle);   
+                 }
+                 break;
+               case E:
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  SInter , SInter->SBI2 , vehicle); 
+    				  break;
+               case W:
+                    sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue,
+    				  SInter , SInter->SBI1 , vehicle); 
+    				  break;
+            }
 		}
 	}
 	else
@@ -174,7 +219,7 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 	vehicle->setLastQ(joinqueue);
 	int Qstate =QCanGo(joinqueue);
 
-	if(  Qstate==1 && !busy )
+	if(  Qstate==1 )
 	{
 		VehicleClass* vehicle=joinqueue->front();
 		joinqueue->pop();
@@ -250,7 +295,7 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 	// 0: Light is not green for the direction of the first member of Queue
 	//+1: Yes, the queue is not empty and the trafficc light is green
 	
-	bool canGo;
+	bool canGo = false;
 
 	if(Q->empty())
 	{
@@ -263,71 +308,126 @@ int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //checks its signals for a s
 	dir dest=this->routingtable[Q->front()->getDestination()];
 
 	//--------------------------------------------
-	if(Q==EBI)
+	if(Q==EBI1)
 	{
 		switch(dest)
 		{
 			case S:
-				canGo=(EB->getState()==GTR);
+				if (SBI1->isBusy()==false)
+				   canGo = true;
 				break;
 			case E:
-				canGo=(EB->getState()==GTR);
+				canGo=(EB->getState()==GTR) && (!SBI1->isBusy()) && (!SBI2->isBusy()) && (!NBI2->isBusy()) && (!NBI1->isBusy());
 				break;
-			case N:
-				canGo=(EB->getState()==GLT); // or, the other direction is not busy(debug)
-				break;
-		}
+		}	
 	}
+	else if (Q==EBI2)
+	{
+       switch (dest)
+       {
+         case E :
+            canGo=(EB->getState()==GTR) && (!SBI1->isBusy()) && (!SBI2->isBusy()) && (!NBI2->isBusy()) && (!NBI1->isBusy());
+	        break;  
+         case N:
+              if (EB->getType())
+                canGo = (EB->getState()==GLT); 
+              else
+              {
+                canGo = (!SBI1->isBusy() && (!SBI2->isBusy()) && (!NBI2->isBusy()) &&(!WBI1->isBusy()) && (!WBI2->isBusy()));   
+              }   
+       }     
+    }
 	//--------------------------------------------
-	else if(Q==WBI)
+	if(Q==SBI1)
 	{
 		switch(dest)
 		{
-			case N:
-				canGo=(WB->getState()==GTR);
-				break;
 			case W:
-				canGo=(WB->getState()==GTR);
+				if (WBI1->isBusy()==false)
+				   canGo = true;
 				break;
 			case S:
-				canGo=(WB->getState()==GLT);
+				canGo=(SB->getState()==GTR) && (!WBI1->isBusy()) && (!WBI2->isBusy()) && (!EBI2->isBusy()) && (!EBI1->isBusy());
 				break;
-		}
+		}	
 	}
-
-
+	else if (Q==SBI2)
+	{
+       switch (dest)
+       {
+         case S :
+            canGo=(SB->getState()==GTR) && (!WBI1->isBusy()) && (!WBI2->isBusy()) && (!EBI2->isBusy()) && (!EBI1->isBusy());
+	        break;  
+         case E:
+              if (SB->getType())
+                canGo = (SB->getState()==GLT); 
+              else
+              {
+                canGo = (!WBI1->isBusy() && (!WBI2->isBusy()) && (!EBI2->isBusy()) &&(!NBI1->isBusy()) && (!NBI2->isBusy()));   
+              }   
+       }     
+    }
+    //--------------------------------------------
+	if(Q==WBI1)
+	{
+		switch(dest)
+		{
+			case N:
+				if (NBI1->isBusy()==false)
+				   canGo = true;
+				break;
+			case W:
+				canGo=(WB->getState()==GTR) && (!NBI1->isBusy()) && (!NBI2->isBusy()) && (!SBI2->isBusy()) && (!SBI1->isBusy());
+				break;
+		}	
+	}
+	else if (Q==WBI2)
+	{
+       switch (dest)
+       {
+         case W :
+            canGo=(WB->getState()==GTR) && (!NBI1->isBusy()) && (!NBI2->isBusy()) && (!SBI2->isBusy()) && (!SBI1->isBusy());
+	        break;  
+         case S:
+              if (WB->getType())
+                canGo = (WB->getState()==GLT); 
+              else
+              {
+                canGo = (!NBI1->isBusy() && (!NBI2->isBusy()) && (!SBI2->isBusy()) &&(!EBI1->isBusy()) && (!EBI2->isBusy()));   
+              }   
+       }     
+    }
 	//--------------------------------------------
-	else if(Q==NBI)
+	if(Q==NBI1)
 	{
 		switch(dest)
 		{
 			case E:
-				canGo=true;
+				if (EBI1->isBusy()==false)
+				   canGo = true;
 				break;
 			case N:
-				canGo=(NB->getState()==GTR);
+				canGo=(NB->getState()==GTR) && (!EBI1->isBusy()) && (!EBI2->isBusy()) && (!WBI2->isBusy()) && (!WBI1->isBusy());
 				break;
-			case W:
-				canGo=(NB->getState()==GLT);
-				break;
-		}
+		}	
 	}
-	//--------------------------------------------
-	else if(Q==SBI)
+	else if (Q==NBI2)
 	{
-		switch(dest)
-		{
-			case W:
-				canGo=(SB->getState()==GTR);
-				break;
-			case S:
-				canGo=(SB->getState()==GTR);
-				break;
-			case E:
-				canGo=(SB->getState()==GLT);
-				break;
-		}
-	}
+       switch (dest)
+       {
+         case N :
+            canGo=(NB->getState()==GTR) && (!EBI1->isBusy()) && (!EBI2->isBusy()) && (!WBI2->isBusy()) && (!WBI1->isBusy());
+	        break;  
+         case W:
+              if (NB->getType())
+                canGo = (NB->getState()==GLT); 
+              else
+              {
+                canGo = (!EBI1->isBusy() && (!EBI2->isBusy()) && (!WBI2->isBusy()) &&(!SBI1->isBusy()) && (!SBI2->isBusy()));   
+              }   
+       }     
+    }
+	
 	if(canGo==true)
 		return 1;
 	else

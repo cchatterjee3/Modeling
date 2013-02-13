@@ -3,6 +3,7 @@
 #include "CommonDefs.h"
 
 class VehicleClass;
+class VehicleQueue;
 //typedef std::queue<VehicleClass> VehicleQueue;
 
 class VehicleClass

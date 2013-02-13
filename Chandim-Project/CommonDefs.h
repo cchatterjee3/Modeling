@@ -17,7 +17,7 @@ enum state {GLT, YLT, RLT, GTR, YTR, RTR};
 enum dir {N, S, E, W};
 //#include "VehicleClass.h"
 class VehicleClass;
-typedef std::queue<VehicleClass* > VehicleQueue;
+//typedef std::queue<VehicleClass* > VehicleQueue;
 
 
 #endif

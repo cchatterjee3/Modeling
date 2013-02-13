@@ -2,6 +2,7 @@
 
 #include "Intersection.h"
 #include "CommonDefs.h"
+#include "VehicleQueue.h"
 #include <memory.h>
 
 using namespace std;
@@ -20,18 +21,21 @@ Intersection::Intersection(int nID)
 				break;
 		}
 		//Queues------------------------------------------
-		EBI=new VehicleQueue;
-		WBI=new VehicleQueue;
-		NBI=new VehicleQueue;
-		SBI=new VehicleQueue;
+		EBI1=new VehicleQueue;
+		WBI1=new VehicleQueue;
+		EBI2=new VehicleQueue;
+		WBI2=new VehicleQueue;
+		NBI1=new VehicleQueue;
+		SBI1=new VehicleQueue;
+		NBI2=new VehicleQueue;
+		SBI2=new VehicleQueue;
 		
-		EBIlength = 25;
-		WBIlength = 25;
-		SBIlength = 25;
 		NBIlength = 25;
+		SBIlength = 25;
+		
 		
 		//initialize routing table
-		//memcpy(routingtable, table, 12*sizeof(dir));
+		
 		switch (ID){
 			
 			case 1: //(debug)

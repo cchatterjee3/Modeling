@@ -21,7 +21,7 @@ int main()
 
 	
 	int VIDcounter=1;
-	VehicleQueue* joinqueue = Topology->I1->NBI;
+	VehicleQueue* joinqueue = Topology->I1->NBI2;
 
 	for ( int t=0 ; t<100 ; t+=1000 )
 	{
