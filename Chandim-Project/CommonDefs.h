@@ -9,7 +9,7 @@
 #define startToPass  2.0 //when a queue is empty and a vehicle arrives, it takes this much to depart
 #define LPassTime  3.0 //service time to turn left in seconds (debug)
 #define roadSegTime  36.0 //time to travel one road segment
-
+#define checkQinterval = 3.0 // if the next Q is full, check again in this amout of time
 
 
 typedef double Time_t;

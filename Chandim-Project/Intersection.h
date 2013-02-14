@@ -55,6 +55,6 @@ public:
 
     int getQdirection(VehicleQueue* Q);
     int getQlane(VehicleQueue* Q);
-
+	VehicleQueue* NextQ(VehicleQueue* currentQ, VehicleClass* vehicle);
 };
 

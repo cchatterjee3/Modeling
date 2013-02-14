@@ -222,7 +222,6 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
     int check1=ID;
     int check2=vehicle->getID();
     
-    
 	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
@@ -262,7 +261,14 @@ void IntersectionwithSignal::EvictQ(VehicleQueue* joinqueue)
     cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << endl;
     cin.get();
     
-    
+	int Qdirection=getQdirection(joinqueue);
+	int Qlane=getQlane(joinqueue);
+	int QState=QCanGo(Qdirection, Qlane);
+	if (QState==1) //Queue is not empty, and the vehicle can go
+	{
+		//if(
+		//sim->Schedule(startToPass, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
+	}
 /*
 
 	if(QCanGo(EBI)==1)
@@ -326,7 +332,6 @@ void IntersectionwithSignal::changeSignalTrigger( int LightID) //checks its own 
     }
 }
 
-
 int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
 	//checks its signals for a specific Queue
 {
@@ -369,7 +374,6 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
 		exit(1); //exit with error
 
 }
-
 
 int IntersectionwithSignal::QCanGo(VehicleQueue* Q) //First Version
 	//checks its signals for a specific Queue
