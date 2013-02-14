@@ -19,6 +19,7 @@ enum dir {N, S, E, W};
 class VehicleClass;
 //typedef std::queue<VehicleClass* > VehicleQueue;
 
+//these 2 definitions in intersection.cpp
 int reg(int i);
 int turn(dir globalDir, int QDirection);
 

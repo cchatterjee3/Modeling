@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <memory.h>
 #include <queue>
+#include <stdio.h>
+
 #include "TrafficLight.h"
 #include "IntersectionwithSignal.h"
 #include "CommonDefs.h"
@@ -217,12 +219,22 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 
+    int check1=ID;
+    int check2=vehicle->getID();
+    
+    
 	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 
 	joinqueue->push(vehicle);
 	vehicle->setLastQ(joinqueue);
-	int Qstate =QCanGo(joinqueue);
+    if(joinqueue->empty()) //(debug)
+    {
+        cout << "joinqueue is empty, evictQ called";
+        this->EvictQ(joinqueue);
+    }
+
+/*	int Qstate =QCanGo(joinqueue);
 
 	if(  Qstate==1 )
 	{
@@ -240,11 +252,17 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
     {
         cout<<"Waiting at Signal at "<<this->getID()<<endl; cin.get();
     }
+*/
+
 
 }
 
-void IntersectionwithSignal::EvictQ(int direction, int lane)
+void IntersectionwithSignal::EvictQ(VehicleQueue* joinqueue)
 {
+    cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << endl;
+    cin.get();
+    
+    
 /*
 
 	if(QCanGo(EBI)==1)
@@ -292,13 +310,20 @@ void IntersectionwithSignal::changeSignalTrigger( int LightID) //checks its own 
 
 	if (TLight[LightID]->getState() == GTR)
 	{
-		this->EvictQ( LightID, 0);
-		this->EvictQ( LightID, 1);
+        cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
+
+		this->EvictQ( Qu[LightID][0] );
+		this->EvictQ( Qu[LightID][1] );
 	}
 	else if (TLight[LightID]->getState() == GLT)
 	{
-		this->EvictQ( LightID, 1);
+        cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
+		this->EvictQ( Qu[LightID][1]);
 	}
+    else
+    {
+        cout << "nobody called - ID=" << this->getID() << " light: " << LightID << endl;
+    }
 }
 
 

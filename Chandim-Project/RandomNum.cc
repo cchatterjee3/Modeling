@@ -4,6 +4,8 @@
 	#include <time.h>
 #else
 	#include <sys/time.h> 
+	#include <time.h> 
+        #include <stdlib.h>
 #endif
 
 #include "RandomNum.h"

@@ -25,7 +25,7 @@ class IntersectionwithSignal : public Intersection
          void VehicleDeparture (VehicleClass* vehicle); //Depart
          virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle); //Adds to outgoing queue or removes vehicles 
          void changeSignalTrigger( int LightID); //checks its own signals 
-		 void EvictQ (int direction, int lane);
+		 void EvictQ (VehicleQueue* joinqueue);
 		 int QCanGo (VehicleQueue* Q );
 		 int QCanGo (int direction, int lane);
 

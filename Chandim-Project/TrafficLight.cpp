@@ -2,7 +2,8 @@
 #include "CommonDefs.h"
 #include "IntersectionwithSignal.h"
 #include <iostream>
-
+#include <stdlib.h>
+#include <stdio.h>
 using namespace std;
 
 
@@ -52,6 +53,12 @@ TrafficLight::TrafficLight(int id, int typ, state initialState, double Ph1, doub
 		exit(1);
 	}
 
+    int check1 = parent->getID();
+    
+	sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
+
+
+
 }
 
 
@@ -97,8 +104,10 @@ void TrafficLight:: cyclestate()
 		
 		sim->Schedule(0, &IntersectionwithSignal::changeSignalTrigger, parent, this->myid);  
         
+        int check1=parent->getID();  //(debug)
         
         sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
 //	return (state)(  (   (curstate+1)%((type+1)*3)  ) +  ((1-type)*3)  );
+		cout << "ID: " << myid << " : cyclestate, parent=" << parent->getID()<<" time="<<sim->getNow() << endl;
 }
 

@@ -94,6 +94,7 @@ Intersection::Intersection(int nID)
 		Qu[0][0]=NBI1; Qu[1][0]=EBI1; Qu[2][0]=SBI1; Qu[3][0]=WBI1; 
 		Qu[0][1]=NBI2; Qu[1][1]=EBI2; Qu[2][1]=SBI2; Qu[3][1]=WBI2; 
 
+        
 };
 
 Intersection::Intersection(){};
@@ -190,4 +191,28 @@ int turn(dir globalDir, int QDirection)
 	default:
 		return -100;
 	}
+}
+
+int Intersection::getQdirection(VehicleQueue* Q)//, Intersection* Inter)
+{
+    if(Q==this->NBI1 || Q==this->NBI2)
+        return 0;
+    else if(Q==this->EBI1 || Q==this->EBI2)
+        return 1;
+    else if(Q==this->SBI1 || Q==this->SBI2)
+        return 2;
+    else if(Q==this->WBI1 || Q==this->WBI2)
+        return 3;
+    else    //does not exist
+        return -1;
+}
+
+int Intersection::getQlane(VehicleQueue* Q)//, Intersection* Inter)
+{
+    if(Q==this->NBI1 || Q==this->EBI1 || Q==this->SBI1 || Q==this->WBI1)
+        return 0;
+    else if(Q==this->NBI2 || Q==this->EBI2 || Q==this->SBI2 || Q==this->WBI2)
+        return 1;
+    else
+        return -1;
 }

@@ -38,7 +38,7 @@ int main()
 
 
 
-    sim->StopAt(5000);
+    sim->StopAt(500);
     sim->Run();
     cin.get() ;
     return 0;

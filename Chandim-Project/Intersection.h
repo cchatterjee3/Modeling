@@ -53,5 +53,8 @@ public:
 
 	int getID()	{return ID;}
 
+    int getQdirection(VehicleQueue* Q);
+    int getQlane(VehicleQueue* Q);
+
 };
 
