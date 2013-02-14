@@ -116,12 +116,15 @@ VehicleQueue* Intersection::NextQ(VehicleQueue* currentQ, VehicleClass* vehicle)
 		return NULL; //the vehicle will not have a next queue under these conditions
 
 	Intersection * NextInter;
+	
 	if( futureQDir==0)
 		NextInter=this->NInter;
 	else
 		NextInter=this->SInter;
+
 	dir futuredir = NextInter->routingtable[vehicle->getDestination()];
 	int futureTurn=turn(futuredir,futureQDir);
+	
 	if(futureTurn == -1)//turning right
 		int futureLane=0;
 	else if(futureTurn == +1)//turning left
