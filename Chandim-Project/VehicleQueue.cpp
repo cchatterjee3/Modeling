@@ -5,14 +5,12 @@ brief definiation of for vehicle queue class ,defined in vehicleQueue.h
 
 #include "VehicleQueue.h"
 
-void VehicleQueue::setBusy(bool b)
-{
-  busy = b;     
-}
-
 VehicleQueue::VehicleQueue()
 {
-	//length = len;
+	maxLength = 15; //(debug)
+    //set the time of last evicted 
+    LastSentCar=-1;
+	length=0;
 
 }
 
@@ -37,17 +35,17 @@ void VehicleQueue::pop()
 	Q1.pop();
 }
 
-/*int VehicleQueue::GetMaxLen()
+int VehicleQueue::GetMaxLen()
 {
-	return length;
-}*/
+	return maxLength;
+}
 
 int VehicleQueue::GetLen()
 {
-	return (int) Q1.size();
+	return length;
 }
 
 bool VehicleQueue::isBusy()
 {
-	return busy;
+	return busy!=0;
 }

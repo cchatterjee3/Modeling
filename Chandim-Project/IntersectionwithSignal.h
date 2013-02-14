@@ -4,7 +4,6 @@
 #include "TrafficLight.h"
 #include "Intersection.h"
 
-
 //class TrafficLight;
 
 class IntersectionwithSignal : public Intersection
@@ -19,15 +18,15 @@ class IntersectionwithSignal : public Intersection
          TrafficLight* NB;
          TrafficLight* SB;
 		 TrafficLight* TLight[4] ;
-
+                 
          //void VehicleArrival(VehicleClass* vehicle);//Add to queue
-         void VehiclePass(VehicleClass* vehicle); //Vehicle passes through intersection
+         void VehiclePass(VehicleClass* vehicle, int Turn); //Vehicle passes through intersection
          void VehicleDeparture (VehicleClass* vehicle); //Depart
          virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle); //Adds to outgoing queue or removes vehicles 
          void changeSignalTrigger( int LightID); //checks its own signals 
 		 void EvictQ (VehicleQueue* joinqueue);
-		 int QCanGo (VehicleQueue* Q );
 		 int QCanGo (int direction, int lane);
+		 int QCanGo (VehicleQueue* Q );
 
          //constructor:
          	/*

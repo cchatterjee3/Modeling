@@ -14,10 +14,16 @@ class VehicleQueue
 		//to hold the list of the queues
 		std::queue<VehicleClass* > Q1;
 		
-		bool busy;
+        int maxLength;
 
 	public:
-		//constructor
+
+		int busy;
+
+        int length;         //instantaneuous length of the queue
+        double LastSentCar;
+
+        //constructor
 		VehicleQueue();
 
 		VehicleClass* front();
@@ -25,10 +31,9 @@ class VehicleQueue
 		bool empty();
 		void push(VehicleClass*);
 		void pop();
-		//int GetMaxLen();
-		int GetLen();
+		int  GetMaxLen();
+		int  GetLen();
 		bool isBusy();
-		void setBusy(bool);
 };
 
 #endif

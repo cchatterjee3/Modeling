@@ -1,5 +1,7 @@
 #include <iostream>
 
+#include <stdlib.h>
+#include <stdio.h>
 #include "Intersection.h"
 #include "CommonDefs.h"
 #include "VehicleQueue.h"
@@ -105,17 +107,20 @@ int Intersection::getQlane(VehicleQueue* Q)//, Intersection* Inter)
         return -1;
 }
 
-VehicleQueue* Intersection::NextQ(VehicleQueue* currentQ, VehicleClass* vehicle)
+void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Intersection *  NextInter, VehicleQueue * FutureQ, bool & isfull, int & Turn)
 { 
 	// this function returns the queue pointer to this vehicle's next q(the one in the next intersection)
 	// NULL means the vehicle will be exiting the system
 	int curQDir=Intersection::getQdirection(currentQ);	//current Q ID
 	dir curdir=this->routingtable[vehicle->getDestination()]; //current direction from routing table
-	int futureQDir=curQDir+turn(curdir,curQDir); //future Q ID
+    
+    Turn=turn(curdir,curQDir);
+	
+    int futureQDir=curQDir+Turn; //future Q ID
 	if( futureQDir==1 || futureQDir==3 || (ID==5 && futureQDir==0 ) || (ID==1 && futureQDir==2 ) )
-		return NULL; //the vehicle will not have a next queue under these conditions
+		FutureQ = NULL; //the vehicle will not have a next queue under these conditions
 
-	Intersection * NextInter;
+	;
 	
 	if( futureQDir==0)
 		NextInter=this->NInter;
@@ -125,19 +130,34 @@ VehicleQueue* Intersection::NextQ(VehicleQueue* currentQ, VehicleClass* vehicle)
 	dir futuredir = NextInter->routingtable[vehicle->getDestination()];
 	int futureTurn=turn(futuredir,futureQDir);
 	
+    int Lane0Len = NextInter->Qu[futureQDir][0]->GetLen();
+    int Lane1Len = NextInter->Qu[futureQDir][1]->GetLen();
+
+    if(Lane0Len + Lane1Len  >=  Qu[futureQDir][0]->GetMaxLen() + Qu[futureQDir][1]->GetMaxLen() )
+        isfull=true;
+    else
+        isfull=false;
+    
+    int futureLane;
+    
 	if(futureTurn == -1)//turning right
-		int futureLane=0;
+		futureLane=0;
 	else if(futureTurn == +1)//turning left
-		int futureLane=1;
+		futureLane=1;
 	else if(futureTurn == 0)//going forward
 	{
-		if(NextInter->Qu[futureQDir][0]->GetLen() > Qu[futureQDir][1]->GetLen())
-			return Qu[futureQDir][1];
+		if(Lane0Len > Lane1Len)
+			futureLane=1;
 		else
-			return Qu[futureQDir][0];
+    		futureLane=0;
 	}
-
-
+    else
+    {
+        printf("there is an error in NextQInfo!\n");
+        futureLane=-1;
+    }
+    
+    FutureQ = NextInter->Qu[futureQDir][futureLane];
 
 }
 
