@@ -45,16 +45,22 @@ public:
 	Intersection* NInter;	//neighboring intersection in the North
 	Intersection* SInter;	//neighboring intersection in the South
 	
-
-	virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle)=0;
 	Intersection();
 	Intersection(int);
 	~Intersection();
 
 	int getID()	{return ID;}
+	
+	void VehiclePass(VehicleClass* vehicle, int Turn); //Vehicle passes through intersection
+	void VehicleDeparture (VehicleClass* vehicle); //Depart
+	void EvictQ (VehicleQueue* joinqueue);
+
+	virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle)=0;
+	virtual int  QCanGo (int direction, int lane)=0; 
 
     int getQdirection(VehicleQueue* Q);
     int getQlane(VehicleQueue* Q);
 	void NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Intersection * &  NextInter, VehicleQueue * & FutureQ, bool & isfull, int & Turn);
+
 };
 
