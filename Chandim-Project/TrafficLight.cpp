@@ -107,7 +107,7 @@ void TrafficLight:: cyclestate()
         int check1=parent->getID();  //(debug)
         
         sim->Schedule(timetoNextSignal, &TrafficLight::cyclestate, this);
-//	return (state)(  (   (curstate+1)%((type+1)*3)  ) +  ((1-type)*3)  );
-		cout << "ID: " << myid << " : cyclestate, parent=" << parent->getID()<<" time="<<sim->getNow() << endl;
+		//return (state)(  (   (curstate+1)%((type+1)*3)  ) +  ((1-type)*3)  );
+		//cout << "ID: " << myid << " : cyclestate, parent=" << parent->getID()<<" time="<<sim->getNow() << endl;
 }
 

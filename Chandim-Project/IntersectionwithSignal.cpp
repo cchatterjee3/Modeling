@@ -8,7 +8,6 @@
 #include "IntersectionwithSignal.h"
 #include "CommonDefs.h"
 #include "VehicleQueue.h"
-
 #include "Simulator.h"
 
 extern Simulator* sim ;
@@ -82,13 +81,13 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 void IntersectionwithSignal::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes through intersection
 {
 
-	cout << "In withSignal::VehiclePass with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cout << "In withSignal::VehiclePass with vehicle ID="<< vehicle->getID()<< " , Intersection:"<< ID << ", Now="<<sim->getNow() <<endl;
 	cout << "press any key to continue..."<<endl;	cin.get() ;
 	
 	// setting queue to busy
 	if(Turn==0) //increase busy flag only when the vehicle is going straight.
 		vehicle-> getLastQ() ->busy ++;
-	vehicle->getLastQ()->length -- ; //decrease length of last queue
+	//vehicle->getLastQ()->length -- ; //decrease length of last queue
 
 	//schedule vehicle deprature in service time
 	sim->Schedule(PassTime, &IntersectionwithSignal::VehicleDeparture, this, vehicle);//(debug)
@@ -103,32 +102,42 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
 
 	cout << "In withSignal::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;
+    cin.get() ;
 
-    Intersection * NextInter = NULL;
-    VehicleQueue * futureQ   = NULL;
 	VehicleQueue * LastQ     = vehicle->getLastQ();
-    
+
+	Intersection * NextInter = NULL;
+    VehicleQueue * futureQ   = NULL;
 	bool isfull=false;
     int Turn;
 	
-	// getting info abou the next Queue and next intersection
+	// getting info about the next Queue and next intersection
 	NextQInfo(LastQ, vehicle, NextInter, futureQ, isfull, Turn);
 	
 	//freeing intersection
-	LastQ->busy --;
+	if(Turn==0)
+        LastQ->busy --;
 
 	if( futureQ == NULL )
 	{
 		//the vehicle is exiting the system
 		vehicle->setEndTime(sim->getNow());
 		ExitQ->push(vehicle);
-		cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<"SUCCESS!!!!!!"<<endl; cin.get();
+
+		cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<" SUCCESS!!!!!!"<<endl;
+		cin.get();
+		
 	}
 	else
 	{
-		
+		sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
+
+		cout << "Will join next intersection, vehicle ID="<< vehicle->getID()<<" , next intersection ID: "<<NextInter->getID()<< 
+			" in time "<<sim->getNow()+roadSegTime  <<endl ;
+		cin.get() ;
 	}
+
+	/*
 	//freeing intersection
 	this->busy=false;
 	
@@ -239,33 +248,38 @@ void IntersectionwithSignal::VehicleDeparture (VehicleClass* vehicle) //Depart
 			//sim->Schedule(PassTime, &IntersectionwithSignal::VehiclePass, this, vehicle);//(debug)
 			break;
 	}
-
+	*/
 }
 
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 
-    int check1=ID;
-    int check2=vehicle->getID();
-    
-	cout << "In withSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
-	cout << "press any key to continue..."<<endl;	cin.get() ;
+	cout << "In WithSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	cin.get() ;
+
 
 	joinqueue->push(vehicle);
+    //joinqueue->length ++;
 	vehicle->setLastQ(joinqueue);
-    if(joinqueue->empty()) //(debug)
+    if(joinqueue->GetLen() == 1) //(debug)
     {
-        cout << "joinqueue is empty, evictQ called";
+        cout << "joinqueue has only 1 car, evictQ called" << endl ;
         if(joinqueue->LastSentCar==-1) // send the car now
         {
+			cout << "did not wait" << endl;
             this->EvictQ(joinqueue);
         }
         else // send the car in the future
 		{
+			cout << "will wait for for " << max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ) << endl;
 			sim->Schedule( max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ), 
-										&IntersectionwithSignal::EvictQ, this, joinqueue ); //(debug)
+                    &IntersectionwithSignal::EvictQ, this, joinqueue ); //(debug)
 		}
     }
+	else
+	{
+		cout << "waiting in line" << endl;
+	}
 
 /*	int Qstate =QCanGo(joinqueue);
 
@@ -292,13 +306,16 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 
 void IntersectionwithSignal::EvictQ(VehicleQueue* joinqueue)
 {
-    cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << endl;
-    cin.get();
+    //cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << endl;
+    //cin.get();
     
 	int Qdirection=getQdirection(joinqueue);
     int Qlane=getQlane(joinqueue);
         
     int QState=QCanGo(Qdirection, Qlane);
+
+	if(QState!=-1)
+		printf("Qstate=%d, Inter ID=%d\n",QState,joinqueue->front()->getID());
 
 	if (QState==2) //Queue is not empty, and the light is green, intersection not busy
 	{
@@ -306,16 +323,19 @@ void IntersectionwithSignal::EvictQ(VehicleQueue* joinqueue)
         VehicleQueue * futureQ = NULL;
         bool isfull=false;
         int Turn;
-		// getting info abou the next Queue and next intersection
+		// getting info about the next Queue and next intersection
         NextQInfo(joinqueue, joinqueue->front(), NextInter, futureQ, isfull, Turn);
 
-        if( futureQ==NULL || !isfull ) //There is no next Queue, or next queue is not full
+        if( futureQ==NULL ) //There is no next Queue
         {
-
     		sim->Schedule( startToPass, &IntersectionwithSignal::VehiclePass, this, joinqueue->front(), Turn);//(debug)
 			joinqueue->pop();
-			futureQ->length ++ ;
-
+        }
+        else if( !isfull ) // next queue is not full
+        {
+    		sim->Schedule( startToPass, &IntersectionwithSignal::VehiclePass, this, joinqueue->front(), Turn);//(debug)
+			joinqueue->pop();
+			//futureQ->length ++ ;
         }
         else // next Q is full, a check will be scheduled for future
         {
@@ -328,7 +348,7 @@ void IntersectionwithSignal::EvictQ(VehicleQueue* joinqueue)
     }
     else if(QState == -1) // Q is empty, set the flag to send the first car arriving
     {
-        joinqueue->LastSentCar=-1; //ready to send car
+        joinqueue->LastSentCar = -1; //ready to send car
     }
 
 }
@@ -339,19 +359,19 @@ void IntersectionwithSignal::changeSignalTrigger( int LightID) //checks its own 
 
 	if (TLight[LightID]->getState() == GTR)
 	{
-        cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
+        //cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
 
 		this->EvictQ( Qu[LightID][0] );
 		this->EvictQ( Qu[LightID][1] );
 	}
 	else if (TLight[LightID]->getState() == GLT)
 	{
-        cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
+        //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
 		this->EvictQ( Qu[LightID][1]);
 	}
     else
     {
-        cout << "nobody called - ID=" << this->getID() << " light: " << LightID << endl;
+        //cout << "nobody called - ID=" << this->getID() << " light: " << LightID << endl;
     }
 }
 
@@ -365,7 +385,7 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
 	//+1: The queue is not empty, the traffic light is OK, But the intersection is busy
 	//+2: The queue is not empty, the traffic light is OK, and the intersection is not busy
 	
-	int canGo = false;
+	int canGo;
 	VehicleQueue* Q = Qu[Qdirection][lane];
 
 	if(Q->empty())
@@ -390,14 +410,14 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
         else
             canGo= 0; //light is NOT OK
     }
-	else if(lane==0 && Turn==-1) // turning right from right lane
+	else if(lane==0 && Turn==+1) // turning right from right lane
     {
-        if(  !(Qu[reg(Qdirection-1)][0])->isBusy()  )
+        if(  !(Qu[reg(Qdirection+1)][0])->isBusy()  )
             canGo=+2; // OK, vehicle can pass
         else
             canGo=+1; // intersection is busy
     }
-	else if(lane==1 && Turn==+1) // turning left from left lane
+	else if(lane==1 && Turn==-1) // turning left from left lane
 	{
 		if(TLight[Qdirection]->getType()==1) // 6states
 		{

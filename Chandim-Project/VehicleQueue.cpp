@@ -10,7 +10,8 @@ VehicleQueue::VehicleQueue()
 	maxLength = 15; //(debug)
     //set the time of last evicted 
     LastSentCar=-1;
-	length=0;
+	//length=0;
+	busy=0;
 
 }
 
@@ -42,7 +43,7 @@ int VehicleQueue::GetMaxLen()
 
 int VehicleQueue::GetLen()
 {
-	return length;
+	return Q1.size();
 }
 
 bool VehicleQueue::isBusy()

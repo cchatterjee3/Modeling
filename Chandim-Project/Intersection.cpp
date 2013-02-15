@@ -107,7 +107,8 @@ int Intersection::getQlane(VehicleQueue* Q)//, Intersection* Inter)
         return -1;
 }
 
-void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Intersection *  NextInter, VehicleQueue * FutureQ, bool & isfull, int & Turn)
+void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Intersection *  & NextInter, VehicleQueue * & FutureQ, 
+	bool & isfull, int & Turn)
 { 
 	// this function returns the queue pointer to this vehicle's next q(the one in the next intersection)
 	// NULL means the vehicle will be exiting the system
@@ -116,12 +117,12 @@ void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Inte
     
     Turn=turn(curdir,curQDir);
 	
-    int futureQDir=curQDir+Turn; //future Q ID
+    int futureQDir=reg(curQDir+Turn); //future Q ID
 	if( futureQDir==1 || futureQDir==3 || (ID==5 && futureQDir==0 ) || (ID==1 && futureQDir==2 ) )
+	{
 		FutureQ = NULL; //the vehicle will not have a next queue under these conditions
-
-	;
-	
+		return;
+	}
 	if( futureQDir==0)
 		NextInter=this->NInter;
 	else
@@ -140,9 +141,9 @@ void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Inte
     
     int futureLane;
     
-	if(futureTurn == -1)//turning right
+	if(futureTurn == 1)//turning right
 		futureLane=0;
-	else if(futureTurn == +1)//turning left
+	else if(futureTurn == -1)//turning left
 		futureLane=1;
 	else if(futureTurn == 0)//going forward
 	{
@@ -173,15 +174,15 @@ int reg(int i)
 	else if (i<0)
 		return i+4;
 	else
-		return -1;
+		return i;
 }
 
 int turn(dir globalDir, int QDirection)
 {
 	//returns: 
 	//  0 : if vehicle must NOT turn
-	// -1 : if vehicle must turn right
-	//  1 : if vehicle must turn left
+	//  1 : if vehicle must turn right
+	// -1 : if vehicle must turn left
 	//-100: error
 
 	switch (QDirection)
@@ -190,13 +191,13 @@ int turn(dir globalDir, int QDirection)
 		switch(globalDir)
 		{
 		case E:
-			return -1; //turn right
+			return  1; //turn right
 			break;
 		case N:
 			return  0; //no turn, go forward
 			break;
 		case W:
-			return +1; //turn left
+			return -1; //turn left
 			break;
 		default:
 			return -100;
@@ -207,13 +208,13 @@ int turn(dir globalDir, int QDirection)
 		switch(globalDir)
 		{
 		case S:
-			return -1; //turn right
+			return  1; //turn right
 			break;
 		case E:
 			return  0; //no turn, go forward
 			break;
 		case N:
-			return +1; //turn left
+			return -1; //turn left
 			break;
 		default:
 			return -100;
@@ -224,13 +225,13 @@ int turn(dir globalDir, int QDirection)
 		switch(globalDir)
 		{
 		case W:
-			return -1; //turn right
+			return  1; //turn right
 			break;
 		case S:
 			return  0; //no turn, go forward
 			break;
 		case E:
-			return +1; //turn left
+			return -1; //turn left
 			break;
 		default:
 			return -100;
@@ -241,13 +242,13 @@ int turn(dir globalDir, int QDirection)
 		switch(globalDir)
 		{
 		case N:
-			return -1; //turn right
+			return  1; //turn right
 			break;
 		case W:
 			return  0; //no turn, go forward
 			break;
 		case S:
-			return +1; //turn left
+			return -1; //turn left
 			break;
 		default:
 			return -100;
@@ -258,4 +259,3 @@ int turn(dir globalDir, int QDirection)
 		return -100;
 	}
 }
-

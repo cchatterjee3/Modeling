@@ -18,9 +18,10 @@ class VehicleQueue
 
 	public:
 
+		bool ismajor; //only for without signal
 		int busy;
 
-        int length;         //instantaneuous length of the queue
+        //int length;         //instantaneuous length of the queue
         double LastSentCar;
 
         //constructor
