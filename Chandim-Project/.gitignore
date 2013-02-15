@@ -4,3 +4,7 @@
 *.o
 *.layout
 
+/RandomNum.cpp
+/RoadSegment.cpp
+/RoadSegment.h
+/stdafx.h
