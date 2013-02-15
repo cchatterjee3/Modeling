@@ -23,16 +23,12 @@ class VehicleClass
          //VehicleClass(int ID, int sDestination...)     !!Constructor
          //!!Constructor
          void updateDirection (dir Direction);
-         
-         
-         
-         dir getDirection ();
-         
 
-         void setLastQ (VehicleQueue* Q);
-         
-         
-         VehicleQueue* getLastQ ();
+		 dir getDirection ();
+
+		 void setLastQ (VehicleQueue* Q);
+
+		 VehicleQueue* getLastQ ();
          
          
          int getDestination ();

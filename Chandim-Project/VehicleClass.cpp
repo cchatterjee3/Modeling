@@ -34,6 +34,13 @@ int VehicleClass::getDestination ()
 }
 
 
-VehicleClass::VehicleClass(int id, int start, int Dest, Time_t starttime){ID=id; sDestination = start; fDestination=Dest; startTime = starttime;};
+VehicleClass::VehicleClass(int id, int start, int Dest, Time_t starttime)
+{
+	ID=id;
+	sDestination = start;
+	fDestination=Dest;
+	startTime = starttime;
+	LastQ=NULL;
+};
 VehicleClass::VehicleClass(){};
 VehicleClass::~VehicleClass(){};

@@ -13,15 +13,11 @@ class VehicleQueue
 	private:
 		//to hold the list of the queues
 		std::queue<VehicleClass* > Q1;
-		
         int maxLength;
 
 	public:
 
-		bool ismajor; //only for without signal
 		int busy;
-
-        //int length;         //instantaneuous length of the queue
         double LastSentCar;
 
         //constructor
