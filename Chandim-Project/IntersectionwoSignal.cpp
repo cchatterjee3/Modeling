@@ -32,6 +32,18 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
 	cout << "In WithoutSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	//cin.get() ;
 
+
+#ifdef test
+    eventDsc E1;
+    E1.type= JQU;
+    E1.InterID=ID;
+    E1.QDir=getQdirection( joinqueue);
+    E1.QLane=getQlane( joinqueue);
+    E1.timetag=sim->getNow();
+    vehicle->EventList.push_back(E1);
+#endif
+
+
 	joinqueue->push(vehicle);
     //joinqueue->length ++;
 	vehicle->setLastQ(joinqueue);

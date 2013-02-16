@@ -10,6 +10,10 @@
 #include "VehicleQueue.h"
 #include <memory.h>
 
+#ifdef test
+    #include "testing/test1.h"
+#endif
+
 using namespace std;
 
 Intersection::Intersection(int nID)
@@ -90,9 +94,17 @@ Intersection::~Intersection(){};
 
 void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes through intersection
 {
-
+#ifdef test
+    eventDsc E1;
+    E1.type= PSS;
+    E1.InterID=ID;
+    E1.QDir=0;
+    E1.QLane=0;
+    E1.timetag=sim->getNow();
+    vehicle->EventList.push_back(E1);
+#endif
 	cout << "In Intersection::VehiclePass with vehicle ID="<< vehicle->getID()<< " , Intersection:"<< ID << ", Now="<<sim->getNow() <<endl;
-	cin.get() ;
+	//cin.get() ;
 	
 	// setting queue to busy
 	if(Turn==0) //increase busy flag only when the vehicle is going straight.
@@ -103,7 +115,17 @@ void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes
 	sim->Schedule(PassTime, &Intersection::VehicleDeparture, this, vehicle);//(debug)
 
 	cout << "--> VehicleDeparture scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+PassTime <<endl;
-	cin.get() ;
+	//cin.get() ;
+
+#ifdef test
+    eventDsc E2;
+    E2.type= DPC;
+    E2.InterID=ID;
+    E2.QDir=0;
+    E2.QLane=0;
+    E2.timetag=sim->getNow();
+    vehicle->EventList.push_back(E2);
+#endif
 
 }
 
@@ -111,7 +133,17 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
 
 	cout << "In Intersection::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
-    cin.get() ;
+    //cin.get() ;
+
+#ifdef test
+    eventDsc E1;
+    E1.type= DEP;
+    E1.InterID=ID;
+    E1.QDir=0;
+    E1.QLane=0;
+    E1.timetag=sim->getNow();
+    vehicle->EventList.push_back(E1);
+#endif
 
 	VehicleQueue * LastQ     = vehicle->getLastQ();
 
@@ -133,17 +165,38 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 		vehicle->setEndTime(sim->getNow());
 		ExitQ->push(vehicle);
 
+#ifdef test
+    eventDsc E2;
+    E2.type= RDT;
+    E2.InterID=ID;
+    E2.QDir=0;
+    E2.QLane=0;
+    E2.timetag=sim->getNow();
+    vehicle->EventList.push_back(E2);
+#endif
+
+    
 		cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<" SUCCESS!!!!!!"<<endl;
-		cin.get();
+		//cin.get();
 		
 	}
 	else
 	{
 		sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
 
-		cout << "Will join next intersection, vehicle ID="<< vehicle->getID()<<" , next intersection ID: "<<NextInter->getID()<< 
+#ifdef test
+    eventDsc E3;
+    E3.type= JQC;
+    E3.InterID=ID;
+    E3.QDir=getQdirection( futureQ);
+    E3.QLane=getQlane( futureQ);
+    E3.timetag=sim->getNow();
+    vehicle->EventList.push_back(E3);
+#endif
+
+    cout << "Will join next intersection, vehicle ID="<< vehicle->getID()<<" , next intersection ID: "<<NextInter->getID()<< 
 			" in time "<<sim->getNow()+roadSegTime  <<endl ;
-		cin.get() ;
+		//cin.get() ;
 	}
 
 }
@@ -152,7 +205,7 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
 {
 	cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << 
 					" Inter ID=" << ID << " time=" << sim->getNow() << endl;
-    cin.get();
+    //cin.get();
     
 	int Qdirection=getQdirection(joinqueue);
     int Qlane=getQlane(joinqueue);
@@ -174,14 +227,36 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
 
         if( futureQ==NULL ) //There is no next Queue
         {
-    		sim->Schedule( startToPass, &Intersection::VehiclePass, this, joinqueue->front(), Turn);//(debug)
+
+#ifdef test
+    eventDsc E1;
+    E1.type = PSC;
+    E1.InterID =ID;
+    E1.QDir = getQdirection(joinqueue);
+    E1.QLane = getQlane(joinqueue);
+    E1.timetag = sim->getNow();
+    joinqueue->front()->EventList .push_back(E1);
+#endif
+
+            sim->Schedule( startToPass, &Intersection::VehiclePass, this, joinqueue->front(), Turn);//(debug)
 			if(joinqueue->front()->getLastQ() != NULL)
 				joinqueue->front()->getLastQ()->LastSentCar=sim->getNow(); //set the time that the queue last sent a car
 			joinqueue->pop();
         }
         else if( !isfull ) // next queue is not full
         {
-    		sim->Schedule( startToPass, &Intersection::VehiclePass, this, joinqueue->front(), Turn);//(debug)
+
+#ifdef test
+    eventDsc E2;
+    E2.type = PSC;
+    E2.InterID =ID;
+    E2.QDir = getQdirection(joinqueue);
+    E2.QLane = getQlane(joinqueue);
+    E2.timetag = sim->getNow();
+    joinqueue->front()->EventList.push_back(E2);
+#endif
+
+            sim->Schedule( startToPass, &Intersection::VehiclePass, this, joinqueue->front(), Turn);//(debug)
 			if(joinqueue->front()->getLastQ() != NULL)
 				joinqueue->front()->getLastQ()->LastSentCar=sim->getNow(); //set the time that the queue last sent a car
 			joinqueue->pop();
@@ -189,17 +264,53 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
         }
         else // next Q is full, a check will be scheduled for future
         {
+#ifdef test
+    eventDsc E3;
+    E3.type = WTQ;
+    E3.InterID =ID;
+    E3.QDir = getQdirection(joinqueue);
+    E3.QLane = getQlane(joinqueue);
+    E3.timetag = sim->getNow();
+    joinqueue->front()->EventList.push_back(E3);
+#endif
+            
     		sim->Schedule( checkQinterval, &Intersection::EvictQ, this, joinqueue ); //(debug)
         }
 	}
     else if(QState == +1) //Queue is not empty, and the light is green, but intersection IS BUSY
     {   //scheduling a check for future
+
+#ifdef test
+    eventDsc E4;
+    E4.type = WTB;
+    E4.InterID =ID;
+    E4.QDir = getQdirection(joinqueue);
+    E4.QLane = getQlane(joinqueue);
+    E4.timetag = sim->getNow();
+    joinqueue->front()->EventList.push_back(E4);
+#endif
+        
     	sim->Schedule( checkQinterval, &Intersection::EvictQ, this, joinqueue ); //(debug)
     }
     else if(QState == -1) // Q is empty, set the flag to send the first car arriving
     {
         joinqueue->LastSentCar = -1; //ready to send car
     }
+    else if(QState == 0)
+    {
+        
+#ifdef test
+    eventDsc E5;
+    E5.type = WTL;
+    E5.InterID =ID;
+    E5.QDir = getQdirection(joinqueue);
+    E5.QLane = getQlane(joinqueue);
+    E5.timetag = sim->getNow();
+    joinqueue->front()->EventList.push_back(E5);
+#endif
+        
+    }
+    
 }
 
 

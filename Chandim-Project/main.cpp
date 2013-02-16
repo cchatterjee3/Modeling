@@ -1,13 +1,12 @@
 
 #include <iostream>
 #include "Simulator.h"
-
 #include "IntersectionwithSignal.h"
 #include "IntersectionwoSignal.h"
-
 #include "Topology.h"
-
 #include "scheduleVehicles.h"
+
+#include "testing/test1.h"
 
 using namespace std;
 
@@ -29,7 +28,6 @@ int main()
 		VehicleClass* vehicle=new VehicleClass(++VIDcounter, 0, 4, t);
 		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
 	}
-	*/
 	//scheduleVehicles(Topology, 7200.0);
 
 	int VIDcounter=0;
@@ -67,14 +65,22 @@ int main()
 	Inter=Topology->I4;
 	joinqueue = Inter->Qu[3][0];
 	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
+*/
+    
 
-
-
+unittest(10, 50, Topology);
 
 
     sim->StopAt(500);
     sim->Run();
+    cout << "post processing" << endl;
     cin.get() ;
+    
+    PrintEventList(Topology->ExitQ->back());
+    cin.get() ;
+    
+    
+    
+    
     return 0;
 }
-

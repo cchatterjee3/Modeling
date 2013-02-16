@@ -2,6 +2,17 @@
 #define DEF_VLENGTH
 #include "CommonDefs.h"
 
+
+#include "testing/test1.h"
+
+
+
+#ifdef test
+    #include <list>
+    #include "Simulator.h"
+    extern Simulator* sim ;
+#endif
+
 class VehicleClass;
 class VehicleQueue;
 //typedef std::queue<VehicleClass> VehicleQueue;
@@ -18,6 +29,10 @@ class VehicleClass
          dir currentDirection; //current direction
          VehicleQueue* LastQ;
   public:
+
+#ifdef test
+      std::list<eventDsc> EventList;
+#endif      
   		void setEndTime(Time_t t);
   		int getID();
          //VehicleClass(int ID, int sDestination...)     !!Constructor
@@ -32,6 +47,7 @@ class VehicleClass
          
          
          int getDestination ();
+		 int getSource ();
          
          VehicleClass(int id, int start, int Dest, Time_t starttime);
          VehicleClass();

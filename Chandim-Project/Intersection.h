@@ -4,6 +4,7 @@
 #include "CommonDefs.h"
 #include "TrafficLight.h"
 #include "VehicleClass.h"
+#include "VehicleQueue.h"
 
 //#include "TrafficLight.h"
 

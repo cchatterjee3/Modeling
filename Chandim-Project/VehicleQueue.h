@@ -28,6 +28,7 @@ class VehicleQueue
 		bool empty();
 		void push(VehicleClass*);
 		void pop();
+		VehicleClass* back();
 		int  GetMaxLen();
 		int  GetLen();
 		bool isBusy();

@@ -36,6 +36,12 @@ void VehicleQueue::pop()
 	Q1.pop();
 }
 
+VehicleClass* VehicleQueue::back()
+{
+    return Q1.back();
+}
+
+
 int VehicleQueue::GetMaxLen()
 {
 	return maxLength;

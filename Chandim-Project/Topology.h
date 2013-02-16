@@ -1,10 +1,11 @@
 #pragma once
 
-#include "TrafficLight.h"
+#include <iostream>
+
+//#include "TrafficLight.h"
 #include "Intersection.h"
 #include "IntersectionwithSignal.h"
 #include "IntersectionwoSignal.h"
-#include <iostream>
 #include "VehicleQueue.h"
 
 using namespace std;
@@ -20,14 +21,16 @@ class _Topology
 	Intersection *I4; //13th street
 	Intersection *I5; //14th street
 
+    Intersection* In[5];
+    
 	VehicleQueue* ExitQ;
 	
 	_Topology(){
-		I1=new IntersectionwithSignal	(1);
+        I1=new IntersectionwithSignal	(1);
 		I2=new IntersectionwithSignal	(2);
-		I3=new IntersectionwithSignal	(3);
+        I3=new IntersectionwithSignal	(3);
 		I4=new IntersectionwithoutSignal(4);
-		I5=new IntersectionwithSignal	(5);
+        I5=new IntersectionwithSignal	(5);
 		
 		// setting connections
 		I1->NInter=I2;	I1->SInter=NULL;	
@@ -44,6 +47,7 @@ class _Topology
 		I4->ExitQ=ExitQ;
 		I5->ExitQ=ExitQ;
 
+        In[0]=I1; In[1]=I2; In[2]=I3; In[3]=I4; In[4]=I5; 
 
 	}
 	
