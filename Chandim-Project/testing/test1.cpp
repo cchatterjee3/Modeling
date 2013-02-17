@@ -41,6 +41,12 @@ void unittest(int numVeh, double time_interval, _Topology* Topology)
         } while(fdest==sdest);
         timetag=(ran2.Next()*time_interval);
         
+    /*    if(timetag<=.00001 ||  timetag>=time_interval)
+        {
+                      printf("error time!\n");
+                      cin.get();
+                      }
+      */  
         switch(sdest)
         {
             case 0:
@@ -93,4 +99,7 @@ void unittest(int numVeh, double time_interval, _Topology* Topology)
         sim->Schedule(timetag, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
 
     }
+
+    cout << IDCounter << " cars scheduled to join the system" << endl;
+
 }

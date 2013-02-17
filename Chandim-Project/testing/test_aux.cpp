@@ -29,6 +29,7 @@ using namespace std;
 
 void PrintEventDsc(eventDsc E1)
 {
+                   
 	switch(E1.type)
 	{
 		case CNS :
@@ -36,7 +37,7 @@ void PrintEventDsc(eventDsc E1)
 			break;
 
 		case JQU :
-			cout<<"Vehicle joined queue ["<< E1.QDir<<","<<E1.QLane <<"]" << " InterID="<<E1.InterID  <<"at time "<<E1.timetag<<endl;
+			cout<<"Vehicle joined queue ["<< E1.QDir<<","<<E1.QLane <<"] , Qsize=" << E1.QSize << " InterID="<<E1.InterID  <<"at time "<<E1.timetag<<endl;
 			break;
 		case JQC :
 			cout<<"Vehicle join queue ["<< E1.QDir<<","<<E1.QLane <<"]" << " InterID="<<E1.InterID  <<" scheduled at time "<<E1.timetag<<endl;
@@ -48,10 +49,10 @@ void PrintEventDsc(eventDsc E1)
 			cout<<"Vehicle passed intersection "<<  E1.InterID <<" Scheduled at time "<<E1.timetag<<endl;
 			break;
 		case DEP :
-			cout<<"Vehicle " << E1.InterID << " Departed intersection "<< E1.InterID  <<" at time "<<E1.timetag<<endl;
+			cout<<"Vehicle Departed intersection "<< E1.InterID  <<" at time "<<E1.timetag<<endl;
 			break;
 		case DPC :
-			cout<<"Vehicle " << E1.InterID << " Depart intersection "<< E1.InterID  <<" scheduled at time "<<E1.timetag<<endl;
+			cout<<"Vehicle Depart intersection "<< E1.InterID  <<" scheduled at time "<<E1.timetag<<endl;
 			break;
 		case WTL :
 			cout<<"waiting on traffic light queue ["<< E1.QDir<<","<<E1.QLane <<"]" << " InterID="<<E1.InterID << " at time "<<E1.timetag<<endl;

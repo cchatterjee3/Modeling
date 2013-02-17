@@ -29,7 +29,7 @@ IntersectionwithoutSignal::~IntersectionwithoutSignal(void)
 void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 
-	cout << "In WithoutSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	//cout << "In WithoutSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	//cin.get() ;
 
 
@@ -37,8 +37,9 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
     eventDsc E1;
     E1.type= JQU;
     E1.InterID=ID;
-    E1.QDir=getQdirection( joinqueue);
-    E1.QLane=getQlane( joinqueue);
+    E1.QDir=getQdirection(this, joinqueue);
+    E1.QLane=getQlane(this, joinqueue);
+    E1.QSize=joinqueue->Q1.size();
     E1.timetag=sim->getNow();
     vehicle->EventList.push_back(E1);
 #endif
@@ -47,25 +48,35 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
 	joinqueue->push(vehicle);
     //joinqueue->length ++;
 	vehicle->setLastQ(joinqueue);
+	
+	
     if(joinqueue->GetLen() == 1) //(debug)
     {
-        cout << "joinqueue has only 1 car, evictQ called" << endl ;
-        if(joinqueue->LastSentCar==-1) // send the car now
+        //cout << "joinqueue has only 1 car, evictQ called" << endl ;
+       if(joinqueue->LastSentCar==-1) // send the car now
         {
-			cout << "did not wait" << endl;
+			//cout << "did not wait" << endl;
             this->EvictQ(joinqueue);
         }
         else // send the car in the future
 		{
-			cout << "will wait for for " << max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ) << endl;
+            
+            
+			//cout << "will wait for " << max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ) << endl;
 			sim->Schedule( max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ), 
                     &IntersectionwithoutSignal::EvictQ, this, joinqueue ); //(debug)
 		}
     }
+	else if(joinqueue->GetLen() > 1)
+	{
+		//cout << "waiting in line" << endl;
+	}
 	else
 	{
-		cout << "waiting in line" << endl;
+		cout << "error!" << endl;
+		cin.get();
 	}
+	
 }
 
 int IntersectionwithoutSignal::QCanGo (int Qdirection, int lane) //Improved Version
@@ -79,6 +90,7 @@ int IntersectionwithoutSignal::QCanGo (int Qdirection, int lane) //Improved Vers
 	
 	int canGo ;
 	VehicleQueue* Q = Qu[Qdirection][lane];
+
 
 	if(Q->empty())
 		return -1;

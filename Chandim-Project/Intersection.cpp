@@ -78,12 +78,12 @@ Intersection::Intersection(int nID)
 				 break;
             }
 		}
-
+        /*
 		if(haveSignal)
 			cout << "Intersection ID=" << ID << " created with    signal"<<endl;
 		else
 			cout << "Intersection ID=" << ID << " created without signal"<<endl;
-
+        */
 		//setting up array of Queues:
 		Qu[0][0]=NBI1; Qu[1][0]=EBI1; Qu[2][0]=SBI1; Qu[3][0]=WBI1; 
 		Qu[0][1]=NBI2; Qu[1][1]=EBI2; Qu[2][1]=SBI2; Qu[3][1]=WBI2; 
@@ -91,6 +91,7 @@ Intersection::Intersection(int nID)
 };
 Intersection::Intersection(){};
 Intersection::~Intersection(){};
+
 
 void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes through intersection
 {
@@ -103,7 +104,7 @@ void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes
     E1.timetag=sim->getNow();
     vehicle->EventList.push_back(E1);
 #endif
-	cout << "In Intersection::VehiclePass with vehicle ID="<< vehicle->getID()<< " , Intersection:"<< ID << ", Now="<<sim->getNow() <<endl;
+	//cout << "In Intersection::VehiclePass with vehicle ID="<< vehicle->getID()<< " , Intersection:"<< ID << ", Now="<<sim->getNow() <<endl;
 	//cin.get() ;
 	
 	// setting queue to busy
@@ -114,7 +115,7 @@ void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes
 	//schedule vehicle deprature in service time
 	sim->Schedule(PassTime, &Intersection::VehicleDeparture, this, vehicle);//(debug)
 
-	cout << "--> VehicleDeparture scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+PassTime <<endl;
+	//cout << "--> VehicleDeparture scheduled for vehicle ID="<< vehicle->getID()<<" , for time Now+startToPass="<<sim->getNow()+PassTime <<endl;
 	//cin.get() ;
 
 #ifdef test
@@ -126,13 +127,16 @@ void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes
     E2.timetag=sim->getNow();
     vehicle->EventList.push_back(E2);
 #endif
+    //send one more car
+    if(vehicle->getLastQ()!=NULL)
+        EvictQ(vehicle->getLastQ());
 
 }
 
 void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 {
 
-	cout << "In Intersection::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	//cout << "In Intersection::VehicleDeparture with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
     //cin.get() ;
 
 #ifdef test
@@ -176,7 +180,7 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 #endif
 
     
-		cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<" SUCCESS!!!!!!"<<endl;
+		//cout << "--> vehicle ID="<< vehicle->getID()<<" , reached destination on t="<<sim->getNow()<<" SUCCESS!!!!!!"<<endl;
 		//cin.get();
 		
 	}
@@ -188,14 +192,16 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
     eventDsc E3;
     E3.type= JQC;
     E3.InterID=ID;
-    E3.QDir=getQdirection( futureQ);
-    E3.QLane=getQlane( futureQ);
+    if(futureQ!=NULL)
+        E3.QDir=getQdirection(NextInter, futureQ);
+    if(futureQ!=NULL)
+        E3.QLane=getQlane( NextInter, futureQ);
     E3.timetag=sim->getNow();
     vehicle->EventList.push_back(E3);
 #endif
 
-    cout << "Will join next intersection, vehicle ID="<< vehicle->getID()<<" , next intersection ID: "<<NextInter->getID()<< 
-			" in time "<<sim->getNow()+roadSegTime  <<endl ;
+    //cout << "Will join next intersection, vehicle ID="<< vehicle->getID()<<" , next intersection ID: "<<NextInter->getID()<< 
+	//		" in time "<<sim->getNow()+roadSegTime  <<endl ;
 		//cin.get() ;
 	}
 
@@ -203,19 +209,19 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 
 void Intersection::EvictQ(VehicleQueue* joinqueue)
 {
-	cout << "evictQ called, Qdirection is " << this->getQdirection(joinqueue) << " Q lane is "<< this->getQlane(joinqueue) << 
-					" Inter ID=" << ID << " time=" << sim->getNow() << endl;
+//	cout << "evictQ called, Qdirection is " << getQdirection(this, joinqueue) << " Q lane is "<< getQlane(this, joinqueue) << 
+//					" Inter ID=" << ID << " time=" << sim->getNow() << endl;
     //cin.get();
     
-	int Qdirection=getQdirection(joinqueue);
-    int Qlane=getQlane(joinqueue);
+	int Qdirection=getQdirection(this, joinqueue);
+    int Qlane=getQlane(this, joinqueue);
         
     int QState=QCanGo(Qdirection, Qlane);
 
-	printf("Qstate=%d\n",QState);
+/*	printf("Qstate=%d\n",QState);
 	if(QState!=-1)
 		printf("Qstate=%d, Inter ID=%d\n",QState,joinqueue->front()->getID());
-
+*/
 	if (QState==2) //Queue is not empty, and the light is green, intersection not busy
 	{
         Intersection * NextInter = NULL;
@@ -232,8 +238,8 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
     eventDsc E1;
     E1.type = PSC;
     E1.InterID =ID;
-    E1.QDir = getQdirection(joinqueue);
-    E1.QLane = getQlane(joinqueue);
+    E1.QDir = getQdirection(this, joinqueue);
+    E1.QLane = getQlane(this, joinqueue);
     E1.timetag = sim->getNow();
     joinqueue->front()->EventList .push_back(E1);
 #endif
@@ -250,8 +256,8 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
     eventDsc E2;
     E2.type = PSC;
     E2.InterID =ID;
-    E2.QDir = getQdirection(joinqueue);
-    E2.QLane = getQlane(joinqueue);
+    E2.QDir = getQdirection(this, joinqueue);
+    E2.QLane = getQlane(this, joinqueue);
     E2.timetag = sim->getNow();
     joinqueue->front()->EventList.push_back(E2);
 #endif
@@ -268,8 +274,8 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
     eventDsc E3;
     E3.type = WTQ;
     E3.InterID =ID;
-    E3.QDir = getQdirection(joinqueue);
-    E3.QLane = getQlane(joinqueue);
+    E3.QDir = getQdirection(this, joinqueue);
+    E3.QLane = getQlane(this, joinqueue);
     E3.timetag = sim->getNow();
     joinqueue->front()->EventList.push_back(E3);
 #endif
@@ -284,8 +290,8 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
     eventDsc E4;
     E4.type = WTB;
     E4.InterID =ID;
-    E4.QDir = getQdirection(joinqueue);
-    E4.QLane = getQlane(joinqueue);
+    E4.QDir = getQdirection(this, joinqueue);
+    E4.QLane = getQlane(this, joinqueue);
     E4.timetag = sim->getNow();
     joinqueue->front()->EventList.push_back(E4);
 #endif
@@ -303,8 +309,8 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
     eventDsc E5;
     E5.type = WTL;
     E5.InterID =ID;
-    E5.QDir = getQdirection(joinqueue);
-    E5.QLane = getQlane(joinqueue);
+    E5.QDir = getQdirection(this, joinqueue);
+    E5.QLane = getQlane(this, joinqueue);
     E5.timetag = sim->getNow();
     joinqueue->front()->EventList.push_back(E5);
 #endif
@@ -314,25 +320,25 @@ void Intersection::EvictQ(VehicleQueue* joinqueue)
 }
 
 
-int  Intersection::getQdirection(VehicleQueue* Q)//, Intersection* Inter)
+int  Intersection::getQdirection(Intersection * inter, VehicleQueue* Q)//, Intersection* Inter)
 {
-    if(Q==this->NBI1 || Q==this->NBI2)
+    if(Q==inter->NBI1 || Q==inter->NBI2)
         return 0;
-    else if(Q==this->EBI1 || Q==this->EBI2)
+    else if(Q==inter->EBI1 || Q==inter->EBI2)
         return 1;
-    else if(Q==this->SBI1 || Q==this->SBI2)
+    else if(Q==inter->SBI1 || Q==inter->SBI2)
         return 2;
-    else if(Q==this->WBI1 || Q==this->WBI2)
+    else if(Q==inter->WBI1 || Q==inter->WBI2)
         return 3;
     else    //does not exist
         return -1;
 }
 
-int  Intersection::getQlane(VehicleQueue* Q)//, Intersection* Inter)
+int  Intersection::getQlane(Intersection * inter, VehicleQueue* Q)//, Intersection* Inter)
 {
-    if(Q==this->NBI1 || Q==this->EBI1 || Q==this->SBI1 || Q==this->WBI1)
+    if(Q==inter->NBI1 || Q==inter->EBI1 || Q==inter->SBI1 || Q==inter->WBI1)
         return 0;
-    else if(Q==this->NBI2 || Q==this->EBI2 || Q==this->SBI2 || Q==this->WBI2)
+    else if(Q==inter->NBI2 || Q==inter->EBI2 || Q==inter->SBI2 || Q==inter->WBI2)
         return 1;
     else
         return -1;
@@ -343,7 +349,7 @@ void Intersection::NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Inte
 { 
 	// this function returns the queue pointer to this vehicle's next q(the one in the next intersection)
 	// NULL means the vehicle will be exiting the system
-	int curQDir=Intersection::getQdirection(currentQ);	//current Q ID
+	int curQDir=Intersection::getQdirection(this, currentQ);	//current Q ID
 	dir curdir=this->routingtable[vehicle->getDestination()]; //current direction from routing table
     
     Turn=turn(curdir,curQDir);

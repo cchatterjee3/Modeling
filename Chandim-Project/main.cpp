@@ -5,8 +5,11 @@
 #include "IntersectionwoSignal.h"
 #include "Topology.h"
 #include "scheduleVehicles.h"
+#include "PostProcessing.h"
 
 #include "testing/test1.h"
+
+#include<queue>
 
 using namespace std;
 
@@ -68,18 +71,49 @@ int main()
 */
     
 
-unittest(10, 50, Topology);
+    unittest(100000, 100000, Topology);
 
 
-    sim->StopAt(500);
+    sim->StopAt(100000);
     sim->Run();
     cout << "post processing" << endl;
+    cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
     cin.get() ;
+
+    PostProcStats(Topology->ExitQ, 1000,  30, 0, 7);
+    cin.get();
+
+    VehicleQueue * Q;
+    Intersection * I;
     
-    PrintEventList(Topology->ExitQ->back());
-    cin.get() ;
+    cout << endl;
+
+    cout <<"missing cars:" << endl;
+    cout << endl;
+    cin.get();
+    for (int inter = 0 ; inter<5 ; ++inter)
+    {
+        for (int direction = 0 ; direction<4 ; ++direction)
+        {
+            for (int lane = 0 ; lane<2 ; ++lane)
+            {
+                
+                I=Topology->In[inter];
+                Q=I->Qu[direction][lane];
+                if(Q->Q1.size())
+                {
+                    cout << Q->Q1.size()<<" Intersection:"<<inter+1<<" Lane:"<<lane<<" Direction:"<<direction<<endl;
+                    cout << "   ID: " << Q->Q1.front()->getID() 
+                         << " dest: " << Q->Q1.front()->getDestination() 
+                         << "start: " << Q->Q1.front()->startTime
+                         << endl;
     
-    
+                }
+            }
+            
+        }
+    }
+    cin.get();
     
     
     return 0;

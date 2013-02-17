@@ -19,7 +19,7 @@ class IntersectionwithSignal : public Intersection
          TrafficLight* SB;
 		 TrafficLight* TLight[4] ;
                  
-         void changeSignalTrigger( int LightID); //checks its own signals 
+         void changeSignalTrigger( int LightID, int leftorthru); //checks its own signals //leftortur=1: left
          virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle); //Adds to outgoing queue or removes vehicles 
 		 virtual int QCanGo (int direction, int lane);
 

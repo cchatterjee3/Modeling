@@ -31,6 +31,7 @@ struct eventDsc
     int InterID;
     int QDir;
     int QLane;
+    int QSize;
     double timetag;
 };
 

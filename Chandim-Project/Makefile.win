@@ -5,8 +5,8 @@ CPP  = g++.exe
 CC   = gcc.exe
 WINDRES = windres.exe
 RES  = 
-OBJ  = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o VehicleClass.o VehicleQueue.o RandomNum.o $(RES)
-LINKOBJ  = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o VehicleClass.o VehicleQueue.o RandomNum.o $(RES)
+OBJ  = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o VehicleClass.o VehicleQueue.o RandomNum.o testing/test_aux.o testing/test1.o PostProcessing.o $(RES)
+LINKOBJ  = calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o main.o Simulator.o TrafficLight.o VehicleClass.o VehicleQueue.o RandomNum.o testing/test_aux.o testing/test1.o PostProcessing.o $(RES)
 LIBS =  -L"C:/Dev-Cpp/lib"  -fmessage-length=0 
 INCS =  -I"C:/Dev-Cpp/include" 
 CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
@@ -55,3 +55,12 @@ VehicleQueue.o: VehicleQueue.cpp
 
 RandomNum.o: RandomNum.cc
 	$(CPP) -c RandomNum.cc -o RandomNum.o $(CXXFLAGS)
+
+testing/test_aux.o: testing/test_aux.cpp
+	$(CPP) -c testing/test_aux.cpp -o testing/test_aux.o $(CXXFLAGS)
+
+testing/test1.o: testing/test1.cpp
+	$(CPP) -c testing/test1.cpp -o testing/test1.o $(CXXFLAGS)
+
+PostProcessing.o: PostProcessing.cpp
+	$(CPP) -c PostProcessing.cpp -o PostProcessing.o $(CXXFLAGS)

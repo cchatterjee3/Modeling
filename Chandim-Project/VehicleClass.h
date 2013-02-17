@@ -20,8 +20,6 @@ class VehicleQueue;
 class VehicleClass
 {
   private:
-         Time_t startTime;
-         Time_t endTime;
          int fDestination; //final location
          int sDestination; //starting location
          int length; //vehicle length
@@ -29,6 +27,8 @@ class VehicleClass
          dir currentDirection; //current direction
          VehicleQueue* LastQ;
   public:
+         Time_t startTime;
+         Time_t endTime;
 
 #ifdef test
       std::list<eventDsc> EventList;
@@ -45,6 +45,8 @@ class VehicleClass
 
 		 VehicleQueue* getLastQ ();
          
+         Time_t StartTime(){return startTime;};
+         Time_t EndTime(){return endTime;};
          
          int getDestination ();
 		 int getSource ();

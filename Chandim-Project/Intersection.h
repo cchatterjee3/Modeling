@@ -52,6 +52,7 @@ public:
 
 	int getID()	{return ID;}
 	
+	//void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle);
 	void VehiclePass(VehicleClass* vehicle, int Turn); //Vehicle passes through intersection
 	void VehicleDeparture (VehicleClass* vehicle); //Depart
 	void EvictQ (VehicleQueue* joinqueue);
@@ -59,8 +60,8 @@ public:
 	virtual void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle)=0;
 	virtual int  QCanGo (int direction, int lane)=0; 
 
-    int getQdirection(VehicleQueue* Q);
-    int getQlane(VehicleQueue* Q);
+    int getQdirection(Intersection * inter, VehicleQueue* Q);
+    int getQlane(Intersection * inter, VehicleQueue* Q);
 	void NextQInfo(VehicleQueue* currentQ, VehicleClass* vehicle, Intersection * &  NextInter, VehicleQueue * & FutureQ, bool & isfull, int & Turn);
 
 };

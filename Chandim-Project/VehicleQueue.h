@@ -12,10 +12,10 @@ class VehicleQueue
 {
 	private:
 		//to hold the list of the queues
-		std::queue<VehicleClass* > Q1;
         int maxLength;
 
 	public:
+		std::queue<VehicleClass* > Q1;
 
 		int busy;
         double LastSentCar;

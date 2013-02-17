@@ -37,35 +37,40 @@ IntersectionwithSignal::IntersectionwithSignal(int nID) : Intersection(nID)
 	
 	if (ID==1) 
     {
+
       //Traffic light on Peachtree and 10th
-	  EB=new TrafficLight(1, EBtype, (state)5, 8, 1.8, 1.8, 30, 3.8, 55, this);
-	  WB=new TrafficLight(3, WBtype, (state)5, 5, 3.6, 4.2, 28, 3.8, 55, this);
-	  NB=new TrafficLight(0, NBtype, (state)5, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
-	  SB=new TrafficLight(2, SBtype, (state)5, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this);
+	  EB=new TrafficLight(1, 1, (state)0, (state)0, 8, 1.8, 1.8, 30, 3.8, 55, this, 8, 0);
+	  WB=new TrafficLight(3, 1, (state)0, (state)0, 5, 3.6, 4.2, 28.8, 3.8, 55, this, 3.8, 0);
+	  NB=new TrafficLight(0, 1, (state)5, (state)0, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this, 45.4, 0);
+	  SB=new TrafficLight(2, 1, (state)5, (state)0, 7, 3.6, 2.2, 34.7, 3.6, 49.3, this, 45.4, 0);
     }
     if (ID==2)
     {
       //Traffic light on Peachtree and 11th
-      EB=new TrafficLight(1, EBtype, (state)5, 0, 0, 0, 20.2, 3.6, 76.1, this);
-	  WB=new TrafficLight(3, WBtype, (state)5, 0, 0, 0, 20.3, 3.6, 76.2, this);
-	  NB=new TrafficLight(0, NBtype, (state)5, 0, 0, 0, 41.5, 3.2, 55.4, this);
-	  SB=new TrafficLight(2, SBtype, (state)5, 0, 0, 0, 41.5, 3.2, 55.4, this);            
+      EB=new TrafficLight(1, 0, (state)3, (state)0, 0, 0, 0, 20.3, 3.6, 76.2, this, 20.3, 0);
+	  WB=new TrafficLight(3, 0, (state)3, (state)0, 0, 0, 0, 20.3, 3.6, 76.2, this,20.3, 0);
+	  NB=new TrafficLight(0, 0, (state)5, (state)0, 0, 0, 0, 41.5, 3.2, 55.4, this, 43.7, 0);
+	  SB=new TrafficLight(2, 0, (state)5, (state)0, 0, 0, 0, 41.5, 3.2, 55.4, this, 43.7, 0);            
     }
     if (ID==3)
     {
       //Traffic light on Peachtree and 12th
-      EB=new TrafficLight(1, EBtype, (state)5, 0, 0, 0, 27.3, 3.6, 69.2, this);
-	  WB=new TrafficLight(3, WBtype, (state)5, 0, 0, 0, 27.3, 3.6, 69.2, this);
-	  NB=new TrafficLight(0, NBtype, (state)5, 0, 0, 0, 60.9, 3.2, 35.7, this);
-	  SB=new TrafficLight(2, SBtype, (state)5, 0, 0, 0, 61.4, 3.2, 35.7, this);             
+      EB=new TrafficLight(1, 0, (state)3, (state)0, 0, 0, 0, 27.4, 3.6, 69.2, this, 27.4, 0);
+	  WB=new TrafficLight(3, 0, (state)3, (state)0, 0, 0, 0, 27.4, 3.6, 69.2, this, 27.4, 0);
+	  NB=new TrafficLight(0, 0, (state)5, (state)0, 0, 0, 0, 61.3, 3.2, 35.7, this, 31, 0);
+	  SB=new TrafficLight(2, 0, (state)5, (state)0, 0, 0, 0, 61.3, 3.2, 35.7, this, 31, 0);       
     }
     if (ID==5)
     {
+    //TrafficLight(int id, int typ, state initialState, state initialstate2, 
+    //double Ph1, double Ph2, double Ph3, double Ph4, 
+    // double Ph5, double Ph6, IntersectionwithSignal* p, Time_t timetoStart, Time_t timetoStart2);
+
       //Traffic light on Peachtree and 14th
-      EB=new TrafficLight(1, EBtype, (state)5, 9.8, 3.6, 87, 36.9, 3.7, 60.2, this);
-	  WB=new TrafficLight(3, WBtype, (state)5, 0, 0, 0, 22.4, 3.7, 74, this);
-	  NB=new TrafficLight(0, NBtype, (state)5, 8.8, 3.6, 3.6, 34.6, 3.2, 46.1, this);
-	  SB=new TrafficLight(2, SBtype, (state)5, 11.6, 3.6, 0.5, 36.6, 3.2, 45.3, this);          
+      EB=new TrafficLight(1, 2, (state)3, (state)0, 9.9, 3.6, 87, 36.6, 3.7, 60.2, this, 9.9, 36.6);
+	  WB=new TrafficLight(3, 0, (state)5, (state)0, 0, 0, 0, 22.8, 3.7, 74, this, 13.5, 0);
+	  NB=new TrafficLight(0, 1, (state)5, (state)0, 8.8, 3.6, 3.6, 35.2, 3.2, 46.1, this, 40, 0);
+	  SB=new TrafficLight(2, 1, (state)5, (state)0, 11.3, 3.6, 0.5, 36.6, 3.2, 45.3, this, 40, 0);          
     }
 
 	//set traffic lights array
@@ -78,32 +83,58 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
                                                      
 }
 
-void IntersectionwithSignal::changeSignalTrigger( int LightID) //checks its own signals 
+void IntersectionwithSignal::changeSignalTrigger( int LightID, int leftorthru) //checks its own signals 
 {
 	//When a light changes, triggers the relevant Queues to send vehicles out.
-
-	if (TLight[LightID]->getState() == GTR)
-	{
-        //cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
-
-		this->EvictQ( Qu[LightID][0] );
-		this->EvictQ( Qu[LightID][1] );
-	}
-	else if (TLight[LightID]->getState() == GLT)
-	{
-        //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
-		this->EvictQ( Qu[LightID][1]);
-	}
-    else
+    if (TLight[LightID]->type==0 || TLight[LightID]->type==1)
     {
-        //cout << "nobody called - ID=" << this->getID() << " light: " << LightID << endl;
-    }
+    	if (TLight[LightID]->getState() == GTR)
+    	{
+            //cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
+    
+    		this->EvictQ( Qu[LightID][0] );
+    		this->EvictQ( Qu[LightID][1] );
+    	}
+    	else if (TLight[LightID]->getState() == GLT)
+    	{
+            //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
+    		this->EvictQ( Qu[LightID][1]);
+    	}
+        else
+        {
+            //cout << "nobody called - ID=" << this->getID() << " light: " << LightID << endl;
+        }
+     }
+     else
+     {
+           if (leftorthru==0)
+           {
+            	if (TLight[LightID]->getState() == GTR)
+            	{
+                    //cout << "state:GTR , ID=" << this->getID() << " light: " << LightID << endl;
+            
+            		this->EvictQ( Qu[LightID][0] );
+            		this->EvictQ( Qu[LightID][1] );
+            	}
+            
+           }
+           else
+           {
+            	if (TLight[LightID]->getLeftState() == GLT)
+            	{
+                    //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
+            		this->EvictQ( Qu[LightID][1]);
+            	}
+            	
+           }
+              
+     }
 }
 
 void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle) //Adds to outgoing queue or removes vehicles 
 {
 
-	cout << "In WithSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
+	//cout << "In WithSignal::addVehicletoQueue with vehicle ID="<< vehicle->getID()<<" , Now="<<sim->getNow() <<endl;
 	//cin.get() ;
 
 
@@ -111,8 +142,9 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
     eventDsc E1;
     E1.type= JQU;
     E1.InterID=ID;
-    E1.QDir=getQdirection( joinqueue);
-    E1.QLane=getQlane( joinqueue);
+    E1.QDir=getQdirection(this, joinqueue);
+    E1.QLane=getQlane(this, joinqueue);
+    E1.QSize=joinqueue->Q1.size();
     E1.timetag=sim->getNow();
     vehicle->EventList.push_back(E1);
 #endif
@@ -122,22 +154,23 @@ void IntersectionwithSignal::addVehicletoQueue(VehicleQueue* joinqueue, VehicleC
 	vehicle->setLastQ(joinqueue);
     if(joinqueue->GetLen() == 1) //(debug)
     {
-        cout << "joinqueue has only 1 car, evictQ called" << endl ;
-        if(joinqueue->LastSentCar==-1) // send the car now
-        {
-			cout << "did not wait" << endl;
+        //cout << "joinqueue has only 1 car, evictQ called" << endl ;
+//        if(joinqueue->LastSentCar==-1) // send the car now
+//        {
+		//	cout << "did not wait" << endl;
             this->EvictQ(joinqueue);
-        }
+/*        }
         else // send the car in the future
 		{
-			cout << "will wait for for " << max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ) << endl;
+			//cout << "will wait for for " << max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ) << endl;
 			sim->Schedule( max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ), 
                     &IntersectionwithSignal::EvictQ, this, joinqueue ); //(debug)
 		}
+*/
     }
 	else
 	{
-		cout << "waiting in line" << endl;
+		//cout << "waiting in line" << endl;
 	}
 
 }
@@ -186,13 +219,20 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
     }
 	else if(lane==1 && Turn==-1) // turning left from left lane
 	{
-		if(TLight[Qdirection]->getType()==1) // 6states
+		if(TLight[Qdirection]->getType()==1 ) // 6states
 		{
 			if(TLight[Qdirection]->getState()==GLT)
 				canGo=+2;
 			else
 				canGo= 0;
 		}
+		else if(TLight[Qdirection]->getType()==2) 
+		{
+			if(TLight[Qdirection]->getLeftState()==GLT)
+				canGo=+2;
+			else
+				canGo= 0;
+         }
 		else //3 states
 		{
 			if(TLight[Qdirection]->getState()==GTR)
