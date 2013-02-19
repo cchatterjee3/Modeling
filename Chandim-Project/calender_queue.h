@@ -1,3 +1,9 @@
+/**
+ *  @file calender_queue.h
+ *  @brief declartion of the class calender queue
+ *
+ */ 
+
 #ifndef __CQ_H__
 #define __CQ_H__
 

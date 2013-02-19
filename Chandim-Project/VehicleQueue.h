@@ -1,6 +1,7 @@
 /***
-brief decs for vehicle queue class , which was originally just typedef with a queue
-
+*	@file VehicleQueue.h	
+*	brief decs for vehicle queue class , which is a FIFO queue with 
+*
 */
 #ifndef VEHICLEQUEUE_H
 #define VEHICLEQUEUE_H
@@ -10,28 +11,69 @@ brief decs for vehicle queue class , which was originally just typedef with a qu
 
 class VehicleQueue
 {
-	private:
-		//to hold the list of the queues
-        int maxLength;
+private:
+    
+    int maxLength;					/**< To hold the maximum length of the Queue */
 
-	public:
-		std::queue<VehicleClass* > Q1;
+public:
 
-		int busy;
-        double LastSentCar;
+    std::queue<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
 
-        //constructor
-		VehicleQueue();
+    int busy;						/**< to check if the queue is busy/not */
+    double LastSentCar;				/**< Holds time for vehicle that was sent last */
 
-		VehicleClass* front();
+    /**
+    *	Default constuctor
+    *
+    */
+    VehicleQueue();
 
-		bool empty();
-		void push(VehicleClass*);
-		void pop();
-		VehicleClass* back();
-		int  GetMaxLen();
-		int  GetLen();
-		bool isBusy();
+    /**
+    *	Returns pointer of the vehicle which is front of the queue
+    *
+    */
+    
+    VehicleClass* front();
+
+    /**
+    *	Returns "true" if the queue is empty
+    *
+    */
+    bool empty();
+
+    /**
+    *	Adds vehicle to the back of the queue 
+    *	@param	V1 is pointer of the vehicle to be pushed into the queue
+    *
+    */
+    void push(VehicleClass* V1);
+    /**
+    *	Returns (and removes ) vehicle that was latest existing vehicle in the queue
+    *
+    */
+    void pop();
+
+    /**
+    *	Returns pointer to the vehicle that is at the end of the queue
+    *
+    */
+    VehicleClass* back();
+    /**
+    *	Returns Maximum possible lenght of the queue
+    *
+    */
+    int  GetMaxLen();
+    /**
+    *	Returns lenght of the queue (i.e. how many vehicles are there in the queue)
+    *
+    */
+    int  GetLen();
+
+    /**
+    *	Returns if the queue is busy or not
+    *
+    */
+    bool isBusy();
 };
 
 #endif

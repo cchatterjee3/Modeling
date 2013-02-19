@@ -1,3 +1,10 @@
+/**
+*	@file Topology.h
+*	To describe the topology of the street to be simulated
+*	i.e. peachtree street for this project
+*
+*/
+
 #pragma once
 
 #include <iostream>
@@ -15,16 +22,20 @@ class _Topology
 	public:
 	
 
-	Intersection *I1; //10th street
-	Intersection *I2; //11th street
-	Intersection *I3; //12th street
-	Intersection *I4; //13th street
-	Intersection *I5; //14th street
+	Intersection *I1; /**< 10th street  */
+	Intersection *I2; /**< 11th street */
+	Intersection *I3; /**< 12th street */
+	Intersection *I4; /**< 13th street */
+	Intersection *I5; /**< 14th street */
 
     Intersection* In[5];
     
-	VehicleQueue* ExitQ;
+	VehicleQueue* ExitQ; /**< Holds a vehicles queue for post processing */
 	
+	/**
+	*	Default constructor
+	*	Initializes the topology with intersections and 
+	*/
 	_Topology(){
         I1=new IntersectionwithSignal	(1);
 		I2=new IntersectionwithSignal	(2);

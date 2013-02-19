@@ -1,4 +1,7 @@
-
+/**
+*	@file main.cpp
+*
+*/
 #include <iostream>
 #include "Simulator.h"
 #include "IntersectionwithSignal.h"
