@@ -1,0 +1,12 @@
+<map id="VehicleClass.h" name="VehicleClass.h">
+<area shape="rect" id="node3" href="$_traffic_light_8h.html" title="description of functionality of traffic light" alt="" coords="139,83,236,111"/>
+<area shape="rect" id="node5" href="$_intersection_8h.html" title="Intersection.h" alt="" coords="257,161,359,189"/>
+<area shape="rect" id="node17" href="$stdafx_8h_source.html" title="stdafx.h" alt="" coords="5,315,72,343"/>
+<area shape="rect" id="node28" href="$_vehicle_queue_8h_source.html" title="VehicleQueue.h" alt="" coords="333,83,448,111"/>
+<area shape="rect" id="node7" href="$_intersectionwith_signal_8h.html" title="IntersectionwithSignal.h" alt="" coords="44,238,205,266"/>
+<area shape="rect" id="node11" href="$_topology_8h.html" title="Topology.h" alt="" coords="328,315,412,343"/>
+<area shape="rect" id="node19" href="$_intersectionwo_signal_8h.html" title="IntersectionwoSignal.h" alt="" coords="230,238,385,266"/>
+<area shape="rect" id="node9" href="$main_8cpp.html" title="main.cpp" alt="" coords="281,470,356,498"/>
+<area shape="rect" id="node14" href="$schedule_vehicles_8h.html" title="scheduleVehicles.h" alt="" coords="251,393,385,421"/>
+<area shape="rect" id="node32" href="$_post_processing_8h.html" title="PostProcessing.h" alt="" coords="461,393,585,421"/>
+</map>

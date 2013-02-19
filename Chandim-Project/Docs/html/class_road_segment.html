@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -100,25 +100,132 @@ Collaboration diagram for RoadSegment:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab7caf1e5f213f7584687edce88a17cdd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7caf1e5f213f7584687edce88a17cdd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>RoadSegment</b> (dir direction, <a class="el" href="class_intersection.html">Intersection</a> *par, int cap)</td></tr>
+<tr class="memitem:ab7caf1e5f213f7584687edce88a17cdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_road_segment.html#ab7caf1e5f213f7584687edce88a17cdd">RoadSegment</a> (dir direction, <a class="el" href="class_intersection.html">Intersection</a> *par, int cap)</td></tr>
 <tr class="separator:ab7caf1e5f213f7584687edce88a17cdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86d7460856feadb6faa86e130b090479"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86d7460856feadb6faa86e130b090479"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>AddVehicle</b> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
+<tr class="memitem:a86d7460856feadb6faa86e130b090479"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_road_segment.html#a86d7460856feadb6faa86e130b090479">AddVehicle</a> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
 <tr class="separator:a86d7460856feadb6faa86e130b090479"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca3951ccd16a925d6aad11ff97f6591"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ca3951ccd16a925d6aad11ff97f6591"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EvictVehicle</b> ()</td></tr>
+<tr class="memitem:a9ca3951ccd16a925d6aad11ff97f6591"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_road_segment.html#a9ca3951ccd16a925d6aad11ff97f6591">EvictVehicle</a> ()</td></tr>
 <tr class="separator:a9ca3951ccd16a925d6aad11ff97f6591"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a33e663e38e3d1944398ff70198fdb77b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e663e38e3d1944398ff70198fdb77b"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>qright</b></td></tr>
+<tr class="memitem:a33e663e38e3d1944398ff70198fdb77b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_road_segment.html#a33e663e38e3d1944398ff70198fdb77b">qright</a></td></tr>
 <tr class="separator:a33e663e38e3d1944398ff70198fdb77b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0272daa14fc04bc471f81409db27b80b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0272daa14fc04bc471f81409db27b80b"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><b>qleft</b></td></tr>
+<tr class="memitem:a0272daa14fc04bc471f81409db27b80b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_road_segment.html#a0272daa14fc04bc471f81409db27b80b">qleft</a></td></tr>
 <tr class="separator:a0272daa14fc04bc471f81409db27b80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ab7caf1e5f213f7584687edce88a17cdd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RoadSegment::RoadSegment </td>
+          <td>(</td>
+          <td class="paramtype">dir&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_intersection.html">Intersection</a> *&#160;</td>
+          <td class="paramname"><em>par</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>cap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a86d7460856feadb6faa86e130b090479"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoadSegment::AddVehicle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td>
+          <td class="paramname"><em>vehicle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds vehicle to the road segment </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.png" border="0" usemap="#class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph" alt=""/></div>
+<map name="class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph" id="class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph">
+<area shape="rect" id="node3" href="class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="236,5,426,33"/><area shape="rect" id="node5" href="class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8" title="VehicleQueue::push" alt="" coords="260,57,401,85"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9ca3951ccd16a925d6aad11ff97f6591"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void RoadSegment::EvictVehicle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Evicts vehicle from the Road Segment </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a0272daa14fc04bc471f81409db27b80b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> RoadSegment::qleft</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Left lane (Vehicle Queue) </p>
+
+</div>
+</div>
+<a class="anchor" id="a33e663e38e3d1944398ff70198fdb77b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> RoadSegment::qright</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Right lane (Vehicle queue) </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_road_segment_8h_source.html">RoadSegment.h</a></li>
 <li>RoadSegment.cpp</li>
@@ -126,7 +233,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -1,0 +1,144 @@
+\hypertarget{_common_defs_8h}{\section{Common\-Defs.\-h File Reference}
+\label{_common_defs_8h}\index{Common\-Defs.\-h@{Common\-Defs.\-h}}
+}
+{\ttfamily \#include $<$queue$>$}\\*
+Include dependency graph for Common\-Defs.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=164pt]{_common_defs_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_common_defs_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_common_defs_8h_a5606b78ad32ff40800d9c4cbecfe72fd}{\#define {\bfseries \-\_\-\-\_\-\-C\-O\-M\-M\-O\-N\-\_\-\-D\-E\-F\-S\-\_\-\-H\-\_\-\-\_\-}}\label{_common_defs_8h_a5606b78ad32ff40800d9c4cbecfe72fd}
+
+\item 
+\#define \hyperlink{_common_defs_8h_aeb463ebe07f549555c0e4cbb049219fc}{Pass\-Time}~5.\-0
+\item 
+\#define \hyperlink{_common_defs_8h_ad25f5048846b180d445c3d4684a9c826}{start\-To\-Pass}~2.\-0
+\item 
+\#define \hyperlink{_common_defs_8h_aff59525ba6b86ffad48cb91df0152cc7}{L\-Pass\-Time}~3.\-0
+\item 
+\#define \hyperlink{_common_defs_8h_a4981ab751ab3a6f1f87f74d20909790f}{road\-Seg\-Time}~36.\-0
+\item 
+\#define \hyperlink{_common_defs_8h_accc6d973f7e650162ca12f2f4ff6420d}{check\-Qinterval}~2.\-0
+\item 
+\#define \hyperlink{_common_defs_8h_a203965ae780742a7d33284e735a3a481}{Burst\-Time}~2.\-0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef double \hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries state} \{ \\*
+{\bfseries G\-L\-T}, 
+{\bfseries Y\-L\-T}, 
+{\bfseries R\-L\-T}, 
+{\bfseries G\-T\-R}, 
+\\*
+{\bfseries Y\-T\-R}, 
+{\bfseries R\-T\-R}
+ \}
+\item 
+enum {\bfseries dir} \{ {\bfseries N}, 
+{\bfseries S}, 
+{\bfseries E}, 
+{\bfseries W}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_common_defs_8h_aee7862becfb6aef94f34e882348eb275}{reg} (int i)
+\item 
+int \hyperlink{_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a}{turn} (dir global\-Dir, int Q\-Direction)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Contains commmon definations of various parameters used in different functions 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_common_defs_8h_a203965ae780742a7d33284e735a3a481}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!Burst\-Time@{Burst\-Time}}
+\index{Burst\-Time@{Burst\-Time}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{Burst\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define Burst\-Time~2.\-0}}\label{_common_defs_8h_a203965ae780742a7d33284e735a3a481}
+time for the next vehicle to depart when cars are going in groups \hypertarget{_common_defs_8h_accc6d973f7e650162ca12f2f4ff6420d}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!check\-Qinterval@{check\-Qinterval}}
+\index{check\-Qinterval@{check\-Qinterval}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{check\-Qinterval}]{\setlength{\rightskip}{0pt plus 5cm}\#define check\-Qinterval~2.\-0}}\label{_common_defs_8h_accc6d973f7e650162ca12f2f4ff6420d}
+if the next Q is full, check again in this amout of time \hypertarget{_common_defs_8h_aff59525ba6b86ffad48cb91df0152cc7}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!L\-Pass\-Time@{L\-Pass\-Time}}
+\index{L\-Pass\-Time@{L\-Pass\-Time}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{L\-Pass\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\-Pass\-Time~3.\-0}}\label{_common_defs_8h_aff59525ba6b86ffad48cb91df0152cc7}
+service time to turn left in seconds (debug) \hypertarget{_common_defs_8h_aeb463ebe07f549555c0e4cbb049219fc}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!Pass\-Time@{Pass\-Time}}
+\index{Pass\-Time@{Pass\-Time}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{Pass\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define Pass\-Time~5.\-0}}\label{_common_defs_8h_aeb463ebe07f549555c0e4cbb049219fc}
+service time to go straight in seconds \hypertarget{_common_defs_8h_a4981ab751ab3a6f1f87f74d20909790f}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!road\-Seg\-Time@{road\-Seg\-Time}}
+\index{road\-Seg\-Time@{road\-Seg\-Time}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{road\-Seg\-Time}]{\setlength{\rightskip}{0pt plus 5cm}\#define road\-Seg\-Time~36.\-0}}\label{_common_defs_8h_a4981ab751ab3a6f1f87f74d20909790f}
+time to travel one road segment \hypertarget{_common_defs_8h_ad25f5048846b180d445c3d4684a9c826}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!start\-To\-Pass@{start\-To\-Pass}}
+\index{start\-To\-Pass@{start\-To\-Pass}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{start\-To\-Pass}]{\setlength{\rightskip}{0pt plus 5cm}\#define start\-To\-Pass~2.\-0}}\label{_common_defs_8h_ad25f5048846b180d445c3d4684a9c826}
+when a queue is empty and a vehicle arrives, it takes this much to depart 
+
+\subsection{Typedef Documentation}
+\hypertarget{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!Time\-\_\-t@{Time\-\_\-t}}
+\index{Time\-\_\-t@{Time\-\_\-t}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{Time\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef double {\bf Time\-\_\-t}}}\label{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}
+Type for storing simulation times 
+
+\subsection{Function Documentation}
+\hypertarget{_common_defs_8h_aee7862becfb6aef94f34e882348eb275}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!reg@{reg}}
+\index{reg@{reg}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{reg}]{\setlength{\rightskip}{0pt plus 5cm}int reg (
+\begin{DoxyParamCaption}
+\item[{int}]{i}
+\end{DoxyParamCaption}
+)}}\label{_common_defs_8h_aee7862becfb6aef94f34e882348eb275}
+\begin{DoxySeeAlso}{See Also}
+intersection.\-cpp 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=110pt]{_common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a}{\index{Common\-Defs.\-h@{Common\-Defs.\-h}!turn@{turn}}
+\index{turn@{turn}!CommonDefs.h@{Common\-Defs.\-h}}
+\subsubsection[{turn}]{\setlength{\rightskip}{0pt plus 5cm}int turn (
+\begin{DoxyParamCaption}
+\item[{dir}]{global\-Dir, }
+\item[{int}]{Q\-Direction}
+\end{DoxyParamCaption}
+)}}\label{_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a}
+Returns routing address for Vehicle \begin{DoxySeeAlso}{See Also}
+intersection.\-cpp 
+\end{DoxySeeAlso}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=114pt]{_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph}
+\end{center}
+\end{figure}
+
+

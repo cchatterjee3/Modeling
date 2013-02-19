@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -107,91 +107,74 @@ Collaboration diagram for IntersectionwithSignal:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7fa2f6aa47aa7624c483523a920d92a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7fa2f6aa47aa7624c483523a920d92a4"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>changeSignalTrigger</b> (int LightID)</td></tr>
-<tr class="separator:a7fa2f6aa47aa7624c483523a920d92a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa918c9a3033c16fac6bfa0e996677670"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa918c9a3033c16fac6bfa0e996677670"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>addVehicletoQueue</b> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *joinqueue, <a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
+<tr class="memitem:a78fbf7f154af7d788c0543b526c7d326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a78fbf7f154af7d788c0543b526c7d326">changeSignalTrigger</a> (int LightID, int leftorthru)</td></tr>
+<tr class="separator:a78fbf7f154af7d788c0543b526c7d326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa918c9a3033c16fac6bfa0e996677670"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#aa918c9a3033c16fac6bfa0e996677670">addVehicletoQueue</a> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *joinqueue, <a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
 <tr class="separator:aa918c9a3033c16fac6bfa0e996677670"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b2a6f1e258fcd15828ffb7e9e9881b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b2a6f1e258fcd15828ffb7e9e9881b3"></a>
-virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>QCanGo</b> (int direction, int lane)</td></tr>
+<tr class="memitem:a3b2a6f1e258fcd15828ffb7e9e9881b3"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a3b2a6f1e258fcd15828ffb7e9e9881b3">QCanGo</a> (int direction, int lane)</td></tr>
 <tr class="separator:a3b2a6f1e258fcd15828ffb7e9e9881b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5eccdd602e1d9c0f6d39b5be79173d1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5eccdd602e1d9c0f6d39b5be79173d1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>IntersectionwithSignal</b> (int)</td></tr>
+<tr class="memitem:a2895da2acf740a52a4f8dd0673d3f46e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a2895da2acf740a52a4f8dd0673d3f46e">IntersectionwithSignal</a> ()</td></tr>
+<tr class="separator:a2895da2acf740a52a4f8dd0673d3f46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5eccdd602e1d9c0f6d39b5be79173d1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#ab5eccdd602e1d9c0f6d39b5be79173d1">IntersectionwithSignal</a> (int)</td></tr>
 <tr class="separator:ab5eccdd602e1d9c0f6d39b5be79173d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0baf29a021f4df049ad1ececeb3c1b11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a0baf29a021f4df049ad1ececeb3c1b11">~IntersectionwithSignal</a> ()</td></tr>
+<tr class="separator:a0baf29a021f4df049ad1ececeb3c1b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_intersection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_intersection')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_intersection.html">Intersection</a></td></tr>
-<tr class="memitem:a6f0781ff95de3ebe87e0ca83a9594cbc inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f0781ff95de3ebe87e0ca83a9594cbc"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Intersection</b> (int)</td></tr>
-<tr class="separator:a6f0781ff95de3ebe87e0ca83a9594cbc inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af9ffdb4a85d4b9250cc74936068f8d2d inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9ffdb4a85d4b9250cc74936068f8d2d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getID</b> ()</td></tr>
+<tr class="memitem:a67497e3efe2793b23909052eeb82c4f3 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a67497e3efe2793b23909052eeb82c4f3">Intersection</a> ()</td></tr>
+<tr class="separator:a67497e3efe2793b23909052eeb82c4f3 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4c8289c83f612558e3ebbb0af571235 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#ac4c8289c83f612558e3ebbb0af571235">Intersection</a> (int num)</td></tr>
+<tr class="separator:ac4c8289c83f612558e3ebbb0af571235 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a064951a970ed8dd11081b2903ab62122 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a064951a970ed8dd11081b2903ab62122">~Intersection</a> ()</td></tr>
+<tr class="separator:a064951a970ed8dd11081b2903ab62122 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9ffdb4a85d4b9250cc74936068f8d2d inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#af9ffdb4a85d4b9250cc74936068f8d2d">getID</a> ()</td></tr>
 <tr class="separator:af9ffdb4a85d4b9250cc74936068f8d2d inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe2e42381c4cf467fca7d2217d92524c inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe2e42381c4cf467fca7d2217d92524c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VehiclePass</b> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle, int Turn)</td></tr>
+<tr class="memitem:afe2e42381c4cf467fca7d2217d92524c inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c">VehiclePass</a> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle, int Turn)</td></tr>
 <tr class="separator:afe2e42381c4cf467fca7d2217d92524c inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a358151a5ef4dd58dd42a6444c7e9bfc9 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a358151a5ef4dd58dd42a6444c7e9bfc9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>VehicleDeparture</b> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
+<tr class="memitem:a358151a5ef4dd58dd42a6444c7e9bfc9 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9">VehicleDeparture</a> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle)</td></tr>
 <tr class="separator:a358151a5ef4dd58dd42a6444c7e9bfc9 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a6b34e31effdf156c39dabf523e5e8 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6a6b34e31effdf156c39dabf523e5e8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>EvictQ</b> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *joinqueue)</td></tr>
+<tr class="memitem:ab6a6b34e31effdf156c39dabf523e5e8 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8">EvictQ</a> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *joinqueue)</td></tr>
 <tr class="separator:ab6a6b34e31effdf156c39dabf523e5e8 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd40e634a34880503bd314124f77e25 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cd40e634a34880503bd314124f77e25"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getQdirection</b> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *Q)</td></tr>
-<tr class="separator:a5cd40e634a34880503bd314124f77e25 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a409b2d3138b034f5b416476ea229165d inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a409b2d3138b034f5b416476ea229165d"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getQlane</b> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *Q)</td></tr>
-<tr class="separator:a409b2d3138b034f5b416476ea229165d inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1cc47dcabbfb512f9cb85ff9e7114e1a inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1cc47dcabbfb512f9cb85ff9e7114e1a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>NextQInfo</b> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *currentQ, <a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle, <a class="el" href="class_intersection.html">Intersection</a> *&amp;NextInter, <a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&amp;FutureQ, bool &amp;isfull, int &amp;Turn)</td></tr>
+<tr class="memitem:a9304a1e23bdcc495ff95c5195b81d947 inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a9304a1e23bdcc495ff95c5195b81d947">getQdirection</a> (<a class="el" href="class_intersection.html">Intersection</a> *inter, <a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *Q)</td></tr>
+<tr class="separator:a9304a1e23bdcc495ff95c5195b81d947 inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f76abb6014473396954bcaa0db18e7e inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a2f76abb6014473396954bcaa0db18e7e">getQlane</a> (<a class="el" href="class_intersection.html">Intersection</a> *inter, <a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *Q)</td></tr>
+<tr class="separator:a2f76abb6014473396954bcaa0db18e7e inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cc47dcabbfb512f9cb85ff9e7114e1a inherit pub_methods_class_intersection"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a1cc47dcabbfb512f9cb85ff9e7114e1a">NextQInfo</a> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *currentQ, <a class="el" href="class_vehicle_class.html">VehicleClass</a> *vehicle, <a class="el" href="class_intersection.html">Intersection</a> *&amp;NextInter, <a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&amp;FutureQ, bool &amp;isfull, int &amp;Turn)</td></tr>
 <tr class="separator:a1cc47dcabbfb512f9cb85ff9e7114e1a inherit pub_methods_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a8a57308329169b7c05acdeabfaa74206"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a57308329169b7c05acdeabfaa74206"></a>
-<a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>EB</b></td></tr>
+<tr class="memitem:a8a57308329169b7c05acdeabfaa74206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a8a57308329169b7c05acdeabfaa74206">EB</a></td></tr>
 <tr class="separator:a8a57308329169b7c05acdeabfaa74206"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f321e72c10bb5a4ebeb6d314135fdbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f321e72c10bb5a4ebeb6d314135fdbb"></a>
-<a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>WB</b></td></tr>
+<tr class="memitem:a5f321e72c10bb5a4ebeb6d314135fdbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a5f321e72c10bb5a4ebeb6d314135fdbb">WB</a></td></tr>
 <tr class="separator:a5f321e72c10bb5a4ebeb6d314135fdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af548458cb3fbe82d25a13fd9295406f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af548458cb3fbe82d25a13fd9295406f7"></a>
-<a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NB</b></td></tr>
+<tr class="memitem:af548458cb3fbe82d25a13fd9295406f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#af548458cb3fbe82d25a13fd9295406f7">NB</a></td></tr>
 <tr class="separator:af548458cb3fbe82d25a13fd9295406f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19a6f5316f7d0ec4c08e6f80126b3e6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19a6f5316f7d0ec4c08e6f80126b3e6c"></a>
-<a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SB</b></td></tr>
+<tr class="memitem:a19a6f5316f7d0ec4c08e6f80126b3e6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersectionwith_signal.html#a19a6f5316f7d0ec4c08e6f80126b3e6c">SB</a></td></tr>
 <tr class="separator:a19a6f5316f7d0ec4c08e6f80126b3e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c5e8c7432419eac922f8efa01a2f487"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c5e8c7432419eac922f8efa01a2f487"></a>
 <a class="el" href="class_traffic_light.html">TrafficLight</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>TLight</b> [4]</td></tr>
 <tr class="separator:a2c5e8c7432419eac922f8efa01a2f487"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_intersection"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_intersection')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_intersection.html">Intersection</a></td></tr>
-<tr class="memitem:a8a64af1004807f4ac451bcf9bfa368a4 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a64af1004807f4ac451bcf9bfa368a4"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>EBI1</b></td></tr>
+<tr class="memitem:a8a64af1004807f4ac451bcf9bfa368a4 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a8a64af1004807f4ac451bcf9bfa368a4">EBI1</a></td></tr>
 <tr class="separator:a8a64af1004807f4ac451bcf9bfa368a4 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8db85628804847f2b98fd1edf5c28e34 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8db85628804847f2b98fd1edf5c28e34"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>EBI2</b></td></tr>
+<tr class="memitem:a8db85628804847f2b98fd1edf5c28e34 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a8db85628804847f2b98fd1edf5c28e34">EBI2</a></td></tr>
 <tr class="separator:a8db85628804847f2b98fd1edf5c28e34 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d4afb62f4051e6f25c0195de1d66442 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d4afb62f4051e6f25c0195de1d66442"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>WBI1</b></td></tr>
+<tr class="memitem:a7d4afb62f4051e6f25c0195de1d66442 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a7d4afb62f4051e6f25c0195de1d66442">WBI1</a></td></tr>
 <tr class="separator:a7d4afb62f4051e6f25c0195de1d66442 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f4c7a9c2344827a24aaa52955e56fac inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f4c7a9c2344827a24aaa52955e56fac"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>WBI2</b></td></tr>
+<tr class="memitem:a7f4c7a9c2344827a24aaa52955e56fac inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a7f4c7a9c2344827a24aaa52955e56fac">WBI2</a></td></tr>
 <tr class="separator:a7f4c7a9c2344827a24aaa52955e56fac inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba3182ae5b832420344bc8fccf5c285b inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba3182ae5b832420344bc8fccf5c285b"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NBI1</b></td></tr>
+<tr class="memitem:aba3182ae5b832420344bc8fccf5c285b inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#aba3182ae5b832420344bc8fccf5c285b">NBI1</a></td></tr>
 <tr class="separator:aba3182ae5b832420344bc8fccf5c285b inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af19480d80bcd05c9b3d6fff9e1e829d7 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af19480d80bcd05c9b3d6fff9e1e829d7"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NBI2</b></td></tr>
+<tr class="memitem:af19480d80bcd05c9b3d6fff9e1e829d7 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#af19480d80bcd05c9b3d6fff9e1e829d7">NBI2</a></td></tr>
 <tr class="separator:af19480d80bcd05c9b3d6fff9e1e829d7 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f60a7d5b4911fbc309ddecdab4a75e7 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f60a7d5b4911fbc309ddecdab4a75e7"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SBI1</b></td></tr>
+<tr class="memitem:a0f60a7d5b4911fbc309ddecdab4a75e7 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a0f60a7d5b4911fbc309ddecdab4a75e7">SBI1</a></td></tr>
 <tr class="separator:a0f60a7d5b4911fbc309ddecdab4a75e7 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a172b271e9434b824c4722b1589d77f55 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a172b271e9434b824c4722b1589d77f55"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SBI2</b></td></tr>
+<tr class="memitem:a172b271e9434b824c4722b1589d77f55 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a172b271e9434b824c4722b1589d77f55">SBI2</a></td></tr>
 <tr class="separator:a172b271e9434b824c4722b1589d77f55 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2ed4059bdd3c08bb3fd62eaf1a89f73 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2ed4059bdd3c08bb3fd62eaf1a89f73"></a>
 <a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Qu</b> [4][2]</td></tr>
 <tr class="separator:ac2ed4059bdd3c08bb3fd62eaf1a89f73 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87a7802a02ff65c92a6fd11c70144ca2 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87a7802a02ff65c92a6fd11c70144ca2"></a>
-dir&#160;</td><td class="memItemRight" valign="bottom"><b>routingtable</b> [12]</td></tr>
+<tr class="memitem:a87a7802a02ff65c92a6fd11c70144ca2 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top">dir&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a87a7802a02ff65c92a6fd11c70144ca2">routingtable</a> [12]</td></tr>
 <tr class="separator:a87a7802a02ff65c92a6fd11c70144ca2 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a23e3dd72ef9a1e4fa82da6a503b61626 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23e3dd72ef9a1e4fa82da6a503b61626"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>NBIlength</b></td></tr>
@@ -199,29 +182,256 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>NBIlength</b></td></tr
 <tr class="memitem:a11b364d7355af20e013e2217596588ec inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11b364d7355af20e013e2217596588ec"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>SBIlength</b></td></tr>
 <tr class="separator:a11b364d7355af20e013e2217596588ec inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2456746faabd194633c2b133440449c6 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2456746faabd194633c2b133440449c6"></a>
-<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>ExitQ</b></td></tr>
+<tr class="memitem:a2456746faabd194633c2b133440449c6 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a2456746faabd194633c2b133440449c6">ExitQ</a></td></tr>
 <tr class="separator:a2456746faabd194633c2b133440449c6 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a577edea4aa08d05052e6cbf7aa2ba9e2 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a577edea4aa08d05052e6cbf7aa2ba9e2"></a>
-<a class="el" href="class_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>NInter</b></td></tr>
+<tr class="memitem:a577edea4aa08d05052e6cbf7aa2ba9e2 inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a577edea4aa08d05052e6cbf7aa2ba9e2">NInter</a></td></tr>
 <tr class="separator:a577edea4aa08d05052e6cbf7aa2ba9e2 inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6cfb23dbc2ad5b1d90752247dd07acf inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6cfb23dbc2ad5b1d90752247dd07acf"></a>
-<a class="el" href="class_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>SInter</b></td></tr>
+<tr class="memitem:af6cfb23dbc2ad5b1d90752247dd07acf inherit pub_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_intersection.html">Intersection</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#af6cfb23dbc2ad5b1d90752247dd07acf">SInter</a></td></tr>
 <tr class="separator:af6cfb23dbc2ad5b1d90752247dd07acf inherit pub_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pro_attribs_class_intersection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_intersection')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_intersection.html">Intersection</a></td></tr>
-<tr class="memitem:aec0f4beb4f24b87b7f47aa6e23b7f4dd inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec0f4beb4f24b87b7f47aa6e23b7f4dd"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>ID</b></td></tr>
+<tr class="memitem:aec0f4beb4f24b87b7f47aa6e23b7f4dd inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#aec0f4beb4f24b87b7f47aa6e23b7f4dd">ID</a></td></tr>
 <tr class="separator:aec0f4beb4f24b87b7f47aa6e23b7f4dd inherit pro_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8f8ad77cc05de03282b613001a5729 inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c8f8ad77cc05de03282b613001a5729"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>haveSignal</b></td></tr>
+<tr class="memitem:a6c8f8ad77cc05de03282b613001a5729 inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#a6c8f8ad77cc05de03282b613001a5729">haveSignal</a></td></tr>
 <tr class="separator:a6c8f8ad77cc05de03282b613001a5729 inherit pro_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c8fd3e12e9df00670ae7c0f77d1e17 inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7c8fd3e12e9df00670ae7c0f77d1e17"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>busy</b></td></tr>
+<tr class="memitem:ac7c8fd3e12e9df00670ae7c0f77d1e17 inherit pro_attribs_class_intersection"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_intersection.html#ac7c8fd3e12e9df00670ae7c0f77d1e17">busy</a></td></tr>
 <tr class="separator:ac7c8fd3e12e9df00670ae7c0f77d1e17 inherit pro_attribs_class_intersection"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a2895da2acf740a52a4f8dd0673d3f46e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntersectionwithSignal::IntersectionwithSignal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default Constructor </p>
+
+</div>
+</div>
+<a class="anchor" id="ab5eccdd602e1d9c0f6d39b5be79173d1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntersectionwithSignal::IntersectionwithSignal </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nID</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>COnstror sets the ID of the intersection </p>
+
+</div>
+</div>
+<a class="anchor" id="a0baf29a021f4df049ad1ececeb3c1b11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">IntersectionwithSignal::~IntersectionwithSignal </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa918c9a3033c16fac6bfa0e996677670"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IntersectionwithSignal::addVehicletoQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td>
+          <td class="paramname"><em>joinqueue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td>
+          <td class="paramname"><em>vehicle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Adds to outgoing queue or removes vehicles </p>
+
+<p>Implements <a class="el" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12">Intersection</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph.png" border="0" usemap="#class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph" alt=""/></div>
+<map name="class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph" id="class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph">
+<area shape="rect" id="node3" href="class_intersection.html#a9304a1e23bdcc495ff95c5195b81d947" title="Intersection::getQdirection" alt="" coords="206,5,383,33"/><area shape="rect" id="node5" href="class_intersection.html#a2f76abb6014473396954bcaa0db18e7e" title="Intersection::getQlane" alt="" coords="219,57,371,85"/><area shape="rect" id="node7" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="922,190,1052,218"/><area shape="rect" id="node9" href="class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8" title="VehicleQueue::push" alt="" coords="224,262,365,290"/><area shape="rect" id="node11" href="class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f" title="VehicleClass::setLastQ" alt="" coords="215,314,374,342"/><area shape="rect" id="node13" href="class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0" title="VehicleQueue::GetLen" alt="" coords="217,366,372,394"/><area shape="rect" id="node15" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="226,210,363,238"/><area shape="rect" id="node17" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="448,518,587,546"/><area shape="rect" id="node20" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="916,445,1057,473"/><area shape="rect" id="node26" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="432,287,602,315"/><area shape="rect" id="node33" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="907,273,1066,301"/><area shape="rect" id="node42" href="class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="450,339,584,367"/><area shape="rect" id="node22" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1145,418,1257,446"/><area shape="rect" id="node24" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1123,470,1280,498"/><area shape="rect" id="node30" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="651,363,851,391"/><area shape="rect" id="node35" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="899,325,1075,353"/><area shape="rect" id="node38" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="900,377,1074,421"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a78fbf7f154af7d788c0543b526c7d326"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void IntersectionwithSignal::changeSignalTrigger </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>LightID</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leftorthru</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>checks its own signals leftortur=1: left </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph.png" border="0" usemap="#class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph" alt=""/></div>
+<map name="class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph" id="class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph">
+<area shape="rect" id="node3" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="206,158,343,186"/><area shape="rect" id="node5" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="408,5,547,33"/><area shape="rect" id="node7" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="882,191,1012,219"/><area shape="rect" id="node9" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="876,139,1017,167"/><area shape="rect" id="node15" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="392,209,562,237"/><area shape="rect" id="node22" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="867,363,1026,391"/><area shape="rect" id="node31" href="class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="410,415,544,443"/><area shape="rect" id="node11" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1105,113,1217,141"/><area shape="rect" id="node13" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1083,165,1240,193"/><area shape="rect" id="node19" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="611,261,811,289"/><area shape="rect" id="node24" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="859,311,1035,339"/><area shape="rect" id="node27" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="860,243,1034,287"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b2a6f1e258fcd15828ffb7e9e9881b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int IntersectionwithSignal::QCanGo </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>lane</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>If the queue can go in "direction,lane" </p>
+
+<p>Implements <a class="el" href="class_intersection.html#ade54ec591355782db542061623096a2f">Intersection</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph.png" border="0" usemap="#class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph" alt=""/></div>
+<map name="class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph" id="class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph">
+<area shape="rect" id="node3" href="class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9" title="VehicleQueue::empty" alt="" coords="227,5,375,33"/><area shape="rect" id="node5" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="232,57,371,85"/><area shape="rect" id="node7" href="class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="206,109,396,137"/><area shape="rect" id="node9" href="_common_defs_8h.html#ab16114155cb6c7b1080dc8f52f1f8f7a" title="turn" alt="" coords="279,185,323,213"/><area shape="rect" id="node12" href="_common_defs_8h.html#aee7862becfb6aef94f34e882348eb275" title="reg" alt="" coords="281,261,322,289"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a8a57308329169b7c05acdeabfaa74206"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_traffic_light.html">TrafficLight</a>* IntersectionwithSignal::EB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>East bound Traffic lights </p>
+
+</div>
+</div>
+<a class="anchor" id="af548458cb3fbe82d25a13fd9295406f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_traffic_light.html">TrafficLight</a>* IntersectionwithSignal::NB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>North bound Traffic lights </p>
+
+</div>
+</div>
+<a class="anchor" id="a19a6f5316f7d0ec4c08e6f80126b3e6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_traffic_light.html">TrafficLight</a>* IntersectionwithSignal::SB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>South bound Traffic lights </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f321e72c10bb5a4ebeb6d314135fdbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_traffic_light.html">TrafficLight</a>* IntersectionwithSignal::WB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>West bound Traffic lights </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_intersectionwith_signal_8h_source.html">IntersectionwithSignal.h</a></li>
 <li>IntersectionwithSignal.cpp</li>
@@ -229,7 +439,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>busy</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

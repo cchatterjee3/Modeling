@@ -1,7 +1,123 @@
 \hypertarget{class_vehicle_queue}{\section{Vehicle\-Queue Class Reference}
 \label{class_vehicle_queue}\index{Vehicle\-Queue@{Vehicle\-Queue}}
 }
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_vehicle_queue_a19f80d40ffe612dae9b2cbce39fe1a1a}{Vehicle\-Queue} ()
+\item 
+\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$ \hyperlink{class_vehicle_queue_aff7fef0dc6401e38a26bc34ee0e78f2a}{front} ()
+\item 
+bool \hyperlink{class_vehicle_queue_a9c22a63f1c7562bc14be172a38cffcb9}{empty} ()
+\item 
+void \hyperlink{class_vehicle_queue_a71dfef194e7e2cbfdca2b724d66301b8}{push} (\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$V1)
+\item 
+void \hyperlink{class_vehicle_queue_ad4f16ccf1a5990172e28b7782051b50a}{pop} ()
+\item 
+\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$ \hyperlink{class_vehicle_queue_a302883b18a07a99dacd614ee5332f09e}{back} ()
+\item 
+int \hyperlink{class_vehicle_queue_a4d5dc7f4ee55be52e781b252e6260ba1}{Get\-Max\-Len} ()
+\item 
+int \hyperlink{class_vehicle_queue_ae443ecfa4227dbb5094f1bd33e77abb0}{Get\-Len} ()
+\item 
+bool \hyperlink{class_vehicle_queue_ada2e9158033c24433b042ab46abe2fb8}{is\-Busy} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::queue$<$ \hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$ $>$ \hyperlink{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}{Q1}
+\item 
+int \hyperlink{class_vehicle_queue_a4ce16496b3665d0b91a8b5baf158c3a3}{busy}
+\item 
+double \hyperlink{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}{Last\-Sent\-Car}
+\end{DoxyCompactItemize}
 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vehicle_queue_a19f80d40ffe612dae9b2cbce39fe1a1a}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Vehicle\-Queue@{Vehicle\-Queue}}
+\index{Vehicle\-Queue@{Vehicle\-Queue}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Vehicle\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}Vehicle\-Queue\-::\-Vehicle\-Queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a19f80d40ffe612dae9b2cbce39fe1a1a}
+Default constuctor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vehicle_queue_a302883b18a07a99dacd614ee5332f09e}{\index{Vehicle\-Queue@{Vehicle\-Queue}!back@{back}}
+\index{back@{back}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{back}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Class} $\ast$ Vehicle\-Queue\-::back (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a302883b18a07a99dacd614ee5332f09e}
+Returns pointer to the vehicle that is at the end of the queue \hypertarget{class_vehicle_queue_a9c22a63f1c7562bc14be172a38cffcb9}{\index{Vehicle\-Queue@{Vehicle\-Queue}!empty@{empty}}
+\index{empty@{empty}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}bool Vehicle\-Queue\-::empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a9c22a63f1c7562bc14be172a38cffcb9}
+Returns \char`\"{}true\char`\"{} if the queue is empty \hypertarget{class_vehicle_queue_aff7fef0dc6401e38a26bc34ee0e78f2a}{\index{Vehicle\-Queue@{Vehicle\-Queue}!front@{front}}
+\index{front@{front}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{front}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Class} $\ast$ Vehicle\-Queue\-::front (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_aff7fef0dc6401e38a26bc34ee0e78f2a}
+Returns pointer of the vehicle which is front of the queue \hypertarget{class_vehicle_queue_ae443ecfa4227dbb5094f1bd33e77abb0}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Get\-Len@{Get\-Len}}
+\index{Get\-Len@{Get\-Len}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Get\-Len}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Queue\-::\-Get\-Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_ae443ecfa4227dbb5094f1bd33e77abb0}
+Returns lenght of the queue (i.\-e. how many vehicles are there in the queue) \hypertarget{class_vehicle_queue_a4d5dc7f4ee55be52e781b252e6260ba1}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Get\-Max\-Len@{Get\-Max\-Len}}
+\index{Get\-Max\-Len@{Get\-Max\-Len}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Get\-Max\-Len}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Queue\-::\-Get\-Max\-Len (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a4d5dc7f4ee55be52e781b252e6260ba1}
+Returns Maximum possible lenght of the queue \hypertarget{class_vehicle_queue_ada2e9158033c24433b042ab46abe2fb8}{\index{Vehicle\-Queue@{Vehicle\-Queue}!is\-Busy@{is\-Busy}}
+\index{is\-Busy@{is\-Busy}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{is\-Busy}]{\setlength{\rightskip}{0pt plus 5cm}bool Vehicle\-Queue\-::is\-Busy (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_ada2e9158033c24433b042ab46abe2fb8}
+Returns if the queue is busy or not \hypertarget{class_vehicle_queue_ad4f16ccf1a5990172e28b7782051b50a}{\index{Vehicle\-Queue@{Vehicle\-Queue}!pop@{pop}}
+\index{pop@{pop}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{pop}]{\setlength{\rightskip}{0pt plus 5cm}void Vehicle\-Queue\-::pop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_ad4f16ccf1a5990172e28b7782051b50a}
+Returns (and removes ) vehicle that was latest existing vehicle in the queue \hypertarget{class_vehicle_queue_a71dfef194e7e2cbfdca2b724d66301b8}{\index{Vehicle\-Queue@{Vehicle\-Queue}!push@{push}}
+\index{push@{push}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{push}]{\setlength{\rightskip}{0pt plus 5cm}void Vehicle\-Queue\-::push (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Class} $\ast$}]{V1}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a71dfef194e7e2cbfdca2b724d66301b8}
+Adds vehicle to the back of the queue 
+\begin{DoxyParams}{Parameters}
+{\em V1} & is pointer of the vehicle to be pushed into the queue \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_vehicle_queue_a4ce16496b3665d0b91a8b5baf158c3a3}{\index{Vehicle\-Queue@{Vehicle\-Queue}!busy@{busy}}
+\index{busy@{busy}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{busy}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Queue\-::busy}}\label{class_vehicle_queue_a4ce16496b3665d0b91a8b5baf158c3a3}
+to check if the queue is busy/not \hypertarget{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Last\-Sent\-Car@{Last\-Sent\-Car}}
+\index{Last\-Sent\-Car@{Last\-Sent\-Car}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Last\-Sent\-Car}]{\setlength{\rightskip}{0pt plus 5cm}double Vehicle\-Queue\-::\-Last\-Sent\-Car}}\label{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}
+Holds time for vehicle that was sent last \hypertarget{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Q1@{Q1}}
+\index{Q1@{Q1}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Q1}]{\setlength{\rightskip}{0pt plus 5cm}std\-::queue$<${\bf Vehicle\-Class}$\ast$ $>$ Vehicle\-Queue\-::\-Q1}}\label{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}
+std\-::\-Queue for holding the vehicle queue 
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 

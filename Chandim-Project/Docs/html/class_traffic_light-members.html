@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,17 +89,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_traffic_light.html">TrafficLight</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>cyclestate</b>() (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getState</b>() (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getType</b>() (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>myid</b> (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>TrafficLight</b>() (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>TrafficLight</b>(int id, int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal *p) (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>~TrafficLight</b>() (defined in <a class="el" href="class_traffic_light.html">TrafficLight</a>)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_traffic_light.html#a43310868b8badae122a037d85f009a0f">cyclestate</a>(int leftorthru)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_traffic_light.html#ae710ff1d3ded24f933c4dd3816ba98e0">getLeftState</a>()</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_traffic_light.html#aaee73cd4cff5ad4f7096c7c8e9e6bc4b">getState</a>()</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_traffic_light.html#abce2ada7d1eeb16437d07acd50b2446b">getType</a>()</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_traffic_light.html#aa8b8852f0a75b737d741cdb831847208">myid</a></td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_traffic_light.html#a28e72db41dcbd224a0a811d08ae20c3f">TrafficLight</a>()</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_traffic_light.html#a7ed32935d0b40a941a56d74cbec790fd">TrafficLight</a>(int id, int typ, state initialState, state initialstate2, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, IntersectionwithSignal *p, Time_t timetoStart, Time_t timetoStart2)</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_traffic_light.html#abd951c68d768bc9d91aedd90e383a7b8">type</a></td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_traffic_light.html#a3dd2a89a028c1586ced0ab587dda8cc1">~TrafficLight</a>()</td><td class="entry"><a class="el" href="class_traffic_light.html">TrafficLight</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

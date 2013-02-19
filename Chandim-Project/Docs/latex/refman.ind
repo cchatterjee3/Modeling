@@ -1,55 +1,577 @@
 \begin{theindex}
 
+  \item {$\sim $\discretionary {-}{}{}Intersection}
+    \subitem {Intersection}, \hyperpage{18}
+  \item {$\sim $\discretionary {-}{}{}Intersectionwith\discretionary {-}{}{}Signal}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+  \item {$\sim $\discretionary {-}{}{}Intersectionwithout\discretionary {-}{}{}Signal}
+    \subitem {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{24}
+  \item {$\sim $\discretionary {-}{}{}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{31}
+  \item {$\sim $\discretionary {-}{}{}Traffic\discretionary {-}{}{}Light}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{37}
+  \item {$\sim $\discretionary {-}{}{}Vehicle\discretionary {-}{}{}Class}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
   \item {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
-		\hyperpage{5}
-
-  \indexspace
-
-  \item {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
-		\hyperpage{6}
-
-  \indexspace
-
-  \item {Event0$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J $>$}, 
 		\hyperpage{7}
-  \item {Event1$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1 $>$}, 
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
 		\hyperpage{8}
-  \item {Event2$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2 $>$}, 
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+    \subitem {Exit\discretionary {-}{}{}Q}, \hyperpage{8}
+    \subitem {I1}, \hyperpage{8}
+    \subitem {I2}, \hyperpage{8}
+    \subitem {I3}, \hyperpage{8}
+    \subitem {I4}, \hyperpage{8}
+    \subitem {I5}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Add\discretionary {-}{}{}Vehicle}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+  \item {add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}
+    \subitem {Intersection}, \hyperpage{18}
+    \subitem {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{25}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+
+  \indexspace
+
+  \item {B\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}U\discretionary {-}{}{}N\discretionary {-}{}{}T}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue.\discretionary {-}{}{}h}, 
+		\hyperpage{44}
+  \item {back}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {Burst\discretionary {-}{}{}Time}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {busy}
+    \subitem {Intersection}, \hyperpage{21}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+
+  \indexspace
+
+  \item {C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}D}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
 		\hyperpage{9}
-  \item {Event3$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2, U3, T3 $>$}, 
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+    \subitem {check659bucket}, \hyperpage{9}
+    \subitem {dequeue}, \hyperpage{9}
+    \subitem {get\discretionary {-}{}{}\_\discretionary {-}{}{}bucket\discretionary {-}{}{}\_\discretionary {-}{}{}count}, 
+		\hyperpage{9}
+    \subitem {get\discretionary {-}{}{}Qsize}, \hyperpage{9}
+    \subitem {gettimeframe}, \hyperpage{9}
+    \subitem {insert}, \hyperpage{10}
+    \subitem {is\discretionary {-}{}{}Empty}, \hyperpage{10}
+    \subitem {next\discretionary {-}{}{}\_\discretionary {-}{}{}event}, 
 		\hyperpage{10}
-  \item {event\discretionary {-}{}{}\_\discretionary {-}{}{}compare}, 
+    \subitem {Pop\discretionary {-}{}{}Next}, \hyperpage{10}
+    \subitem {remove\discretionary {-}{}{}\_\discretionary {-}{}{}event}, 
+		\hyperpage{10}
+  \item {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue.\discretionary {-}{}{}h}, 
+		\hyperpage{43}
+    \subitem {B\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}U\discretionary {-}{}{}N\discretionary {-}{}{}T}, 
+		\hyperpage{44}
+    \subitem {C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}D}, 
+		\hyperpage{45}
+    \subitem {T\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E}, 
+		\hyperpage{45}
+  \item {change\discretionary {-}{}{}Signal\discretionary {-}{}{}Trigger}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+  \item {check659bucket}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+  \item {check\discretionary {-}{}{}Qinterval}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+    \subitem {Burst\discretionary {-}{}{}Time}, \hyperpage{47}
+    \subitem {check\discretionary {-}{}{}Qinterval}, \hyperpage{47}
+    \subitem {L\discretionary {-}{}{}Pass\discretionary {-}{}{}Time}, 
+		\hyperpage{47}
+    \subitem {Pass\discretionary {-}{}{}Time}, \hyperpage{47}
+    \subitem {reg}, \hyperpage{47}
+    \subitem {road\discretionary {-}{}{}Seg\discretionary {-}{}{}Time}, 
+		\hyperpage{47}
+    \subitem {start\discretionary {-}{}{}To\discretionary {-}{}{}Pass}, 
+		\hyperpage{47}
+    \subitem {Time\discretionary {-}{}{}\_\discretionary {-}{}{}t}, 
+		\hyperpage{47}
+    \subitem {turn}, \hyperpage{48}
+  \item {cyclestate}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{37}
+
+  \indexspace
+
+  \item {dequeue}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {E\discretionary {-}{}{}B}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{29}
+  \item {E\discretionary {-}{}{}B\discretionary {-}{}{}I1}
+    \subitem {Intersection}, \hyperpage{21}
+  \item {E\discretionary {-}{}{}B\discretionary {-}{}{}I2}
+    \subitem {Intersection}, \hyperpage{21}
+  \item {empty}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {End\discretionary {-}{}{}Time}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {end\discretionary {-}{}{}Time}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{40}
+  \item {Event0$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J $>$}, 
 		\hyperpage{11}
-  \item {Event\discretionary {-}{}{}Base}, \hyperpage{11}
-
-  \indexspace
-
-  \item {Intersection}, \hyperpage{12}
-  \item {Intersectionwith\discretionary {-}{}{}Signal}, \hyperpage{15}
-  \item {Intersectionwithout\discretionary {-}{}{}Signal}, 
+  \item {Event1$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1 $>$}, 
+		\hyperpage{12}
+  \item {Event2$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2 $>$}, 
 		\hyperpage{13}
+  \item {Event3$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2, U3, T3 $>$}, 
+		\hyperpage{14}
+  \item {event\discretionary {-}{}{}\_\discretionary {-}{}{}compare}, 
+		\hyperpage{15}
+  \item {Event\discretionary {-}{}{}Base}, \hyperpage{15}
+  \item {event\discretionary {-}{}{}Dsc}, \hyperpage{16}
+  \item {Events.\discretionary {-}{}{}h}, \hyperpage{48}
+  \item {Evict\discretionary {-}{}{}Q}
+    \subitem {Intersection}, \hyperpage{18}
+  \item {Evict\discretionary {-}{}{}Vehicle}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+  \item {Exit\discretionary {-}{}{}Q}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+    \subitem {Intersection}, \hyperpage{22}
 
   \indexspace
 
-  \item {prioqueue}, \hyperpage{16}
+  \item {front}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
 
   \indexspace
 
+  \item {get\discretionary {-}{}{}\_\discretionary {-}{}{}bucket\discretionary {-}{}{}\_\discretionary {-}{}{}count}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+  \item {get\discretionary {-}{}{}Destination}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Direction}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}I\discretionary {-}{}{}D}
+    \subitem {Intersection}, \hyperpage{19}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Last\discretionary {-}{}{}Q}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {get\discretionary {-}{}{}Left\discretionary {-}{}{}State}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{37}
+  \item {Get\discretionary {-}{}{}Len}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {Get\discretionary {-}{}{}Max\discretionary {-}{}{}Len}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {get\discretionary {-}{}{}Now}
+    \subitem {Simulator}, \hyperpage{33}
+  \item {get\discretionary {-}{}{}Qdirection}
+    \subitem {Intersection}, \hyperpage{19}
+  \item {get\discretionary {-}{}{}Qlane}
+    \subitem {Intersection}, \hyperpage{19}
+  \item {get\discretionary {-}{}{}Qsize}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+  \item {get\discretionary {-}{}{}Source}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {Get\discretionary {-}{}{}State}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{31}
+  \item {get\discretionary {-}{}{}State}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{37}
+  \item {get\discretionary {-}{}{}Type}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{37}
+  \item {gettimeframe}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{9}
+
+  \indexspace
+
+  \item {have\discretionary {-}{}{}Signal}
+    \subitem {Intersection}, \hyperpage{22}
+
+  \indexspace
+
+  \item {I1}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+  \item {I2}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+  \item {I3}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+  \item {I4}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+  \item {I5}
+    \subitem {\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}, 
+		\hyperpage{8}
+  \item {I\discretionary {-}{}{}D}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {insert}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{10}
+  \item {instance}
+    \subitem {Simulator}, \hyperpage{36}
+  \item {Intersection}, \hyperpage{16}
+    \subitem {$\sim $\discretionary {-}{}{}Intersection}, 
+		\hyperpage{18}
+    \subitem {add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}, 
+		\hyperpage{18}
+    \subitem {busy}, \hyperpage{21}
+    \subitem {E\discretionary {-}{}{}B\discretionary {-}{}{}I1}, 
+		\hyperpage{21}
+    \subitem {E\discretionary {-}{}{}B\discretionary {-}{}{}I2}, 
+		\hyperpage{21}
+    \subitem {Evict\discretionary {-}{}{}Q}, \hyperpage{18}
+    \subitem {Exit\discretionary {-}{}{}Q}, \hyperpage{22}
+    \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{19}
+    \subitem {get\discretionary {-}{}{}Qdirection}, \hyperpage{19}
+    \subitem {get\discretionary {-}{}{}Qlane}, \hyperpage{19}
+    \subitem {have\discretionary {-}{}{}Signal}, \hyperpage{22}
+    \subitem {I\discretionary {-}{}{}D}, \hyperpage{22}
+    \subitem {Intersection}, \hyperpage{18}
+    \subitem {N\discretionary {-}{}{}B\discretionary {-}{}{}I1}, 
+		\hyperpage{22}
+    \subitem {N\discretionary {-}{}{}B\discretionary {-}{}{}I2}, 
+		\hyperpage{22}
+    \subitem {N\discretionary {-}{}{}Inter}, \hyperpage{22}
+    \subitem {Next\discretionary {-}{}{}Q\discretionary {-}{}{}Info}, 
+		\hyperpage{19}
+    \subitem {Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}, 
+		\hyperpage{20}
+    \subitem {routingtable}, \hyperpage{22}
+    \subitem {S\discretionary {-}{}{}B\discretionary {-}{}{}I1}, 
+		\hyperpage{22}
+    \subitem {S\discretionary {-}{}{}B\discretionary {-}{}{}I2}, 
+		\hyperpage{22}
+    \subitem {S\discretionary {-}{}{}Inter}, \hyperpage{22}
+    \subitem {Vehicle\discretionary {-}{}{}Departure}, \hyperpage{20}
+    \subitem {Vehicle\discretionary {-}{}{}Pass}, \hyperpage{21}
+    \subitem {W\discretionary {-}{}{}B\discretionary {-}{}{}I1}, 
+		\hyperpage{22}
+    \subitem {W\discretionary {-}{}{}B\discretionary {-}{}{}I2}, 
+		\hyperpage{22}
+  \item {Intersection.\discretionary {-}{}{}h}, \hyperpage{50}
+  \item {Intersectionwith\discretionary {-}{}{}Signal}, \hyperpage{26}
+    \subitem {$\sim $\discretionary {-}{}{}Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+    \subitem {add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}, 
+		\hyperpage{28}
+    \subitem {change\discretionary {-}{}{}Signal\discretionary {-}{}{}Trigger}, 
+		\hyperpage{28}
+    \subitem {E\discretionary {-}{}{}B}, \hyperpage{29}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{28}
+    \subitem {N\discretionary {-}{}{}B}, \hyperpage{29}
+    \subitem {Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}, 
+		\hyperpage{29}
+    \subitem {S\discretionary {-}{}{}B}, \hyperpage{30}
+    \subitem {W\discretionary {-}{}{}B}, \hyperpage{30}
+  \item {Intersectionwith\discretionary {-}{}{}Signal.\discretionary {-}{}{}h}, 
+		\hyperpage{51}
+  \item {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{23}
+    \subitem {$\sim $\discretionary {-}{}{}Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{24}
+    \subitem {add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}, 
+		\hyperpage{25}
+    \subitem {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{24}
+    \subitem {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{24}
+    \subitem {Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}, 
+		\hyperpage{25}
+  \item {Intersectionwo\discretionary {-}{}{}Signal.\discretionary {-}{}{}h}, 
+		\hyperpage{53}
+  \item {is\discretionary {-}{}{}Busy}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {is\discretionary {-}{}{}Empty}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{10}
+
+  \indexspace
+
+  \item {L\discretionary {-}{}{}Pass\discretionary {-}{}{}Time}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {Last\discretionary {-}{}{}Sent\discretionary {-}{}{}Car}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+
+  \indexspace
+
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}G}
+    \subitem {Random\discretionary {-}{}{}Num.\discretionary {-}{}{}h}, 
+		\hyperpage{58}
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}M}
+    \subitem {Random\discretionary {-}{}{}Num.\discretionary {-}{}{}h}, 
+		\hyperpage{58}
+  \item {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}X}
+    \subitem {Random\discretionary {-}{}{}Num.\discretionary {-}{}{}h}, 
+		\hyperpage{58}
+  \item {main.\discretionary {-}{}{}cpp}, \hyperpage{54}
+  \item {myid}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{38}
+
+  \indexspace
+
+  \item {N\discretionary {-}{}{}B}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{29}
+  \item {N\discretionary {-}{}{}B\discretionary {-}{}{}I1}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {N\discretionary {-}{}{}B\discretionary {-}{}{}I2}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {N\discretionary {-}{}{}Inter}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {Next}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{31}
+  \item {next\discretionary {-}{}{}\_\discretionary {-}{}{}event}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{10}
+  \item {Next\discretionary {-}{}{}Q\discretionary {-}{}{}Info}
+    \subitem {Intersection}, \hyperpage{19}
+  \item {Now}
+    \subitem {Simulator}, \hyperpage{33}
+
+  \indexspace
+
+  \item {Pass\discretionary {-}{}{}Time}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {pop}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {Pop\discretionary {-}{}{}Next}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{10}
+  \item {Post\discretionary {-}{}{}Proc\discretionary {-}{}{}Stats}
+    \subitem {Post\discretionary {-}{}{}Processing.\discretionary {-}{}{}h}, 
+		\hyperpage{57}
+  \item {Post\discretionary {-}{}{}Processing.\discretionary {-}{}{}h}, 
+		\hyperpage{56}
+    \subitem {Post\discretionary {-}{}{}Proc\discretionary {-}{}{}Stats}, 
+		\hyperpage{57}
+  \item {prioqueue}, \hyperpage{30}
+  \item {push}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Q1}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{41}
+  \item {Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}
+    \subitem {Intersection}, \hyperpage{20}
+    \subitem {Intersectionwithout\discretionary {-}{}{}Signal}, 
+		\hyperpage{25}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{29}
+  \item {qleft}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+  \item {qright}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Random\discretionary {-}{}{}Num.\discretionary {-}{}{}h}, 
+		\hyperpage{58}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}G}, 
+		\hyperpage{58}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}M}, 
+		\hyperpage{58}
+    \subitem {M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}X}, 
+		\hyperpage{58}
   \item {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
-		\hyperpage{16}
-  \item {Road\discretionary {-}{}{}Segment}, \hyperpage{17}
+		\hyperpage{30}
+    \subitem {$\sim $\discretionary {-}{}{}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{31}
+    \subitem {Get\discretionary {-}{}{}State}, \hyperpage{31}
+    \subitem {Next}, \hyperpage{31}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{30}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{30}
+    \subitem {Reset}, \hyperpage{31}
+  \item {reg}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {remove\discretionary {-}{}{}\_\discretionary {-}{}{}event}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}, 
+		\hyperpage{10}
+  \item {Reset}
+    \subitem {Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}, 
+		\hyperpage{31}
+  \item {road\discretionary {-}{}{}Seg\discretionary {-}{}{}Time}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {Road\discretionary {-}{}{}Segment}, \hyperpage{31}
+    \subitem {Add\discretionary {-}{}{}Vehicle}, \hyperpage{32}
+    \subitem {Evict\discretionary {-}{}{}Vehicle}, \hyperpage{32}
+    \subitem {qleft}, \hyperpage{32}
+    \subitem {qright}, \hyperpage{32}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+    \subitem {Road\discretionary {-}{}{}Segment}, \hyperpage{32}
+  \item {Road\discretionary {-}{}{}Segment.\discretionary {-}{}{}h}, 
+		\hyperpage{59}
+  \item {routingtable}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {Run}
+    \subitem {Simulator}, \hyperpage{34}
 
   \indexspace
 
-  \item {Simulator}, \hyperpage{17}
+  \item {S\discretionary {-}{}{}B}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{30}
+  \item {S\discretionary {-}{}{}B\discretionary {-}{}{}I1}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {S\discretionary {-}{}{}B\discretionary {-}{}{}I2}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {S\discretionary {-}{}{}Inter}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {Schedule}
+    \subitem {Simulator}, \hyperpage{34, 35}
+  \item {schedule\discretionary {-}{}{}Vehicles}
+    \subitem {schedule\discretionary {-}{}{}Vehicles.\discretionary {-}{}{}h}, 
+		\hyperpage{60}
+  \item {schedule\discretionary {-}{}{}Vehicles.\discretionary {-}{}{}h}, 
+		\hyperpage{59}
+    \subitem {schedule\discretionary {-}{}{}Vehicles}, \hyperpage{60}
+  \item {set\discretionary {-}{}{}End\discretionary {-}{}{}Time}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {set\discretionary {-}{}{}Last\discretionary {-}{}{}Q}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {Simulator}, \hyperpage{33}
+    \subitem {get\discretionary {-}{}{}Now}, \hyperpage{33}
+    \subitem {instance}, \hyperpage{36}
+    \subitem {Now}, \hyperpage{33}
+    \subitem {Run}, \hyperpage{34}
+    \subitem {Schedule}, \hyperpage{34, 35}
+    \subitem {Simulator}, \hyperpage{33}
+    \subitem {Stop}, \hyperpage{35}
+    \subitem {Stop\discretionary {-}{}{}At}, \hyperpage{35}
+  \item {Simulator.\discretionary {-}{}{}h}, \hyperpage{61}
+  \item {Start\discretionary {-}{}{}Time}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{39}
+  \item {start\discretionary {-}{}{}Time}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{40}
+  \item {start\discretionary {-}{}{}To\discretionary {-}{}{}Pass}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {Stop}
+    \subitem {Simulator}, \hyperpage{35}
+  \item {Stop\discretionary {-}{}{}At}
+    \subitem {Simulator}, \hyperpage{35}
 
   \indexspace
 
-  \item {Traffic\discretionary {-}{}{}Light}, \hyperpage{18}
+  \item {T\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E}
+    \subitem {calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue.\discretionary {-}{}{}h}, 
+		\hyperpage{45}
+  \item {Time\discretionary {-}{}{}\_\discretionary {-}{}{}t}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{47}
+  \item {Topology.\discretionary {-}{}{}h}, \hyperpage{62}
+  \item {Traffic\discretionary {-}{}{}Light}, \hyperpage{36}
+    \subitem {$\sim $\discretionary {-}{}{}Traffic\discretionary {-}{}{}Light}, 
+		\hyperpage{37}
+    \subitem {cyclestate}, \hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Left\discretionary {-}{}{}State}, 
+		\hyperpage{37}
+    \subitem {get\discretionary {-}{}{}State}, \hyperpage{37}
+    \subitem {get\discretionary {-}{}{}Type}, \hyperpage{37}
+    \subitem {myid}, \hyperpage{38}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{36}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{36}
+    \subitem {type}, \hyperpage{38}
+  \item {Traffic\discretionary {-}{}{}Light.\discretionary {-}{}{}h}, 
+		\hyperpage{63}
+  \item {turn}
+    \subitem {Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h}, 
+		\hyperpage{48}
+  \item {type}
+    \subitem {Traffic\discretionary {-}{}{}Light}, \hyperpage{38}
 
   \indexspace
 
-  \item {Vehicle\discretionary {-}{}{}Class}, \hyperpage{19}
-  \item {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{19}
+  \item {update\discretionary {-}{}{}Direction}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{40}
+
+  \indexspace
+
+  \item {Vehicle\discretionary {-}{}{}Class}, \hyperpage{38}
+    \subitem {$\sim $\discretionary {-}{}{}Vehicle\discretionary {-}{}{}Class}, 
+		\hyperpage{39}
+    \subitem {End\discretionary {-}{}{}Time}, \hyperpage{39}
+    \subitem {end\discretionary {-}{}{}Time}, \hyperpage{40}
+    \subitem {get\discretionary {-}{}{}Destination}, \hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Direction}, \hyperpage{39}
+    \subitem {get\discretionary {-}{}{}I\discretionary {-}{}{}D}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Last\discretionary {-}{}{}Q}, 
+		\hyperpage{39}
+    \subitem {get\discretionary {-}{}{}Source}, \hyperpage{39}
+    \subitem {set\discretionary {-}{}{}End\discretionary {-}{}{}Time}, 
+		\hyperpage{39}
+    \subitem {set\discretionary {-}{}{}Last\discretionary {-}{}{}Q}, 
+		\hyperpage{39}
+    \subitem {Start\discretionary {-}{}{}Time}, \hyperpage{39}
+    \subitem {start\discretionary {-}{}{}Time}, \hyperpage{40}
+    \subitem {update\discretionary {-}{}{}Direction}, \hyperpage{40}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{38}
+    \subitem {Vehicle\discretionary {-}{}{}Class}, \hyperpage{38}
+  \item {Vehicle\discretionary {-}{}{}Class.\discretionary {-}{}{}h}, 
+		\hyperpage{65}
+  \item {Vehicle\discretionary {-}{}{}Departure}
+    \subitem {Intersection}, \hyperpage{20}
+  \item {Vehicle\discretionary {-}{}{}Pass}
+    \subitem {Intersection}, \hyperpage{21}
+  \item {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{40}
+    \subitem {back}, \hyperpage{41}
+    \subitem {busy}, \hyperpage{41}
+    \subitem {empty}, \hyperpage{41}
+    \subitem {front}, \hyperpage{41}
+    \subitem {Get\discretionary {-}{}{}Len}, \hyperpage{41}
+    \subitem {Get\discretionary {-}{}{}Max\discretionary {-}{}{}Len}, 
+		\hyperpage{41}
+    \subitem {is\discretionary {-}{}{}Busy}, \hyperpage{41}
+    \subitem {Last\discretionary {-}{}{}Sent\discretionary {-}{}{}Car}, 
+		\hyperpage{41}
+    \subitem {pop}, \hyperpage{41}
+    \subitem {push}, \hyperpage{41}
+    \subitem {Q1}, \hyperpage{41}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{40}
+    \subitem {Vehicle\discretionary {-}{}{}Queue}, \hyperpage{40}
+
+  \indexspace
+
+  \item {W\discretionary {-}{}{}B}
+    \subitem {Intersectionwith\discretionary {-}{}{}Signal}, 
+		\hyperpage{30}
+  \item {W\discretionary {-}{}{}B\discretionary {-}{}{}I1}
+    \subitem {Intersection}, \hyperpage{22}
+  \item {W\discretionary {-}{}{}B\discretionary {-}{}{}I2}
+    \subitem {Intersection}, \hyperpage{22}
 
 \end{theindex}

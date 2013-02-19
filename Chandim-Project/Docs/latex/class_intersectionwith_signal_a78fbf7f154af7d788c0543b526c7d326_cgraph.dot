@@ -1,0 +1,37 @@
+digraph "IntersectionwithSignal::changeSignalTrigger"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="IntersectionwithSignal\l::changeSignalTrigger",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Intersection::EvictQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8"];
+  Node2 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="VehicleQueue::front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a"];
+  Node2 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Simulator::getNow",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009"];
+  Node2 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Simulator::Schedule",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d"];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Simulator::Now",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1"];
+  Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="calender_queue::insert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b"];
+  Node2 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Intersection::VehiclePass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#afe2e42381c4cf467fca7d2217d92524c"];
+  Node8 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Intersection::VehicleDeparture",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9"];
+  Node9 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="VehicleClass::getLastQ",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351"];
+  Node9 -> Node11 [color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="VehicleClass::setEndTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a127372b94980fa045c648af412856fd5"];
+  Node9 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 -> Node12 [color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Intersection::addVehicleto\lQueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12"];
+  Node8 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 -> Node13 [color="midnightblue",fontsize="10",style="solid"];
+  Node13 [label="VehicleQueue::pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a"];
+}

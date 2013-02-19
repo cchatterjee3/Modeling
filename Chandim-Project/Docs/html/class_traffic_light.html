@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,25 +93,289 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abce2ada7d1eeb16437d07acd50b2446b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abce2ada7d1eeb16437d07acd50b2446b"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>getType</b> ()</td></tr>
+<tr class="memitem:abce2ada7d1eeb16437d07acd50b2446b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#abce2ada7d1eeb16437d07acd50b2446b">getType</a> ()</td></tr>
 <tr class="separator:abce2ada7d1eeb16437d07acd50b2446b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee73cd4cff5ad4f7096c7c8e9e6bc4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaee73cd4cff5ad4f7096c7c8e9e6bc4b"></a>
-state&#160;</td><td class="memItemRight" valign="bottom"><b>getState</b> ()</td></tr>
+<tr class="memitem:aaee73cd4cff5ad4f7096c7c8e9e6bc4b"><td class="memItemLeft" align="right" valign="top">state&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#aaee73cd4cff5ad4f7096c7c8e9e6bc4b">getState</a> ()</td></tr>
 <tr class="separator:aaee73cd4cff5ad4f7096c7c8e9e6bc4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3bb62de50352123ffa6d67b4cbd028f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3bb62de50352123ffa6d67b4cbd028f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>TrafficLight</b> (int id, int typ, state initialState, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, <a class="el" href="class_intersectionwith_signal.html">IntersectionwithSignal</a> *p)</td></tr>
-<tr class="separator:ad3bb62de50352123ffa6d67b4cbd028f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a069a58acd9a0b2ecb9245912b53c4462"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a069a58acd9a0b2ecb9245912b53c4462"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cyclestate</b> ()</td></tr>
-<tr class="separator:a069a58acd9a0b2ecb9245912b53c4462"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae710ff1d3ded24f933c4dd3816ba98e0"><td class="memItemLeft" align="right" valign="top">state&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#ae710ff1d3ded24f933c4dd3816ba98e0">getLeftState</a> ()</td></tr>
+<tr class="separator:ae710ff1d3ded24f933c4dd3816ba98e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e72db41dcbd224a0a811d08ae20c3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#a28e72db41dcbd224a0a811d08ae20c3f">TrafficLight</a> ()</td></tr>
+<tr class="separator:a28e72db41dcbd224a0a811d08ae20c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ed32935d0b40a941a56d74cbec790fd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#a7ed32935d0b40a941a56d74cbec790fd">TrafficLight</a> (int id, int typ, state initialState, state initialstate2, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, <a class="el" href="class_intersectionwith_signal.html">IntersectionwithSignal</a> *p, <a class="el" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> timetoStart, <a class="el" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> timetoStart2)</td></tr>
+<tr class="separator:a7ed32935d0b40a941a56d74cbec790fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd2a89a028c1586ced0ab587dda8cc1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#a3dd2a89a028c1586ced0ab587dda8cc1">~TrafficLight</a> ()</td></tr>
+<tr class="separator:a3dd2a89a028c1586ced0ab587dda8cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43310868b8badae122a037d85f009a0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#a43310868b8badae122a037d85f009a0f">cyclestate</a> (int leftorthru)</td></tr>
+<tr class="separator:a43310868b8badae122a037d85f009a0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:aa8b8852f0a75b737d741cdb831847208"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8b8852f0a75b737d741cdb831847208"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>myid</b></td></tr>
+<tr class="memitem:abd951c68d768bc9d91aedd90e383a7b8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#abd951c68d768bc9d91aedd90e383a7b8">type</a></td></tr>
+<tr class="separator:abd951c68d768bc9d91aedd90e383a7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8b8852f0a75b737d741cdb831847208"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_traffic_light.html#aa8b8852f0a75b737d741cdb831847208">myid</a></td></tr>
 <tr class="separator:aa8b8852f0a75b737d741cdb831847208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a28e72db41dcbd224a0a811d08ae20c3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrafficLight::TrafficLight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default constructor </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ed32935d0b40a941a56d74cbec790fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrafficLight::TrafficLight </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>typ</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">state&#160;</td>
+          <td class="paramname"><em>initialState</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">state&#160;</td>
+          <td class="paramname"><em>initialstate2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph4</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph5</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>Ph6</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_intersectionwith_signal.html">IntersectionwithSignal</a> *&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a>&#160;</td>
+          <td class="paramname"><em>timetoStart</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a>&#160;</td>
+          <td class="paramname"><em>timetoStart2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constructor with initial states and everything (type, initialState GLT, YLT, RLT, GTR, YTR, RTR) put zeros if any was inapplicable </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.png" border="0" usemap="#class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph" alt=""/></div>
+<map name="class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph" id="class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph">
+<area shape="rect" id="node3" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="1287,146,1428,174"/><area shape="rect" id="node9" href="class_traffic_light.html#a43310868b8badae122a037d85f009a0f" title="TrafficLight::cyclestate" alt="" coords="214,43,367,71"/><area shape="rect" id="node5" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1516,119,1628,147"/><area shape="rect" id="node7" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1494,171,1650,199"/><area shape="rect" id="node12" href="class_intersectionwith_signal.html#a78fbf7f154af7d788c0543b526c7d326" title="IntersectionwithSignal\l::changeSignalTrigger" alt="" coords="416,142,568,186"/><area shape="rect" id="node14" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="617,198,754,226"/><area shape="rect" id="node16" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="819,94,957,122"/><area shape="rect" id="node18" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="1292,455,1422,483"/><area shape="rect" id="node21" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="803,326,973,354"/><area shape="rect" id="node28" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="1278,283,1437,311"/><area shape="rect" id="node37" href="class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="821,198,955,226"/><area shape="rect" id="node25" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="1021,378,1221,406"/><area shape="rect" id="node30" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="1269,403,1445,431"/><area shape="rect" id="node33" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="1270,335,1444,379"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3dd2a89a028c1586ced0ab587dda8cc1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TrafficLight::~TrafficLight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default destructor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a43310868b8badae122a037d85f009a0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TrafficLight::cyclestate </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>leftorthru</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>cyclestate </p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.png" border="0" usemap="#class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph" alt=""/></div>
+<map name="class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph" id="class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph">
+<area shape="rect" id="node3" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="1079,73,1220,101"/><area shape="rect" id="node9" href="class_intersectionwith_signal.html#a78fbf7f154af7d788c0543b526c7d326" title="IntersectionwithSignal\l::changeSignalTrigger" alt="" coords="208,114,360,158"/><area shape="rect" id="node5" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1308,46,1420,74"/><area shape="rect" id="node7" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1286,98,1442,126"/><area shape="rect" id="node11" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="409,194,546,222"/><area shape="rect" id="node13" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="611,401,749,429"/><area shape="rect" id="node15" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="1084,327,1214,355"/><area shape="rect" id="node18" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="595,194,765,222"/><area shape="rect" id="node25" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="1070,155,1229,183"/><area shape="rect" id="node34" href="class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="613,246,747,274"/><area shape="rect" id="node22" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="813,246,1013,274"/><area shape="rect" id="node27" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="1061,207,1237,235"/><area shape="rect" id="node30" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="1062,259,1236,303"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae710ff1d3ded24f933c4dd3816ba98e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">state TrafficLight::getLeftState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the present left state of the traffic light </p>
+
+</div>
+</div>
+<a class="anchor" id="aaee73cd4cff5ad4f7096c7c8e9e6bc4b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">state TrafficLight::getState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the present state of the traffic light </p>
+
+</div>
+</div>
+<a class="anchor" id="abce2ada7d1eeb16437d07acd50b2446b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrafficLight::getType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the type of traffic light </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="aa8b8852f0a75b737d741cdb831847208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrafficLight::myid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Id of the traffic signal </p>
+
+</div>
+</div>
+<a class="anchor" id="abd951c68d768bc9d91aedd90e383a7b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int TrafficLight::type</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>0 if 3 states and 1 if 6 states and 2 if there are two independent signals </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_traffic_light_8h_source.html">TrafficLight.h</a></li>
 <li>TrafficLight.cpp</li>
@@ -119,7 +383,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>myid</b></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

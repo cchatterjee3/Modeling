@@ -1,0 +1,66 @@
+\hypertarget{calender__queue_8h}{\section{calender\-\_\-queue.\-h File Reference}
+\label{calender__queue_8h}\index{calender\-\_\-queue.\-h@{calender\-\_\-queue.\-h}}
+}
+
+
+declartion of the class calender queue  
+
+
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$list$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include \char`\"{}Events.\-h\char`\"{}}\\*
+Include dependency graph for calender\-\_\-queue.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{calender__queue_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{calender__queue_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classcalender__queue}{calender\-\_\-queue}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{calender__queue_8h_abd5c70d32425bb863d03547829782194}{T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E}~120$\ast$60
+\item 
+\#define \hyperlink{calender__queue_8h_a1072bf234f0898ff3c3b0c453c8adf45}{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}~72000
+\item 
+\hypertarget{calender__queue_8h_a352964ca100791f7e6438323f55b8541}{\#define {\bfseries B\-U\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}~0.\-1}\label{calender__queue_8h_a352964ca100791f7e6438323f55b8541}
+
+\item 
+\#define \hyperlink{calender__queue_8h_a897e22608586c2928b305de5bd4e9bb8}{C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D}~\hyperlink{calender__queue_8h_a1072bf234f0898ff3c3b0c453c8adf45}{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}$\ast$B\-U\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{calender__queue_8h_ab6530df477a1bf2804e6865497b288e3}{typedef std\-::list$<$ \hyperlink{class_event_base}{Event\-Base} $\ast$ $>$ {\bfseries bucket}}\label{calender__queue_8h_ab6530df477a1bf2804e6865497b288e3}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+declartion of the class calender queue 
+
+\subsection{Macro Definition Documentation}
+\hypertarget{calender__queue_8h_a1072bf234f0898ff3c3b0c453c8adf45}{\index{calender\-\_\-queue.\-h@{calender\-\_\-queue.\-h}!B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T@{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}}
+\index{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T@{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}!calender_queue.h@{calender\-\_\-queue.\-h}}
+\subsubsection[{B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T~72000}}\label{calender__queue_8h_a1072bf234f0898ff3c3b0c453c8adf45}
+Number of Buckets for Calender Queue \hypertarget{calender__queue_8h_a897e22608586c2928b305de5bd4e9bb8}{\index{calender\-\_\-queue.\-h@{calender\-\_\-queue.\-h}!C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D@{C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D}}
+\index{C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D@{C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D}!calender_queue.h@{calender\-\_\-queue.\-h}}
+\subsubsection[{C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\-A\-L\-E\-N\-D\-E\-R\-\_\-\-P\-E\-R\-I\-O\-D~{\bf B\-U\-C\-K\-E\-T\-\_\-\-C\-O\-U\-N\-T}$\ast$B\-U\-C\-K\-E\-T\-\_\-\-S\-I\-Z\-E}}\label{calender__queue_8h_a897e22608586c2928b305de5bd4e9bb8}
+how much is a \char`\"{}year\char`\"{} for this calender \hypertarget{calender__queue_8h_abd5c70d32425bb863d03547829782194}{\index{calender\-\_\-queue.\-h@{calender\-\_\-queue.\-h}!T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E@{T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E}}
+\index{T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E@{T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E}!calender_queue.h@{calender\-\_\-queue.\-h}}
+\subsubsection[{T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\-O\-T\-A\-L\-\_\-\-T\-I\-M\-E~120$\ast$60}}\label{calender__queue_8h_abd5c70d32425bb863d03547829782194}
+Total time of the simulation 

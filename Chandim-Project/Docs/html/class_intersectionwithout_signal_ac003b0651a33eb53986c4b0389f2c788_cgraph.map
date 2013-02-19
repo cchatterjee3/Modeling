@@ -1,0 +1,7 @@
+<map id="IntersectionwithoutSignal::QCanGo" name="IntersectionwithoutSignal::QCanGo">
+<area shape="rect" id="node3" href="$class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9" title="VehicleQueue::empty" alt="" coords="246,5,394,33"/>
+<area shape="rect" id="node5" href="$class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="251,57,389,85"/>
+<area shape="rect" id="node7" href="$class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="225,109,415,137"/>
+<area shape="rect" id="node9" href="$_common_defs_8h.html#ab16114155cb6c7b1080dc8f52f1f8f7a" title="turn" alt="" coords="298,185,342,213"/>
+<area shape="rect" id="node12" href="$_common_defs_8h.html#aee7862becfb6aef94f34e882348eb275" title="reg" alt="" coords="300,261,340,289"/>
+</map>

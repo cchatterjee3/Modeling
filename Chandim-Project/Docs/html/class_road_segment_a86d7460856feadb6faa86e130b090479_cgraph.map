@@ -1,0 +1,4 @@
+<map id="RoadSegment::AddVehicle" name="RoadSegment::AddVehicle">
+<area shape="rect" id="node3" href="$class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="236,5,426,33"/>
+<area shape="rect" id="node5" href="$class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8" title="VehicleQueue::push" alt="" coords="260,57,401,85"/>
+</map>

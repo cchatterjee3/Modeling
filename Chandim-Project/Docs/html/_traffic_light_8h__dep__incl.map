@@ -1,0 +1,9 @@
+<map id="TrafficLight.h" name="TrafficLight.h">
+<area shape="rect" id="node3" href="$_intersection_8h.html" title="Intersection.h" alt="" coords="153,83,255,111"/>
+<area shape="rect" id="node5" href="$_intersectionwith_signal_8h.html" title="IntersectionwithSignal.h" alt="" coords="4,161,165,189"/>
+<area shape="rect" id="node15" href="$stdafx_8h_source.html" title="stdafx.h" alt="" coords="357,238,424,266"/>
+<area shape="rect" id="node9" href="$_topology_8h.html" title="Topology.h" alt="" coords="162,238,245,266"/>
+<area shape="rect" id="node17" href="$_intersectionwo_signal_8h.html" title="IntersectionwoSignal.h" alt="" coords="241,161,396,189"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="main.cpp" alt="" coords="122,393,197,421"/>
+<area shape="rect" id="node12" href="$schedule_vehicles_8h.html" title="scheduleVehicles.h" alt="" coords="146,315,280,343"/>
+</map>

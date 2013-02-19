@@ -8,42 +8,154 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{classcalender__queue_a0427ba423314b787c91a5f38127d3e0c}{void {\bfseries insert} (\hyperlink{class_event_base}{Event\-Base} $\ast$)}\label{classcalender__queue_a0427ba423314b787c91a5f38127d3e0c}
-
+void \hyperlink{classcalender__queue_a9908e97c05434b58fca91d5327cf479b}{insert} (\hyperlink{class_event_base}{Event\-Base} $\ast$E1)
 \item 
-\hypertarget{classcalender__queue_ac6e6562d1a4ca817d9747f7e901742be}{void {\bfseries dequeue} (\hyperlink{class_event_base}{Event\-Base} $\ast$)}\label{classcalender__queue_ac6e6562d1a4ca817d9747f7e901742be}
-
+void \hyperlink{classcalender__queue_ad751210f4fe9885234857ca428799c18}{dequeue} (\hyperlink{class_event_base}{Event\-Base} $\ast$E1)
 \item 
-\hypertarget{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655}{\hyperlink{class_event_base}{Event\-Base} $\ast$ {\bfseries Pop\-Next} ()}\label{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655}
-
+\hyperlink{class_event_base}{Event\-Base} $\ast$ \hyperlink{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655}{Pop\-Next} ()
 \item 
-\hypertarget{classcalender__queue_a22d23f844d4318dbb693ae014028cc4f}{\hyperlink{class_event_base}{Event\-Base} $\ast$ {\bfseries next\-\_\-event} (int)}\label{classcalender__queue_a22d23f844d4318dbb693ae014028cc4f}
-
+\hyperlink{class_event_base}{Event\-Base} $\ast$ \hyperlink{classcalender__queue_ac6070fec29a645ecce9bc5ded0c0de18}{next\-\_\-event} (int bucket\-\_\-num)
 \item 
-\hypertarget{classcalender__queue_a82e8a5aacee2ecce3c8bd39967cbd065}{void {\bfseries remove\-\_\-event} (int, \hyperlink{class_event_base}{Event\-Base} $\ast$)}\label{classcalender__queue_a82e8a5aacee2ecce3c8bd39967cbd065}
-
+void \hyperlink{classcalender__queue_a5643aa39133a7c8d62b465752c62ad88}{remove\-\_\-event} (int bucket\-\_\-num, \hyperlink{class_event_base}{Event\-Base} $\ast$E1)
 \item 
-\hypertarget{classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f}{int {\bfseries is\-Empty} ()}\label{classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f}
-
+int \hyperlink{classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f}{is\-Empty} ()
 \item 
-\hypertarget{classcalender__queue_a78818b6767d5f432dd4b4e629ca72435}{int {\bfseries get\-\_\-bucket\-\_\-count} ()}\label{classcalender__queue_a78818b6767d5f432dd4b4e629ca72435}
-
+int \hyperlink{classcalender__queue_a78818b6767d5f432dd4b4e629ca72435}{get\-\_\-bucket\-\_\-count} ()
 \item 
-\hypertarget{classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017}{int {\bfseries get\-Qsize} ()}\label{classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017}
-
+\hyperlink{classcalender__queue_ae60c0a818d3de5b7e2e3e8f5e9919923}{calender\-\_\-queue} ()
 \item 
-\hypertarget{classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608}{int {\bfseries gettimeframe} ()}\label{classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608}
-
+int \hyperlink{classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017}{get\-Qsize} ()
 \item 
-\hypertarget{classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78}{void {\bfseries check659bucket} ()}\label{classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78}
-
+int \hyperlink{classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608}{gettimeframe} ()
+\item 
+void \hyperlink{classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78}{check659bucket} ()
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Name changed from prioqueue to \hyperlink{classcalender__queue}{calender\-\_\-queue} for sake of clearity 
+Calender Queue is priority queue, Ref\-: Calendar queues\-: a fast 0(1) priority queue implementation for the simulation event set problem 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classcalender__queue_ae60c0a818d3de5b7e2e3e8f5e9919923}{\index{calender\-\_\-queue@{calender\-\_\-queue}!calender\-\_\-queue@{calender\-\_\-queue}}
+\index{calender\-\_\-queue@{calender\-\_\-queue}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{calender\-\_\-queue}]{\setlength{\rightskip}{0pt plus 5cm}calender\-\_\-queue\-::calender\-\_\-queue (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_ae60c0a818d3de5b7e2e3e8f5e9919923}
+Default constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78}{\index{calender\-\_\-queue@{calender\-\_\-queue}!check659bucket@{check659bucket}}
+\index{check659bucket@{check659bucket}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{check659bucket}]{\setlength{\rightskip}{0pt plus 5cm}void calender\-\_\-queue\-::check659bucket (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78}
+is there debuggin purpose \hypertarget{classcalender__queue_ad751210f4fe9885234857ca428799c18}{\index{calender\-\_\-queue@{calender\-\_\-queue}!dequeue@{dequeue}}
+\index{dequeue@{dequeue}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{dequeue}]{\setlength{\rightskip}{0pt plus 5cm}void calender\-\_\-queue\-::dequeue (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Base} $\ast$}]{E1}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_ad751210f4fe9885234857ca428799c18}
+Removes an event E1 from the list (Hence it won't be scheduled) 
+\begin{DoxyParams}{Parameters}
+{\em E1} & \-: event pointer to removed from the list \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcalender__queue_a78818b6767d5f432dd4b4e629ca72435}{\index{calender\-\_\-queue@{calender\-\_\-queue}!get\-\_\-bucket\-\_\-count@{get\-\_\-bucket\-\_\-count}}
+\index{get\-\_\-bucket\-\_\-count@{get\-\_\-bucket\-\_\-count}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{get\-\_\-bucket\-\_\-count}]{\setlength{\rightskip}{0pt plus 5cm}int calender\-\_\-queue\-::get\-\_\-bucket\-\_\-count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a78818b6767d5f432dd4b4e629ca72435}
+Get number of buckets in the calender queue \hypertarget{classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017}{\index{calender\-\_\-queue@{calender\-\_\-queue}!get\-Qsize@{get\-Qsize}}
+\index{get\-Qsize@{get\-Qsize}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{get\-Qsize}]{\setlength{\rightskip}{0pt plus 5cm}int calender\-\_\-queue\-::get\-Qsize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017}
+Returns number of element in the Q \hypertarget{classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608}{\index{calender\-\_\-queue@{calender\-\_\-queue}!gettimeframe@{gettimeframe}}
+\index{gettimeframe@{gettimeframe}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{gettimeframe}]{\setlength{\rightskip}{0pt plus 5cm}int calender\-\_\-queue\-::gettimeframe (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608}
+Returns the time frame from which last event was popped \hypertarget{classcalender__queue_a9908e97c05434b58fca91d5327cf479b}{\index{calender\-\_\-queue@{calender\-\_\-queue}!insert@{insert}}
+\index{insert@{insert}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{insert}]{\setlength{\rightskip}{0pt plus 5cm}void calender\-\_\-queue\-::insert (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\-Base} $\ast$}]{E1}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a9908e97c05434b58fca91d5327cf479b}
+Inserts an event into the priority list 
+\begin{DoxyParams}{Parameters}
+{\em E1} & is the even to be inserted into the list \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f}{\index{calender\-\_\-queue@{calender\-\_\-queue}!is\-Empty@{is\-Empty}}
+\index{is\-Empty@{is\-Empty}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{is\-Empty}]{\setlength{\rightskip}{0pt plus 5cm}int calender\-\_\-queue\-::is\-Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f}
+Checks if there are anymore events left in the list \hypertarget{classcalender__queue_ac6070fec29a645ecce9bc5ded0c0de18}{\index{calender\-\_\-queue@{calender\-\_\-queue}!next\-\_\-event@{next\-\_\-event}}
+\index{next\-\_\-event@{next\-\_\-event}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{next\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Base} $\ast$ calender\-\_\-queue\-::next\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{int}]{bucket\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_ac6070fec29a645ecce9bc5ded0c0de18}
+Returns event with minimum time from bucket-\/num 
+\begin{DoxyParams}{Parameters}
+{\em bucket\-\_\-num} & is the number of bucket from which you want to get the min time stamp event \\
+\hline
+\end{DoxyParams}
+\hypertarget{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655}{\index{calender\-\_\-queue@{calender\-\_\-queue}!Pop\-Next@{Pop\-Next}}
+\index{Pop\-Next@{Pop\-Next}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{Pop\-Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\-Base} $\ast$ calender\-\_\-queue\-::\-Pop\-Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655}
+Pops Next event(event with minimum time stamp) in the list (and removes it as well) \begin{DoxyReturn}{Returns}
+Event pointer with minimum time stamp 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classcalender__queue_a5643aa39133a7c8d62b465752c62ad88}{\index{calender\-\_\-queue@{calender\-\_\-queue}!remove\-\_\-event@{remove\-\_\-event}}
+\index{remove\-\_\-event@{remove\-\_\-event}!calender_queue@{calender\-\_\-queue}}
+\subsubsection[{remove\-\_\-event}]{\setlength{\rightskip}{0pt plus 5cm}void calender\-\_\-queue\-::remove\-\_\-event (
+\begin{DoxyParamCaption}
+\item[{int}]{bucket\-\_\-num, }
+\item[{{\bf Event\-Base} $\ast$}]{E1}
+\end{DoxyParamCaption}
+)}}\label{classcalender__queue_a5643aa39133a7c8d62b465752c62ad88}
+Removes event E1 from bucket\-\_\-num$^\wedge$th bucket 
+\begin{DoxyParams}{Parameters}
+{\em B\-Ucket\-\_\-num} & is the id of bucket from which event is to be removed \\
+\hline
+{\em E1} & is pointer to event to be removed \\
+\hline
+\end{DoxyParams}
+
 
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-calender\-\_\-queue.\-h\item 
+\hyperlink{calender__queue_8h}{calender\-\_\-queue.\-h}\item 
 calender\-\_\-queue.\-cc\end{DoxyCompactItemize}

@@ -4,21 +4,74 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f}{{\bfseries Random\-Num\-Gen} (unsigned long x0)}\label{class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f}
-
+\hyperlink{class_random_num_gen_adc07d95ae2d1d3a5a4a395f233e30a2c}{Random\-Num\-Gen} ()
 \item 
-\hypertarget{class_random_num_gen_a49782fde536ad4b01ab3bd6063a5c6c2}{double {\bfseries Next} ()}\label{class_random_num_gen_a49782fde536ad4b01ab3bd6063a5c6c2}
-
+\hyperlink{class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f}{Random\-Num\-Gen} (unsigned long x0)
 \item 
-\hypertarget{class_random_num_gen_a12e515fdf02cd66772a76ae0765d4d08}{void {\bfseries Reset} ()}\label{class_random_num_gen_a12e515fdf02cd66772a76ae0765d4d08}
-
+double \hyperlink{class_random_num_gen_a49782fde536ad4b01ab3bd6063a5c6c2}{Next} ()
 \item 
-\hypertarget{class_random_num_gen_a936200dd149f676875efaa2dbed8699e}{unsigned long {\bfseries Get\-State} ()}\label{class_random_num_gen_a936200dd149f676875efaa2dbed8699e}
-
+void \hyperlink{class_random_num_gen_a12e515fdf02cd66772a76ae0765d4d08}{Reset} ()
+\item 
+unsigned long \hyperlink{class_random_num_gen_a936200dd149f676875efaa2dbed8699e}{Get\-State} ()
+\item 
+\hyperlink{class_random_num_gen_a8fec599a61c18b20bfd567ff5b80ab31}{$\sim$\-Random\-Num\-Gen} ()
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_random_num_gen_adc07d95ae2d1d3a5a4a395f233e30a2c}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!Random\-Num\-Gen@{Random\-Num\-Gen}}
+\index{Random\-Num\-Gen@{Random\-Num\-Gen}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{Random\-Num\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Num\-Gen\-::\-Random\-Num\-Gen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_adc07d95ae2d1d3a5a4a395f233e30a2c}
+Constructor\-: Initializes the default parameters of Random number genrator \hypertarget{class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!Random\-Num\-Gen@{Random\-Num\-Gen}}
+\index{Random\-Num\-Gen@{Random\-Num\-Gen}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{Random\-Num\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Num\-Gen\-::\-Random\-Num\-Gen (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{x0}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f}
+Constuctor\-: Initializes the starting state with x0 
+\begin{DoxyParams}{Parameters}
+{\em x0} & is long input, if 0 takes starting point seed as time, otherwise sets x0 as the internal state \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_random_num_gen_a8fec599a61c18b20bfd567ff5b80ab31}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!$\sim$\-Random\-Num\-Gen@{$\sim$\-Random\-Num\-Gen}}
+\index{$\sim$\-Random\-Num\-Gen@{$\sim$\-Random\-Num\-Gen}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{$\sim$\-Random\-Num\-Gen}]{\setlength{\rightskip}{0pt plus 5cm}Random\-Num\-Gen\-::$\sim$\-Random\-Num\-Gen (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_a8fec599a61c18b20bfd567ff5b80ab31}
+Destructor for random number genrator 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_random_num_gen_a936200dd149f676875efaa2dbed8699e}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!Get\-State@{Get\-State}}
+\index{Get\-State@{Get\-State}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{Get\-State}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long Random\-Num\-Gen\-::\-Get\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_a936200dd149f676875efaa2dbed8699e}
+Gives state of random genrator. Used for debugging purpose \hypertarget{class_random_num_gen_a49782fde536ad4b01ab3bd6063a5c6c2}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!Next@{Next}}
+\index{Next@{Next}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{Next}]{\setlength{\rightskip}{0pt plus 5cm}double Random\-Num\-Gen\-::\-Next (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_a49782fde536ad4b01ab3bd6063a5c6c2}
+Genrates next random number \hypertarget{class_random_num_gen_a12e515fdf02cd66772a76ae0765d4d08}{\index{Random\-Num\-Gen@{Random\-Num\-Gen}!Reset@{Reset}}
+\index{Reset@{Reset}!RandomNumGen@{Random\-Num\-Gen}}
+\subsubsection[{Reset}]{\setlength{\rightskip}{0pt plus 5cm}void Random\-Num\-Gen\-::\-Reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_random_num_gen_a12e515fdf02cd66772a76ae0765d4d08}
+Resets the random number generator 
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Random\-Num.\-h\item 
+\hyperlink{_random_num_8h}{Random\-Num.\-h}\item 
 Random\-Num.\-cc\end{DoxyCompactItemize}

@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,60 +84,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">TrafficLight.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;CommonDefs.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//#include &quot;IntersectionwithSignal.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;CommonDefs.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;VehicleClass.h&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;Simulator.h&quot;</span></div>
+<a href="_traffic_light_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_common_defs_8h.html">CommonDefs.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_simulator.html">Simulator</a>* sim ;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span><a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_traffic_light.html">   13</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_traffic_light.html">TrafficLight</a></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;              <span class="keywordtype">double</span> GLT; <span class="comment">//Green Left</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;              <span class="keywordtype">double</span> YLT; <span class="comment">//Yellow Left</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;              <span class="keywordtype">double</span> RLT; <span class="comment">//Right Left</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;              <span class="keywordtype">double</span> GTR; <span class="comment">//Green Through</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;              <span class="keywordtype">double</span> YTR; <span class="comment">//Yellow Through</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;              <span class="keywordtype">double</span> RTR; <span class="comment">//Right Through</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;              </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;              state curstate;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;              <span class="keywordtype">int</span> type; <span class="comment">//0 if 3 states and 1 if 6 states</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;              <a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>* parent; <span class="comment">// Intersection it belongs to</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;              <span class="keywordtype">int</span> myid;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              <span class="keywordtype">int</span> getType()</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;              {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                <span class="keywordflow">return</span> type;    </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;              </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              state getState()</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;              {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                    <span class="keywordflow">return</span> curstate;      </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              }</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;              <span class="comment">//constructors</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;              <a class="code" href="class_traffic_light.html">TrafficLight</a>();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              <span class="comment">// (type, initialState GLT, YLT, RLT, GTR, YTR, RTR)</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;              <span class="comment">// put zeros if any was inapplicable</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              <a class="code" href="class_traffic_light.html">TrafficLight</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> typ, state initialState, <span class="keywordtype">double</span> Ph1, <span class="keywordtype">double</span> Ph2, <span class="keywordtype">double</span> Ph3, <span class="keywordtype">double</span> Ph4, <span class="keywordtype">double</span> Ph5, <span class="keywordtype">double</span> Ph6, <a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>* p);</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;              <span class="comment">//destructor</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;              ~<a class="code" href="class_traffic_light.html">TrafficLight</a>();</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;          </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;              <span class="comment">//cyclestate</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;              <span class="keywordtype">void</span> cyclestate(); </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_common_defs_8h.html">CommonDefs.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vehicle_class_8h.html">VehicleClass.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_simulator_8h.html">Simulator.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">extern</span> <a class="code" href="class_simulator.html">Simulator</a>* sim ;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="code" href="class_traffic_light.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_traffic_light.html">TrafficLight</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">double</span> GLT; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">double</span> YLT; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">double</span> RLT; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">double</span> GTR; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">double</span> YTR; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">double</span> RTR; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    state curstate;   </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    state leftstate;  </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>* parent; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_traffic_light.html#abd951c68d768bc9d91aedd90e383a7b8">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_traffic_light.html#abd951c68d768bc9d91aedd90e383a7b8">type</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_traffic_light.html#aa8b8852f0a75b737d741cdb831847208">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_traffic_light.html#aa8b8852f0a75b737d741cdb831847208">myid</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="code" href="class_traffic_light.html#abce2ada7d1eeb16437d07acd50b2446b">   40</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_traffic_light.html#abce2ada7d1eeb16437d07acd50b2446b">getType</a>()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="class_traffic_light.html#abd951c68d768bc9d91aedd90e383a7b8">type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="code" href="class_traffic_light.html#aaee73cd4cff5ad4f7096c7c8e9e6bc4b">   49</a></span>&#160;    state <a class="code" href="class_traffic_light.html#aaee73cd4cff5ad4f7096c7c8e9e6bc4b">getState</a>()</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> curstate;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="code" href="class_traffic_light.html#ae710ff1d3ded24f933c4dd3816ba98e0">   58</a></span>&#160;    state <a class="code" href="class_traffic_light.html#ae710ff1d3ded24f933c4dd3816ba98e0">getLeftState</a>()</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> leftstate;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="class_traffic_light.html#a28e72db41dcbd224a0a811d08ae20c3f">TrafficLight</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <a class="code" href="class_traffic_light.html#a28e72db41dcbd224a0a811d08ae20c3f">TrafficLight</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> typ, state initialState, state initialstate2, <span class="keywordtype">double</span> Ph1, <span class="keywordtype">double</span> Ph2, <span class="keywordtype">double</span> Ph3, <span class="keywordtype">double</span> Ph4,</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                 <span class="keywordtype">double</span> Ph5, <span class="keywordtype">double</span> Ph6, <a class="code" href="class_intersectionwith_signal.html">IntersectionwithSignal</a>* p, <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> timetoStart, <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> timetoStart2);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_traffic_light.html#a3dd2a89a028c1586ced0ab587dda8cc1">~TrafficLight</a>();</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_traffic_light.html#a43310868b8badae122a037d85f009a0f">cyclestate</a>(<span class="keywordtype">int</span> leftorthru);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:36 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

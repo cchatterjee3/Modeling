@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -89,20 +89,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_vehicle_class.html">VehicleClass</a>, including all inherited members.</p>
 <table class="directory">
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getDestination</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getDirection</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>getID</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>getLastQ</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>setEndTime</b>(Time_t t) (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>setLastQ</b>(VehicleQueue *Q) (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">endTime</a></td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33">EndTime</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>EventList</b> (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d">getDestination</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#a107f9787110e3a575facf1975e40a7b2">getDirection</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#a8f00863bdcac1822d486c3d119ff1340">getID</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351">getLastQ</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#aa1e4f513ff1cf84e577f3c6e8bcd681f">getSource</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5">setEndTime</a>(Time_t t)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f">setLastQ</a>(VehicleQueue *Q)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99">StartTime</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">startTime</a></td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_vehicle_class.html#a7070e6f4e7814a6f81292a54aa3c58b5">updateDirection</a>(dir Direction)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>VehicleClass</b>(int id, int start, int Dest, Time_t starttime) (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#ae4291311ac5253a754310588100c494a">VehicleClass</a>(int id, int start, int Dest, Time_t starttime)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
   <tr bgcolor="#f0f0f0" class="even"><td class="entry"><b>VehicleClass</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
-  <tr bgcolor="#f0f0f0"><td class="entry"><b>~VehicleClass</b>() (defined in <a class="el" href="class_vehicle_class.html">VehicleClass</a>)</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_vehicle_class.html#a5e06ff66b19ecd516f549e7f78feeb44">~VehicleClass</a>()</td><td class="entry"><a class="el" href="class_vehicle_class.html">VehicleClass</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

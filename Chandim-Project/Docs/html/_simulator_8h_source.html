@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,73 +84,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Simulator.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;CommonDefs.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Events.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;calender_queue.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classcalender__queue.html">calender_queue</a> <a class="code" href="classcalender__queue.html">EventSet_t</a>;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="code" href="class_simulator.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulator.html">Simulator</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;      <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;            <span class="keyword">static</span> Time_t now;  </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;            <span class="keyword">static</span> <a class="code" href="classcalender__queue.html">EventSet_t</a> events;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;            <span class="keyword">static</span> <span class="keywordtype">bool</span> stopped;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;      <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;             <a class="code" href="class_simulator.html">Simulator</a>();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;             <span class="keywordtype">void</span> Stop(); <span class="comment">//Stop executing events</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;             <span class="keyword">static</span> <span class="keywordtype">void</span> Run(); <span class="comment">//Start executing events</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;             <span class="keyword">static</span> <span class="keywordtype">void</span> StopAt(Time_t); <span class="comment">//define stopping time  </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;             Time_t getNow(){</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                  <span class="keywordflow">return</span> now;     </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;             }</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;             </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;             <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ&gt;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keyword">static</span> <span class="keywordtype">void</span> Schedule(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(<span class="keywordtype">void</span>), OBJ* obj)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;              {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event0.html">Event0&lt;T, OBJ&gt;</a>(t + Simulator::Now(), handler, obj);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                events.insert(ev);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;              }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;              <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1&gt;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <span class="keywordtype">void</span> Schedule(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1), OBJ* obj, T1 t1)</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;              {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event1.html">Event1&lt;T, OBJ, U1, T1&gt;</a>(t + Simulator::Now(), handler, obj, t1);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                events.insert(ev);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;              }</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;              <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <span class="keyword">typename</span> U2, <span class="keyword">typename</span> T2&gt;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <span class="keywordtype">void</span> Schedule(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1, U2), OBJ* obj, T1 t1, T2 t2)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;              {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event2.html">Event2&lt;T, OBJ, U1, T1, U2, T2&gt;</a>(t + Simulator::Now(), handler, obj, t1, t2);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                events.insert(ev);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;              }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;              <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1,</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <span class="keyword">typename</span> U2, <span class="keyword">typename</span> T2,</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                <span class="keyword">typename</span> U3, <span class="keyword">typename</span> T3&gt;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                <span class="keywordtype">void</span> Schedule(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1, U2, U3), OBJ* obj, T1 t1, T2 t2, T3 t3)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;              {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event3.html">Event3&lt;T, OBJ, U1, T1, U2, T2, U3, T3&gt;</a>(t + Simulator::Now(), handler, obj, t1, t2, t3);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                events.insert(ev);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;              }   </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;              </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;              <span class="keyword">static</span> Time_t Now();</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;              <span class="keyword">static</span> <a class="code" href="class_simulator.html">Simulator</a>* instance;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<a href="_simulator_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_common_defs_8h.html">CommonDefs.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_events_8h.html" title="declaration of various types of events">Events.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="calender__queue_8h.html" title="declartion of the class calender queue">calender_queue.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> <a class="code" href="classcalender__queue.html">calender_queue</a> <a class="code" href="classcalender__queue.html">EventSet_t</a>;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="code" href="class_simulator.html">   15</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_simulator.html">Simulator</a></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;{</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> now;          </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">static</span> <a class="code" href="classcalender__queue.html">EventSet_t</a> events;   </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> stopped;        </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_simulator.html#a031573bfcfe2e0f5c9539bcc1c7fc5d9">Simulator</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#ad493423e80256f53c715bb59c16ec78e">Stop</a>(); </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#a27e7045e7aa4e29e9d2003aaa09c8326">Run</a>();</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#a4bbb179ecbac8adfee23bd49d19746c0">StopAt</a>(<a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a>); </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="code" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009">   51</a></span>&#160;    <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009">getNow</a>()</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span> now;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ&gt;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="code" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d">   61</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d">Schedule</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(<span class="keywordtype">void</span>), OBJ* obj)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event0.html">Event0&lt;T, OBJ&gt;</a>(t + <a class="code" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1">Simulator::Now</a>(), handler, obj);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        events.<a class="code" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b">insert</a>(ev);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;             <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1&gt;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="code" href="class_simulator.html#a0d67931f9d55c1f284f6467b9015c1c4">   73</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d">Schedule</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1), OBJ* obj, T1 t1)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event1.html">Event1&lt;T, OBJ, U1, T1&gt;</a>(t + <a class="code" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1">Simulator::Now</a>(), handler, obj, t1);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        events.<a class="code" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b">insert</a>(ev);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;             <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;             <span class="keyword">typename</span> U2, <span class="keyword">typename</span> T2&gt;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="code" href="class_simulator.html#a5dc207907f17173964ca9a04d7d4b8fe">   86</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d">Schedule</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1, U2), OBJ* obj, T1 t1, T2 t2)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event2.html">Event2&lt;T, OBJ, U1, T1, U2, T2&gt;</a>(t + <a class="code" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1">Simulator::Now</a>(), handler, obj, t1, t2);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        events.<a class="code" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b">insert</a>(ev);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> OBJ,</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;             <span class="keyword">typename</span> U1, <span class="keyword">typename</span> T1,</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;             <span class="keyword">typename</span> U2, <span class="keyword">typename</span> T2,</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;             <span class="keyword">typename</span> U3, <span class="keyword">typename</span> T3&gt;</div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="code" href="class_simulator.html#a2a00f7c57e142e06046f4df091f0173b">  100</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d">Schedule</a>(<span class="keywordtype">double</span> t, <span class="keywordtype">void</span>(T::*handler)(U1, U2, U3), OBJ* obj, T1 t1, T2 t2, T3 t3)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="class_event_base.html">EventBase</a>* ev = <span class="keyword">new</span> <a class="code" href="class_event3.html">Event3&lt;T, OBJ, U1, T1, U2, T2, U3, T3&gt;</a>(t + <a class="code" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1">Simulator::Now</a>(), handler, obj, t1, t2, t3);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        events.<a class="code" href="classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b">insert</a>(ev);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">static</span> <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1">Now</a>();</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="code" href="class_simulator.html#a12033735d8c6b88db2aaf72113481f97">  116</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="class_simulator.html">Simulator</a>* <a class="code" href="class_simulator.html#a12033735d8c6b88db2aaf72113481f97">instance</a>;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;};</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:36 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

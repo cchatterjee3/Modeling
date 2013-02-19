@@ -1,0 +1,8 @@
+<map id="TrafficLight.h" name="TrafficLight.h">
+<area shape="rect" id="node3" href="$_common_defs_8h.html" title="CommonDefs.h" alt="" coords="4,315,117,343"/>
+<area shape="rect" id="node7" href="$_vehicle_class_8h.html" title="VehicleClass.h" alt="" coords="123,83,231,111"/>
+<area shape="rect" id="node16" href="$_simulator_8h.html" title="Simulator.h" alt="" coords="224,161,312,189"/>
+<area shape="rect" id="node10" href="$test1_8h_source.html" title="testing/test1.h" alt="" coords="126,238,231,266"/>
+<area shape="rect" id="node20" href="$_events_8h.html" title="declaration of various types of events" alt="" coords="305,238,377,266"/>
+<area shape="rect" id="node26" href="$calender__queue_8h.html" title="declartion of the class calender queue" alt="" coords="385,315,513,343"/>
+</map>

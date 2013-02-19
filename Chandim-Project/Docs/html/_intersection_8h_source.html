@@ -61,6 +61,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -69,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,76 +84,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Intersection.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;CommonDefs.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;TrafficLight.h&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;VehicleClass.h&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#include &quot;TrafficLight.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="code" href="class_intersection.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_intersection.html">Intersection</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">int</span> ID;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordtype">bool</span> haveSignal;</div>
+<a href="_intersection_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;queue&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_common_defs_8h.html">CommonDefs.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_traffic_light_8h.html" title="description of functionality of traffic light">TrafficLight.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_vehicle_class_8h.html">VehicleClass.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;VehicleQueue.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//#include &quot;TrafficLight.h&quot;</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">bool</span> busy; <span class="comment">// busy or not</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* EBI1;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* EBI2;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* WBI1;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* WBI2;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* NBI1;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* NBI2;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* SBI1;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* SBI2;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Qu[4][2];</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    dir routingtable[12]; <span class="comment">//for routing cars</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="comment">/*VehicleQueue* EBI;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">    VehicleQueue* WBI;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">    VehicleQueue* SBI;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">    VehicleQueue* NBI;*/</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">//int EBIlength;</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">//int WBIlength;</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> NBIlength;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">int</span> SBIlength;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* ExitQ;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>* NInter;   <span class="comment">//neighboring intersection in the North</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>* SInter;   <span class="comment">//neighboring intersection in the South</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>(<span class="keywordtype">int</span>);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ~<a class="code" href="class_intersection.html">Intersection</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">int</span> getID() {<span class="keywordflow">return</span> ID;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> VehiclePass(<a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle, <span class="keywordtype">int</span> Turn); <span class="comment">//Vehicle passes through intersection</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> VehicleDeparture (<a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle); <span class="comment">//Depart</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> EvictQ (<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* joinqueue);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> addVehicletoQueue(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* joinqueue, <a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle)=0;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  QCanGo (<span class="keywordtype">int</span> direction, <span class="keywordtype">int</span> lane)=0; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="code" href="class_intersection.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_intersection.html">Intersection</a></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="code" href="class_intersection.html#aec0f4beb4f24b87b7f47aa6e23b7f4dd">   21</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_intersection.html#aec0f4beb4f24b87b7f47aa6e23b7f4dd">ID</a>;             </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="code" href="class_intersection.html#a6c8f8ad77cc05de03282b613001a5729">   22</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_intersection.html#a6c8f8ad77cc05de03282b613001a5729">haveSignal</a>;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="code" href="class_intersection.html#ac7c8fd3e12e9df00670ae7c0f77d1e17">   24</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_intersection.html#ac7c8fd3e12e9df00670ae7c0f77d1e17">busy</a>;          </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="code" href="class_intersection.html#a8a64af1004807f4ac451bcf9bfa368a4">   28</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a8a64af1004807f4ac451bcf9bfa368a4">EBI1</a>; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="code" href="class_intersection.html#a8db85628804847f2b98fd1edf5c28e34">   29</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a8db85628804847f2b98fd1edf5c28e34">EBI2</a>; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="code" href="class_intersection.html#a7d4afb62f4051e6f25c0195de1d66442">   30</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a7d4afb62f4051e6f25c0195de1d66442">WBI1</a>; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_intersection.html#a7f4c7a9c2344827a24aaa52955e56fac">   31</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a7f4c7a9c2344827a24aaa52955e56fac">WBI2</a>; </div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_intersection.html#aba3182ae5b832420344bc8fccf5c285b">   32</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#aba3182ae5b832420344bc8fccf5c285b">NBI1</a>; </div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_intersection.html#af19480d80bcd05c9b3d6fff9e1e829d7">   33</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#af19480d80bcd05c9b3d6fff9e1e829d7">NBI2</a>; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_intersection.html#a0f60a7d5b4911fbc309ddecdab4a75e7">   34</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a0f60a7d5b4911fbc309ddecdab4a75e7">SBI1</a>; </div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_intersection.html#a172b271e9434b824c4722b1589d77f55">   35</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a172b271e9434b824c4722b1589d77f55">SBI2</a>; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Qu[4][2];</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="code" href="class_intersection.html#a87a7802a02ff65c92a6fd11c70144ca2">   39</a></span>&#160;    dir <a class="code" href="class_intersection.html#a87a7802a02ff65c92a6fd11c70144ca2">routingtable</a>[12]; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">/*VehicleQueue* EBI;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">    VehicleQueue* WBI;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">    VehicleQueue* SBI;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">    VehicleQueue* NBI;*/</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//int EBIlength;</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">//int WBIlength;</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">int</span> NBIlength;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">int</span> SBIlength;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="code" href="class_intersection.html#a2456746faabd194633c2b133440449c6">   50</a></span>&#160;    <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_intersection.html#a2456746faabd194633c2b133440449c6">ExitQ</a>;    </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_intersection.html#a577edea4aa08d05052e6cbf7aa2ba9e2">   52</a></span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>* <a class="code" href="class_intersection.html#a577edea4aa08d05052e6cbf7aa2ba9e2">NInter</a>;   </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="code" href="class_intersection.html#af6cfb23dbc2ad5b1d90752247dd07acf">   53</a></span>&#160;    <a class="code" href="class_intersection.html">Intersection</a>* <a class="code" href="class_intersection.html#af6cfb23dbc2ad5b1d90752247dd07acf">SInter</a>;   </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_intersection.html#a67497e3efe2793b23909052eeb82c4f3">Intersection</a>();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> getQdirection(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> getQlane(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> NextQInfo(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* currentQ, <a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle, <a class="code" href="class_intersection.html">Intersection</a> * &amp;  NextInter, <a class="code" href="class_vehicle_queue.html">VehicleQueue</a> * &amp; FutureQ, <span class="keywordtype">bool</span> &amp; isfull, <span class="keywordtype">int</span> &amp; Turn);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;};</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_intersection.html#a67497e3efe2793b23909052eeb82c4f3">Intersection</a>(<span class="keywordtype">int</span> num);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="class_intersection.html#a064951a970ed8dd11081b2903ab62122">~Intersection</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="code" href="class_intersection.html#af9ffdb4a85d4b9250cc74936068f8d2d">   77</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_intersection.html#af9ffdb4a85d4b9250cc74936068f8d2d">getID</a>() {<span class="keywordflow">return</span> <a class="code" href="class_intersection.html#aec0f4beb4f24b87b7f47aa6e23b7f4dd">ID</a>;}</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="comment">//void addVehicletoQueue(VehicleQueue* joinqueue, VehicleClass* vehicle);</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment"></span>    <span class="keywordtype">void</span> <a class="code" href="class_intersection.html#afe2e42381c4cf467fca7d2217d92524c">VehiclePass</a>(<a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle, <span class="keywordtype">int</span> Turn); </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9">VehicleDeparture</a> (<a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle); </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8">EvictQ</a> (<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* joinqueue);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12">addVehicletoQueue</a>(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* joinqueue, <a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle)=0;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">int</span>  <a class="code" href="class_intersection.html#ade54ec591355782db542061623096a2f">QCanGo</a> (<span class="keywordtype">int</span> direction, <span class="keywordtype">int</span> lane)=0; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_intersection.html#a9304a1e23bdcc495ff95c5195b81d947">getQdirection</a>(<a class="code" href="class_intersection.html">Intersection</a> * inter, <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_intersection.html#a2f76abb6014473396954bcaa0db18e7e">getQlane</a>(<a class="code" href="class_intersection.html">Intersection</a> * inter, <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_intersection.html#a1cc47dcabbfb512f9cb85ff9e7114e1a">NextQInfo</a>(<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* currentQ, <a class="code" href="class_vehicle_class.html">VehicleClass</a>* vehicle, <a class="code" href="class_intersection.html">Intersection</a> * &amp;  NextInter, <a class="code" href="class_vehicle_queue.html">VehicleQueue</a> * &amp; FutureQ, <span class="keywordtype">bool</span> &amp; isfull, <span class="keywordtype">int</span> &amp; Turn);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;};</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:36 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

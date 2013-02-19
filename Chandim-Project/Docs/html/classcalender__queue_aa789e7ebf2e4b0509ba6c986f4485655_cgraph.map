@@ -1,0 +1,5 @@
+<map id="calender_queue::PopNext" name="calender_queue::PopNext">
+<area shape="rect" id="node3" href="$classcalender__queue.html#a3b911c0f17d0cac2ff6c2a261d123a78" title="calender_queue::check659bucket" alt="" coords="230,5,450,33"/>
+<area shape="rect" id="node5" href="$classcalender__queue.html#ac6070fec29a645ecce9bc5ded0c0de18" title="calender_queue::next\l_event" alt="" coords="265,57,415,101"/>
+<area shape="rect" id="node7" href="$classcalender__queue.html#a5643aa39133a7c8d62b465752c62ad88" title="calender_queue::remove\l_event" alt="" coords="256,125,424,169"/>
+</map>

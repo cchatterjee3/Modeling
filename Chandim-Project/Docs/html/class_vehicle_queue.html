@@ -71,7 +71,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Functions</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -83,11 +83,237 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="class_vehicle_queue-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">VehicleQueue Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a19f80d40ffe612dae9b2cbce39fe1a1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a19f80d40ffe612dae9b2cbce39fe1a1a">VehicleQueue</a> ()</td></tr>
+<tr class="separator:a19f80d40ffe612dae9b2cbce39fe1a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff7fef0dc6401e38a26bc34ee0e78f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a">front</a> ()</td></tr>
+<tr class="separator:aff7fef0dc6401e38a26bc34ee0e78f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c22a63f1c7562bc14be172a38cffcb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9">empty</a> ()</td></tr>
+<tr class="separator:a9c22a63f1c7562bc14be172a38cffcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71dfef194e7e2cbfdca2b724d66301b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8">push</a> (<a class="el" href="class_vehicle_class.html">VehicleClass</a> *V1)</td></tr>
+<tr class="separator:a71dfef194e7e2cbfdca2b724d66301b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f16ccf1a5990172e28b7782051b50a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a">pop</a> ()</td></tr>
+<tr class="separator:ad4f16ccf1a5990172e28b7782051b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a302883b18a07a99dacd614ee5332f09e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a302883b18a07a99dacd614ee5332f09e">back</a> ()</td></tr>
+<tr class="separator:a302883b18a07a99dacd614ee5332f09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5dc7f4ee55be52e781b252e6260ba1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a4d5dc7f4ee55be52e781b252e6260ba1">GetMaxLen</a> ()</td></tr>
+<tr class="separator:a4d5dc7f4ee55be52e781b252e6260ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae443ecfa4227dbb5094f1bd33e77abb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0">GetLen</a> ()</td></tr>
+<tr class="separator:ae443ecfa4227dbb5094f1bd33e77abb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada2e9158033c24433b042ab46abe2fb8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#ada2e9158033c24433b042ab46abe2fb8">isBusy</a> ()</td></tr>
+<tr class="separator:ada2e9158033c24433b042ab46abe2fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a64dd34f2ca5bee22e9bf07be665c4d13"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="class_vehicle_class.html">VehicleClass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a64dd34f2ca5bee22e9bf07be665c4d13">Q1</a></td></tr>
+<tr class="separator:a64dd34f2ca5bee22e9bf07be665c4d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ce16496b3665d0b91a8b5baf158c3a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a4ce16496b3665d0b91a8b5baf158c3a3">busy</a></td></tr>
+<tr class="separator:a4ce16496b3665d0b91a8b5baf158c3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a329310055fa8fd635fd6740a8400b88d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a329310055fa8fd635fd6740a8400b88d">LastSentCar</a></td></tr>
+<tr class="separator:a329310055fa8fd635fd6740a8400b88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a19f80d40ffe612dae9b2cbce39fe1a1a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VehicleQueue::VehicleQueue </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Default constuctor </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a302883b18a07a99dacd614ee5332f09e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vehicle_class.html">VehicleClass</a> * VehicleQueue::back </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns pointer to the vehicle that is at the end of the queue </p>
+
+</div>
+</div>
+<a class="anchor" id="a9c22a63f1c7562bc14be172a38cffcb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VehicleQueue::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns "true" if the queue is empty </p>
+
+</div>
+</div>
+<a class="anchor" id="aff7fef0dc6401e38a26bc34ee0e78f2a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_vehicle_class.html">VehicleClass</a> * VehicleQueue::front </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns pointer of the vehicle which is front of the queue </p>
+
+</div>
+</div>
+<a class="anchor" id="ae443ecfa4227dbb5094f1bd33e77abb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VehicleQueue::GetLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns lenght of the queue (i.e. how many vehicles are there in the queue) </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d5dc7f4ee55be52e781b252e6260ba1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VehicleQueue::GetMaxLen </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns Maximum possible lenght of the queue </p>
+
+</div>
+</div>
+<a class="anchor" id="ada2e9158033c24433b042ab46abe2fb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool VehicleQueue::isBusy </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns if the queue is busy or not </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4f16ccf1a5990172e28b7782051b50a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VehicleQueue::pop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns (and removes ) vehicle that was latest existing vehicle in the queue </p>
+
+</div>
+</div>
+<a class="anchor" id="a71dfef194e7e2cbfdca2b724d66301b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void VehicleQueue::push </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td>
+          <td class="paramname"><em>V1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds vehicle to the back of the queue </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">V1</td><td>is pointer of the vehicle to be pushed into the queue </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a4ce16496b3665d0b91a8b5baf158c3a3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VehicleQueue::busy</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>to check if the queue is busy/not </p>
+
+</div>
+</div>
+<a class="anchor" id="a329310055fa8fd635fd6740a8400b88d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double VehicleQueue::LastSentCar</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Holds time for vehicle that was sent last </p>
+
+</div>
+</div>
+<a class="anchor" id="a64dd34f2ca5bee22e9bf07be665c4d13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;<a class="el" href="class_vehicle_class.html">VehicleClass</a>* &gt; VehicleQueue::Q1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>std::Queue for holding the vehicle queue </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="_vehicle_queue_8h_source.html">VehicleQueue.h</a></li>
 <li>VehicleQueue.cpp</li>
@@ -95,7 +321,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 14:15:37 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

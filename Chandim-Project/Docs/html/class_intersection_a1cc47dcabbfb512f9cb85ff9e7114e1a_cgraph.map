@@ -1,0 +1,7 @@
+<map id="Intersection::NextQInfo" name="Intersection::NextQInfo">
+<area shape="rect" id="node3" href="$class_intersection.html#a9304a1e23bdcc495ff95c5195b81d947" title="Intersection::getQdirection" alt="" coords="218,5,395,33"/>
+<area shape="rect" id="node5" href="$class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="212,57,402,85"/>
+<area shape="rect" id="node7" href="$_common_defs_8h.html#ab16114155cb6c7b1080dc8f52f1f8f7a" title="turn" alt="" coords="285,133,329,161"/>
+<area shape="rect" id="node10" href="$_common_defs_8h.html#aee7862becfb6aef94f34e882348eb275" title="reg" alt="" coords="286,209,327,237"/>
+<area shape="rect" id="node13" href="$class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0" title="VehicleQueue::GetLen" alt="" coords="229,261,384,289"/>
+</map>

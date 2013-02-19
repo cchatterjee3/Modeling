@@ -13,27 +13,72 @@ Collaboration diagram for Road\-Segment\-:\nopagebreak
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_road_segment_ab7caf1e5f213f7584687edce88a17cdd}{{\bfseries Road\-Segment} (dir direction, \hyperlink{class_intersection}{Intersection} $\ast$par, int cap)}\label{class_road_segment_ab7caf1e5f213f7584687edce88a17cdd}
-
+\hyperlink{class_road_segment_ab7caf1e5f213f7584687edce88a17cdd}{Road\-Segment} (dir direction, \hyperlink{class_intersection}{Intersection} $\ast$par, int cap)
 \item 
-\hypertarget{class_road_segment_a86d7460856feadb6faa86e130b090479}{void {\bfseries Add\-Vehicle} (\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle)}\label{class_road_segment_a86d7460856feadb6faa86e130b090479}
-
+void \hyperlink{class_road_segment_a86d7460856feadb6faa86e130b090479}{Add\-Vehicle} (\hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$vehicle)
 \item 
-\hypertarget{class_road_segment_a9ca3951ccd16a925d6aad11ff97f6591}{void {\bfseries Evict\-Vehicle} ()}\label{class_road_segment_a9ca3951ccd16a925d6aad11ff97f6591}
-
+void \hyperlink{class_road_segment_a9ca3951ccd16a925d6aad11ff97f6591}{Evict\-Vehicle} ()
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_road_segment_a33e663e38e3d1944398ff70198fdb77b}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} {\bfseries qright}}\label{class_road_segment_a33e663e38e3d1944398ff70198fdb77b}
-
+\hyperlink{class_vehicle_queue}{Vehicle\-Queue} \hyperlink{class_road_segment_a33e663e38e3d1944398ff70198fdb77b}{qright}
 \item 
-\hypertarget{class_road_segment_a0272daa14fc04bc471f81409db27b80b}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} {\bfseries qleft}}\label{class_road_segment_a0272daa14fc04bc471f81409db27b80b}
-
+\hyperlink{class_vehicle_queue}{Vehicle\-Queue} \hyperlink{class_road_segment_a0272daa14fc04bc471f81409db27b80b}{qleft}
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_road_segment_ab7caf1e5f213f7584687edce88a17cdd}{\index{Road\-Segment@{Road\-Segment}!Road\-Segment@{Road\-Segment}}
+\index{Road\-Segment@{Road\-Segment}!RoadSegment@{Road\-Segment}}
+\subsubsection[{Road\-Segment}]{\setlength{\rightskip}{0pt plus 5cm}Road\-Segment\-::\-Road\-Segment (
+\begin{DoxyParamCaption}
+\item[{dir}]{direction, }
+\item[{{\bf Intersection} $\ast$}]{par, }
+\item[{int}]{cap}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_road_segment_ab7caf1e5f213f7584687edce88a17cdd}
+Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_road_segment_a86d7460856feadb6faa86e130b090479}{\index{Road\-Segment@{Road\-Segment}!Add\-Vehicle@{Add\-Vehicle}}
+\index{Add\-Vehicle@{Add\-Vehicle}!RoadSegment@{Road\-Segment}}
+\subsubsection[{Add\-Vehicle}]{\setlength{\rightskip}{0pt plus 5cm}void Road\-Segment\-::\-Add\-Vehicle (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Class} $\ast$}]{vehicle}
+\end{DoxyParamCaption}
+)}}\label{class_road_segment_a86d7460856feadb6faa86e130b090479}
+Adds vehicle to the road segment 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_road_segment_a9ca3951ccd16a925d6aad11ff97f6591}{\index{Road\-Segment@{Road\-Segment}!Evict\-Vehicle@{Evict\-Vehicle}}
+\index{Evict\-Vehicle@{Evict\-Vehicle}!RoadSegment@{Road\-Segment}}
+\subsubsection[{Evict\-Vehicle}]{\setlength{\rightskip}{0pt plus 5cm}void Road\-Segment\-::\-Evict\-Vehicle (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_road_segment_a9ca3951ccd16a925d6aad11ff97f6591}
+Evicts vehicle from the Road Segment 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_road_segment_a0272daa14fc04bc471f81409db27b80b}{\index{Road\-Segment@{Road\-Segment}!qleft@{qleft}}
+\index{qleft@{qleft}!RoadSegment@{Road\-Segment}}
+\subsubsection[{qleft}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Queue} Road\-Segment\-::qleft}}\label{class_road_segment_a0272daa14fc04bc471f81409db27b80b}
+Left lane (Vehicle Queue) \hypertarget{class_road_segment_a33e663e38e3d1944398ff70198fdb77b}{\index{Road\-Segment@{Road\-Segment}!qright@{qright}}
+\index{qright@{qright}!RoadSegment@{Road\-Segment}}
+\subsubsection[{qright}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Queue} Road\-Segment\-::qright}}\label{class_road_segment_a33e663e38e3d1944398ff70198fdb77b}
+Right lane (Vehicle queue) 
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Road\-Segment.\-h\item 
+\hyperlink{_road_segment_8h}{Road\-Segment.\-h}\item 
 Road\-Segment.\-cpp\end{DoxyCompactItemize}

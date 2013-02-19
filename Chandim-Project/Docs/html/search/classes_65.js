@@ -5,5 +5,6 @@ var searchData=
   ['event2',['Event2',['../class_event2.html',1,'']]],
   ['event3',['Event3',['../class_event3.html',1,'']]],
   ['event_5fcompare',['event_compare',['../classevent__compare.html',1,'']]],
-  ['eventbase',['EventBase',['../class_event_base.html',1,'']]]
+  ['eventbase',['EventBase',['../class_event_base.html',1,'']]],
+  ['eventdsc',['eventDsc',['../structevent_dsc.html',1,'']]]
 ];

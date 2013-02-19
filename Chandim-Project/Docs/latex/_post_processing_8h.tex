@@ -1,0 +1,70 @@
+\hypertarget{_post_processing_8h}{\section{Post\-Processing.\-h File Reference}
+\label{_post_processing_8h}\index{Post\-Processing.\-h@{Post\-Processing.\-h}}
+}
+{\ttfamily \#include \char`\"{}Vehicle\-Queue.\-h\char`\"{}}\\*
+Include dependency graph for Post\-Processing.\-h\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_post_processing_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{_post_processing_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}{Post\-Proc\-Stats} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$E\-Q, double timeval, int buckets, int source, int dest)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Takes Exit Queue As Argument and print Various following things
+\begin{DoxyEnumerate}
+\item Histogram of simulation time 
+\end{DoxyEnumerate}
+
+\subsection{Function Documentation}
+\hypertarget{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}{\index{Post\-Processing.\-h@{Post\-Processing.\-h}!Post\-Proc\-Stats@{Post\-Proc\-Stats}}
+\index{Post\-Proc\-Stats@{Post\-Proc\-Stats}!PostProcessing.h@{Post\-Processing.\-h}}
+\subsubsection[{Post\-Proc\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}void Post\-Proc\-Stats (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Queue} $\ast$}]{E\-Q, }
+\item[{double}]{timeval, }
+\item[{int}]{buckets, }
+\item[{int}]{source, }
+\item[{int}]{dest}
+\end{DoxyParamCaption}
+)}}\label{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}
+Takes exit queue and prints histogram of time takes to cover between source and destination Also prints stats like, average time , standard deviation etc. 
+\begin{DoxyParams}{Parameters}
+{\em E\-Q} & is exit Q \\
+\hline
+{\em buckets} & is number of buckets for histogram \\
+\hline
+{\em timeval} & is the period of time which is divided into buckets \\
+\hline
+{\em source} & is starting point of the journey \\
+\hline
+{\em dest} & is input for describing \\
+\hline
+\end{DoxyParams}
+
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph}
+\end{center}
+\end{figure}
+
+

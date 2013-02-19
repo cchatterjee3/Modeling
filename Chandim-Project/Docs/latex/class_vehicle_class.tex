@@ -4,33 +4,161 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_vehicle_class_a127372b94980fa045c648af412856fd5}{void {\bfseries set\-End\-Time} (Time\-\_\-t t)}\label{class_vehicle_class_a127372b94980fa045c648af412856fd5}
-
+void \hyperlink{class_vehicle_class_a127372b94980fa045c648af412856fd5}{set\-End\-Time} (\hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} t)
 \item 
-\hypertarget{class_vehicle_class_a8f00863bdcac1822d486c3d119ff1340}{int {\bfseries get\-I\-D} ()}\label{class_vehicle_class_a8f00863bdcac1822d486c3d119ff1340}
-
+int \hyperlink{class_vehicle_class_a8f00863bdcac1822d486c3d119ff1340}{get\-I\-D} ()
 \item 
-\hypertarget{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}{void \hyperlink{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}{update\-Direction} (dir Direction)}\label{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}
-
+void \hyperlink{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}{update\-Direction} (dir Direction)
 \begin{DoxyCompactList}\small\item\em !\-Constructor \end{DoxyCompactList}\item 
-\hypertarget{class_vehicle_class_a107f9787110e3a575facf1975e40a7b2}{dir {\bfseries get\-Direction} ()}\label{class_vehicle_class_a107f9787110e3a575facf1975e40a7b2}
-
+dir \hyperlink{class_vehicle_class_a107f9787110e3a575facf1975e40a7b2}{get\-Direction} ()
 \item 
-\hypertarget{class_vehicle_class_af0e593cd2608561e6596ae61bbc0b62f}{void {\bfseries set\-Last\-Q} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Q)}\label{class_vehicle_class_af0e593cd2608561e6596ae61bbc0b62f}
-
+void \hyperlink{class_vehicle_class_af0e593cd2608561e6596ae61bbc0b62f}{set\-Last\-Q} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Q)
 \item 
-\hypertarget{class_vehicle_class_a2d35acee350ca16bbadd8ff048956351}{\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ {\bfseries get\-Last\-Q} ()}\label{class_vehicle_class_a2d35acee350ca16bbadd8ff048956351}
-
+\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$ \hyperlink{class_vehicle_class_a2d35acee350ca16bbadd8ff048956351}{get\-Last\-Q} ()
 \item 
-\hypertarget{class_vehicle_class_a2158372213aad34b03a4d8021e1dbd1d}{int {\bfseries get\-Destination} ()}\label{class_vehicle_class_a2158372213aad34b03a4d8021e1dbd1d}
-
+\hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} \hyperlink{class_vehicle_class_a53459527cf013f8e9fac5543c9817b99}{Start\-Time} ()
 \item 
-\hypertarget{class_vehicle_class_ae4291311ac5253a754310588100c494a}{{\bfseries Vehicle\-Class} (int id, int start, int Dest, Time\-\_\-t starttime)}\label{class_vehicle_class_ae4291311ac5253a754310588100c494a}
+\hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} \hyperlink{class_vehicle_class_a91a7fa343d550e90de5e921550ec0c33}{End\-Time} ()
+\item 
+int \hyperlink{class_vehicle_class_a2158372213aad34b03a4d8021e1dbd1d}{get\-Destination} ()
+\item 
+int \hyperlink{class_vehicle_class_aa1e4f513ff1cf84e577f3c6e8bcd681f}{get\-Source} ()
+\item 
+\hyperlink{class_vehicle_class_ae4291311ac5253a754310588100c494a}{Vehicle\-Class} (int id, int start, int Dest, \hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} starttime)
+\item 
+\hyperlink{class_vehicle_class_a5e06ff66b19ecd516f549e7f78feeb44}{$\sim$\-Vehicle\-Class} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} \hyperlink{class_vehicle_class_acafc6e10e1f8b5181fbed411d7a57f35}{start\-Time}
+\item 
+\hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} \hyperlink{class_vehicle_class_ae11f41b18fa726d81c0156162b4554d0}{end\-Time}
+\item 
+\hypertarget{class_vehicle_class_a0d57911f52f3bb9c66fe9b6ea9ea3625}{std\-::list$<$ \hyperlink{structevent_dsc}{event\-Dsc} $>$ {\bfseries Event\-List}}\label{class_vehicle_class_a0d57911f52f3bb9c66fe9b6ea9ea3625}
 
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_vehicle_class_ae4291311ac5253a754310588100c494a}{\index{Vehicle\-Class@{Vehicle\-Class}!Vehicle\-Class@{Vehicle\-Class}}
+\index{Vehicle\-Class@{Vehicle\-Class}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{Vehicle\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Vehicle\-Class\-::\-Vehicle\-Class (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{start, }
+\item[{int}]{Dest, }
+\item[{{\bf Time\-\_\-t}}]{starttime}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_ae4291311ac5253a754310588100c494a}
+Default constructor 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_vehicle_class_a5e06ff66b19ecd516f549e7f78feeb44}{\index{Vehicle\-Class@{Vehicle\-Class}!$\sim$\-Vehicle\-Class@{$\sim$\-Vehicle\-Class}}
+\index{$\sim$\-Vehicle\-Class@{$\sim$\-Vehicle\-Class}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{$\sim$\-Vehicle\-Class}]{\setlength{\rightskip}{0pt plus 5cm}Vehicle\-Class\-::$\sim$\-Vehicle\-Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a5e06ff66b19ecd516f549e7f78feeb44}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_vehicle_class_a91a7fa343d550e90de5e921550ec0c33}{\index{Vehicle\-Class@{Vehicle\-Class}!End\-Time@{End\-Time}}
+\index{End\-Time@{End\-Time}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{End\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-\_\-t} Vehicle\-Class\-::\-End\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vehicle_class_a91a7fa343d550e90de5e921550ec0c33}
+Returns endtime of the car \hypertarget{class_vehicle_class_a2158372213aad34b03a4d8021e1dbd1d}{\index{Vehicle\-Class@{Vehicle\-Class}!get\-Destination@{get\-Destination}}
+\index{get\-Destination@{get\-Destination}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{get\-Destination}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Class\-::get\-Destination (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a2158372213aad34b03a4d8021e1dbd1d}
+Returns destination of the car \hypertarget{class_vehicle_class_a107f9787110e3a575facf1975e40a7b2}{\index{Vehicle\-Class@{Vehicle\-Class}!get\-Direction@{get\-Direction}}
+\index{get\-Direction@{get\-Direction}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{get\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}dir Vehicle\-Class\-::get\-Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a107f9787110e3a575facf1975e40a7b2}
+outputs the direction of the car \hypertarget{class_vehicle_class_a8f00863bdcac1822d486c3d119ff1340}{\index{Vehicle\-Class@{Vehicle\-Class}!get\-I\-D@{get\-I\-D}}
+\index{get\-I\-D@{get\-I\-D}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{get\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Class\-::get\-I\-D (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a8f00863bdcac1822d486c3d119ff1340}
+Gets the I\-D of the car \hypertarget{class_vehicle_class_a2d35acee350ca16bbadd8ff048956351}{\index{Vehicle\-Class@{Vehicle\-Class}!get\-Last\-Q@{get\-Last\-Q}}
+\index{get\-Last\-Q@{get\-Last\-Q}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{get\-Last\-Q}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vehicle\-Queue} $\ast$ Vehicle\-Class\-::get\-Last\-Q (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a2d35acee350ca16bbadd8ff048956351}
+outputs the last queue \hypertarget{class_vehicle_class_aa1e4f513ff1cf84e577f3c6e8bcd681f}{\index{Vehicle\-Class@{Vehicle\-Class}!get\-Source@{get\-Source}}
+\index{get\-Source@{get\-Source}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{get\-Source}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Class\-::get\-Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_aa1e4f513ff1cf84e577f3c6e8bcd681f}
+Returns the source of the car \hypertarget{class_vehicle_class_a127372b94980fa045c648af412856fd5}{\index{Vehicle\-Class@{Vehicle\-Class}!set\-End\-Time@{set\-End\-Time}}
+\index{set\-End\-Time@{set\-End\-Time}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{set\-End\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void Vehicle\-Class\-::set\-End\-Time (
+\begin{DoxyParamCaption}
+\item[{{\bf Time\-\_\-t}}]{t}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a127372b94980fa045c648af412856fd5}
+Sets the end time \hypertarget{class_vehicle_class_af0e593cd2608561e6596ae61bbc0b62f}{\index{Vehicle\-Class@{Vehicle\-Class}!set\-Last\-Q@{set\-Last\-Q}}
+\index{set\-Last\-Q@{set\-Last\-Q}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{set\-Last\-Q}]{\setlength{\rightskip}{0pt plus 5cm}void Vehicle\-Class\-::set\-Last\-Q (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Queue} $\ast$}]{Q}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_af0e593cd2608561e6596ae61bbc0b62f}
+Sets the Vehicle queue to which the car eblonged \hypertarget{class_vehicle_class_a53459527cf013f8e9fac5543c9817b99}{\index{Vehicle\-Class@{Vehicle\-Class}!Start\-Time@{Start\-Time}}
+\index{Start\-Time@{Start\-Time}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{Start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-\_\-t} Vehicle\-Class\-::\-Start\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_vehicle_class_a53459527cf013f8e9fac5543c9817b99}
+Returns the start time \hypertarget{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}{\index{Vehicle\-Class@{Vehicle\-Class}!update\-Direction@{update\-Direction}}
+\index{update\-Direction@{update\-Direction}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{update\-Direction}]{\setlength{\rightskip}{0pt plus 5cm}void Vehicle\-Class\-::update\-Direction (
+\begin{DoxyParamCaption}
+\item[{dir}]{Direction}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_class_a7070e6f4e7814a6f81292a54aa3c58b5}
+
+
+!\-Constructor 
+
+Updated the direction of the car 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_vehicle_class_ae11f41b18fa726d81c0156162b4554d0}{\index{Vehicle\-Class@{Vehicle\-Class}!end\-Time@{end\-Time}}
+\index{end\-Time@{end\-Time}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{end\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-\_\-t} Vehicle\-Class\-::end\-Time}}\label{class_vehicle_class_ae11f41b18fa726d81c0156162b4554d0}
+Time when a car exits out of the system \hypertarget{class_vehicle_class_acafc6e10e1f8b5181fbed411d7a57f35}{\index{Vehicle\-Class@{Vehicle\-Class}!start\-Time@{start\-Time}}
+\index{start\-Time@{start\-Time}!VehicleClass@{Vehicle\-Class}}
+\subsubsection[{start\-Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Time\-\_\-t} Vehicle\-Class\-::start\-Time}}\label{class_vehicle_class_acafc6e10e1f8b5181fbed411d7a57f35}
+Time when a car comes into existance 
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Vehicle\-Class.\-h\item 
+\hyperlink{_vehicle_class_8h}{Vehicle\-Class.\-h}\item 
 Vehicle\-Class.\-cpp\end{DoxyCompactItemize}

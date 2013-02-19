@@ -4,27 +4,130 @@
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_traffic_light_abce2ada7d1eeb16437d07acd50b2446b}{int {\bfseries get\-Type} ()}\label{class_traffic_light_abce2ada7d1eeb16437d07acd50b2446b}
-
+int \hyperlink{class_traffic_light_abce2ada7d1eeb16437d07acd50b2446b}{get\-Type} ()
 \item 
-\hypertarget{class_traffic_light_aaee73cd4cff5ad4f7096c7c8e9e6bc4b}{state {\bfseries get\-State} ()}\label{class_traffic_light_aaee73cd4cff5ad4f7096c7c8e9e6bc4b}
-
+state \hyperlink{class_traffic_light_aaee73cd4cff5ad4f7096c7c8e9e6bc4b}{get\-State} ()
 \item 
-\hypertarget{class_traffic_light_ad3bb62de50352123ffa6d67b4cbd028f}{{\bfseries Traffic\-Light} (int id, int typ, state initial\-State, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, \hyperlink{class_intersectionwith_signal}{Intersectionwith\-Signal} $\ast$p)}\label{class_traffic_light_ad3bb62de50352123ffa6d67b4cbd028f}
-
+state \hyperlink{class_traffic_light_ae710ff1d3ded24f933c4dd3816ba98e0}{get\-Left\-State} ()
 \item 
-\hypertarget{class_traffic_light_a069a58acd9a0b2ecb9245912b53c4462}{void {\bfseries cyclestate} ()}\label{class_traffic_light_a069a58acd9a0b2ecb9245912b53c4462}
-
+\hyperlink{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}{Traffic\-Light} ()
+\item 
+\hyperlink{class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd}{Traffic\-Light} (int id, int typ, state initial\-State, state initialstate2, double Ph1, double Ph2, double Ph3, double Ph4, double Ph5, double Ph6, \hyperlink{class_intersectionwith_signal}{Intersectionwith\-Signal} $\ast$p, \hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} timeto\-Start, \hyperlink{_common_defs_8h_a80b23eab88362163e2edd1a8b8238ef1}{Time\-\_\-t} timeto\-Start2)
+\item 
+\hyperlink{class_traffic_light_a3dd2a89a028c1586ced0ab587dda8cc1}{$\sim$\-Traffic\-Light} ()
+\item 
+void \hyperlink{class_traffic_light_a43310868b8badae122a037d85f009a0f}{cyclestate} (int leftorthru)
 \end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\hypertarget{class_traffic_light_aa8b8852f0a75b737d741cdb831847208}{int {\bfseries myid}}\label{class_traffic_light_aa8b8852f0a75b737d741cdb831847208}
-
+int \hyperlink{class_traffic_light_abd951c68d768bc9d91aedd90e383a7b8}{type}
+\item 
+int \hyperlink{class_traffic_light_aa8b8852f0a75b737d741cdb831847208}{myid}
 \end{DoxyCompactItemize}
 
 
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}{\index{Traffic\-Light@{Traffic\-Light}!Traffic\-Light@{Traffic\-Light}}
+\index{Traffic\-Light@{Traffic\-Light}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{Traffic\-Light}]{\setlength{\rightskip}{0pt plus 5cm}Traffic\-Light\-::\-Traffic\-Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_traffic_light_a28e72db41dcbd224a0a811d08ae20c3f}
+Default constructor \hypertarget{class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd}{\index{Traffic\-Light@{Traffic\-Light}!Traffic\-Light@{Traffic\-Light}}
+\index{Traffic\-Light@{Traffic\-Light}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{Traffic\-Light}]{\setlength{\rightskip}{0pt plus 5cm}Traffic\-Light\-::\-Traffic\-Light (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{int}]{typ, }
+\item[{state}]{initial\-State, }
+\item[{state}]{initialstate2, }
+\item[{double}]{Ph1, }
+\item[{double}]{Ph2, }
+\item[{double}]{Ph3, }
+\item[{double}]{Ph4, }
+\item[{double}]{Ph5, }
+\item[{double}]{Ph6, }
+\item[{{\bf Intersectionwith\-Signal} $\ast$}]{p, }
+\item[{{\bf Time\-\_\-t}}]{timeto\-Start, }
+\item[{{\bf Time\-\_\-t}}]{timeto\-Start2}
+\end{DoxyParamCaption}
+)}}\label{class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd}
+Constructor with initial states and everything (type, initial\-State G\-L\-T, Y\-L\-T, R\-L\-T, G\-T\-R, Y\-T\-R, R\-T\-R) put zeros if any was inapplicable 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_traffic_light_a3dd2a89a028c1586ced0ab587dda8cc1}{\index{Traffic\-Light@{Traffic\-Light}!$\sim$\-Traffic\-Light@{$\sim$\-Traffic\-Light}}
+\index{$\sim$\-Traffic\-Light@{$\sim$\-Traffic\-Light}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{$\sim$\-Traffic\-Light}]{\setlength{\rightskip}{0pt plus 5cm}Traffic\-Light\-::$\sim$\-Traffic\-Light (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_traffic_light_a3dd2a89a028c1586ced0ab587dda8cc1}
+Default destructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_traffic_light_a43310868b8badae122a037d85f009a0f}{\index{Traffic\-Light@{Traffic\-Light}!cyclestate@{cyclestate}}
+\index{cyclestate@{cyclestate}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{cyclestate}]{\setlength{\rightskip}{0pt plus 5cm}void Traffic\-Light\-::cyclestate (
+\begin{DoxyParamCaption}
+\item[{int}]{leftorthru}
+\end{DoxyParamCaption}
+)}}\label{class_traffic_light_a43310868b8badae122a037d85f009a0f}
+cyclestate 
+
+Here is the call graph for this function\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_traffic_light_ae710ff1d3ded24f933c4dd3816ba98e0}{\index{Traffic\-Light@{Traffic\-Light}!get\-Left\-State@{get\-Left\-State}}
+\index{get\-Left\-State@{get\-Left\-State}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{get\-Left\-State}]{\setlength{\rightskip}{0pt plus 5cm}state Traffic\-Light\-::get\-Left\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_traffic_light_ae710ff1d3ded24f933c4dd3816ba98e0}
+Returns the present left state of the traffic light \hypertarget{class_traffic_light_aaee73cd4cff5ad4f7096c7c8e9e6bc4b}{\index{Traffic\-Light@{Traffic\-Light}!get\-State@{get\-State}}
+\index{get\-State@{get\-State}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{get\-State}]{\setlength{\rightskip}{0pt plus 5cm}state Traffic\-Light\-::get\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_traffic_light_aaee73cd4cff5ad4f7096c7c8e9e6bc4b}
+Returns the present state of the traffic light \hypertarget{class_traffic_light_abce2ada7d1eeb16437d07acd50b2446b}{\index{Traffic\-Light@{Traffic\-Light}!get\-Type@{get\-Type}}
+\index{get\-Type@{get\-Type}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{get\-Type}]{\setlength{\rightskip}{0pt plus 5cm}int Traffic\-Light\-::get\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_traffic_light_abce2ada7d1eeb16437d07acd50b2446b}
+Returns the type of traffic light 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_traffic_light_aa8b8852f0a75b737d741cdb831847208}{\index{Traffic\-Light@{Traffic\-Light}!myid@{myid}}
+\index{myid@{myid}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{myid}]{\setlength{\rightskip}{0pt plus 5cm}int Traffic\-Light\-::myid}}\label{class_traffic_light_aa8b8852f0a75b737d741cdb831847208}
+Id of the traffic signal \hypertarget{class_traffic_light_abd951c68d768bc9d91aedd90e383a7b8}{\index{Traffic\-Light@{Traffic\-Light}!type@{type}}
+\index{type@{type}!TrafficLight@{Traffic\-Light}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}int Traffic\-Light\-::type}}\label{class_traffic_light_abd951c68d768bc9d91aedd90e383a7b8}
+0 if 3 states and 1 if 6 states and 2 if there are two independent signals 
+
 The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
 \item 
-Traffic\-Light.\-h\item 
+\hyperlink{_traffic_light_8h}{Traffic\-Light.\-h}\item 
 Traffic\-Light.\-cpp\end{DoxyCompactItemize}

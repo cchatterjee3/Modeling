@@ -2,24 +2,227 @@
 \contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}
 \contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}
-\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}
-\contentsline {section}{\numberline {3.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology Class Reference}{5}{section.3.1}
-\contentsline {section}{\numberline {3.2}calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue Class Reference}{6}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Detailed Description}{6}{subsection.3.2.1}
-\contentsline {section}{\numberline {3.3}Event0$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J $>$ Class Template Reference}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}Event1$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1 $>$ Class Template Reference}{8}{section.3.4}
-\contentsline {section}{\numberline {3.5}Event2$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2 $>$ Class Template Reference}{9}{section.3.5}
-\contentsline {section}{\numberline {3.6}Event3$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2, U3, T3 $>$ Class Template Reference}{10}{section.3.6}
-\contentsline {section}{\numberline {3.7}event\discretionary {-}{}{}\_\discretionary {-}{}{}compare Class Reference}{11}{section.3.7}
-\contentsline {section}{\numberline {3.8}Event\discretionary {-}{}{}Base Class Reference}{11}{section.3.8}
-\contentsline {section}{\numberline {3.9}Intersection Class Reference}{12}{section.3.9}
-\contentsline {section}{\numberline {3.10}Intersectionwithout\discretionary {-}{}{}Signal Class Reference}{13}{section.3.10}
-\contentsline {section}{\numberline {3.11}Intersectionwith\discretionary {-}{}{}Signal Class Reference}{15}{section.3.11}
-\contentsline {section}{\numberline {3.12}prioqueue Class Reference}{16}{section.3.12}
-\contentsline {section}{\numberline {3.13}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen Class Reference}{16}{section.3.13}
-\contentsline {section}{\numberline {3.14}Road\discretionary {-}{}{}Segment Class Reference}{17}{section.3.14}
-\contentsline {section}{\numberline {3.15}Simulator Class Reference}{17}{section.3.15}
-\contentsline {section}{\numberline {3.16}Traffic\discretionary {-}{}{}Light Class Reference}{18}{section.3.16}
-\contentsline {section}{\numberline {3.17}Vehicle\discretionary {-}{}{}Class Class Reference}{19}{section.3.17}
-\contentsline {section}{\numberline {3.18}Vehicle\discretionary {-}{}{}Queue Class Reference}{19}{section.3.18}
-\contentsline {part}{Index}{19}{section.3.18}
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology Class Reference}{7}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Constructor \& Destructor Documentation}{8}{subsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.1.1}\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}Topology}{8}{subsubsection.4.1.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Member Data Documentation}{8}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Exit\discretionary {-}{}{}Q}{8}{subsubsection.4.1.2.1}
+\contentsline {subsubsection}{\numberline {4.1.2.2}I1}{8}{subsubsection.4.1.2.2}
+\contentsline {subsubsection}{\numberline {4.1.2.3}I2}{8}{subsubsection.4.1.2.3}
+\contentsline {subsubsection}{\numberline {4.1.2.4}I3}{8}{subsubsection.4.1.2.4}
+\contentsline {subsubsection}{\numberline {4.1.2.5}I4}{8}{subsubsection.4.1.2.5}
+\contentsline {subsubsection}{\numberline {4.1.2.6}I5}{8}{subsubsection.4.1.2.6}
+\contentsline {section}{\numberline {4.2}calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue Class Reference}{9}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{9}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{9}{subsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.2.1}calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue}{9}{subsubsection.4.2.2.1}
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{9}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}check659bucket}{9}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}dequeue}{9}{subsubsection.4.2.3.2}
+\contentsline {subsubsection}{\numberline {4.2.3.3}get\discretionary {-}{}{}\_\discretionary {-}{}{}bucket\discretionary {-}{}{}\_\discretionary {-}{}{}count}{9}{subsubsection.4.2.3.3}
+\contentsline {subsubsection}{\numberline {4.2.3.4}get\discretionary {-}{}{}Qsize}{9}{subsubsection.4.2.3.4}
+\contentsline {subsubsection}{\numberline {4.2.3.5}gettimeframe}{10}{subsubsection.4.2.3.5}
+\contentsline {subsubsection}{\numberline {4.2.3.6}insert}{10}{subsubsection.4.2.3.6}
+\contentsline {subsubsection}{\numberline {4.2.3.7}is\discretionary {-}{}{}Empty}{10}{subsubsection.4.2.3.7}
+\contentsline {subsubsection}{\numberline {4.2.3.8}next\discretionary {-}{}{}\_\discretionary {-}{}{}event}{10}{subsubsection.4.2.3.8}
+\contentsline {subsubsection}{\numberline {4.2.3.9}Pop\discretionary {-}{}{}Next}{10}{subsubsection.4.2.3.9}
+\contentsline {subsubsection}{\numberline {4.2.3.10}remove\discretionary {-}{}{}\_\discretionary {-}{}{}event}{10}{subsubsection.4.2.3.10}
+\contentsline {section}{\numberline {4.3}Event0$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J $>$ Class Template Reference}{11}{section.4.3}
+\contentsline {section}{\numberline {4.4}Event1$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1 $>$ Class Template Reference}{12}{section.4.4}
+\contentsline {section}{\numberline {4.5}Event2$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2 $>$ Class Template Reference}{13}{section.4.5}
+\contentsline {section}{\numberline {4.6}Event3$<$ T, O\discretionary {-}{}{}B\discretionary {-}{}{}J, U1, T1, U2, T2, U3, T3 $>$ Class Template Reference}{14}{section.4.6}
+\contentsline {section}{\numberline {4.7}event\discretionary {-}{}{}\_\discretionary {-}{}{}compare Class Reference}{15}{section.4.7}
+\contentsline {section}{\numberline {4.8}Event\discretionary {-}{}{}Base Class Reference}{15}{section.4.8}
+\contentsline {section}{\numberline {4.9}event\discretionary {-}{}{}Dsc Struct Reference}{16}{section.4.9}
+\contentsline {section}{\numberline {4.10}Intersection Class Reference}{16}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}Constructor \& Destructor Documentation}{18}{subsection.4.10.1}
+\contentsline {subsubsection}{\numberline {4.10.1.1}Intersection}{18}{subsubsection.4.10.1.1}
+\contentsline {subsubsection}{\numberline {4.10.1.2}Intersection}{18}{subsubsection.4.10.1.2}
+\contentsline {subsubsection}{\numberline {4.10.1.3}$\sim $\discretionary {-}{}{}Intersection}{18}{subsubsection.4.10.1.3}
+\contentsline {subsection}{\numberline {4.10.2}Member Function Documentation}{18}{subsection.4.10.2}
+\contentsline {subsubsection}{\numberline {4.10.2.1}add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}{18}{subsubsection.4.10.2.1}
+\contentsline {subsubsection}{\numberline {4.10.2.2}Evict\discretionary {-}{}{}Q}{18}{subsubsection.4.10.2.2}
+\contentsline {subsubsection}{\numberline {4.10.2.3}get\discretionary {-}{}{}I\discretionary {-}{}{}D}{19}{subsubsection.4.10.2.3}
+\contentsline {subsubsection}{\numberline {4.10.2.4}get\discretionary {-}{}{}Qdirection}{19}{subsubsection.4.10.2.4}
+\contentsline {subsubsection}{\numberline {4.10.2.5}get\discretionary {-}{}{}Qlane}{19}{subsubsection.4.10.2.5}
+\contentsline {subsubsection}{\numberline {4.10.2.6}Next\discretionary {-}{}{}Q\discretionary {-}{}{}Info}{19}{subsubsection.4.10.2.6}
+\contentsline {subsubsection}{\numberline {4.10.2.7}Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}{20}{subsubsection.4.10.2.7}
+\contentsline {subsubsection}{\numberline {4.10.2.8}Vehicle\discretionary {-}{}{}Departure}{20}{subsubsection.4.10.2.8}
+\contentsline {subsubsection}{\numberline {4.10.2.9}Vehicle\discretionary {-}{}{}Pass}{21}{subsubsection.4.10.2.9}
+\contentsline {subsection}{\numberline {4.10.3}Member Data Documentation}{21}{subsection.4.10.3}
+\contentsline {subsubsection}{\numberline {4.10.3.1}busy}{21}{subsubsection.4.10.3.1}
+\contentsline {subsubsection}{\numberline {4.10.3.2}E\discretionary {-}{}{}B\discretionary {-}{}{}I1}{21}{subsubsection.4.10.3.2}
+\contentsline {subsubsection}{\numberline {4.10.3.3}E\discretionary {-}{}{}B\discretionary {-}{}{}I2}{22}{subsubsection.4.10.3.3}
+\contentsline {subsubsection}{\numberline {4.10.3.4}Exit\discretionary {-}{}{}Q}{22}{subsubsection.4.10.3.4}
+\contentsline {subsubsection}{\numberline {4.10.3.5}have\discretionary {-}{}{}Signal}{22}{subsubsection.4.10.3.5}
+\contentsline {subsubsection}{\numberline {4.10.3.6}I\discretionary {-}{}{}D}{22}{subsubsection.4.10.3.6}
+\contentsline {subsubsection}{\numberline {4.10.3.7}N\discretionary {-}{}{}B\discretionary {-}{}{}I1}{22}{subsubsection.4.10.3.7}
+\contentsline {subsubsection}{\numberline {4.10.3.8}N\discretionary {-}{}{}B\discretionary {-}{}{}I2}{22}{subsubsection.4.10.3.8}
+\contentsline {subsubsection}{\numberline {4.10.3.9}N\discretionary {-}{}{}Inter}{22}{subsubsection.4.10.3.9}
+\contentsline {subsubsection}{\numberline {4.10.3.10}routingtable}{22}{subsubsection.4.10.3.10}
+\contentsline {subsubsection}{\numberline {4.10.3.11}S\discretionary {-}{}{}B\discretionary {-}{}{}I1}{22}{subsubsection.4.10.3.11}
+\contentsline {subsubsection}{\numberline {4.10.3.12}S\discretionary {-}{}{}B\discretionary {-}{}{}I2}{22}{subsubsection.4.10.3.12}
+\contentsline {subsubsection}{\numberline {4.10.3.13}S\discretionary {-}{}{}Inter}{22}{subsubsection.4.10.3.13}
+\contentsline {subsubsection}{\numberline {4.10.3.14}W\discretionary {-}{}{}B\discretionary {-}{}{}I1}{22}{subsubsection.4.10.3.14}
+\contentsline {subsubsection}{\numberline {4.10.3.15}W\discretionary {-}{}{}B\discretionary {-}{}{}I2}{23}{subsubsection.4.10.3.15}
+\contentsline {section}{\numberline {4.11}Intersectionwithout\discretionary {-}{}{}Signal Class Reference}{23}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}Constructor \& Destructor Documentation}{24}{subsection.4.11.1}
+\contentsline {subsubsection}{\numberline {4.11.1.1}Intersectionwithout\discretionary {-}{}{}Signal}{24}{subsubsection.4.11.1.1}
+\contentsline {subsubsection}{\numberline {4.11.1.2}Intersectionwithout\discretionary {-}{}{}Signal}{24}{subsubsection.4.11.1.2}
+\contentsline {subsubsection}{\numberline {4.11.1.3}$\sim $\discretionary {-}{}{}Intersectionwithout\discretionary {-}{}{}Signal}{25}{subsubsection.4.11.1.3}
+\contentsline {subsection}{\numberline {4.11.2}Member Function Documentation}{25}{subsection.4.11.2}
+\contentsline {subsubsection}{\numberline {4.11.2.1}add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}{25}{subsubsection.4.11.2.1}
+\contentsline {subsubsection}{\numberline {4.11.2.2}Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}{25}{subsubsection.4.11.2.2}
+\contentsline {section}{\numberline {4.12}Intersectionwith\discretionary {-}{}{}Signal Class Reference}{26}{section.4.12}
+\contentsline {subsection}{\numberline {4.12.1}Constructor \& Destructor Documentation}{28}{subsection.4.12.1}
+\contentsline {subsubsection}{\numberline {4.12.1.1}Intersectionwith\discretionary {-}{}{}Signal}{28}{subsubsection.4.12.1.1}
+\contentsline {subsubsection}{\numberline {4.12.1.2}Intersectionwith\discretionary {-}{}{}Signal}{28}{subsubsection.4.12.1.2}
+\contentsline {subsubsection}{\numberline {4.12.1.3}$\sim $\discretionary {-}{}{}Intersectionwith\discretionary {-}{}{}Signal}{28}{subsubsection.4.12.1.3}
+\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{28}{subsection.4.12.2}
+\contentsline {subsubsection}{\numberline {4.12.2.1}add\discretionary {-}{}{}Vehicleto\discretionary {-}{}{}Queue}{28}{subsubsection.4.12.2.1}
+\contentsline {subsubsection}{\numberline {4.12.2.2}change\discretionary {-}{}{}Signal\discretionary {-}{}{}Trigger}{28}{subsubsection.4.12.2.2}
+\contentsline {subsubsection}{\numberline {4.12.2.3}Q\discretionary {-}{}{}Can\discretionary {-}{}{}Go}{29}{subsubsection.4.12.2.3}
+\contentsline {subsection}{\numberline {4.12.3}Member Data Documentation}{29}{subsection.4.12.3}
+\contentsline {subsubsection}{\numberline {4.12.3.1}E\discretionary {-}{}{}B}{29}{subsubsection.4.12.3.1}
+\contentsline {subsubsection}{\numberline {4.12.3.2}N\discretionary {-}{}{}B}{30}{subsubsection.4.12.3.2}
+\contentsline {subsubsection}{\numberline {4.12.3.3}S\discretionary {-}{}{}B}{30}{subsubsection.4.12.3.3}
+\contentsline {subsubsection}{\numberline {4.12.3.4}W\discretionary {-}{}{}B}{30}{subsubsection.4.12.3.4}
+\contentsline {section}{\numberline {4.13}prioqueue Class Reference}{30}{section.4.13}
+\contentsline {section}{\numberline {4.14}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen Class Reference}{30}{section.4.14}
+\contentsline {subsection}{\numberline {4.14.1}Constructor \& Destructor Documentation}{30}{subsection.4.14.1}
+\contentsline {subsubsection}{\numberline {4.14.1.1}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}{30}{subsubsection.4.14.1.1}
+\contentsline {subsubsection}{\numberline {4.14.1.2}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}{31}{subsubsection.4.14.1.2}
+\contentsline {subsubsection}{\numberline {4.14.1.3}$\sim $\discretionary {-}{}{}Random\discretionary {-}{}{}Num\discretionary {-}{}{}Gen}{31}{subsubsection.4.14.1.3}
+\contentsline {subsection}{\numberline {4.14.2}Member Function Documentation}{31}{subsection.4.14.2}
+\contentsline {subsubsection}{\numberline {4.14.2.1}Get\discretionary {-}{}{}State}{31}{subsubsection.4.14.2.1}
+\contentsline {subsubsection}{\numberline {4.14.2.2}Next}{31}{subsubsection.4.14.2.2}
+\contentsline {subsubsection}{\numberline {4.14.2.3}Reset}{31}{subsubsection.4.14.2.3}
+\contentsline {section}{\numberline {4.15}Road\discretionary {-}{}{}Segment Class Reference}{31}{section.4.15}
+\contentsline {subsection}{\numberline {4.15.1}Constructor \& Destructor Documentation}{32}{subsection.4.15.1}
+\contentsline {subsubsection}{\numberline {4.15.1.1}Road\discretionary {-}{}{}Segment}{32}{subsubsection.4.15.1.1}
+\contentsline {subsection}{\numberline {4.15.2}Member Function Documentation}{32}{subsection.4.15.2}
+\contentsline {subsubsection}{\numberline {4.15.2.1}Add\discretionary {-}{}{}Vehicle}{32}{subsubsection.4.15.2.1}
+\contentsline {subsubsection}{\numberline {4.15.2.2}Evict\discretionary {-}{}{}Vehicle}{32}{subsubsection.4.15.2.2}
+\contentsline {subsection}{\numberline {4.15.3}Member Data Documentation}{32}{subsection.4.15.3}
+\contentsline {subsubsection}{\numberline {4.15.3.1}qleft}{32}{subsubsection.4.15.3.1}
+\contentsline {subsubsection}{\numberline {4.15.3.2}qright}{32}{subsubsection.4.15.3.2}
+\contentsline {section}{\numberline {4.16}Simulator Class Reference}{33}{section.4.16}
+\contentsline {subsection}{\numberline {4.16.1}Constructor \& Destructor Documentation}{33}{subsection.4.16.1}
+\contentsline {subsubsection}{\numberline {4.16.1.1}Simulator}{33}{subsubsection.4.16.1.1}
+\contentsline {subsection}{\numberline {4.16.2}Member Function Documentation}{33}{subsection.4.16.2}
+\contentsline {subsubsection}{\numberline {4.16.2.1}get\discretionary {-}{}{}Now}{33}{subsubsection.4.16.2.1}
+\contentsline {subsubsection}{\numberline {4.16.2.2}Now}{34}{subsubsection.4.16.2.2}
+\contentsline {subsubsection}{\numberline {4.16.2.3}Run}{34}{subsubsection.4.16.2.3}
+\contentsline {subsubsection}{\numberline {4.16.2.4}Schedule}{34}{subsubsection.4.16.2.4}
+\contentsline {subsubsection}{\numberline {4.16.2.5}Schedule}{34}{subsubsection.4.16.2.5}
+\contentsline {subsubsection}{\numberline {4.16.2.6}Schedule}{35}{subsubsection.4.16.2.6}
+\contentsline {subsubsection}{\numberline {4.16.2.7}Schedule}{35}{subsubsection.4.16.2.7}
+\contentsline {subsubsection}{\numberline {4.16.2.8}Stop}{35}{subsubsection.4.16.2.8}
+\contentsline {subsubsection}{\numberline {4.16.2.9}Stop\discretionary {-}{}{}At}{36}{subsubsection.4.16.2.9}
+\contentsline {subsection}{\numberline {4.16.3}Member Data Documentation}{36}{subsection.4.16.3}
+\contentsline {subsubsection}{\numberline {4.16.3.1}instance}{36}{subsubsection.4.16.3.1}
+\contentsline {section}{\numberline {4.17}Traffic\discretionary {-}{}{}Light Class Reference}{36}{section.4.17}
+\contentsline {subsection}{\numberline {4.17.1}Constructor \& Destructor Documentation}{36}{subsection.4.17.1}
+\contentsline {subsubsection}{\numberline {4.17.1.1}Traffic\discretionary {-}{}{}Light}{36}{subsubsection.4.17.1.1}
+\contentsline {subsubsection}{\numberline {4.17.1.2}Traffic\discretionary {-}{}{}Light}{37}{subsubsection.4.17.1.2}
+\contentsline {subsubsection}{\numberline {4.17.1.3}$\sim $\discretionary {-}{}{}Traffic\discretionary {-}{}{}Light}{37}{subsubsection.4.17.1.3}
+\contentsline {subsection}{\numberline {4.17.2}Member Function Documentation}{37}{subsection.4.17.2}
+\contentsline {subsubsection}{\numberline {4.17.2.1}cyclestate}{37}{subsubsection.4.17.2.1}
+\contentsline {subsubsection}{\numberline {4.17.2.2}get\discretionary {-}{}{}Left\discretionary {-}{}{}State}{37}{subsubsection.4.17.2.2}
+\contentsline {subsubsection}{\numberline {4.17.2.3}get\discretionary {-}{}{}State}{37}{subsubsection.4.17.2.3}
+\contentsline {subsubsection}{\numberline {4.17.2.4}get\discretionary {-}{}{}Type}{38}{subsubsection.4.17.2.4}
+\contentsline {subsection}{\numberline {4.17.3}Member Data Documentation}{38}{subsection.4.17.3}
+\contentsline {subsubsection}{\numberline {4.17.3.1}myid}{38}{subsubsection.4.17.3.1}
+\contentsline {subsubsection}{\numberline {4.17.3.2}type}{38}{subsubsection.4.17.3.2}
+\contentsline {section}{\numberline {4.18}Vehicle\discretionary {-}{}{}Class Class Reference}{38}{section.4.18}
+\contentsline {subsection}{\numberline {4.18.1}Constructor \& Destructor Documentation}{38}{subsection.4.18.1}
+\contentsline {subsubsection}{\numberline {4.18.1.1}Vehicle\discretionary {-}{}{}Class}{38}{subsubsection.4.18.1.1}
+\contentsline {subsubsection}{\numberline {4.18.1.2}$\sim $\discretionary {-}{}{}Vehicle\discretionary {-}{}{}Class}{39}{subsubsection.4.18.1.2}
+\contentsline {subsection}{\numberline {4.18.2}Member Function Documentation}{39}{subsection.4.18.2}
+\contentsline {subsubsection}{\numberline {4.18.2.1}End\discretionary {-}{}{}Time}{39}{subsubsection.4.18.2.1}
+\contentsline {subsubsection}{\numberline {4.18.2.2}get\discretionary {-}{}{}Destination}{39}{subsubsection.4.18.2.2}
+\contentsline {subsubsection}{\numberline {4.18.2.3}get\discretionary {-}{}{}Direction}{39}{subsubsection.4.18.2.3}
+\contentsline {subsubsection}{\numberline {4.18.2.4}get\discretionary {-}{}{}I\discretionary {-}{}{}D}{39}{subsubsection.4.18.2.4}
+\contentsline {subsubsection}{\numberline {4.18.2.5}get\discretionary {-}{}{}Last\discretionary {-}{}{}Q}{39}{subsubsection.4.18.2.5}
+\contentsline {subsubsection}{\numberline {4.18.2.6}get\discretionary {-}{}{}Source}{39}{subsubsection.4.18.2.6}
+\contentsline {subsubsection}{\numberline {4.18.2.7}set\discretionary {-}{}{}End\discretionary {-}{}{}Time}{39}{subsubsection.4.18.2.7}
+\contentsline {subsubsection}{\numberline {4.18.2.8}set\discretionary {-}{}{}Last\discretionary {-}{}{}Q}{39}{subsubsection.4.18.2.8}
+\contentsline {subsubsection}{\numberline {4.18.2.9}Start\discretionary {-}{}{}Time}{40}{subsubsection.4.18.2.9}
+\contentsline {subsubsection}{\numberline {4.18.2.10}update\discretionary {-}{}{}Direction}{40}{subsubsection.4.18.2.10}
+\contentsline {subsection}{\numberline {4.18.3}Member Data Documentation}{40}{subsection.4.18.3}
+\contentsline {subsubsection}{\numberline {4.18.3.1}end\discretionary {-}{}{}Time}{40}{subsubsection.4.18.3.1}
+\contentsline {subsubsection}{\numberline {4.18.3.2}start\discretionary {-}{}{}Time}{40}{subsubsection.4.18.3.2}
+\contentsline {section}{\numberline {4.19}Vehicle\discretionary {-}{}{}Queue Class Reference}{40}{section.4.19}
+\contentsline {subsection}{\numberline {4.19.1}Constructor \& Destructor Documentation}{40}{subsection.4.19.1}
+\contentsline {subsubsection}{\numberline {4.19.1.1}Vehicle\discretionary {-}{}{}Queue}{40}{subsubsection.4.19.1.1}
+\contentsline {subsection}{\numberline {4.19.2}Member Function Documentation}{41}{subsection.4.19.2}
+\contentsline {subsubsection}{\numberline {4.19.2.1}back}{41}{subsubsection.4.19.2.1}
+\contentsline {subsubsection}{\numberline {4.19.2.2}empty}{41}{subsubsection.4.19.2.2}
+\contentsline {subsubsection}{\numberline {4.19.2.3}front}{41}{subsubsection.4.19.2.3}
+\contentsline {subsubsection}{\numberline {4.19.2.4}Get\discretionary {-}{}{}Len}{41}{subsubsection.4.19.2.4}
+\contentsline {subsubsection}{\numberline {4.19.2.5}Get\discretionary {-}{}{}Max\discretionary {-}{}{}Len}{41}{subsubsection.4.19.2.5}
+\contentsline {subsubsection}{\numberline {4.19.2.6}is\discretionary {-}{}{}Busy}{41}{subsubsection.4.19.2.6}
+\contentsline {subsubsection}{\numberline {4.19.2.7}pop}{41}{subsubsection.4.19.2.7}
+\contentsline {subsubsection}{\numberline {4.19.2.8}push}{41}{subsubsection.4.19.2.8}
+\contentsline {subsection}{\numberline {4.19.3}Member Data Documentation}{41}{subsection.4.19.3}
+\contentsline {subsubsection}{\numberline {4.19.3.1}busy}{41}{subsubsection.4.19.3.1}
+\contentsline {subsubsection}{\numberline {4.19.3.2}Last\discretionary {-}{}{}Sent\discretionary {-}{}{}Car}{41}{subsubsection.4.19.3.2}
+\contentsline {subsubsection}{\numberline {4.19.3.3}Q1}{42}{subsubsection.4.19.3.3}
+\contentsline {chapter}{\numberline {5}File Documentation}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}calender\discretionary {-}{}{}\_\discretionary {-}{}{}queue.\discretionary {-}{}{}h File Reference}{43}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{44}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Macro Definition Documentation}{44}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}B\discretionary {-}{}{}U\discretionary {-}{}{}C\discretionary {-}{}{}K\discretionary {-}{}{}E\discretionary {-}{}{}T\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}C\discretionary {-}{}{}O\discretionary {-}{}{}U\discretionary {-}{}{}N\discretionary {-}{}{}T}{45}{subsubsection.5.1.2.1}
+\contentsline {subsubsection}{\numberline {5.1.2.2}C\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}E\discretionary {-}{}{}N\discretionary {-}{}{}D\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}P\discretionary {-}{}{}E\discretionary {-}{}{}R\discretionary {-}{}{}I\discretionary {-}{}{}O\discretionary {-}{}{}D}{45}{subsubsection.5.1.2.2}
+\contentsline {subsubsection}{\numberline {5.1.2.3}T\discretionary {-}{}{}O\discretionary {-}{}{}T\discretionary {-}{}{}A\discretionary {-}{}{}L\discretionary {-}{}{}\_\discretionary {-}{}{}\discretionary {-}{}{}T\discretionary {-}{}{}I\discretionary {-}{}{}M\discretionary {-}{}{}E}{45}{subsubsection.5.1.2.3}
+\contentsline {section}{\numberline {5.2}Common\discretionary {-}{}{}Defs.\discretionary {-}{}{}h File Reference}{45}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{47}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Macro Definition Documentation}{47}{subsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.1}Burst\discretionary {-}{}{}Time}{47}{subsubsection.5.2.2.1}
+\contentsline {subsubsection}{\numberline {5.2.2.2}check\discretionary {-}{}{}Qinterval}{47}{subsubsection.5.2.2.2}
+\contentsline {subsubsection}{\numberline {5.2.2.3}L\discretionary {-}{}{}Pass\discretionary {-}{}{}Time}{47}{subsubsection.5.2.2.3}
+\contentsline {subsubsection}{\numberline {5.2.2.4}Pass\discretionary {-}{}{}Time}{47}{subsubsection.5.2.2.4}
+\contentsline {subsubsection}{\numberline {5.2.2.5}road\discretionary {-}{}{}Seg\discretionary {-}{}{}Time}{47}{subsubsection.5.2.2.5}
+\contentsline {subsubsection}{\numberline {5.2.2.6}start\discretionary {-}{}{}To\discretionary {-}{}{}Pass}{47}{subsubsection.5.2.2.6}
+\contentsline {subsection}{\numberline {5.2.3}Typedef Documentation}{47}{subsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.3.1}Time\discretionary {-}{}{}\_\discretionary {-}{}{}t}{47}{subsubsection.5.2.3.1}
+\contentsline {subsection}{\numberline {5.2.4}Function Documentation}{47}{subsection.5.2.4}
+\contentsline {subsubsection}{\numberline {5.2.4.1}reg}{47}{subsubsection.5.2.4.1}
+\contentsline {subsubsection}{\numberline {5.2.4.2}turn}{48}{subsubsection.5.2.4.2}
+\contentsline {section}{\numberline {5.3}Events.\discretionary {-}{}{}h File Reference}{48}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{50}{subsection.5.3.1}
+\contentsline {section}{\numberline {5.4}Intersection.\discretionary {-}{}{}h File Reference}{50}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{51}{subsection.5.4.1}
+\contentsline {section}{\numberline {5.5}Intersectionwith\discretionary {-}{}{}Signal.\discretionary {-}{}{}h File Reference}{51}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Detailed Description}{53}{subsection.5.5.1}
+\contentsline {section}{\numberline {5.6}Intersectionwo\discretionary {-}{}{}Signal.\discretionary {-}{}{}h File Reference}{53}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Detailed Description}{54}{subsection.5.6.1}
+\contentsline {section}{\numberline {5.7}main.\discretionary {-}{}{}cpp File Reference}{54}{section.5.7}
+\contentsline {section}{\numberline {5.8}Post\discretionary {-}{}{}Processing.\discretionary {-}{}{}h File Reference}{56}{section.5.8}
+\contentsline {subsection}{\numberline {5.8.1}Detailed Description}{56}{subsection.5.8.1}
+\contentsline {subsection}{\numberline {5.8.2}Function Documentation}{57}{subsection.5.8.2}
+\contentsline {subsubsection}{\numberline {5.8.2.1}Post\discretionary {-}{}{}Proc\discretionary {-}{}{}Stats}{57}{subsubsection.5.8.2.1}
+\contentsline {section}{\numberline {5.9}Random\discretionary {-}{}{}Num.\discretionary {-}{}{}h File Reference}{58}{section.5.9}
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{58}{subsection.5.9.1}
+\contentsline {subsection}{\numberline {5.9.2}Macro Definition Documentation}{58}{subsection.5.9.2}
+\contentsline {subsubsection}{\numberline {5.9.2.1}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}G}{58}{subsubsection.5.9.2.1}
+\contentsline {subsubsection}{\numberline {5.9.2.2}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}M}{58}{subsubsection.5.9.2.2}
+\contentsline {subsubsection}{\numberline {5.9.2.3}M\discretionary {-}{}{}I\discretionary {-}{}{}N\discretionary {-}{}{}S\discretionary {-}{}{}T\discretionary {-}{}{}D\discretionary {-}{}{}X}{59}{subsubsection.5.9.2.3}
+\contentsline {section}{\numberline {5.10}Road\discretionary {-}{}{}Segment.\discretionary {-}{}{}h File Reference}{59}{section.5.10}
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{59}{subsection.5.10.1}
+\contentsline {section}{\numberline {5.11}schedule\discretionary {-}{}{}Vehicles.\discretionary {-}{}{}h File Reference}{59}{section.5.11}
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{60}{subsection.5.11.1}
+\contentsline {subsection}{\numberline {5.11.2}Function Documentation}{60}{subsection.5.11.2}
+\contentsline {subsubsection}{\numberline {5.11.2.1}schedule\discretionary {-}{}{}Vehicles}{60}{subsubsection.5.11.2.1}
+\contentsline {section}{\numberline {5.12}Simulator.\discretionary {-}{}{}h File Reference}{61}{section.5.12}
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{62}{subsection.5.12.1}
+\contentsline {section}{\numberline {5.13}Topology.\discretionary {-}{}{}h File Reference}{62}{section.5.13}
+\contentsline {subsection}{\numberline {5.13.1}Detailed Description}{63}{subsection.5.13.1}
+\contentsline {section}{\numberline {5.14}Traffic\discretionary {-}{}{}Light.\discretionary {-}{}{}h File Reference}{63}{section.5.14}
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{65}{subsection.5.14.1}
+\contentsline {section}{\numberline {5.15}Vehicle\discretionary {-}{}{}Class.\discretionary {-}{}{}h File Reference}{65}{section.5.15}
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{67}{subsection.5.15.1}
+\contentsline {part}{Index}{67}{subsection.5.15.1}
