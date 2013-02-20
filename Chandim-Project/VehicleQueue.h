@@ -13,10 +13,10 @@ class VehicleQueue
 {
 private:
     
-    int maxLength;					/**< To hold the maximum length of the Queue */
+    
 
 public:
-
+    int maxLength;					/**< To hold the maximum length of the Queue */
     std::queue<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
 
     int busy;						/**< to check if the queue is busy/not */
@@ -27,6 +27,18 @@ public:
     *
     */
     VehicleQueue();
+
+    /**
+    *	Constuctor with Pointer argument
+    *
+    */
+    VehicleQueue(VehicleQueue* Q);
+
+    /**
+    *	Constuctor with int argument assigning maxLength
+    *
+    */
+    VehicleQueue(int maxL);
 
     /**
     *	Returns pointer of the vehicle which is front of the queue

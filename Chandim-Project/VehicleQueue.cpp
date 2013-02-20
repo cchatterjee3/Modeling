@@ -15,6 +15,19 @@ VehicleQueue::VehicleQueue()
 
 }
 
+VehicleQueue::VehicleQueue(VehicleQueue* Q)
+{
+  this->maxLength = Q->maxLength;
+  this -> busy = Q->busy;
+  this->LastSentCar = Q->LastSentCar;
+  this->Q1 = Q->Q1;                        
+}
+
+VehicleQueue::VehicleQueue(int maxL)
+{
+  maxLength = maxL;                 
+}
+
 bool VehicleQueue::empty()
 {
 	return Q1.empty();
