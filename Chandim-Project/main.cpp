@@ -74,10 +74,10 @@ int main()
 */
     
 
-    unittest(100000, 100000, Topology);
+    unittest(4800, 7200, Topology);
 
 
-    sim->StopAt(100000);
+    sim->StopAt(7200);
     sim->Run();
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";

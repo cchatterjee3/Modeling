@@ -7,7 +7,7 @@ brief definiation of for vehicle queue class ,defined in vehicleQueue.h
 
 VehicleQueue::VehicleQueue()
 {
-	maxLength = 5000; //(debug)
+	maxLength = 50; //(debug)
     //set the time of last evicted 
     LastSentCar=-1;
 	//length=0;

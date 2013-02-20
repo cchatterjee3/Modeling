@@ -186,7 +186,7 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 	}
 	else
 	{
-		sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
+		sim->Schedule(roadSegTime - ((double)(futureQ->GetLen()))/((double)(futureQ->GetMaxLen()) * roadSegTime), &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
 
 #ifdef test
     eventDsc E3;
