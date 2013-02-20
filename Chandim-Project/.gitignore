@@ -1,10 +1,6 @@
-# ignore these files on git
-*.exe
-*.win
-*.o
-*.layout
-
-/RandomNum.cpp
-/RoadSegment.cpp
-/RoadSegment.h
-/stdafx.h
+/*.o
+/*.h.orig
+/*.json
+/rng
+/Calender_queue
+/*.lyx~
