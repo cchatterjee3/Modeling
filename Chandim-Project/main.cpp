@@ -30,7 +30,7 @@ int main()
 //    unittest(6000, 6000, Topology);
 
 
-    sim->StopAt(10000);
+    sim->StopAt(7200);
     sim->Run();
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
@@ -44,7 +44,9 @@ int main()
       for (int receiver = 0; receiver<12; receiver++)
       {
         if (sender!=receiver)
-          PostProcStats(Topology->ExitQ, 1000,  30, sender, receiver, fh);
+          if (((sender==0 || sender==1 || sender==11) && (receiver==5 || receiver==6 || receiver==7))
+            || ((sender==5 || sender==6 || sender==7) && (receiver==0 || receiver==1 || receiver==11)))
+            PostProcStats(Topology->ExitQ, 1000,  30, sender, receiver, fh);
       }
     }
     fh.close();
