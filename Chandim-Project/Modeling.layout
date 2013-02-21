@@ -4,9 +4,9 @@ CursorRow=19
 TopLine=8
 LeftChar=1
 Open=1
-Top=1
+Top=0
 [Editors]
-Focused=20
+Focused=16
 Order=4,5,3,13,14,15,16,1,28,27,21,11,20,12,19,9
 [Editor_0]
 Open=0
@@ -114,10 +114,10 @@ TopLine=52
 LeftChar=1
 [Editor_16]
 Open=1
-Top=0
+Top=1
 CursorCol=75
 CursorRow=95
-TopLine=60
+TopLine=73
 LeftChar=1
 [Editor_17]
 Open=0

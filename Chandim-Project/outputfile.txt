@@ -1,924 +1,924 @@
-Average time taken for crossing from 0 to 1 is 48.8486
-Maximum time: 98.731
+Average time taken for crossing from 0 to 1 is 54.0611
+Maximum time: 98.7714
 Minimum time: 7
-Standard Deviation: 28.5545
+Standard Deviation: 26.0161
 Histogram is as follows :
-9, 9, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+7, 17, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 0 to 2 is 104.86
-Maximum time: 160.579
-Minimum time: 51.9994
-Standard Deviation: 29.6031
-Histogram is as follows :
-0, 4, 10, 14, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 3 is 157.822
-Maximum time: 218.607
-Minimum time: 108.466
-Standard Deviation: 25.8527
-Histogram is as follows :
-0, 0, 0, 8, 17, 14, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 4 is 197.588
-Maximum time: 260.994
-Minimum time: 142.006
-Standard Deviation: 27.6811
-Histogram is as follows :
-0, 0, 0, 0, 6, 13, 16, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 5 is 447.204
-Maximum time: 693.818
-Minimum time: 281.035
-Standard Deviation: 117.236
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 2, 3, 4, 4, 10, 2, 1, 1, 0, 1, 3, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 6 is 253.133
-Maximum time: 317.488
-Minimum time: 194.075
-Standard Deviation: 34.8399
-Histogram is as follows :
-0, 0, 0, 0, 0, 3, 12, 12, 13, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 7 is 251.991
-Maximum time: 314.968
-Minimum time: 198.777
-Standard Deviation: 30.7881
-Histogram is as follows :
-0, 0, 0, 0, 0, 1, 10, 13, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 8 is 197.4
-Maximum time: 240.44
-Minimum time: 140.269
-Standard Deviation: 26.6599
-Histogram is as follows :
-0, 0, 0, 0, 3, 13, 13, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 9 is 152.639
-Maximum time: 208.297
-Minimum time: 93
-Standard Deviation: 29.4535
-Histogram is as follows :
-0, 0, 1, 7, 7, 11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 10 is 98.446
-Maximum time: 148.235
-Minimum time: 52.2142
-Standard Deviation: 23.0615
-Histogram is as follows :
-0, 3, 16, 12, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 0 to 11 is 18.2486
-Maximum time: 57.3572
-Minimum time: 7
-Standard Deviation: 15.6548
-Histogram is as follows :
-27, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 0 is 11.3212
-Maximum time: 54.8679
-Minimum time: 7
-Standard Deviation: 10.3508
-Histogram is as follows :
-35, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 2 is 269.73
-Maximum time: 478.917
-Minimum time: 87.4647
-Standard Deviation: 115.631
-Histogram is as follows :
-0, 0, 2, 4, 3, 2, 0, 3, 8, 1, 1, 4, 4, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 3 is 280.994
-Maximum time: 547.32
-Minimum time: 132.388
-Standard Deviation: 115.219
-Histogram is as follows :
-0, 0, 0, 1, 6, 2, 4, 4, 4, 4, 1, 2, 1, 1, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 4 is 350.323
-Maximum time: 580.959
-Minimum time: 202.492
-Standard Deviation: 113.834
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 4, 7, 4, 2, 2, 2, 2, 1, 2, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 5 is 563.742
-Maximum time: 935.93
-Minimum time: 290.679
-Standard Deviation: 184.961
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 1, 4, 1, 2, 1, 1, 1, 3, 1, 0, 3, 2, 3, 1, 0, 1, 1, 0, 1, 0, 
-
-Average time taken for crossing from 1 to 6 is 436.895
-Maximum time: 640.026
-Minimum time: 212.552
-Standard Deviation: 122.127
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 1, 2, 1, 6, 1, 1, 0, 4, 2, 6, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 7 is 421.896
-Maximum time: 632.389
-Minimum time: 225.79
-Standard Deviation: 104.909
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 1, 2, 3, 3, 2, 1, 1, 5, 10, 1, 0, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 8 is 358.549
-Maximum time: 576.266
-Minimum time: 170.361
-Standard Deviation: 113.905
-Histogram is as follows :
-0, 0, 0, 0, 0, 3, 2, 2, 1, 2, 2, 2, 4, 4, 1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 9 is 310.237
-Maximum time: 546.927
-Minimum time: 161.346
-Standard Deviation: 95.8611
-Histogram is as follows :
-0, 0, 0, 0, 2, 2, 2, 3, 1, 4, 7, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 10 is 218.333
-Maximum time: 542.64
-Minimum time: 54.2688
-Standard Deviation: 104.639
-Histogram is as follows :
-0, 2, 1, 2, 9, 6, 4, 3, 1, 1, 4, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 1 to 11 is 33.6753
-Maximum time: 72.2698
-Minimum time: 7
-Standard Deviation: 21.2425
-Histogram is as follows :
-15, 17, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 0 is 92.6601
-Maximum time: 145.167
-Minimum time: 49.9978
-Standard Deviation: 25.1681
-Histogram is as follows :
-0, 5, 13, 10, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 1 is 76.7731
-Maximum time: 142.805
-Minimum time: 49.9967
-Standard Deviation: 28.8122
-Histogram is as follows :
-0, 19, 8, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 3 is 87.3219
-Maximum time: 141.061
-Minimum time: 55.6096
-Standard Deviation: 26.1333
-Histogram is as follows :
-0, 10, 17, 8, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 4 is 124.358
-Maximum time: 177.007
-Minimum time: 92.9978
-Standard Deviation: 25.4334
-Histogram is as follows :
-0, 0, 9, 14, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 5 is 388.757
-Maximum time: 704.86
-Minimum time: 217.545
-Standard Deviation: 133.121
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 1, 6, 2, 8, 1, 1, 4, 2, 0, 2, 2, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 6 is 213.163
-Maximum time: 264.865
-Minimum time: 161.936
-Standard Deviation: 27.0194
-Histogram is as follows :
-0, 0, 0, 0, 1, 12, 13, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 7 is 199.557
-Maximum time: 258.029
-Minimum time: 140.591
-Standard Deviation: 29.6539
-Histogram is as follows :
-0, 0, 0, 0, 5, 23, 11, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 8 is 136.558
-Maximum time: 184.183
-Minimum time: 92.9989
-Standard Deviation: 24.5387
-Histogram is as follows :
-0, 0, 2, 7, 11, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 9 is 88.1035
-Maximum time: 138.573
-Minimum time: 49.9944
-Standard Deviation: 27.2069
-Histogram is as follows :
-0, 15, 12, 19, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 10 is 44.4902
-Maximum time: 84.7372
-Minimum time: 7
-Standard Deviation: 28.0897
-Histogram is as follows :
-11, 5, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 2 to 11 is 570.203
-Maximum time: 813.409
-Minimum time: 76.3245
-Standard Deviation: 190.005
-Histogram is as follows :
-0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 1, 5, 1, 3, 2, 1, 1, 0, 2, 1, 4, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 3 to 0 is 155.016
-Maximum time: 404.646
-Minimum time: 101.08
-Standard Deviation: 55.0584
-Histogram is as follows :
-0, 0, 0, 12, 16, 4, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 3 to 1 is 136.67
-Maximum time: 221.819
-Minimum time: 92.9944
-Standard Deviation: 25.5678
-Histogram is as follows :
-0, 0, 3, 21, 11, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 3 to 2 is 69.3669
-Maximum time: 112.218
-Minimum time: 49.995
-Standard Deviation: 20.357
-Histogram is as follows :
-0, 17, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 3 to 4 is 79.0659
-Maximum time: 123.92
+Average time taken for crossing from 0 to 2 is 95.0841
+Maximum time: 155.779
 Minimum time: 50
-Standard Deviation: 24.3957
+Standard Deviation: 30.5532
 Histogram is as follows :
-0, 16, 11, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 7, 15, 8, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 5 is 333.394
-Maximum time: 650.942
-Minimum time: 155.841
-Standard Deviation: 137.298
+Average time taken for crossing from 0 to 3 is 162.048
+Maximum time: 222.63
+Minimum time: 103.921
+Standard Deviation: 33.6886
 Histogram is as follows :
-0, 0, 0, 0, 1, 4, 4, 4, 4, 5, 3, 2, 1, 0, 0, 0, 1, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 6, 8, 11, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 6 is 139.935
-Maximum time: 254.478
-Minimum time: 92.9956
-Standard Deviation: 46.3696
+Average time taken for crossing from 0 to 4 is 205.16
+Maximum time: 250.024
+Minimum time: 144.418
+Standard Deviation: 25.922
 Histogram is as follows :
-0, 0, 9, 5, 12, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 5, 7, 21, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 7 is 121.391
-Maximum time: 163.684
-Minimum time: 92.9967
-Standard Deviation: 22.4636
+Average time taken for crossing from 0 to 5 is 408.824
+Maximum time: 628.936
+Minimum time: 276.652
+Standard Deviation: 101.597
 Histogram is as follows :
-0, 0, 13, 16, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 3, 2, 4, 1, 1, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 8 is 80.7951
-Maximum time: 122.075
-Minimum time: 50
-Standard Deviation: 24.5838
+Average time taken for crossing from 0 to 6 is 248.583
+Maximum time: 349.522
+Minimum time: 186.395
+Standard Deviation: 36.1034
 Histogram is as follows :
-0, 15, 14, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 1, 13, 10, 7, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 9 is 29.5262
-Maximum time: 74.7519
+Average time taken for crossing from 0 to 7 is 247.773
+Maximum time: 332.216
+Minimum time: 184.923
+Standard Deviation: 35.833
+Histogram is as follows :
+0, 0, 0, 0, 0, 5, 10, 11, 14, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 0 to 8 is 193.887
+Maximum time: 240.17
+Minimum time: 151.516
+Standard Deviation: 23.8988
+Histogram is as follows :
+0, 0, 0, 0, 7, 12, 14, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 0 to 9 is 148.846
+Maximum time: 205.635
+Minimum time: 93.1138
+Standard Deviation: 32.6137
+Histogram is as follows :
+0, 0, 2, 9, 12, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 0 to 10 is 93.3123
+Maximum time: 144.312
+Minimum time: 55.6659
+Standard Deviation: 24.2272
+Histogram is as follows :
+0, 8, 19, 14, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 0 to 11 is 20.2783
+Maximum time: 59.7418
 Minimum time: 7
-Standard Deviation: 22.813
+Standard Deviation: 16.2588
 Histogram is as follows :
-25, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+30, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 3 to 10 is 101.706
-Maximum time: 212.035
-Minimum time: 49.9983
-Standard Deviation: 39.9311
-Histogram is as follows :
-0, 9, 9, 12, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 3 to 11 is 607.153
-Maximum time: 868.961
-Minimum time: 131.833
-Standard Deviation: 159.216
-Histogram is as follows :
-0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 4, 3, 3, 2, 3, 1, 1, 1, 3, 2, 1, 1, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 0 is 204.541
-Maximum time: 324.004
-Minimum time: 147.661
-Standard Deviation: 30.3056
-Histogram is as follows :
-0, 0, 0, 0, 4, 11, 23, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 1 is 192.41
-Maximum time: 261.925
-Minimum time: 153.043
-Standard Deviation: 26.9594
-Histogram is as follows :
-0, 0, 0, 0, 6, 13, 11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 2 is 128.527
-Maximum time: 175.211
-Minimum time: 92.9972
-Standard Deviation: 19.5191
-Histogram is as follows :
-0, 0, 2, 20, 11, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 3 is 58.0564
-Maximum time: 74.8653
-Minimum time: 49.9972
-Standard Deviation: 8.96143
-Histogram is as follows :
-0, 21, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 5 is 263.175
-Maximum time: 543.73
-Minimum time: 89.4906
-Standard Deviation: 128.62
-Histogram is as follows :
-0, 0, 1, 2, 5, 5, 4, 1, 2, 1, 0, 2, 2, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 6 is 89.2922
-Maximum time: 219.727
-Minimum time: 49.9972
-Standard Deviation: 36.2167
-Histogram is as follows :
-0, 11, 8, 7, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 7 is 67.3401
-Maximum time: 112.505
-Minimum time: 49.9967
-Standard Deviation: 20.2545
-Histogram is as follows :
-0, 20, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 8 is 11.6757
-Maximum time: 33
+Average time taken for crossing from 1 to 0 is 9.89973
+Maximum time: 38.3744
 Minimum time: 7
-Standard Deviation: 6.61501
-Histogram is as follows :
-45, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 9 is 66.3772
-Maximum time: 91.5232
-Minimum time: 49.9989
-Standard Deviation: 11.9986
-Histogram is as follows :
-0, 24, 18, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 10 is 153.871
-Maximum time: 247.659
-Minimum time: 92.9978
-Standard Deviation: 36.7394
-Histogram is as follows :
-0, 0, 2, 7, 12, 3, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 4 to 11 is 667.652
-Maximum time: 942.677
-Minimum time: 312.34
-Standard Deviation: 135.514
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 4, 7, 3, 2, 2, 5, 2, 1, 0, 1, 0, 2, 2, 0, 
-
-Average time taken for crossing from 5 to 0 is 235.466
-Maximum time: 303.201
-Minimum time: 191.001
-Standard Deviation: 26.285
-Histogram is as follows :
-0, 0, 0, 0, 0, 2, 13, 10, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 1 is 238.275
-Maximum time: 307.618
-Minimum time: 178.999
-Standard Deviation: 29.2613
-Histogram is as follows :
-0, 0, 0, 0, 0, 3, 14, 16, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 2 is 172.41
-Maximum time: 214.807
-Minimum time: 135.999
-Standard Deviation: 19.8301
-Histogram is as follows :
-0, 0, 0, 0, 16, 17, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 3 is 105.12
-Maximum time: 138.472
-Minimum time: 92.9956
-Standard Deviation: 14.2066
-Histogram is as follows :
-0, 0, 16, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 4 is 54.2754
-Maximum time: 113.995
-Minimum time: 50
-Standard Deviation: 12.0567
-Histogram is as follows :
-0, 29, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 6 is 49.0541
-Maximum time: 96.1791
-Minimum time: 7
-Standard Deviation: 28.965
-Histogram is as follows :
-15, 17, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 7 is 28.7379
-Maximum time: 70.1904
-Minimum time: 7
-Standard Deviation: 22.5041
-Histogram is as follows :
-24, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 8 is 62.7349
-Maximum time: 116.324
-Minimum time: 50
-Standard Deviation: 18.53
-Histogram is as follows :
-0, 23, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 9 is 112.636
-Maximum time: 160.732
-Minimum time: 92.9989
-Standard Deviation: 19.1203
-Histogram is as follows :
-0, 0, 11, 16, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 10 is 206.934
-Maximum time: 306.756
-Minimum time: 135.998
-Standard Deviation: 35.4941
-Histogram is as follows :
-0, 0, 0, 0, 2, 15, 13, 4, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 5 to 11 is 756.691
-Maximum time: 1020.48
-Minimum time: 562.89
-Standard Deviation: 128.968
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 4, 4, 5, 5, 2, 2, 2, 2, 1, 1, 2, 3, 
-
-Average time taken for crossing from 6 to 0 is 251.64
-Maximum time: 362.611
-Minimum time: 194.487
-Standard Deviation: 33.0323
-Histogram is as follows :
-0, 0, 0, 0, 0, 2, 12, 15, 13, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 1 is 250.607
-Maximum time: 293.294
-Minimum time: 197.393
-Standard Deviation: 23.0868
-Histogram is as follows :
-0, 0, 0, 0, 0, 1, 5, 16, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 2 is 193.811
-Maximum time: 255.616
-Minimum time: 135.997
-Standard Deviation: 28.6922
-Histogram is as follows :
-0, 0, 0, 0, 6, 21, 12, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 3 is 112.269
-Maximum time: 159.837
-Minimum time: 92.9961
-Standard Deviation: 19.3157
-Histogram is as follows :
-0, 0, 14, 12, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 4 is 65.2092
-Maximum time: 110.779
-Minimum time: 50
-Standard Deviation: 18.8778
-Histogram is as follows :
-0, 28, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 5 is 17.8551
-Maximum time: 67.8305
-Minimum time: 7
-Standard Deviation: 18.2219
-Histogram is as follows :
-33, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 7 is 42.154
-Maximum time: 93.904
-Minimum time: 7
-Standard Deviation: 24.9235
-Histogram is as follows :
-18, 14, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 8 is 75.3873
-Maximum time: 114.865
-Minimum time: 49.9994
-Standard Deviation: 20.004
-Histogram is as follows :
-0, 16, 13, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 9 is 115.69
-Maximum time: 159.7
-Minimum time: 92.9978
-Standard Deviation: 20.665
-Histogram is as follows :
-0, 0, 10, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 10 is 213.982
-Maximum time: 358.943
-Minimum time: 152.897
-Standard Deviation: 39.3761
-Histogram is as follows :
-0, 0, 0, 0, 4, 8, 17, 4, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 6 to 11 is 698.446
-Maximum time: 996.723
-Minimum time: 423.159
-Standard Deviation: 114.783
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 1, 4, 3, 1, 5, 3, 4, 4, 0, 1, 2, 0, 0, 1, 
-
-Average time taken for crossing from 7 to 0 is 278.838
-Maximum time: 339.155
-Minimum time: 242.556
-Standard Deviation: 22.6662
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 16, 22, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 1 is 274.384
-Maximum time: 340.016
-Minimum time: 196.817
-Standard Deviation: 32.5787
-Histogram is as follows :
-0, 0, 0, 0, 0, 1, 2, 13, 13, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 2 is 200.583
-Maximum time: 262.948
-Minimum time: 155.965
-Standard Deviation: 29.56
-Histogram is as follows :
-0, 0, 0, 0, 7, 15, 9, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 3 is 142.057
-Maximum time: 197.277
-Minimum time: 93
-Standard Deviation: 27.5468
-Histogram is as follows :
-0, 0, 3, 10, 16, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 4 is 82.8733
-Maximum time: 122.764
-Minimum time: 50
-Standard Deviation: 24.9017
-Histogram is as follows :
-0, 16, 19, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 5 is 45.4178
-Maximum time: 79.133
-Minimum time: 7
-Standard Deviation: 26.0632
-Histogram is as follows :
-13, 15, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 6 is 12.8005
-Maximum time: 76.2425
-Minimum time: 7
-Standard Deviation: 14.5428
-Histogram is as follows :
-37, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 8 is 90.2364
-Maximum time: 128.844
-Minimum time: 49.9994
-Standard Deviation: 24.1722
-Histogram is as follows :
-0, 7, 13, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 9 is 150.371
-Maximum time: 209.968
-Minimum time: 101.285
-Standard Deviation: 28.7301
-Histogram is as follows :
-0, 0, 0, 14, 12, 13, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 10 is 236.651
-Maximum time: 333.081
-Minimum time: 146.192
-Standard Deviation: 48.4707
-Histogram is as follows :
-0, 0, 0, 0, 2, 1, 8, 5, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 7 to 11 is 783.683
-Maximum time: 1033.3
-Minimum time: 548.066
-Standard Deviation: 140.092
-Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 2, 3, 3, 2, 3, 1, 0, 1, 1, 2, 2, 
-
-Average time taken for crossing from 8 to 0 is 207.99
-Maximum time: 458.079
-Minimum time: 150.252
-Standard Deviation: 53.8241
-Histogram is as follows :
-0, 0, 0, 0, 4, 12, 11, 3, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 8 to 1 is 190.864
-Maximum time: 239.43
-Minimum time: 142
-Standard Deviation: 25.008
-Histogram is as follows :
-0, 0, 0, 0, 7, 12, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 8 to 2 is 120.65
-Maximum time: 171.725
-Minimum time: 92.9989
-Standard Deviation: 18.7455
-Histogram is as follows :
-0, 0, 7, 19, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 8 to 3 is 61.7069
-Maximum time: 91.9009
-Minimum time: 49.995
-Standard Deviation: 12.5136
-Histogram is as follows :
-0, 27, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 8 to 4 is 12.0125
-Maximum time: 37
-Minimum time: 7
-Standard Deviation: 7.28181
+Standard Deviation: 6.65786
 Histogram is as follows :
 32, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 8 to 5 is 251.984
-Maximum time: 586.148
-Minimum time: 90.9343
-Standard Deviation: 134.014
+Average time taken for crossing from 1 to 2 is 496.593
+Maximum time: 1051.17
+Minimum time: 133.313
+Standard Deviation: 318.023
 Histogram is as follows :
-0, 0, 1, 4, 6, 5, 6, 1, 3, 0, 1, 2, 0, 2, 1, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 1, 2, 3, 2, 4, 1, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 2, 2, 0, 0, 2, 0, 1, 1, 0, 
 
-Average time taken for crossing from 8 to 6 is 75.5602
-Maximum time: 120.042
-Minimum time: 49.9961
-Standard Deviation: 20.169
+Average time taken for crossing from 1 to 3 is 534.343
+Maximum time: 1081.46
+Minimum time: 156.431
+Standard Deviation: 286.094
 Histogram is as follows :
-0, 14, 17, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 1, 0, 3, 3, 2, 1, 3, 2, 1, 2, 2, 0, 0, 1, 0, 0, 1, 1, 1, 2, 1, 0, 0, 0, 0, 3, 
 
-Average time taken for crossing from 8 to 7 is 67.781
-Maximum time: 110.476
-Minimum time: 49.9961
-Standard Deviation: 19.747
+Average time taken for crossing from 1 to 4 is 526.7
+Maximum time: 1074.85
+Minimum time: 227.62
+Standard Deviation: 283.67
 Histogram is as follows :
-0, 28, 9, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 1, 2, 2, 3, 2, 3, 0, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 
 
-Average time taken for crossing from 8 to 9 is 68.4554
-Maximum time: 99.024
-Minimum time: 49.9994
-Standard Deviation: 16.4559
+Average time taken for crossing from 1 to 5 is 795.827
+Maximum time: 1565.47
+Minimum time: 304.798
+Standard Deviation: 402.672
 Histogram is as follows :
-0, 17, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 5, 1, 0, 2, 2, 1, 2, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 
 
-Average time taken for crossing from 8 to 10 is 150.516
-Maximum time: 224.257
-Minimum time: 97.0134
-Standard Deviation: 33.2817
+Average time taken for crossing from 1 to 6 is 577.824
+Maximum time: 1227.38
+Minimum time: 280.579
+Standard Deviation: 297.38
 Histogram is as follows :
-0, 0, 1, 12, 14, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 1, 5, 8, 2, 3, 0, 2, 0, 0, 1, 1, 1, 1, 0, 1, 0, 0, 1, 1, 1, 0, 1, 
 
-Average time taken for crossing from 8 to 11 is 649.316
-Maximum time: 1003.05
-Minimum time: 268.795
-Standard Deviation: 134.012
+Average time taken for crossing from 1 to 7 is 572.586
+Maximum time: 1135.47
+Minimum time: 238.57
+Standard Deviation: 287.685
 Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 3, 1, 5, 1, 6, 6, 0, 0, 2, 1, 1, 1, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 1, 3, 3, 7, 2, 2, 3, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 2, 4, 1, 0, 1, 
 
-Average time taken for crossing from 9 to 0 is 170.035
-Maximum time: 392.486
-Minimum time: 92.995
-Standard Deviation: 53.1215
+Average time taken for crossing from 1 to 8 is 716.615
+Maximum time: 1221.63
+Minimum time: 307.224
+Standard Deviation: 293.911
 Histogram is as follows :
-0, 0, 2, 8, 14, 9, 8, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 6, 0, 2, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 2, 2, 1, 2, 1, 0, 
 
-Average time taken for crossing from 9 to 1 is 143.44
-Maximum time: 224.948
-Minimum time: 92.9944
-Standard Deviation: 37.0889
+Average time taken for crossing from 1 to 9 is 409.986
+Maximum time: 1041.14
+Minimum time: 144.563
+Standard Deviation: 225.822
 Histogram is as follows :
-0, 0, 6, 11, 10, 7, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 3, 2, 2, 4, 1, 1, 2, 0, 2, 0, 2, 1, 1, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 
 
-Average time taken for crossing from 9 to 2 is 83.2447
-Maximum time: 136.382
-Minimum time: 49.9961
-Standard Deviation: 26.9037
+Average time taken for crossing from 1 to 10 is 427.598
+Maximum time: 1102.31
+Minimum time: 95.0678
+Standard Deviation: 301.454
 Histogram is as follows :
-0, 14, 12, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 1, 3, 1, 6, 2, 6, 2, 1, 2, 1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 2, 0, 1, 0, 0, 0, 3, 1, 0, 
 
-Average time taken for crossing from 9 to 3 is 37.0479
-Maximum time: 75.8497
+Average time taken for crossing from 1 to 11 is 36.3216
+Maximum time: 77.1419
 Minimum time: 7
-Standard Deviation: 26.8093
+Standard Deviation: 25.8597
 Histogram is as follows :
-17, 11, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+16, 9, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 4 is 56.8521
-Maximum time: 101.315
+Average time taken for crossing from 2 to 0 is 86.9294
+Maximum time: 139.238
+Minimum time: 49.9967
+Standard Deviation: 26.2199
+Histogram is as follows :
+0, 11, 19, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 1 is 71.0657
+Maximum time: 132.202
+Minimum time: 49.9956
+Standard Deviation: 25.1701
+Histogram is as follows :
+0, 22, 8, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 3 is 102.983
+Maximum time: 168.046
 Minimum time: 50
-Standard Deviation: 10.7829
+Standard Deviation: 28.4603
 Histogram is as follows :
-0, 33, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 4, 13, 8, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 5 is 273.575
-Maximum time: 606.335
-Minimum time: 100.817
-Standard Deviation: 121.821
+Average time taken for crossing from 2 to 4 is 135.41
+Maximum time: 174.716
+Minimum time: 92.9994
+Standard Deviation: 25.7967
 Histogram is as follows :
-0, 0, 0, 2, 2, 10, 2, 8, 4, 3, 3, 1, 1, 0, 0, 1, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 8, 9, 20, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 6 is 126.587
-Maximum time: 271.195
-Minimum time: 92.9961
-Standard Deviation: 33.6876
+Average time taken for crossing from 2 to 5 is 363.409
+Maximum time: 648.339
+Minimum time: 163.391
+Standard Deviation: 137.403
 Histogram is as follows :
-0, 0, 6, 14, 8, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 2, 3, 1, 1, 4, 4, 3, 2, 3, 1, 1, 1, 2, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 7 is 109.179
-Maximum time: 145.772
+Average time taken for crossing from 2 to 6 is 210.49
+Maximum time: 259.179
+Minimum time: 166.196
+Standard Deviation: 28.8603
+Histogram is as follows :
+0, 0, 0, 0, 1, 15, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 7 is 205.252
+Maximum time: 253.756
+Minimum time: 150.981
+Standard Deviation: 27.0932
+Histogram is as follows :
+0, 0, 0, 0, 2, 16, 13, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 8 is 134.103
+Maximum time: 174.44
+Minimum time: 92.9989
+Standard Deviation: 22.7835
+Histogram is as follows :
+0, 0, 3, 15, 22, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 9 is 83.9384
+Maximum time: 132.123
+Minimum time: 49.9961
+Standard Deviation: 29.0495
+Histogram is as follows :
+0, 9, 9, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 10 is 38.4404
+Maximum time: 83.5496
+Minimum time: 7
+Standard Deviation: 24.7177
+Histogram is as follows :
+20, 20, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 2 to 11 is 695.321
+Maximum time: 1159.23
+Minimum time: 103.551
+Standard Deviation: 326.173
+Histogram is as follows :
+0, 0, 0, 2, 0, 0, 1, 0, 0, 3, 2, 2, 0, 1, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 2, 0, 4, 3, 2, 0, 
+
+Average time taken for crossing from 3 to 0 is 149.393
+Maximum time: 239.242
+Minimum time: 92.9956
+Standard Deviation: 39.1398
+Histogram is as follows :
+0, 0, 5, 6, 15, 3, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 3 to 1 is 128.786
+Maximum time: 215.454
+Minimum time: 92.9956
+Standard Deviation: 25.7917
+Histogram is as follows :
+0, 0, 9, 19, 17, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 3 to 2 is 73.3729
+Maximum time: 118.39
+Minimum time: 49.9939
+Standard Deviation: 19.5921
+Histogram is as follows :
+0, 15, 18, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 3 to 4 is 79.3591
+Maximum time: 124.231
+Minimum time: 49.9994
+Standard Deviation: 23.3422
+Histogram is as follows :
+0, 18, 22, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 3 to 5 is 286.917
+Maximum time: 548.248
+Minimum time: 126.991
+Standard Deviation: 112.536
+Histogram is as follows :
+0, 0, 0, 1, 4, 5, 1, 3, 3, 6, 0, 3, 2, 0, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 3 to 6 is 158.54
+Maximum time: 320.236
 Minimum time: 92.9978
-Standard Deviation: 16.1795
+Standard Deviation: 62.2662
 Histogram is as follows :
-0, 0, 11, 13, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 3, 7, 11, 1, 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 8 is 55.0327
-Maximum time: 100.398
-Minimum time: 49.9994
-Standard Deviation: 11.2031
+Average time taken for crossing from 3 to 7 is 127.413
+Maximum time: 180.091
+Minimum time: 92.9967
+Standard Deviation: 25.686
 Histogram is as follows :
-0, 41, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 9, 12, 15, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 9 to 10 is 111.568
-Maximum time: 238.378
-Minimum time: 49.9994
-Standard Deviation: 45.5383
-Histogram is as follows :
-0, 7, 10, 7, 6, 4, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 9 to 11 is 616.831
-Maximum time: 933.598
-Minimum time: 138.621
-Standard Deviation: 179.721
-Histogram is as follows :
-0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 2, 0, 3, 3, 4, 4, 2, 2, 3, 0, 0, 1, 0, 2, 2, 1, 0, 
-
-Average time taken for crossing from 10 to 0 is 124.649
-Maximum time: 167.307
-Minimum time: 65.9117
-Standard Deviation: 28.1176
-Histogram is as follows :
-0, 1, 7, 11, 14, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 10 to 1 is 106.45
-Maximum time: 156.351
+Average time taken for crossing from 3 to 8 is 73.5729
+Maximum time: 119.281
 Minimum time: 50
-Standard Deviation: 28.4769
+Standard Deviation: 22.5365
 Histogram is as follows :
-0, 4, 10, 18, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 17, 9, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 2 is 40.6274
-Maximum time: 86.6146
+Average time taken for crossing from 3 to 9 is 28.3279
+Maximum time: 79.2179
 Minimum time: 7
-Standard Deviation: 25.5417
+Standard Deviation: 24.1966
 Histogram is as follows :
-16, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+26, 6, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 3 is 68.3938
-Maximum time: 114.457
+Average time taken for crossing from 3 to 10 is 96.021
+Maximum time: 224.118
 Minimum time: 49.9989
-Standard Deviation: 16.8546
+Standard Deviation: 34.0022
 Histogram is as follows :
-0, 25, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 4, 14, 8, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 4 is 109.713
-Maximum time: 141.827
-Minimum time: 92.9989
-Standard Deviation: 16.9952
+Average time taken for crossing from 3 to 11 is 760.298
+Maximum time: 1250.39
+Minimum time: 160.371
+Standard Deviation: 316.773
 Histogram is as follows :
-0, 0, 20, 16, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 1, 0, 2, 1, 1, 0, 0, 0, 3, 2, 0, 1, 0, 0, 0, 1, 1, 2, 0, 
 
-Average time taken for crossing from 10 to 5 is 344.352
-Maximum time: 682.171
-Minimum time: 210.367
-Standard Deviation: 141.421
+Average time taken for crossing from 4 to 0 is 194.011
+Maximum time: 232.937
+Minimum time: 161.521
+Standard Deviation: 21.2548
 Histogram is as follows :
-0, 0, 0, 0, 0, 0, 9, 7, 4, 5, 2, 2, 1, 2, 1, 1, 0, 0, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 3, 16, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 6 is 185.212
-Maximum time: 243.65
-Minimum time: 145.282
-Standard Deviation: 26.2501
+Average time taken for crossing from 4 to 1 is 191.443
+Maximum time: 235.845
+Minimum time: 151.992
+Standard Deviation: 22.3241
 Histogram is as follows :
-0, 0, 0, 0, 9, 17, 8, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 5, 16, 11, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 7 is 177.097
-Maximum time: 240.038
-Minimum time: 135.999
-Standard Deviation: 29.4581
+Average time taken for crossing from 4 to 2 is 125.885
+Maximum time: 167.627
+Minimum time: 96.3247
+Standard Deviation: 17.9486
 Histogram is as follows :
-0, 0, 0, 0, 14, 14, 7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 3, 21, 8, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 8 is 108.584
-Maximum time: 172.579
-Minimum time: 92.9989
-Standard Deviation: 18.5273
+Average time taken for crossing from 4 to 3 is 59.1349
+Maximum time: 88.9203
+Minimum time: 49.9967
+Standard Deviation: 9.55517
 Histogram is as follows :
-0, 0, 21, 17, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 28, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 9 is 68.3392
-Maximum time: 100.263
+Average time taken for crossing from 4 to 5 is 263.982
+Maximum time: 478.85
+Minimum time: 54.468
+Standard Deviation: 124.707
+Histogram is as follows :
+0, 1, 0, 3, 5, 2, 3, 0, 4, 2, 2, 0, 1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 4 to 6 is 83.322
+Maximum time: 217.855
+Minimum time: 49.9967
+Standard Deviation: 37.2064
+Histogram is as follows :
+0, 12, 6, 7, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 4 to 7 is 68.4413
+Maximum time: 109.41
 Minimum time: 49.995
-Standard Deviation: 17.2445
+Standard Deviation: 19.3861
 Histogram is as follows :
-0, 13, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 20, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 10 to 11 is 560.082
-Maximum time: 823.351
-Minimum time: 50
-Standard Deviation: 164.302
-Histogram is as follows :
-0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 3, 2, 5, 1, 4, 3, 2, 0, 3, 0, 2, 2, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 11 to 0 is 55.5457
-Maximum time: 97.2545
-Minimum time: 12.0427
-Standard Deviation: 28.4347
-Histogram is as follows :
-12, 6, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
-
-Average time taken for crossing from 11 to 1 is 33.0966
-Maximum time: 75.9648
+Average time taken for crossing from 4 to 8 is 13.5311
+Maximum time: 39
 Minimum time: 7
-Standard Deviation: 24.4846
+Standard Deviation: 7.70571
 Histogram is as follows :
-18, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+37, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 2 is 80.2577
-Maximum time: 186.698
-Minimum time: 49.9972
-Standard Deviation: 25.6373
+Average time taken for crossing from 4 to 9 is 69.4621
+Maximum time: 113.921
+Minimum time: 49.9994
+Standard Deviation: 17.8585
 Histogram is as follows :
-0, 13, 18, 9, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 21, 16, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 3 is 135.043
-Maximum time: 182.035
-Minimum time: 93
-Standard Deviation: 22.9116
+Average time taken for crossing from 4 to 10 is 155.414
+Maximum time: 252.577
+Minimum time: 92.9983
+Standard Deviation: 33.7985
 Histogram is as follows :
-0, 0, 2, 19, 14, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 2, 8, 14, 8, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 4 is 175.801
-Maximum time: 198.184
-Minimum time: 139.976
-Standard Deviation: 13.5218
+Average time taken for crossing from 4 to 11 is 783.752
+Maximum time: 1297.78
+Minimum time: 424.901
+Standard Deviation: 258.428
 Histogram is as follows :
-0, 0, 0, 0, 6, 21, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 3, 0, 1, 4, 1, 3, 1, 2, 0, 0, 0, 1, 1, 0, 1, 
 
-Average time taken for crossing from 11 to 5 is 431.656
-Maximum time: 754.285
-Minimum time: 233.501
-Standard Deviation: 129.86
+Average time taken for crossing from 5 to 0 is 239.938
+Maximum time: 323.307
+Minimum time: 189.533
+Standard Deviation: 28.8939
 Histogram is as follows :
-0, 0, 0, 0, 0, 0, 0, 2, 3, 3, 5, 9, 8, 2, 0, 0, 1, 2, 2, 2, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 3, 10, 14, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 6 is 242.084
-Maximum time: 287.833
-Minimum time: 179.057
-Standard Deviation: 31.1464
+Average time taken for crossing from 5 to 1 is 221.962
+Maximum time: 258.531
+Minimum time: 188.002
+Standard Deviation: 19.1766
 Histogram is as follows :
-0, 0, 0, 0, 0, 3, 8, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 0, 5, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 7 is 232.39
-Maximum time: 305.135
-Minimum time: 179.689
-Standard Deviation: 27.5138
+Average time taken for crossing from 5 to 2 is 166.537
+Maximum time: 249.826
+Minimum time: 135.996
+Standard Deviation: 23.1603
 Histogram is as follows :
-0, 0, 0, 0, 0, 4, 24, 13, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 0, 26, 13, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 8 is 176.081
-Maximum time: 218.79
-Minimum time: 149.565
-Standard Deviation: 16.8782
+Average time taken for crossing from 5 to 3 is 101.681
+Maximum time: 127.596
+Minimum time: 92.9956
+Standard Deviation: 11.445
 Histogram is as follows :
-0, 0, 0, 0, 11, 22, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 20, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 9 is 137.366
-Maximum time: 226.468
-Minimum time: 93
-Standard Deviation: 23.7586
+Average time taken for crossing from 5 to 4 is 52.2546
+Maximum time: 99.6779
+Minimum time: 49.9994
+Standard Deviation: 7.68772
 Histogram is as follows :
-0, 0, 2, 16, 20, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 47, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
-Average time taken for crossing from 11 to 10 is 62.8074
-Maximum time: 97.9204
+Average time taken for crossing from 5 to 6 is 51.4156
+Maximum time: 95.5421
+Minimum time: 7
+Standard Deviation: 25.0484
+Histogram is as follows :
+11, 17, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 5 to 7 is 24.2775
+Maximum time: 65.3197
+Minimum time: 7
+Standard Deviation: 20.0504
+Histogram is as follows :
+19, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 5 to 8 is 53.4539
+Maximum time: 71.486
+Minimum time: 50
+Standard Deviation: 5.18595
+Histogram is as follows :
+0, 42, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 5 to 9 is 117.045
+Maximum time: 140.44
+Minimum time: 92.9989
+Standard Deviation: 14.2766
+Histogram is as follows :
+0, 0, 4, 22, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 5 to 10 is 191.42
+Maximum time: 250.021
+Minimum time: 135.996
+Standard Deviation: 27.6429
+Histogram is as follows :
+0, 0, 0, 0, 7, 16, 9, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 5 to 11 is 880.953
+Maximum time: 1414.11
+Minimum time: 247.534
+Standard Deviation: 327.676
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 1, 0, 0, 2, 1, 1, 0, 3, 2, 0, 0, 0, 1, 0, 2, 1, 1, 
+
+Average time taken for crossing from 6 to 0 is 255.199
+Maximum time: 312.943
+Minimum time: 204.478
+Standard Deviation: 25.7888
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 7, 13, 8, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 1 is 244.634
+Maximum time: 297.239
+Minimum time: 190.169
+Standard Deviation: 33.1406
+Histogram is as follows :
+0, 0, 0, 0, 0, 2, 15, 6, 14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 2 is 185.135
+Maximum time: 251.083
+Minimum time: 137.343
+Standard Deviation: 25.8229
+Histogram is as follows :
+0, 0, 0, 0, 10, 24, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 3 is 114.686
+Maximum time: 149.634
+Minimum time: 92.995
+Standard Deviation: 18.697
+Histogram is as follows :
+0, 0, 12, 20, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 4 is 70.2129
+Maximum time: 112.701
+Minimum time: 50
+Standard Deviation: 22.9182
+Histogram is as follows :
+0, 18, 8, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 5 is 26.8215
+Maximum time: 70.0814
+Minimum time: 7
+Standard Deviation: 21.5416
+Histogram is as follows :
+25, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 7 is 44.8065
+Maximum time: 87.6814
+Minimum time: 7
+Standard Deviation: 25.5902
+Histogram is as follows :
+14, 14, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 8 is 72.0974
+Maximum time: 115.122
+Minimum time: 50
+Standard Deviation: 19.8362
+Histogram is as follows :
+0, 14, 14, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 9 is 124.85
+Maximum time: 160.619
+Minimum time: 92.9978
+Standard Deviation: 21.3662
+Histogram is as follows :
+0, 0, 7, 16, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 10 is 220.116
+Maximum time: 342.869
+Minimum time: 170.26
+Standard Deviation: 40.3962
+Histogram is as follows :
+0, 0, 0, 0, 0, 8, 13, 3, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 6 to 11 is 944.057
+Maximum time: 1428.79
+Minimum time: 392.533
+Standard Deviation: 304.309
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 2, 0, 0, 0, 1, 3, 1, 2, 0, 0, 2, 0, 0, 0, 2, 
+
+Average time taken for crossing from 7 to 0 is 289.594
+Maximum time: 348.912
+Minimum time: 238.171
+Standard Deviation: 30.5227
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 0, 10, 10, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 1 is 268.273
+Maximum time: 329.792
+Minimum time: 197.736
+Standard Deviation: 33.3056
+Histogram is as follows :
+0, 0, 0, 0, 0, 1, 3, 12, 13, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 2 is 193.636
+Maximum time: 239.112
+Minimum time: 136.656
+Standard Deviation: 26.7051
+Histogram is as follows :
+0, 0, 0, 0, 8, 15, 13, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 3 is 143.916
+Maximum time: 187.808
+Minimum time: 102.296
+Standard Deviation: 24.2717
+Histogram is as follows :
+0, 0, 0, 12, 12, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 4 is 88.2892
+Maximum time: 127.202
+Minimum time: 50
+Standard Deviation: 30.1479
+Histogram is as follows :
+0, 11, 5, 15, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 5 is 48.3671
+Maximum time: 81.7831
+Minimum time: 7
+Standard Deviation: 22.3486
+Histogram is as follows :
+10, 17, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 6 is 12.8504
+Maximum time: 54.7116
+Minimum time: 7
+Standard Deviation: 12.0627
+Histogram is as follows :
+39, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 8 is 87.3212
+Maximum time: 125.969
+Minimum time: 49.9994
+Standard Deviation: 23.5185
+Histogram is as follows :
+0, 6, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 9 is 149.943
+Maximum time: 214.072
+Minimum time: 105.06
+Standard Deviation: 30.5689
+Histogram is as follows :
+0, 0, 0, 14, 11, 10, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 10 is 230.198
+Maximum time: 315.752
+Minimum time: 138.64
+Standard Deviation: 45.9751
+Histogram is as follows :
+0, 0, 0, 0, 3, 7, 6, 5, 6, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 7 to 11 is 875.353
+Maximum time: 1395.83
+Minimum time: 345.914
+Standard Deviation: 298.401
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 0, 0, 0, 0, 4, 1, 0, 2, 1, 0, 0, 2, 0, 0, 0, 1, 1, 1, 
+
+Average time taken for crossing from 8 to 0 is 201.53
+Maximum time: 353.137
+Minimum time: 159.552
+Standard Deviation: 41.1181
+Histogram is as follows :
+0, 0, 0, 0, 2, 9, 7, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 1 is 188.009
+Maximum time: 242.342
+Minimum time: 154.752
+Standard Deviation: 23.549
+Histogram is as follows :
+0, 0, 0, 0, 5, 18, 8, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 2 is 128.365
+Maximum time: 173.688
+Minimum time: 92.9989
+Standard Deviation: 18.4791
+Histogram is as follows :
+0, 0, 4, 14, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 3 is 60.5221
+Maximum time: 93.1264
+Minimum time: 49.9967
+Standard Deviation: 11.2112
+Histogram is as follows :
+0, 27, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 4 is 11.5791
+Maximum time: 37
+Minimum time: 7
+Standard Deviation: 6.83375
+Histogram is as follows :
+29, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 5 is 225.207
+Maximum time: 570.232
+Minimum time: 79.614
+Standard Deviation: 101.37
+Histogram is as follows :
+0, 0, 4, 4, 6, 3, 6, 5, 7, 2, 1, 0, 2, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 6 is 82.2175
+Maximum time: 122.299
+Minimum time: 49.9978
+Standard Deviation: 23.3224
+Histogram is as follows :
+0, 11, 12, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 7 is 64.8344
+Maximum time: 103.775
 Minimum time: 49.995
-Standard Deviation: 14.5002
+Standard Deviation: 16.0873
 Histogram is as follows :
-0, 25, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+0, 17, 10, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 9 is 73.9083
+Maximum time: 127.789
+Minimum time: 49.9989
+Standard Deviation: 20.4228
+Histogram is as follows :
+0, 22, 16, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 10 is 152.439
+Maximum time: 205.309
+Minimum time: 96.9989
+Standard Deviation: 25.3599
+Histogram is as follows :
+0, 0, 2, 5, 16, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 8 to 11 is 819.212
+Maximum time: 1387.67
+Minimum time: 190.444
+Standard Deviation: 356.958
+Histogram is as follows :
+0, 0, 0, 0, 0, 1, 1, 0, 0, 1, 0, 1, 1, 4, 1, 3, 1, 2, 2, 2, 2, 0, 1, 0, 1, 2, 0, 2, 0, 0, 
+
+Average time taken for crossing from 9 to 0 is 164.81
+Maximum time: 329.908
+Minimum time: 96.4976
+Standard Deviation: 45.4141
+Histogram is as follows :
+0, 0, 2, 7, 11, 8, 6, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 1 is 147.771
+Maximum time: 228.009
+Minimum time: 92.9972
+Standard Deviation: 32.6145
+Histogram is as follows :
+0, 0, 2, 11, 14, 8, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 2 is 84.9937
+Maximum time: 132.404
+Minimum time: 49.9967
+Standard Deviation: 25.8972
+Histogram is as follows :
+0, 14, 11, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 3 is 30.7945
+Maximum time: 79.0188
+Minimum time: 7
+Standard Deviation: 22.2841
+Histogram is as follows :
+25, 13, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 4 is 58.1493
+Maximum time: 96.5564
+Minimum time: 49.9994
+Standard Deviation: 12.1858
+Histogram is as follows :
+0, 34, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 5 is 270.002
+Maximum time: 540.944
+Minimum time: 99.5886
+Standard Deviation: 114.53
+Histogram is as follows :
+0, 0, 1, 4, 4, 2, 2, 6, 5, 4, 4, 1, 0, 0, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 6 is 133.074
+Maximum time: 345.224
+Minimum time: 92.9972
+Standard Deviation: 51.2565
+Histogram is as follows :
+0, 0, 10, 14, 13, 1, 0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 7 is 109.57
+Maximum time: 139
+Minimum time: 92.9956
+Standard Deviation: 16.1148
+Histogram is as follows :
+0, 0, 17, 21, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 8 is 51.5462
+Maximum time: 74.2576
+Minimum time: 49.9994
+Standard Deviation: 4.45661
+Histogram is as follows :
+0, 30, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 10 is 106.862
+Maximum time: 160.222
+Minimum time: 50
+Standard Deviation: 27.6037
+Histogram is as follows :
+0, 5, 8, 15, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 9 to 11 is 796.465
+Maximum time: 1216.43
+Minimum time: 165.847
+Standard Deviation: 303.217
+Histogram is as follows :
+0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 1, 3, 1, 1, 2, 1, 0, 0, 0, 0, 1, 0, 0, 1, 1, 1, 3, 
+
+Average time taken for crossing from 10 to 0 is 103.952
+Maximum time: 163.509
+Minimum time: 59.7395
+Standard Deviation: 31.4061
+Histogram is as follows :
+0, 4, 17, 10, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 1 is 98.0101
+Maximum time: 152.325
+Minimum time: 50
+Standard Deviation: 28.3146
+Histogram is as follows :
+0, 5, 7, 13, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 2 is 41.3397
+Maximum time: 84.867
+Minimum time: 7
+Standard Deviation: 28.4917
+Histogram is as follows :
+15, 10, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 3 is 67.0256
+Maximum time: 102.07
+Minimum time: 49.9989
+Standard Deviation: 15.3451
+Histogram is as follows :
+0, 18, 12, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 4 is 106.053
+Maximum time: 146.171
+Minimum time: 92.9994
+Standard Deviation: 15.5915
+Histogram is as follows :
+0, 0, 26, 20, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 5 is 356.528
+Maximum time: 630.789
+Minimum time: 136
+Standard Deviation: 143.908
+Histogram is as follows :
+0, 0, 0, 0, 2, 4, 3, 2, 4, 3, 2, 2, 2, 1, 2, 3, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 6 is 189.239
+Maximum time: 326.105
+Minimum time: 136
+Standard Deviation: 42.7012
+Histogram is as follows :
+0, 0, 0, 0, 11, 14, 8, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 7 is 190.524
+Maximum time: 253.854
+Minimum time: 135.997
+Standard Deviation: 25.637
+Histogram is as follows :
+0, 0, 0, 0, 3, 12, 8, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 8 is 110.572
+Maximum time: 146.959
+Minimum time: 92.9989
+Standard Deviation: 18.9814
+Histogram is as follows :
+0, 0, 17, 14, 9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 9 is 66.0554
+Maximum time: 119.531
+Minimum time: 49.9956
+Standard Deviation: 19.8203
+Histogram is as follows :
+0, 25, 13, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 10 to 11 is 748.833
+Maximum time: 1238.77
+Minimum time: 145.023
+Standard Deviation: 323.088
+Histogram is as follows :
+0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 3, 0, 0, 1, 0, 1, 3, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 
+
+Average time taken for crossing from 11 to 0 is 54.0022
+Maximum time: 98.5332
+Minimum time: 7
+Standard Deviation: 27.5603
+Histogram is as follows :
+8, 13, 13, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 1 is 31.9
+Maximum time: 68.5681
+Minimum time: 7
+Standard Deviation: 21.8349
+Histogram is as follows :
+22, 17, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 2 is 72.7291
+Maximum time: 126.916
+Minimum time: 49.9978
+Standard Deviation: 21.2978
+Histogram is as follows :
+0, 20, 16, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 3 is 135.117
+Maximum time: 174.667
+Minimum time: 96.574
+Standard Deviation: 17.8887
+Histogram is as follows :
+0, 0, 1, 13, 15, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 4 is 172.833
+Maximum time: 211.07
+Minimum time: 140.724
+Standard Deviation: 19.0238
+Histogram is as follows :
+0, 0, 0, 0, 7, 14, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 5 is 381.096
+Maximum time: 614.346
+Minimum time: 250.948
+Standard Deviation: 93.6241
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 0, 2, 3, 7, 3, 6, 1, 3, 2, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 6 is 241.177
+Maximum time: 316.717
+Minimum time: 178.999
+Standard Deviation: 33.6533
+Histogram is as follows :
+0, 0, 0, 0, 0, 5, 10, 13, 7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 7 is 238.889
+Maximum time: 298.814
+Minimum time: 200.905
+Standard Deviation: 26.5829
+Histogram is as follows :
+0, 0, 0, 0, 0, 0, 13, 11, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 8 is 175.373
+Maximum time: 209.492
+Minimum time: 137.298
+Standard Deviation: 19.1184
+Histogram is as follows :
+0, 0, 0, 0, 13, 30, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 9 is 125.198
+Maximum time: 175.016
+Minimum time: 92.9989
+Standard Deviation: 19.8625
+Histogram is as follows :
+0, 0, 4, 18, 7, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+
+Average time taken for crossing from 11 to 10 is 63.933
+Maximum time: 106.585
+Minimum time: 49.9956
+Standard Deviation: 15.8532
+Histogram is as follows :
+0, 26, 13, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
 
