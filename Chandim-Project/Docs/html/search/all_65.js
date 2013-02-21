@@ -4,7 +4,7 @@ var searchData=
   ['ebi1',['EBI1',['../class_intersection.html#a8a64af1004807f4ac451bcf9bfa368a4',1,'Intersection']]],
   ['ebi2',['EBI2',['../class_intersection.html#a8db85628804847f2b98fd1edf5c28e34',1,'Intersection']]],
   ['empty',['empty',['../class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9',1,'VehicleQueue']]],
-  ['endtime',['EndTime',['../class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33',1,'VehicleClass::EndTime()'],['../class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0',1,'VehicleClass::endTime()']]],
+  ['endtime',['endTime',['../class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0',1,'VehicleClass::endTime()'],['../class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33',1,'VehicleClass::EndTime()']]],
   ['event0',['Event0',['../class_event0.html',1,'']]],
   ['event1',['Event1',['../class_event1.html',1,'']]],
   ['event2',['Event2',['../class_event2.html',1,'']]],

@@ -4,4 +4,6 @@
 <area shape="rect" id="node7" href="$class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d" title="VehicleClass::getDestination" alt="" coords="206,109,396,137"/>
 <area shape="rect" id="node9" href="$_common_defs_8h.html#ab16114155cb6c7b1080dc8f52f1f8f7a" title="turn" alt="" coords="279,185,323,213"/>
 <area shape="rect" id="node12" href="$_common_defs_8h.html#aee7862becfb6aef94f34e882348eb275" title="reg" alt="" coords="281,261,322,289"/>
+<area shape="rect" id="node15" href="$class_vehicle_class.html#a8f00863bdcac1822d486c3d119ff1340" title="VehicleClass::getID" alt="" coords="233,313,370,341"/>
+<area shape="rect" id="node17" href="$class_vehicle_class.html#aa1e4f513ff1cf84e577f3c6e8bcd681f" title="VehicleClass::getSource" alt="" coords="218,365,384,393"/>
 </map>

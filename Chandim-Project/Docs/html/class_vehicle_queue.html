@@ -95,6 +95,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a19f80d40ffe612dae9b2cbce39fe1a1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a19f80d40ffe612dae9b2cbce39fe1a1a">VehicleQueue</a> ()</td></tr>
 <tr class="separator:a19f80d40ffe612dae9b2cbce39fe1a1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84393b3dc29273e9fc18ff6c498c4a95"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a84393b3dc29273e9fc18ff6c498c4a95">VehicleQueue</a> (<a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *Q)</td></tr>
+<tr class="separator:a84393b3dc29273e9fc18ff6c498c4a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e939caee1688630bf1f9ba50ef0d67e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a3e939caee1688630bf1f9ba50ef0d67e">VehicleQueue</a> (int maxL)</td></tr>
+<tr class="separator:a3e939caee1688630bf1f9ba50ef0d67e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff7fef0dc6401e38a26bc34ee0e78f2a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_vehicle_class.html">VehicleClass</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a">front</a> ()</td></tr>
 <tr class="separator:aff7fef0dc6401e38a26bc34ee0e78f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c22a63f1c7562bc14be172a38cffcb9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9">empty</a> ()</td></tr>
@@ -114,6 +118,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a8634f859977fc6937f91abc302d56318"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a8634f859977fc6937f91abc302d56318">maxLength</a></td></tr>
+<tr class="separator:a8634f859977fc6937f91abc302d56318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64dd34f2ca5bee22e9bf07be665c4d13"><td class="memItemLeft" align="right" valign="top">std::queue&lt; <a class="el" href="class_vehicle_class.html">VehicleClass</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a64dd34f2ca5bee22e9bf07be665c4d13">Q1</a></td></tr>
 <tr class="separator:a64dd34f2ca5bee22e9bf07be665c4d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ce16496b3665d0b91a8b5baf158c3a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_vehicle_queue.html#a4ce16496b3665d0b91a8b5baf158c3a3">busy</a></td></tr>
@@ -135,6 +141,40 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Default constuctor </p>
+
+</div>
+</div>
+<a class="anchor" id="a84393b3dc29273e9fc18ff6c498c4a95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VehicleQueue::VehicleQueue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_vehicle_queue.html">VehicleQueue</a> *&#160;</td>
+          <td class="paramname"><em>Q</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constuctor with Pointer argument </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e939caee1688630bf1f9ba50ef0d67e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VehicleQueue::VehicleQueue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxL</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Constuctor with int argument assigning maxLength </p>
 
 </div>
 </div>
@@ -301,6 +341,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8634f859977fc6937f91abc302d56318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int VehicleQueue::maxLength</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>To hold the maximum length of the Queue </p>
+
+</div>
+</div>
 <a class="anchor" id="a64dd34f2ca5bee22e9bf07be665c4d13"></a>
 <div class="memitem">
 <div class="memproto">
@@ -321,7 +374,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 18 2013 21:11:52 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 21 2013 16:58:54 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

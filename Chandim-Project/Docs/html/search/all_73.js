@@ -11,7 +11,7 @@ var searchData=
   ['simulator',['Simulator',['../class_simulator.html',1,'Simulator'],['../class_simulator.html#a031573bfcfe2e0f5c9539bcc1c7fc5d9',1,'Simulator::Simulator()']]],
   ['simulator_2eh',['Simulator.h',['../_simulator_8h.html',1,'']]],
   ['sinter',['SInter',['../class_intersection.html#af6cfb23dbc2ad5b1d90752247dd07acf',1,'Intersection']]],
-  ['starttime',['startTime',['../class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35',1,'VehicleClass::startTime()'],['../class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99',1,'VehicleClass::StartTime()']]],
+  ['starttime',['StartTime',['../class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99',1,'VehicleClass::StartTime()'],['../class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35',1,'VehicleClass::startTime()']]],
   ['starttopass',['startToPass',['../_common_defs_8h.html#ad25f5048846b180d445c3d4684a9c826',1,'CommonDefs.h']]],
   ['stop',['Stop',['../class_simulator.html#ad493423e80256f53c715bb59c16ec78e',1,'Simulator']]],
   ['stopat',['StopAt',['../class_simulator.html#a4bbb179ecbac8adfee23bd49d19746c0',1,'Simulator']]]
