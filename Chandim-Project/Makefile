@@ -7,8 +7,7 @@ CXX  = g++ -g
 CC   = g++ -g 
 
 
-OBJ  = main.o Simulator.o  IntersectionwithSignal.o IntersectionwoSignal.o Intersection.o VehicleClass.o  \
-		TrafficLight.o calender_queue.o
+OBJ  = main.o calender_queue.o Intersection.o IntersectionwithSignal.o IntersectionwoSignal.o Simulator.o TrafficLight.o VehicleClass.o VehicleQueue.o RandomNum.o testing/test_aux.o testing/test1.o PostProcessing.o
 BIN = ModelingPeachtree.exe
 
 %.cpp:

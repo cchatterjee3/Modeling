@@ -168,6 +168,7 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 		//the vehicle is exiting the system
 		vehicle->setEndTime(sim->getNow());
 		ExitQ->push(vehicle);
+		//printf("Car ID=%d Exited the system, inter: %d, ExitQ size:%d, at time: %f \n", vehicle->getID(), ID,ExitQ->GetLen(), sim->getNow());
 
 #ifdef test
     eventDsc E2;
@@ -187,6 +188,7 @@ void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart
 	else
 	{
 		sim->Schedule(roadSegTime - ((double)(futureQ->GetLen()))/((double)(futureQ->GetMaxLen()) * roadSegTime), &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
+		//sim->Schedule(roadSegTime, &Intersection::addVehicletoQueue, NextInter , futureQ , vehicle); //(debug)
 
 #ifdef test
     eventDsc E3;

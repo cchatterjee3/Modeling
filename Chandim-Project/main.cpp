@@ -25,60 +25,12 @@ int main()
 	//Temporary Initialization Place
 	_Topology *Topology = new _Topology();
 
-	
+	scheduleVehicles(Topology, 7200.0);
 
-	/*
-	int VIDcounter=0;
-	VehicleQueue* joinqueue = Topology->I1->NBI2;
-	for ( int t=0 ; t<100 ; t+=1000 )
-	{
-		VehicleClass* vehicle=new VehicleClass(++VIDcounter, 0, 4, t);
-		sim->Schedule(t, &Intersection::addVehicletoQueue, Topology->I1, joinqueue, vehicle);
-	}
-	//scheduleVehicles(Topology, 7200.0);
-
-	int VIDcounter=0;
-	double t;
-	VehicleClass* vehicle;
-	VehicleQueue* joinqueue;
-	Intersection* Inter;
-
-	t=0;
-	vehicle=new VehicleClass(++VIDcounter, 8,  4, t);
-	Inter=Topology->I4;
-	joinqueue = Inter->Qu[3][0];
-	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
-
-	t=2;
-	vehicle=new VehicleClass(++VIDcounter, 8,  5, t);
-	Inter=Topology->I4;
-	joinqueue = Inter->Qu[3][0];
-	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
-
-	t=2;
-	vehicle=new VehicleClass(++VIDcounter, 8,  3, t);
-	Inter=Topology->I4;
-	joinqueue = Inter->Qu[3][1];
-	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
-
-	t=16;
-	vehicle=new VehicleClass(++VIDcounter, 8, 10, t);
-	Inter=Topology->I4;
-	joinqueue = Inter->Qu[3][1];
-	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
-
-	t=30;
-	vehicle=new VehicleClass(++VIDcounter, 8,  6, t);
-	Inter=Topology->I4;
-	joinqueue = Inter->Qu[3][0];
-	sim->Schedule(t, &Intersection::addVehicletoQueue, Inter, joinqueue, vehicle);
-*/
-    
-
-    unittest(4800, 7200, Topology);
+//    unittest(6000, 6000, Topology);
 
 
-    sim->StopAt(7200);
+    sim->StopAt(10000);
     sim->Run();
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
@@ -102,12 +54,11 @@ int main()
 
     VehicleQueue * Q;
     Intersection * I;
-    
-    cout << endl;
 
+    cout << endl;
     cout <<"missing cars:" << endl;
     cout << endl;
-    cin.get();
+
     for (int inter = 0 ; inter<5 ; ++inter)
     {
         for (int direction = 0 ; direction<4 ; ++direction)
@@ -123,6 +74,7 @@ int main()
                     cout << "   ID: " << Q->Q1.front()->getID() 
                          << " dest: " << Q->Q1.front()->getDestination() 
                          << "start: " << Q->Q1.front()->startTime
+						 << "Now: " << sim->getNow()
                          << endl;
     
                 }
@@ -130,8 +82,8 @@ int main()
             
         }
     }
+    
     cin.get();
-    
-    
+
     return 0;
 }

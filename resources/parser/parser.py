@@ -26,6 +26,23 @@ else:
 # reading the input file
 s = f1.readlines();
 
+#the routes' ID's
+def rout(x):
+    return {
+        101: 0,
+        123: 1,
+        122: 2,
+        121: 3,
+        119: 4,
+        118: 4,
+        115: 5,
+        114: 6,
+        113: 7,
+        112: 8,
+        106: 9,
+        103: 10,
+        102: 11,
+        }.get(x,-1)
 
 
 orig_count       = [0] * 124
@@ -59,12 +76,18 @@ for i in range( 1 , len(s) ): # Starting from the second line
 		Dest_Zone[currID]= int  (s[i].split(',')[15])
 		lastID=currID;
 
-f2.write("Vehicle_ID,Veh_Len,Veh_Class,Org_Zone,Dest_Zone,Veh_minTime,Veh_maxTime\n");
+f2.write("Vehicle_ID,Veh_Len,Veh_Class,Org_Zone,Dest_Zone,Veh_minTime,Veh_maxTime,Input_ID,Output_ID\n");
 for i in range(1,max_ID+1) :
 		if(Veh_Len[i] != 0) :
-			f2.write('%d,%f,%d,%d,%d,%f,%f\n' 
-				% (i,Veh_Len[i],Veh_Class[i],Org_Zone[i],Dest_Zone[i],
-				Veh_minTime[i],Veh_maxTime[i]))
+			#checking if input and outputs are proper
+			if(Dest_Zone[i]-Org_Zone[i] != 100) :
+				ent1 = rout(Org_Zone[i])
+				out1 = rout( Dest_Zone[i] - 100 )
+				if( (ent1 != -1)   &   (out1 != -1) ) :
+					f2.write('%d,%f,%d,%d,%d,%f,%f,%d,%d\n' 
+						% (i,Veh_Len[i],Veh_Class[i],Org_Zone[i],Dest_Zone[i],
+						Veh_minTime[i],Veh_maxTime[i],ent1,out1))
+
 			# orig=Org_Zone[i]
 			# if orig_count[orig]>0 :
 			# 	orig_time[orig] = (orig_time[orig] *(orig_count[orig]-1)+
@@ -108,3 +131,5 @@ print "Dest_Zone  		=	" , Dest_Zone [max_ID];
 # 11- Veh_Class
 # 15- Org_Zone
 # 16- Dest_Zone
+
+

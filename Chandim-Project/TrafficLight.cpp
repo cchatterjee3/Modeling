@@ -29,7 +29,8 @@ TrafficLight::TrafficLight(int id, int typ, state initialState, state initialsta
 	else
 	{
 		printf("error in getting myid!\n");
-		exit(1);
+		cin.get();
+        exit(1);
 	}
 
     int check1 = parent->getID();
