@@ -40,13 +40,13 @@ VehicleClass* VehicleQueue::front()
 
 void VehicleQueue::push(VehicleClass* V1)
 {
-	Q1.push(V1);
+	Q1.push_back(V1);
 }
 
 void VehicleQueue::pop()
 {
 
-	Q1.pop();
+	Q1.pop_front();
 }
 
 VehicleClass* VehicleQueue::back()

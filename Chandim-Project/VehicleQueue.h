@@ -17,7 +17,7 @@ private:
 
 public:
     int maxLength;					/**< To hold the maximum length of the Queue */
-    std::queue<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
+    std::list<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
 
     int busy;						/**< to check if the queue is busy/not */
     double LastSentCar;				/**< Holds time for vehicle that was sent last */

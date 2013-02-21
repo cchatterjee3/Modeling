@@ -40,6 +40,12 @@ class IntersectionwithSignal : public Intersection
          *
          */
 		 virtual int QCanGo (int direction, int lane);
+		 
+		 /**
+         *    Evict for left direction
+         *
+         */
+		 void EvictL (VehicleQueue* joinqueue);
 
          /**
          *    Default Constructor

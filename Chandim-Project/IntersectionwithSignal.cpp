@@ -83,6 +83,17 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
                                                      
 }
 
+void IntersectionwithSignal::EvictL (VehicleQueue* joinqueue)
+{
+  int Qdirection=getQdirection(this, joinqueue);
+  int Qlane=getQlane(this, joinqueue);      
+  
+  Intersection * NextInter = NULL;
+  VehicleQueue * futureQ = NULL;
+  bool isfull=false;
+  int Turn;
+}
+
 void IntersectionwithSignal::changeSignalTrigger( int LightID, int leftorthru) //checks its own signals 
 {
 	//When a light changes, triggers the relevant Queues to send vehicles out.
