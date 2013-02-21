@@ -36,10 +36,14 @@ int main()
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
     cin.get() ;
     
-    ofstream fh;
-    fh.open("outputfile.txt");
+    ofstream fh0("1_5.csv", fstream::app), fh1("1_6.csv", fstream::app), fh2("1_7.csv", fstream::app), fh3("0_5.csv", fstream::app),
+    fh4("0_6.csv", fstream::app), fh5("0_7.csv", fstream::app), fh6("11_5.csv", fstream::app), fh7("11_6.csv", fstream::app), 
+    fh8("11_7.csv", fstream::app), fh9("5_1.csv", fstream::app), fh10("5_0.csv", fstream::app), fh11("5_11.csv", fstream::app), 
+    fh12("6_1.csv", fstream::app), fh13("6_0.csv", fstream::app), fh14("6_11.csv", fstream::app), fh15("7_1.csv", fstream::app), 
+    fh16("7_0.csv", fstream::app), fh17("7_11.csv", fstream::app);
     
-    for (int sender = 0; sender<12; sender++)
+    
+    /*for (int sender = 0; sender<12; sender++)
     {
       for (int receiver = 0; receiver<12; receiver++)
       {
@@ -48,8 +52,46 @@ int main()
             || ((sender==5 || sender==6 || sender==7) && (receiver==0 || receiver==1 || receiver==11)))
             PostProcStats(Topology->ExitQ, 1000,  30, sender, receiver, fh);
       }
-    }
-    fh.close();
+    }*/
+    
+    PostProcStats(Topology->ExitQ, 1000,  30, 1, 5, fh0);
+    PostProcStats(Topology->ExitQ, 1000,  30, 1, 6, fh1);
+    PostProcStats(Topology->ExitQ, 1000,  30, 1, 7, fh2);
+    PostProcStats(Topology->ExitQ, 1000,  30, 0, 5, fh3);
+    PostProcStats(Topology->ExitQ, 1000,  30, 0, 6, fh4);
+    PostProcStats(Topology->ExitQ, 1000,  30, 0, 7, fh5);
+    PostProcStats(Topology->ExitQ, 1000,  30, 11, 5, fh6);
+    PostProcStats(Topology->ExitQ, 1000,  30, 11, 6, fh7);
+    PostProcStats(Topology->ExitQ, 1000,  30, 11, 7, fh8);
+    PostProcStats(Topology->ExitQ, 1000,  30, 5, 1, fh9);
+    PostProcStats(Topology->ExitQ, 1000,  30, 5, 0, fh10);
+    PostProcStats(Topology->ExitQ, 1000,  30, 5, 11, fh11);
+    PostProcStats(Topology->ExitQ, 1000,  30, 6, 1, fh12);
+    PostProcStats(Topology->ExitQ, 1000,  30, 6, 0, fh13);
+    PostProcStats(Topology->ExitQ, 1000,  30, 6, 11, fh14);
+    PostProcStats(Topology->ExitQ, 1000,  30, 7, 1, fh15);
+    PostProcStats(Topology->ExitQ, 1000,  30, 7, 0, fh16);
+    PostProcStats(Topology->ExitQ, 1000,  30, 7, 11, fh17);
+    
+    fh0.close();
+    fh1.close();
+    fh2.close();
+    fh3.close();
+    fh4.close();
+    fh5.close();
+    fh6.close();
+    fh7.close();
+    fh8.close();
+    fh9.close();
+    fh10.close();
+    fh11.close();
+    fh12.close();
+    fh13.close();
+    fh14.close();
+    fh15.close();
+    fh16.close();
+    fh17.close();
+    
     cin.get();
     
     
