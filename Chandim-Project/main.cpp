@@ -3,6 +3,7 @@
 *
 */
 #include <iostream>
+#include <fstream>
 #include "Simulator.h"
 #include "IntersectionwithSignal.h"
 #include "IntersectionwoSignal.h"
@@ -34,8 +35,22 @@ int main()
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
     cin.get() ;
-
-    PostProcStats(Topology->ExitQ, 1000,  30, 0, 7);
+    
+    ofstream fh;
+    fh.open("outputfile.txt");
+    
+    for (int sender = 0; sender<12; sender++)
+    {
+      for (int receiver = 0; receiver<12; receiver++)
+      {
+        if (sender!=receiver)
+          PostProcStats(Topology->ExitQ, 1000,  30, sender, receiver, fh);
+      }
+    }
+    fh.close();
+    cin.get();
+    
+    
 
     VehicleQueue * Q;
     Intersection * I;

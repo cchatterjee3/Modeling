@@ -1,19 +1,47 @@
 #include<math.h>
-#include "calender_queue.h"
+#include <stdlib.h>
 
-#define DEBUG 
+#ifdef TEST
+	#include<sys/time.h>
+#endif
+
+#include "calender_queue_testing.h"
+
+typedef double Time_t;
+
+
+#define NUM_TRIALS 10000	/**< Number of trials for experiments */
+
+/**
+*	Time function to measure time 
+*
+*/
+unsigned long gettime(void)
+{
+	//gives current time for genrating seed for random number
+
+	timeval tim;
+	gettimeofday(&tim,NULL);
+	unsigned long t1=tim.tv_sec*1000000.0+tim.tv_usec;
+	return t1; 
+	
+	/*
+	unsigned long int t1 = (long int) time(NULL);
+	return t1;
+	*/
+}
 
 int calender_queue::getQsize()
 {
-  return Qsize;
+  	return Qsize;
 }
 
 int calender_queue::gettimeframe()
 {
-  return cur_time_frame;   
+  	return cur_time_frame;   
 }
 
-void calender_queue::insert(EventBase* E1)
+void calender_queue::insert(node* E1)
 {
 	// This function adds the event *E1 in the calender queue
        
@@ -39,7 +67,7 @@ void calender_queue::check659bucket()
 {
          
 }
-void calender_queue::dequeue(EventBase* E1)
+void calender_queue::dequeue(node* E1)
 {
 	//This function removes an arbitrary event E1 from
 	//calender queue
@@ -55,12 +83,12 @@ void calender_queue::dequeue(EventBase* E1)
 
 }
 
-EventBase* calender_queue::PopNext()
+node* calender_queue::PopNext()
 {
 	// this functions pops the next event to scheduled
 
 	//if  Q is empty return NULL
-	EventBase* E1;
+	node* E1;
 	E1 = NULL;
 	//cout<<"Inside PopNext "<<Qsize<<endl;
 	//cout<<cur_time_frame<<endl;
@@ -71,7 +99,7 @@ EventBase* calender_queue::PopNext()
 	while(E1==NULL)
 	{	int cur_bucket = cur_time_frame%BUCKET_COUNT;
  	    //cout <<"Inside While LOOP Iteration number:"<<count<<endl;  
-		EventBase* temp;
+		node* temp;
 		
 		temp = next_event(cur_bucket);
 		if (temp!=NULL)
@@ -111,13 +139,13 @@ int  calender_queue::isEmpty()
 	else return 0;
 }
 
-EventBase* calender_queue::next_event(int bucket_id)
+node* calender_queue::next_event(int bucket_id)
 {
     if (buckets[bucket_id].empty() == true)
        return NULL;
 	bucket::iterator it;
 	Time_t min_t;
-	EventBase* mint_Event;
+	node* mint_Event;
 	mint_Event = *buckets[bucket_id].begin();
 	min_t = mint_Event->getTime();
 	for (it = buckets[bucket_id].begin(); it != buckets[bucket_id].end(); it++)
@@ -133,7 +161,7 @@ EventBase* calender_queue::next_event(int bucket_id)
 
 }
 
-void calender_queue::remove_event(int i,EventBase* E1)
+void calender_queue::remove_event(int i,node* E1)
 {
 	buckets[i].remove(E1);
 	Qsize--;
@@ -161,4 +189,72 @@ calender_queue::calender_queue()
 }
 
 
+/**
+*	Testing procedures
+*
+*/
+#ifdef TEST
 
+void unittest_EqDq(int N,calender_queue* CQ)
+{
+	srand((unsigned)time(NULL));
+	
+	node* temp;
+	double min_t, max_t, sum_t;
+
+	/**
+	*	Initialization of the queue
+	*
+	*/
+
+	for (int i = CQ->getQsize(); i < N; ++i)
+	{
+		int tRand = rand();
+		double X=((double)rand()/(double)RAND_MAX);
+		temp = new node(tRand,X);
+		CQ->insert(temp);
+		
+	}
+
+	/**
+	*	running n trials
+	*
+	*/
+
+	long tStart = gettime();
+
+	for (int i = 0; i < NUM_TRIALS; ++i)
+	{	
+		int tRand = rand();
+		double X=((double)rand()/(double)RAND_MAX);
+		temp = new node(tRand,X);
+		CQ->insert(temp);
+		temp = CQ->PopNext();
+	}
+
+	long tEnd = gettime();
+
+	/**
+	*	printing states
+	*
+	*/
+
+	printf("%d\t%lf\n",N,(double)(tEnd-tStart)/(double)NUM_TRIALS);
+}
+
+int main(int argc, char const *argv[])
+{
+	calender_queue CQ;
+	int i =1;
+	while(i<1000000)
+	{
+		unittest_EqDq(i,&CQ);	
+		i = i*2;
+	}
+	
+
+	
+	return 0;
+}
+
+#endif 

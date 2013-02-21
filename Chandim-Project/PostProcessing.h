@@ -5,6 +5,7 @@
 *
 */
 
+#include <fstream>
 #include "VehicleQueue.h"
 
 
@@ -17,6 +18,6 @@
 *	@param source is starting point of the journey
 *	@param dest is input for describing 
 */
-void PostProcStats(VehicleQueue* EQ, double timeval, int buckets,int source, int dest);
+void PostProcStats(VehicleQueue* ExQ, double timeval, int buckets,int source, int dest, ofstream &fh);
 
 

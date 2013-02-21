@@ -1,0 +1,1568 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine natbib_authoryear
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 3cm
+\topmargin 3cm
+\rightmargin 3cm
+\bottommargin 3cm
+\headheight 3cm
+\headsep 3cm
+\footskip 3cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CSE6730 Project-1 Checkpoint
+\end_layout
+
+\begin_layout Author
+Chandim Chatterjee, Seyed Parsa Banihashemi & Piyush Sao
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Project Description
+\end_layout
+
+\begin_layout Standard
+This project is a discrete event traffic simulation of a section of Peachtree
+ street (from 10th street to 14th street) from 4pm to 6pm.
+ The simulation will analyse the rush-hour behavior of traffic in the above-ment
+ioned road sections.
+ The simulation is based on a stochastic model that models the incoming
+ and outgoing cars using a random number generator based on data collected
+ by a research by the National Institute for Advanced Transportation Technology
+ titled “Improved Simulation of Stop Bar Driver Behavior at Signalized Intersect
+ions”.
+ The main goals of the project is to capture the distribution of vehicle
+ travel times as they traverse the stretch of Peachtree Str and possibly
+ store this data in a text file for further data analysis.
+\end_layout
+
+\begin_layout Standard
+The stretch of Peachtree Street that is modeled is shown in Figure 1.
+ This stretch has five intersections, each with 4 adjoining roads coming
+ from the North, South, East and West.
+ The street throughout the stretch is aligned from North to South and has
+ two lanes moving in both directions.
+ Four of the five intersections are run using traffic lights whose timings
+ are predictable and known while one of them is governed by stop signs.
+ Cars can enter this stretch from any of the intersections or can be coming
+ North on Peachtree at the 10th Street intersection or be moving south on
+ Peachtree at the 14th Street intersection.
+ At each intersection, the cars can move towards their final destination
+ only when they have a green signal or the right of way.
+ The incoming cars spend time averse through distances along the stretch
+ of the road and queue up before intersections.
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename Images/PeachtreeSection.PNG
+	scale 60
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Satelite view of W.
+ PeachTree Street
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The data received from the National Institute research is used to find the
+ distribution of car arrival times and measure average travel times for
+ car through different stretches of the road.
+ This data is also used to stochastically assign final destinations of arriving
+ cars.
+\end_layout
+
+\begin_layout Standard
+Some of the assumptions made in the System Under Investigation while creating
+ the model are listed below:
+\end_layout
+
+\begin_layout Enumerate
+Once cars move out of the stretch (North of 14th street or South of 10th
+ street), they can move freely to their final destination and there is no
+ congestion in the exit points that may stop vehicles from proceeding.
+ This is done to simplify the model as the main goal is to predict peak
+ hour traffic behavior and traversal times only within the stretch
+\end_layout
+
+\begin_layout Enumerate
+All vehicles try to take the shortest route and move to the correct lanes
+ to proceed to the final destination.
+ This may not always be true but a high percentage of peak hour traffic
+ vehicles know the stretch well enough to make the correct decisions to
+ proceed to final destination
+\end_layout
+
+\begin_layout Enumerate
+There are no emergency or regulatory vehicles in action during this time.
+\end_layout
+
+\begin_layout Enumerate
+There are no traffic accidents that may create congestion in the model.
+\end_layout
+
+\begin_layout Enumerate
+Pedestrian traffic is not considered in this model and it is assumed that
+ they cross the road only during red signal and do not affect vehicle traffic.
+ Their effect on the stop light intersection is also ignored and may be
+ revisited in future iterations
+\end_layout
+
+\begin_layout Enumerate
+It is assumed that cars move at similar uniform speeds through the stretch
+ during this time.
+ This is assumed to be true because during peak hours, the effect of difference
+ in acceleration of different cars is not too pronounced due to high congestion.
+ This is another assumption that may be revisited in future iterations
+\end_layout
+
+\begin_layout Section
+Random Number Genrator
+\end_layout
+
+\begin_layout Standard
+In heart of any simulation engine lies a random number generator.
+ Hence, designing a pesudo random number generator, was an important considerati
+on for the project.
+ We would ideally like random number generator to have a large period.
+ It should be reasonably fast so that overhead of computing random numbers
+ is not high.
+ Additionally, we would like it to produce random numbers in accordance
+ to distribution.
+ We chose Lehmer's algorithm [REF] for generating random numbers for it
+ is fast and well tested.
+ Various parameters to lehmer's algorithm have been studied for lehmer's
+ algorithm, we after trying a couple of possibilties,we choose 
+\begin_inset Formula $n=2^{31}\text{−}1$
+\end_inset
+
+ , 
+\begin_inset Formula $g=7^{5}$
+\end_inset
+
+.
+ This combination is also known as MINSTD.
+ It has a full cycle of 
+\begin_inset Formula $n=2^{31}-1=2147483645$
+\end_inset
+
+, which we explicitly verify by running it for full cycle.
+ We verify that with increasing number of trials, mean of output of the
+ random numbers converge to 
+\begin_inset Formula $0.5$
+\end_inset
+
+ and varience converges to 
+\begin_inset Formula $\frac{1}{12}$
+\end_inset
+
+, for uniform distribution[REF:beautiful testing].
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RandNumData/MeanTest.eps
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename RandNumData/VarTest.eps
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+In addition to that, we use Chi Square testing [REF], to test uniform distributi
+on hypothesis of our random number generator.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of Buckets
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Number of trials
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probability
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.06
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.6308
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+89.18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.75
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+930.80
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9390
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9675.33
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9895
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+100000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98917.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9923
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Chi Square test for our Random Number Generator
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conceptual Model
+\end_layout
+
+\begin_layout Standard
+The conceptual model used is a simple queueing model where each all the
+ road patches between intersections and entering into and exiting from the
+ intersections are modeled as queues which are created by linked lists (using
+ C++ STL std::list).
+ The simulator program also uses a priority queue to store the future event
+ list and the queue is created using a simple hashing abstract data structure
+ called calendar queue.
+ This provides a data access and insertion time complexity of nearly O(1)
+ with high probability.
+ Priority queue models also rely heavily on random number generators for
+ simulation of events and a custom random number generator will be written
+ in the future.
+\end_layout
+
+\begin_layout Standard
+Entities and Events:
+\end_layout
+
+\begin_layout Subsection
+Simulator and the Event handler
+\end_layout
+
+\begin_layout Standard
+Events:
+\end_layout
+
+\begin_layout Itemize
+StopAt
+\end_layout
+
+\begin_layout Itemize
+Run
+\end_layout
+
+\begin_layout Itemize
+Schedule
+\end_layout
+
+\begin_layout Standard
+The simulator is the main engine of the code.The simulator schedules the
+ events and by doing this the events are added in the priority queue (implemente
+d using a calendar queue) sorted by their times.
+ The simulator can schedule when the simulation should stop and when it’s
+ run is called it keeps popping events from its priority queue until the
+ stop event is encountered or there are no more events in the queue.
+\end_layout
+
+\begin_layout Standard
+The events are created in a templated manner so that the event call handler
+ functions can easily be called as member functions of classes.
+ This can be observed easily in more detail by checking the schedule function
+ in the code.
+\end_layout
+
+\begin_layout Subsection
+The calendar queue
+\end_layout
+
+\begin_layout Standard
+The events list is managed by a calendar queue data structure, with constant
+ bucket sizes of size 0.1s for this checkpoint.
+ The bucket size is easy to modify and can be tested for optimal performance.
+ Each bucket contains a linked list of events and the length of the linked
+ list is tried to be kept lower than 5 for now.
+ The calendar queue fits very well for our purpose, since it provides O(1)
+ access time with high probability.
+ This abstract data structure is very similar to a hash table with an implemente
+d chaining conflict resolution mechanism.
+\end_layout
+
+\begin_layout Subsection
+Vehicles
+\end_layout
+
+\begin_layout Standard
+The consumer objects in our model are the vehicles passing through the road
+ network.
+ The vehicles are a class , with attributes, such as ID, start time, end
+ time, current direction, last queue, and, final destination.
+ The final destinations are randomly generated when the vehicle is generated.
+ The vehicles also keep track of their start times and end times and are
+ added to an exit queue after their pass through the stretch.
+ The start times and end times are used to generate the essential data/metric
+ for this project
+\end_layout
+
+\begin_layout Subsection
+VehicleQueues
+\end_layout
+
+\begin_layout Standard
+The queues are linked lists, containing components of vehicle type.
+ Queues are treated in a first-in first-out fashion.
+\end_layout
+
+\begin_layout Subsection
+Traffic Lights
+\end_layout
+
+\begin_layout Standard
+Events:
+\end_layout
+
+\begin_layout Itemize
+cyclestate
+\end_layout
+
+\begin_layout Standard
+The traffic lights are attributes of the intersections with signal.
+ They have a “Current phase” variable.
+ Whenever a “cyclestate“ event is scheduled, the traffic light changes state
+ to the next and schedules a change of a “changeSignalTrigger” event that
+ triggers traveling of cars that are in relevant queues.
+ There are four TrafficLights for each intersection with signal.
+\end_layout
+
+\begin_layout Subsection
+6.
+ Intersections
+\end_layout
+
+\begin_layout Standard
+Events:
+\end_layout
+
+\begin_layout Itemize
+changeSignalTrigger
+\end_layout
+
+\begin_layout Itemize
+AddtoQueue
+\end_layout
+
+\begin_layout Itemize
+VehiclePass
+\end_layout
+
+\begin_layout Itemize
+VehicleDeparture
+\end_layout
+
+\begin_layout Standard
+We have two types of intersections: with signals and without signals.
+ The two types of intersection classes inherit from an abstract Intersection
+ base class.
+ Intersections are the main event scheduler in the program.
+ Different methods in the intersection classes schedule other methods for
+ the future execution by calling the simulator Schedule function.
+ The intersection contains the routing table which is used to direct vehicles
+ towards their final destination.
+ The Intersection class contains pointers to different VehicleQueues that
+ are adjoining it.
+ A set of busy flags within the class will also represent the state of the
+ intersection and govern whether cars can enter it.
+ The AddtoQueue, VehiclePass and VehicleDeparture are used to depict the
+ motion of a car across the intersection and being moved from one queue
+ to another.
+\end_layout
+
+\begin_layout Subsection
+Topology
+\end_layout
+
+\begin_layout Standard
+The topology class contains object classes that represent the whole stretch
+ of roads including intersections and vehiclequeues.
+ It also keeps track of an exit queue containing all the cars that have
+ completed their traversal of the stretch.
+ Most of the randomness in our program will go into this class as all the
+ initial vehicle addition events are scheduled here (not implemented completely
+ yet, but is the next step in the development process).
+\end_layout
+
+\begin_layout Subsubsection
+Simulation Model
+\end_layout
+
+\begin_layout Standard
+Classes, Data Structures, and methods.
+\end_layout
+
+\begin_layout Enumerate
+VehicleClass: The most basic data structure is a class for individual vehicles.
+ It contains the following attributes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ID: The unique tag to identify each vehicle.
+\end_layout
+
+\begin_layout Itemize
+StartTime: The time of arrival of the vehicle into the system.
+\end_layout
+
+\begin_layout Itemize
+End Time: The time that the vehicle reaches its destination.
+\end_layout
+
+\begin_layout Itemize
+Destination: The ID of the particular node that the vehicle must reach.
+\end_layout
+
+\begin_layout Itemize
+Length: The length of the vehicle.
+ It is applied to calculate the length of the queue 
+\end_layout
+
+\begin_layout Itemize
+Current Direction: the direction which the intersection directs the vehicle
+ while the VehiclePass is executed.
+\end_layout
+
+\begin_layout Itemize
+Last Queue: The last queue the vehicle was a member of before entering the
+ intersection.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+VehicleQueue: is a linked list of type “queue” of VehicleClass.
+\end_layout
+
+\begin_layout Enumerate
+TrafficLight: contains several attributes
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Data structures:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Signal Type: Indicates whether a traffic light is a 3-phase, or a 6-phase
+ light.
+\end_layout
+
+\begin_layout Itemize
+Signal Timings: A set of variables containing the time for each phase.
+\end_layout
+
+\begin_layout Itemize
+Parent intersection: used for issuing a “changeSignalTrigger” event.
+\end_layout
+
+\begin_layout Itemize
+CurrentState: Indicates the current phase.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Methods:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+cyclestate: This method performs a change of phase for the traffic light.
+ All “cyclestate” events should be scheduled in the beginning of the simulation.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Intersection: is the base class for “Intersection with Signal” and “Intersection
+ Without Signal” classes.
+ Its attributes are:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Data Structures:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+ID: the unique identification number for intersections.
+\end_layout
+
+\begin_layout Itemize
+Busy indicators: boolean flags to specify whether the intersection is busy.
+\end_layout
+
+\begin_layout Itemize
+routingtable: is an array that provides a direction to each vehicle judging
+ based on the vehicle’s final destination.
+\end_layout
+
+\begin_layout Itemize
+Incoming Queues: There are 4 vehicle queues incoming each intersection,
+ and a global ExitQ that each intersection has the pointer to it.
+ Whenever a vehicle leaves the intersection, it is added to that queue.
+ ExitQ is going to be used to analyse the system in the future.
+\end_layout
+
+\begin_layout Itemize
+Neighbor intersections: The pointer to the neighbor intersections is included
+ in each intersection, so each intersection can schedule an arrival (addToQueue)
+ event for the others once the vehicle departs from it.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Methods:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Add to queue: This is a “virtual” method that is overridden by other classes
+ inheriting this class.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Intersection with signal: This class inherits from the Intersection class
+ and has these additional parts:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Data Structures:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Traffic Lights: TrafficLight type
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Methods:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+VehiclePass: Sets the intersection to busy and schedules a departure event,
+ using the routingTable.
+\end_layout
+
+\begin_layout Itemize
+VehicleDeparture: Sets “busy” to “false”, schedules joining the next queue,
+ or exiting the system and adding to ExitQ.
+ If the Light is still green, schedules the next VehiclePass for the next
+ vehicle.
+\end_layout
+
+\begin_layout Itemize
+addVehicletoQueue: adds vehicle to the neighbor intersection’s queue.
+\end_layout
+
+\begin_layout Itemize
+changeSignalTrigger: Starting scheduling VehiclePass for the proper queues
+ that have “green light”.
+\end_layout
+
+\begin_layout Itemize
+QCanGo: Takes a Queue and decides whether that Queue’s light is green
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Intersection without signal: This class inherits from the Intersection class
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Methods: (All exist in IntersectionWithLights)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+VehiclePass
+\end_layout
+
+\begin_layout Itemize
+VehicleDeparture
+\end_layout
+
+\begin_layout Itemize
+addVehicletoQueue
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Topology: is a class, that contains almost all variables in the code.
+ It is initialized in the beginning of the code and has theses attributes:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Intersection classes.
+ All intersections are part of Topology
+\end_layout
+
+\begin_layout Itemize
+ExitQ: as explained above, this is a Queue that every vehicle leaving the
+ network is added to.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Simulator: runs the actual simulator and contains a calendar_queue containing
+ future events.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Event: is a class containing templated classes and functions and used to
+ simulate any event which in the case of our program are functions belonging
+ to any of the classes.
+\end_layout
+
+\begin_layout Enumerate
+Calendar_queue: is the data structure for handling storing the list of all
+ “Event” classes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/Class-structure.pdf
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Class dependencies
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Typical Behavior:
+\end_layout
+
+\begin_layout Standard
+The classes and methods were described in the last section.
+ In this section, The order of execution, dependencies, and, chain of events
+ are discussed.
+\end_layout
+
+\begin_layout Itemize
+Joining the vehicles to: The events of vehicles joining the simulation system
+ is scheduled all in the beginning of the simulation.
+\end_layout
+
+\begin_layout Itemize
+cyclestate: all the change-of-state of the traffic lights are scheduled
+ in the beginning of the simulation.
+\end_layout
+
+\begin_layout Itemize
+VehiclePass can be scheduled by VehicleDeparture.
+ So, each vehicle that departs, will schedule another vehicle’s pass if
+ the light is still green.
+\end_layout
+
+\begin_layout Itemize
+changeSignalTrigger, can also start the chain of Depart-Pass.
+ It will schedule the first VehiclePass.
+ and the chain goes on until the light goes yellow.
+\end_layout
+
+\begin_layout Itemize
+The “Stop” event, will end the simulation.
+\end_layout
+
+\begin_layout Itemize
+Below, the event dependencies are demonstrated
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Images/Events-flow-chart.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Event Transition Diagram
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Divison of work 
+\end_layout
+
+\begin_layout Standard
+So far, we have been able to successfully generate events that will be able
+ self sustaining their life cycle.
+ In order to completely simulate the W.PeachTree street, we would like to
+ have better models of working of intersection and vehicle queues.
+ Another aspect of this project is to generate random data (vehicle) which
+ statistically reflects the incoming and outgoing traffic from the W.
+ Peachtree street.
+ Validation of our model also remains yet another important task to be done.
+ We would additionally like to have yet another implementation (probably
+ splay tree/ ladder ) of priority queues and see the performance of the
+ two for this particular exercise.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Name of Task
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Person responsible
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Due
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Priority Queues 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Piyush
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 Jan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Simulator 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chandim 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 Jan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vehicle Class 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Parsa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 Jan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Traffic lights Class 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Parsa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 Jan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Intersection Class 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Parsa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27 Jan
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Random Number Generator
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Piyush
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Check point report 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Group activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ 1 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Topology Chandim 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chandim 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced Modeling of Intersection 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Group activity
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Data parsing and Initialization
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Chandim 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Advanced Modeling of Vehicle queues
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+ Parsa
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10 Feb
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+References
+\end_layout
+
+\begin_layout Itemize
+S.
+ K.
+ Park and K.
+ W.
+ Miller (1988).
+ "Random Number Generators: Good Ones Are Hard To Find".
+ Communications of the ACM 31 (10): 1192–120
+\end_layout
+
+\end_body
+\end_document
