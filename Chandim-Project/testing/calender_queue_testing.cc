@@ -1,4 +1,5 @@
 #include<math.h>
+#include <stdio.h>
 #include <stdlib.h>
 
 #ifdef TEST
@@ -49,7 +50,7 @@ void calender_queue::insert(node* E1)
 	//Finding out which bukcet this event belongs to
 	Time_t t1 = E1->getTime();
 	
-	int bucket_id = (int) (fmod(t1,  CALENDER_PERIOD)/BUCKET_SIZE);
+	int bucket_id = (int) (fmod(t1,  calender_period)/bucket_size);
 
 	bucket* cur_bucket;
 	cur_bucket = &buckets[bucket_id];
@@ -73,7 +74,7 @@ void calender_queue::dequeue(node* E1)
 	//calender queue
 
 	Time_t t1 = E1->getTime();
-	int bucket_id = (int) (fmod(t1,  CALENDER_PERIOD)/BUCKET_SIZE);
+	int bucket_id = (int) (fmod(t1,  calender_period)/bucket_size);
 	
 	buckets[bucket_id].remove(E1);
 
@@ -97,7 +98,7 @@ node* calender_queue::PopNext()
 	//Now search for the next events from  
 	 int count = 0;
 	while(E1==NULL)
-	{	int cur_bucket = cur_time_frame%BUCKET_COUNT;
+	{	int cur_bucket = cur_time_frame%bucket_count;
  	    //cout <<"Inside While LOOP Iteration number:"<<count<<endl;  
 		node* temp;
 		
@@ -172,10 +173,14 @@ int calender_queue::get_bucket_count()
 	return bucket_count;
 }
 
-calender_queue::calender_queue()
+calender_queue::calender_queue(int bk,double int_width,double bk_sz)
 {
+	bucket_count = bk;
+	bucket_size = bk_sz;
+	interval_width =int_width;
+	calender_period = bucket_size*bucket_count;
 	bucket* temp;
-	for (int i = 0; i < BUCKET_COUNT; ++i)
+	for (int i = 0; i < bucket_count; ++i)
 	{	
 		temp = new bucket;
 		buckets.push_back(*temp);
@@ -183,7 +188,7 @@ calender_queue::calender_queue()
 
 	Qsize=0;
 	cur_time_frame =0;
-	bucket_count = 72000;
+	
 	time_frame_size =0.1;
 
 }
@@ -244,13 +249,32 @@ void unittest_EqDq(int N,calender_queue* CQ)
 
 int main(int argc, char const *argv[])
 {
-	calender_queue CQ;
+	int j=1;
 	int i =1;
-	while(i<1000000)
+	calender_queue* temp;
+	printf(" Bucket Count =%d \n",j);
+	temp = new calender_queue(j,1.0,0.0001);	
+	while(i<100000)
 	{
-		unittest_EqDq(i,&CQ);	
+		unittest_EqDq(i,temp);	
 		i = i*2;
 	}
+	
+	j =10;
+	
+	while(j<100000)
+	{	int i =1;
+		printf(" Bucket Count =%d \n",j);
+		temp = new calender_queue(j,1.0,0.0001);	
+		while(i<1000000)
+		{
+			unittest_EqDq(i,temp);	
+			i = i*2;
+		}
+
+		j= j*2;
+	}
+	
 	
 
 	

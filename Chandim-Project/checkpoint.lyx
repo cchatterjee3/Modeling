@@ -370,15 +370,11 @@ on hypothesis of our random number generator.
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="6" columns="4">
+<lyxtabular version="3" rows="7" columns="4">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top" width="0">
 <column alignment="center" valignment="top" width="0">
@@ -578,11 +574,49 @@ Probability
 </cell>
 </row>
 <row>
-<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
 100000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+98917.66
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.9923
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1000000
 \end_layout
 
 \end_inset
@@ -600,7 +634,7 @@ Probability
 \begin_inset Text
 
 \begin_layout Plain Layout
-98917.66
+994092
 \end_layout
 
 \end_inset
@@ -609,7 +643,7 @@ Probability
 \begin_inset Text
 
 \begin_layout Plain Layout
-0.9923
+0.9999
 \end_layout
 
 \end_inset
@@ -623,11 +657,83 @@ Probability
 \begin_inset Caption
 
 \begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Chi-Square-test"
+
+\end_inset
+
 Chi Square test for our Random Number Generator
 \end_layout
 
 \end_inset
 
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+The calendar queue
+\end_layout
+
+\begin_layout Standard
+The events list is managed by a calendar queue data structure, with constant
+ bucket sizes of size 0.1s for this checkpoint.
+ The bucket size is easy to modify and can be tested for optimal performance.
+ Each bucket contains a linked list of events and the length of the linked
+ list is tried to be kept lower than 5 for now.
+ The calendar queue fits very well for our purpose, since it provides O(1)
+ access time with high probability.
+ This abstract data structure is very similar to a hash table with an implemente
+d chaining conflict resolution mechanism.
+\end_layout
+
+\begin_layout Subsection
+Performance of calender queue
+\end_layout
+
+\begin_layout Standard
+To test the performance of our calender queue implementation, we use hold
+ time model.
+ We compare the Calender queue with linked list ( which is also special
+ case of calender queue with number of buckets equal to one).
+ The performance comparison is depicted in [CROSS-REF]
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename CQData/CQperf.eps
+	scale 60
+
+\end_inset
+
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Performance comparison of Calender queue with linked list
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 
 \end_layout
 
@@ -693,22 +799,6 @@ The events are created in a templated manner so that the event call handler
  functions can easily be called as member functions of classes.
  This can be observed easily in more detail by checking the schedule function
  in the code.
-\end_layout
-
-\begin_layout Subsection
-The calendar queue
-\end_layout
-
-\begin_layout Standard
-The events list is managed by a calendar queue data structure, with constant
- bucket sizes of size 0.1s for this checkpoint.
- The bucket size is easy to modify and can be tested for optimal performance.
- Each bucket contains a linked list of events and the length of the linked
- list is tried to be kept lower than 5 for now.
- The calendar queue fits very well for our purpose, since it provides O(1)
- access time with high probability.
- This abstract data structure is very similar to a hash table with an implemente
-d chaining conflict resolution mechanism.
 \end_layout
 
 \begin_layout Subsection
