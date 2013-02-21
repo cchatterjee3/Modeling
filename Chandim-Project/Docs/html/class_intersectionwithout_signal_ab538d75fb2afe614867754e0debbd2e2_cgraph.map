@@ -1,19 +1,20 @@
 <map id="IntersectionwithoutSignal::addVehicletoQueue" name="IntersectionwithoutSignal::addVehicletoQueue">
 <area shape="rect" id="node3" href="$class_intersection.html#a9304a1e23bdcc495ff95c5195b81d947" title="Intersection::getQdirection" alt="" coords="225,5,402,33"/>
 <area shape="rect" id="node5" href="$class_intersection.html#a2f76abb6014473396954bcaa0db18e7e" title="Intersection::getQlane" alt="" coords="237,57,389,85"/>
-<area shape="rect" id="node7" href="$class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="940,159,1070,187"/>
-<area shape="rect" id="node9" href="$class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8" title="VehicleQueue::push" alt="" coords="243,570,384,598"/>
-<area shape="rect" id="node11" href="$class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f" title="VehicleClass::setLastQ" alt="" coords="234,622,393,650"/>
-<area shape="rect" id="node13" href="$class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0" title="VehicleQueue::GetLen" alt="" coords="236,674,391,702"/>
-<area shape="rect" id="node15" href="$class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="245,415,382,443"/>
-<area shape="rect" id="node20" href="$class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="935,425,1076,453"/>
-<area shape="rect" id="node17" href="$class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="467,363,605,391"/>
-<area shape="rect" id="node26" href="$class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="451,311,621,339"/>
-<area shape="rect" id="node33" href="$class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="926,331,1085,359"/>
-<area shape="rect" id="node42" href="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="469,518,603,546"/>
-<area shape="rect" id="node22" href="$class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1164,398,1276,426"/>
-<area shape="rect" id="node24" href="$classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1142,450,1298,478"/>
-<area shape="rect" id="node30" href="$class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="669,262,869,290"/>
-<area shape="rect" id="node35" href="$class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="917,279,1093,307"/>
-<area shape="rect" id="node38" href="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="918,211,1092,255"/>
+<area shape="rect" id="node7" href="$class_simulator.html#a7fe5c584b3fc3f93f5b13e882ca27009" title="Simulator::getNow" alt="" coords="943,227,1073,255"/>
+<area shape="rect" id="node9" href="$class_vehicle_queue.html#a71dfef194e7e2cbfdca2b724d66301b8" title="VehicleQueue::push" alt="" coords="243,622,384,650"/>
+<area shape="rect" id="node11" href="$class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f" title="VehicleClass::setLastQ" alt="" coords="234,674,393,702"/>
+<area shape="rect" id="node13" href="$class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0" title="VehicleQueue::GetLen" alt="" coords="930,570,1086,598"/>
+<area shape="rect" id="node15" href="$class_intersection.html#ab6a6b34e31effdf156c39dabf523e5e8" title="Intersection::EvictQ" alt="" coords="245,289,382,317"/>
+<area shape="rect" id="node17" href="$class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a" title="VehicleQueue::front" alt="" coords="467,161,605,189"/>
+<area shape="rect" id="node20" href="$class_simulator.html#ae9f1c5a28f2fc0d42ccead5d7d2a642d" title="Simulator::Schedule" alt="" coords="938,518,1078,546"/>
+<area shape="rect" id="node26" href="$class_intersection.html#afe2e42381c4cf467fca7d2217d92524c" title="Intersection::VehiclePass" alt="" coords="451,367,621,395"/>
+<area shape="rect" id="node33" href="$class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351" title="VehicleClass::getLastQ" alt="" coords="928,294,1088,322"/>
+<area shape="rect" id="node45" href="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a" title="VehicleQueue::pop" alt="" coords="469,315,603,343"/>
+<area shape="rect" id="node22" href="$class_simulator.html#a4a9507b155c22a9c5f119abb2d2d6fc1" title="Simulator::Now" alt="" coords="1169,491,1281,519"/>
+<area shape="rect" id="node24" href="$classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b" title="calender_queue::insert" alt="" coords="1147,543,1304,571"/>
+<area shape="rect" id="node30" href="$class_intersection.html#a358151a5ef4dd58dd42a6444c7e9bfc9" title="Intersection::VehicleDeparture" alt="" coords="669,417,869,445"/>
+<area shape="rect" id="node35" href="$class_vehicle_class.html#a127372b94980fa045c648af412856fd5" title="VehicleClass::setEndTime" alt="" coords="920,346,1096,374"/>
+<area shape="rect" id="node39" href="$class_vehicle_queue.html#a4d5dc7f4ee55be52e781b252e6260ba1" title="VehicleQueue::GetMaxLen" alt="" coords="918,398,1098,426"/>
+<area shape="rect" id="node41" href="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12" title="Intersection::addVehicleto\lQueue" alt="" coords="921,450,1095,494"/>
 </map>

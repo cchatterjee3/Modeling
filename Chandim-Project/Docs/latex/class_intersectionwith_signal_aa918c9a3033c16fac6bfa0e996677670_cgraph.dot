@@ -39,10 +39,13 @@ digraph "IntersectionwithSignal::addVehicletoQueue"
   Node14 -> Node16 [color="midnightblue",fontsize="10",style="solid"];
   Node16 [label="VehicleClass::setEndTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a127372b94980fa045c648af412856fd5"];
   Node14 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node14 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node14 -> Node17 [color="midnightblue",fontsize="10",style="solid"];
-  Node17 [label="Intersection::addVehicleto\lQueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12"];
+  Node17 [label="VehicleQueue::GetMaxLen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#a4d5dc7f4ee55be52e781b252e6260ba1"];
+  Node14 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
+  Node18 [label="Intersection::addVehicleto\lQueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12"];
   Node13 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
   Node8 -> Node15 [color="midnightblue",fontsize="10",style="solid"];
-  Node8 -> Node18 [color="midnightblue",fontsize="10",style="solid"];
-  Node18 [label="VehicleQueue::pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a"];
+  Node8 -> Node19 [color="midnightblue",fontsize="10",style="solid"];
+  Node19 [label="VehicleQueue::pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a"];
 }

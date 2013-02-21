@@ -17,5 +17,9 @@ digraph "Intersection::VehicleDeparture"
   Node5 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
   Node7 [label="calender_queue::insert",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classcalender__queue.html#a9908e97c05434b58fca91d5327cf479b"];
   Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
-  Node8 [label="Intersection::addVehicleto\lQueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12"];
+  Node8 [label="VehicleQueue::GetLen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#ae443ecfa4227dbb5094f1bd33e77abb0"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="VehicleQueue::GetMaxLen",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#a4d5dc7f4ee55be52e781b252e6260ba1"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Intersection::addVehicleto\lQueue",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_intersection.html#a6e55e3add20e9d49e5751ccf47832c12"];
 }

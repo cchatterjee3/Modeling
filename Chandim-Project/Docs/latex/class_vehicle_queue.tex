@@ -6,6 +6,10 @@
 \item 
 \hyperlink{class_vehicle_queue_a19f80d40ffe612dae9b2cbce39fe1a1a}{Vehicle\-Queue} ()
 \item 
+\hyperlink{class_vehicle_queue_a84393b3dc29273e9fc18ff6c498c4a95}{Vehicle\-Queue} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Q)
+\item 
+\hyperlink{class_vehicle_queue_a3e939caee1688630bf1f9ba50ef0d67e}{Vehicle\-Queue} (int max\-L)
+\item 
 \hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$ \hyperlink{class_vehicle_queue_aff7fef0dc6401e38a26bc34ee0e78f2a}{front} ()
 \item 
 bool \hyperlink{class_vehicle_queue_a9c22a63f1c7562bc14be172a38cffcb9}{empty} ()
@@ -25,6 +29,8 @@ bool \hyperlink{class_vehicle_queue_ada2e9158033c24433b042ab46abe2fb8}{is\-Busy}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+int \hyperlink{class_vehicle_queue_a8634f859977fc6937f91abc302d56318}{max\-Length}
+\item 
 std\-::queue$<$ \hyperlink{class_vehicle_class}{Vehicle\-Class} $\ast$ $>$ \hyperlink{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}{Q1}
 \item 
 int \hyperlink{class_vehicle_queue_a4ce16496b3665d0b91a8b5baf158c3a3}{busy}
@@ -41,7 +47,21 @@ double \hyperlink{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}{Last\-S
 {}
 \end{DoxyParamCaption}
 )}}\label{class_vehicle_queue_a19f80d40ffe612dae9b2cbce39fe1a1a}
-Default constuctor 
+Default constuctor \hypertarget{class_vehicle_queue_a84393b3dc29273e9fc18ff6c498c4a95}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Vehicle\-Queue@{Vehicle\-Queue}}
+\index{Vehicle\-Queue@{Vehicle\-Queue}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Vehicle\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}Vehicle\-Queue\-::\-Vehicle\-Queue (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Queue} $\ast$}]{Q}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a84393b3dc29273e9fc18ff6c498c4a95}
+Constuctor with Pointer argument \hypertarget{class_vehicle_queue_a3e939caee1688630bf1f9ba50ef0d67e}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Vehicle\-Queue@{Vehicle\-Queue}}
+\index{Vehicle\-Queue@{Vehicle\-Queue}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{Vehicle\-Queue}]{\setlength{\rightskip}{0pt plus 5cm}Vehicle\-Queue\-::\-Vehicle\-Queue (
+\begin{DoxyParamCaption}
+\item[{int}]{max\-L}
+\end{DoxyParamCaption}
+)}}\label{class_vehicle_queue_a3e939caee1688630bf1f9ba50ef0d67e}
+Constuctor with int argument assigning max\-Length 
 
 \subsection{Member Function Documentation}
 \hypertarget{class_vehicle_queue_a302883b18a07a99dacd614ee5332f09e}{\index{Vehicle\-Queue@{Vehicle\-Queue}!back@{back}}
@@ -114,7 +134,10 @@ Adds vehicle to the back of the queue
 to check if the queue is busy/not \hypertarget{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Last\-Sent\-Car@{Last\-Sent\-Car}}
 \index{Last\-Sent\-Car@{Last\-Sent\-Car}!VehicleQueue@{Vehicle\-Queue}}
 \subsubsection[{Last\-Sent\-Car}]{\setlength{\rightskip}{0pt plus 5cm}double Vehicle\-Queue\-::\-Last\-Sent\-Car}}\label{class_vehicle_queue_a329310055fa8fd635fd6740a8400b88d}
-Holds time for vehicle that was sent last \hypertarget{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Q1@{Q1}}
+Holds time for vehicle that was sent last \hypertarget{class_vehicle_queue_a8634f859977fc6937f91abc302d56318}{\index{Vehicle\-Queue@{Vehicle\-Queue}!max\-Length@{max\-Length}}
+\index{max\-Length@{max\-Length}!VehicleQueue@{Vehicle\-Queue}}
+\subsubsection[{max\-Length}]{\setlength{\rightskip}{0pt plus 5cm}int Vehicle\-Queue\-::max\-Length}}\label{class_vehicle_queue_a8634f859977fc6937f91abc302d56318}
+To hold the maximum length of the Queue \hypertarget{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}{\index{Vehicle\-Queue@{Vehicle\-Queue}!Q1@{Q1}}
 \index{Q1@{Q1}!VehicleQueue@{Vehicle\-Queue}}
 \subsubsection[{Q1}]{\setlength{\rightskip}{0pt plus 5cm}std\-::queue$<${\bf Vehicle\-Class}$\ast$ $>$ Vehicle\-Queue\-::\-Q1}}\label{class_vehicle_queue_a64dd34f2ca5bee22e9bf07be665c4d13}
 std\-::\-Queue for holding the vehicle queue 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  18 FEB 2013 21:15
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (TeX Live 2011) (format=pdflatex 2011.7.3)  21 FEB 2013 16:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -910,7 +910,28 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 
 
 Writing index file refman.idx
-(./refman.aux)
+(./refman.aux
+
+LaTeX Warning: Label `classcalender__queue_a3b911c0f17d0cac2ff6c2a261d123a78' m
+ultiply defined.
+
+
+LaTeX Warning: Label `classcalender__queue_a78818b6767d5f432dd4b4e629ca72435' m
+ultiply defined.
+
+
+LaTeX Warning: Label `classcalender__queue_ac6b4b6d42278a5c88de4550d4b7f4017' m
+ultiply defined.
+
+
+LaTeX Warning: Label `classcalender__queue_a3985b2b2d55245ec4b70e79e1588c608' m
+ultiply defined.
+
+
+LaTeX Warning: Label `classcalender__queue_a8d42460de7de2396f588c8f9a5aa099f' m
+ultiply defined.
+
+)
 \openout1 = `refman.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -1101,26 +1122,22 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 71.
  [2]
-[3] [4] [5]
+[3] [4] [5] [6]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 228.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 228.
+(Font)              scaled to size 10.79993pt on input line 253.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 253.
 )
 \tf@toc=\write5
 \openout5 = `refman.toc'.
 
-
-Underfull \vbox (badness 1968) has occurred while \output is active []
-
- [6]
-[7] [8
+ [7] [8
 
 ]
 Package hyperref Info: Option `pageanchor' set `true' on input line 65.
@@ -1156,24 +1173,28 @@ Chapter 3.
 LaTeX Warning: Reference `prioqueue_8h' on page 5 undefined on input line 11.
 
 
-LaTeX Warning: Reference `stdafx_8h' on page 5 undefined on input line 16.
+LaTeX Warning: Reference `stdafx_8h' on page 5 undefined on input line 17.
 
 
 LaTeX Warning: Reference `_vehicle_queue_8h' on page 5 undefined on input line 
-20.
+21.
 
 
-LaTeX Warning: Reference `test1_8h' on page 5 undefined on input line 21.
+LaTeX Warning: Reference `calender__queue__testing_8h' on page 5 undefined on i
+nput line 22.
 
 
-LaTeX Warning: Reference `testing_8h' on page 5 undefined on input line 22.
+LaTeX Warning: Reference `test1_8h' on page 5 undefined on input line 23.
+
+
+LaTeX Warning: Reference `testing_8h' on page 5 undefined on input line 24.
 
 ) [5] [6
 
 ]
 Chapter 4.
 (./class___topology.tex
-<class___topology__coll__graph.pdf, id=1335, 250.9375pt x 425.59pt>
+<class___topology__coll__graph.pdf, id=1467, 250.9375pt x 425.59pt>
 File: class___topology__coll__graph.pdf Graphic file (type pdf)
 
 <use class___topology__coll__graph.pdf>
@@ -1208,38 +1229,102 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 6.
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [8]
 LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
-(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 62.
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 81.
 LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
-(Font)              scaled to size 8.99994pt on input line 62.
+(Font)              scaled to size 8.99994pt on input line 81.
+ [9pdfTeX warning (ext4): destination with the same identifier (name{classcalen
+der__queue_a3b911c0f17d0cac2ff6c2a261d123a78}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.105 )}}
+         \label{classcalender__queue_ad751210f4fe9885234857ca428799c18}]
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 65.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 108.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 65.
+(Font)              scaled to size 8.99994pt on input line 108.
 
-Underfull \vbox (badness 10000) detected at line 67
- []
-
-[9]
-Underfull \vbox (badness 10000) detected at line 100
+Underfull \vbox (badness 10000) detected at line 110
  []
 
 
-Underfull \vbox (badness 10000) detected at line 119
+Underfull \vbox (badness 10000) detected at line 122
  []
 
 
-<classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655_cgraph.pdf, id=1419, 41
-5.5525pt x 202.7575pt>
-File: classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655_cgraph.pdf Graphic
+<classcalender__queue_a7c07ffcbca12cfd91018963c70c1542a_cgraph.pdf, id=1574, 32
+9.23pt x 100.375pt>
+File: classcalender__queue_a7c07ffcbca12cfd91018963c70c1542a_cgraph.pdf Graphic
  file (type pdf)
 
-<use classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655_cgraph.pdf>
-Package pdftex.def Info: classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655
-_cgraph.pdf used on input line 136.
+<use classcalender__queue_a7c07ffcbca12cfd91018963c70c1542a_cgraph.pdf>
+Package pdftex.def Info: classcalender__queue_a7c07ffcbca12cfd91018963c70c1542a
+_cgraph.pdf used on input line 130.
+(pdftex.def)             Requested size: 328.0pt x 100.00255pt.
+
+[10pdfTeX warning (ext4): destination with the same identifier (name{classcalen
+der__queue_a78818b6767d5f432dd4b4e629ca72435}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 )}}
+         \label{classcalender__queue_a533aa5760d1e91277a071771c6f1ffb7}pdfTeX w
+arning (ext4): destination with the same identifier (name{classcalender__queue_
+ac6b4b6d42278a5c88de4550d4b7f4017}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 )}}
+         \label{classcalender__queue_a533aa5760d1e91277a071771c6f1ffb7}pdfTeX w
+arning (ext4): destination with the same identifier (name{classcalender__queue_
+a3985b2b2d55245ec4b70e79e1588c608}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.185 )}}
+         \label{classcalender__queue_a533aa5760d1e91277a071771c6f1ffb7} <./clas
+scalender__queue_a7c07ffcbca12cfd91018963c70c1542a_cgraph.pdf>]
+Underfull \vbox (badness 10000) detected at line 197
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 223
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 235
+ []
+
+
+<classcalender__queue_adce9f39aeb6b2912579ffc3aad67bd7a_cgraph.pdf, id=1595, 41
+5.5525pt x 202.7575pt>
+File: classcalender__queue_adce9f39aeb6b2912579ffc3aad67bd7a_cgraph.pdf Graphic
+ file (type pdf)
+
+<use classcalender__queue_adce9f39aeb6b2912579ffc3aad67bd7a_cgraph.pdf>
+Package pdftex.def Info: classcalender__queue_adce9f39aeb6b2912579ffc3aad67bd7a
+_cgraph.pdf used on input line 253.
 (pdftex.def)             Requested size: 350.0pt x 170.7792pt.
 
-[10 <./classcalender__queue_aa789e7ebf2e4b0509ba6c986f4485655_cgraph.pdf>]
-Underfull \vbox (badness 10000) detected at line 155
+[11pdfTeX warning (ext4): destination with the same identifier (name{classcalen
+der__queue_a8d42460de7de2396f588c8f9a5aa099f}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 
+      ]
+Underfull \vbox (badness 10000) detected at line 282
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 297
+ []
+
+[12 <./classcalender__queue_adce9f39aeb6b2912579ffc3aad67bd7a_cgraph.pdf>]
+Underfull \vbox (badness 10000) detected at line 309
  []
 
 ) (./class_event0.tex
@@ -1266,7 +1351,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<class_event0__inherit__graph.pdf, id=1439, 174.6525pt x 160.6pt>
+<class_event0__inherit__graph.pdf, id=1622, 174.6525pt x 160.6pt>
 File: class_event0__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_event0__inherit__graph.pdf>
@@ -1274,13 +1359,13 @@ Package pdftex.def Info: class_event0__inherit__graph.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 174.0pt x 160.009pt.
 
-<class_event0__coll__graph.pdf, id=1440, 174.6525pt x 160.6pt>
+<class_event0__coll__graph.pdf, id=1623, 174.6525pt x 160.6pt>
 File: class_event0__coll__graph.pdf Graphic file (type pdf)
 
 <use class_event0__coll__graph.pdf>
 Package pdftex.def Info: class_event0__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 174.0pt x 160.009pt.
- [11 <./class_event0__inherit__graph.pdf> <./class_event0__coll__graph.pdf>]) (
+ [13 <./class_event0__inherit__graph.pdf> <./class_event0__coll__graph.pdf>]) (
 ./class_event1.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1298,7 +1383,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<class_event1__inherit__graph.pdf, id=1476, 186.6975pt x 172.645pt>
+<class_event1__inherit__graph.pdf, id=1660, 186.6975pt x 172.645pt>
 File: class_event1__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_event1__inherit__graph.pdf>
@@ -1306,13 +1391,13 @@ Package pdftex.def Info: class_event1__inherit__graph.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 186.0pt x 172.00705pt.
 
-<class_event1__coll__graph.pdf, id=1477, 186.6975pt x 172.645pt>
+<class_event1__coll__graph.pdf, id=1661, 186.6975pt x 172.645pt>
 File: class_event1__coll__graph.pdf Graphic file (type pdf)
 
 <use class_event1__coll__graph.pdf>
 Package pdftex.def Info: class_event1__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 186.0pt x 172.00705pt.
- [12 <./class_event1__inherit__graph.pdf> <./class_event1__coll__graph.pdf>]) (
+ [14 <./class_event1__inherit__graph.pdf> <./class_event1__coll__graph.pdf>]) (
 ./class_event2.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1330,7 +1415,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<class_event2__inherit__graph.pdf, id=1514, 186.6975pt x 172.645pt>
+<class_event2__inherit__graph.pdf, id=1698, 186.6975pt x 172.645pt>
 File: class_event2__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_event2__inherit__graph.pdf>
@@ -1338,13 +1423,13 @@ Package pdftex.def Info: class_event2__inherit__graph.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 186.0pt x 172.00705pt.
 
-<class_event2__coll__graph.pdf, id=1515, 186.6975pt x 172.645pt>
+<class_event2__coll__graph.pdf, id=1699, 186.6975pt x 172.645pt>
 File: class_event2__coll__graph.pdf Graphic file (type pdf)
 
 <use class_event2__coll__graph.pdf>
 Package pdftex.def Info: class_event2__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 186.0pt x 172.00705pt.
- [13 <./class_event2__inherit__graph.pdf> <./class_event2__coll__graph.pdf>]) (
+ [15 <./class_event2__inherit__graph.pdf> <./class_event2__coll__graph.pdf>]) (
 ./class_event3.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1362,7 +1447,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 3.
 
-<class_event3__inherit__graph.pdf, id=1553, 188.705pt x 172.645pt>
+<class_event3__inherit__graph.pdf, id=1737, 188.705pt x 172.645pt>
 File: class_event3__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_event3__inherit__graph.pdf>
@@ -1370,25 +1455,25 @@ Package pdftex.def Info: class_event3__inherit__graph.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 188.0pt x 171.99915pt.
 
-<class_event3__coll__graph.pdf, id=1554, 188.705pt x 172.645pt>
+<class_event3__coll__graph.pdf, id=1738, 188.705pt x 172.645pt>
 File: class_event3__coll__graph.pdf Graphic file (type pdf)
 
 <use class_event3__coll__graph.pdf>
 Package pdftex.def Info: class_event3__coll__graph.pdf used on input line 19.
 (pdftex.def)             Requested size: 188.0pt x 171.99915pt.
- [14 <./class_event3__inherit__graph.pdf> <./class_event3__coll__graph.pdf>]) (
+ [16 <./class_event3__inherit__graph.pdf> <./class_event3__coll__graph.pdf>]) (
 ./classevent__compare.tex)
 (./class_event_base.tex
-<class_event_base__inherit__graph.pdf, id=1594, 291.0875pt x 253.94875pt>
+<class_event_base__inherit__graph.pdf, id=1779, 291.0875pt x 253.94875pt>
 File: class_event_base__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_event_base__inherit__graph.pdf>
 Package pdftex.def Info: class_event_base__inherit__graph.pdf used on input lin
 e 10.
 (pdftex.def)             Requested size: 290.0pt x 253.01813pt.
- [15 <./class_event_base__inherit__graph.pdf>]) (./structevent_dsc.tex) (./clas
+ [17 <./class_event_base__inherit__graph.pdf>]) (./structevent_dsc.tex) (./clas
 s_intersection.tex
-<class_intersection__inherit__graph.pdf, id=1627, 338.26375pt x 160.6pt>
+<class_intersection__inherit__graph.pdf, id=1811, 338.26375pt x 160.6pt>
 File: class_intersection__inherit__graph.pdf Graphic file (type pdf)
 
 <use class_intersection__inherit__graph.pdf>
@@ -1396,7 +1481,7 @@ Package pdftex.def Info: class_intersection__inherit__graph.pdf used on input l
 ine 10.
 (pdftex.def)             Requested size: 337.0pt x 160.0041pt.
 
-<class_intersection__coll__graph.pdf, id=1628, 199.74625pt x 301.125pt>
+<class_intersection__coll__graph.pdf, id=1812, 199.74625pt x 301.125pt>
 File: class_intersection__coll__graph.pdf Graphic file (type pdf)
 
 <use class_intersection__coll__graph.pdf>
@@ -1406,7 +1491,7 @@ Package pdftex.def Info: class_intersection__coll__graph.pdf used on input line
 
 Underfull \vbox (badness 5667) has occurred while \output is active []
 
- [16 <./class_intersection__inherit__graph.pdf>] [17 <./class_intersection__col
+ [18 <./class_intersection__inherit__graph.pdf>] [19 <./class_intersection__col
 l__graph.pdf>]
 Underfull \vbox (badness 10000) detected at line 115
  []
@@ -1424,66 +1509,66 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 122.
 
 
-<class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf, id=1747, 859.
-21pt x 409.53pt>
+<class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf, id=1931, 863.
+225pt x 409.53pt>
 File: class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf Graphic f
 ile (type pdf)
 
 <use class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf>
 Package pdftex.def Info: class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_c
 graph.pdf used on input line 152.
-(pdftex.def)             Requested size: 350.0pt x 166.82106pt.
+(pdftex.def)             Requested size: 350.0pt x 166.0462pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [18]
-<class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf, id=1767, 379.
+ [20]
+<class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf, id=1950, 379.
 4175pt x 293.095pt>
 File: class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf Graphic f
 ile (type pdf)
 
 <use class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf>
 Package pdftex.def Info: class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_c
-graph.pdf used on input line 199.
+graph.pdf used on input line 198.
 (pdftex.def)             Requested size: 350.0pt x 270.37517pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf>]
-Underfull \vbox (badness 10000) detected at line 227
+ [21 <./class_intersection_ab6a6b34e31effdf156c39dabf523e5e8_cgraph.pdf>]
+Underfull \vbox (badness 10000) detected at line 226
  []
 
 
-<class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf, id=1786, 554.
-07pt x 269.005pt>
+<class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf, id=1970, 558.
+085pt x 347.2975pt>
 File: class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf Graphic f
 ile (type pdf)
 
 <use class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf>
 Package pdftex.def Info: class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_c
-graph.pdf used on input line 235.
-(pdftex.def)             Requested size: 350.0pt x 169.92555pt.
+graph.pdf used on input line 234.
+(pdftex.def)             Requested size: 350.0pt x 217.8129pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20 <./class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf>]
-Underfull \vbox (badness 10000) detected at line 254
+ [22 <./class_intersection_a1cc47dcabbfb512f9cb85ff9e7114e1a_cgraph.pdf>]
+Underfull \vbox (badness 10000) detected at line 253
  []
 
 
-<class_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf, id=1806, 718.
-685pt x 269.005pt>
+<class_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf, id=1990, 722.
+7pt x 347.2975pt>
 File: class_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf Graphic f
 ile (type pdf)
 
 <use class_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf>
 Package pdftex.def Info: class_intersection_afe2e42381c4cf467fca7d2217d92524c_c
-graph.pdf used on input line 262.
-(pdftex.def)             Requested size: 350.0pt x 131.00908pt.
- [21 <./class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf> <./cla
-ss_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf>] [22])
+graph.pdf used on input line 261.
+(pdftex.def)             Requested size: 350.0pt x 168.19531pt.
+ [23 <./class_intersection_a358151a5ef4dd58dd42a6444c7e9bfc9_cgraph.pdf> <./cla
+ss_intersection_afe2e42381c4cf467fca7d2217d92524c_cgraph.pdf>] [24])
 (./class_intersectionwithout_signal.tex
-<class_intersectionwithout_signal__inherit__graph.pdf, id=1844, 206.7725pt x 16
+<class_intersectionwithout_signal__inherit__graph.pdf, id=2027, 206.7725pt x 16
 0.6pt>
 File: class_intersectionwithout_signal__inherit__graph.pdf Graphic file (type p
 df)
@@ -1492,7 +1577,7 @@ Package pdftex.def Info: class_intersectionwithout_signal__inherit__graph.pdf u
 sed on input line 10.
 (pdftex.def)             Requested size: 206.0pt x 160.0041pt.
 
-<class_intersectionwithout_signal__coll__graph.pdf, id=1845, 223.83624pt x 355.
+<class_intersectionwithout_signal__coll__graph.pdf, id=2028, 223.83624pt x 355.
 3275pt>
 File: class_intersectionwithout_signal__coll__graph.pdf Graphic file (type pdf)
 
@@ -1503,7 +1588,7 @@ Package pdftex.def Info: class_intersectionwithout_signal__coll__graph.pdf used
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./class_intersectionwithout_signal__inherit__graph.pdf>]
+ [25 <./class_intersectionwithout_signal__inherit__graph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 59.
@@ -1516,9 +1601,9 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 59.
 
-[24 <./class_intersectionwithout_signal__coll__graph.pdf>]
+[26 <./class_intersectionwithout_signal__coll__graph.pdf>]
 <class_intersectionwithout_signal_ab538d75fb2afe614867754e0debbd2e2_cgraph.pdf,
- id=1891, 1053.9375pt x 604.2575pt>
+ id=2074, 1057.9525pt x 604.2575pt>
 File: class_intersectionwithout_signal_ab538d75fb2afe614867754e0debbd2e2_cgraph
 .pdf Graphic file (type pdf)
 
@@ -1526,25 +1611,25 @@ File: class_intersectionwithout_signal_ab538d75fb2afe614867754e0debbd2e2_cgraph
 pdf>
 Package pdftex.def Info: class_intersectionwithout_signal_ab538d75fb2afe6148677
 54e0debbd2e2_cgraph.pdf used on input line 82.
-(pdftex.def)             Requested size: 350.0pt x 200.66876pt.
+(pdftex.def)             Requested size: 350.0pt x 199.90347pt.
 
 <class_intersectionwithout_signal_ac003b0651a33eb53986c4b0389f2c788_cgraph.pdf,
- id=1893, 389.455pt x 293.095pt>
+ id=2076, 389.455pt x 293.095pt>
 File: class_intersectionwithout_signal_ac003b0651a33eb53986c4b0389f2c788_cgraph
 .pdf Graphic file (type pdf)
 
 <use class_intersectionwithout_signal_ac003b0651a33eb53986c4b0389f2c788_cgraph.
 pdf>
 Package pdftex.def Info: class_intersectionwithout_signal_ac003b0651a33eb53986c
-4b0389f2c788_cgraph.pdf used on input line 106.
+4b0389f2c788_cgraph.pdf used on input line 105.
 (pdftex.def)             Requested size: 350.0pt x 263.41185pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./class_intersectionwithout_signal_ab538d75fb2afe614867754e0debbd2e2_cgra
+ [27 <./class_intersectionwithout_signal_ab538d75fb2afe614867754e0debbd2e2_cgra
 ph.pdf>])
 (./class_intersectionwith_signal.tex
-<class_intersectionwith_signal__inherit__graph.pdf, id=1911, 192.72pt x 160.6pt
+<class_intersectionwith_signal__inherit__graph.pdf, id=2096, 192.72pt x 160.6pt
 >
 File: class_intersectionwith_signal__inherit__graph.pdf Graphic file (type pdf)
 
@@ -1553,7 +1638,7 @@ Package pdftex.def Info: class_intersectionwith_signal__inherit__graph.pdf used
  on input line 10.
 (pdftex.def)             Requested size: 192.0pt x 159.9992pt.
 
-<class_intersectionwith_signal__coll__graph.pdf, id=1912, 283.0575pt x 413.545p
+<class_intersectionwith_signal__coll__graph.pdf, id=2097, 283.0575pt x 413.545p
 t>
 File: class_intersectionwith_signal__coll__graph.pdf Graphic file (type pdf)
  <use class_intersectionwith_signal__coll__graph.pdf>
@@ -1563,8 +1648,8 @@ Package pdftex.def Info: class_intersectionwith_signal__coll__graph.pdf used on
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26 <./class_intersectionwithout_signal_ac003b0651a33eb53986c4b0389f2c788_cgra
-ph.pdf> <./class_intersectionwith_signal__inherit__graph.pdf>] [27 <./class_int
+ [28 <./class_intersectionwithout_signal_ac003b0651a33eb53986c4b0389f2c788_cgra
+ph.pdf> <./class_intersectionwith_signal__inherit__graph.pdf>] [29 <./class_int
 ersectionwith_signal__coll__graph.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1580,7 +1665,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 
 <class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph.pdf, id
-=1988, 1039.885pt x 486.81876pt>
+=2171, 1043.9pt x 604.2575pt>
 File: class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph.pd
 f Graphic file (type pdf)
 
@@ -1588,10 +1673,10 @@ f Graphic file (type pdf)
 >
 Package pdftex.def Info: class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e
 996677670_cgraph.pdf used on input line 98.
-(pdftex.def)             Requested size: 350.0pt x 163.85225pt.
+(pdftex.def)             Requested size: 350.0pt x 202.59578pt.
 
 <class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph.pdf, id
-=1989, 1009.7725pt x 409.53pt>
+=2172, 1013.7875pt x 409.53pt>
 File: class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph.pd
 f Graphic file (type pdf)
 
@@ -1599,14 +1684,14 @@ f Graphic file (type pdf)
 >
 Package pdftex.def Info: class_intersectionwith_signal_a78fbf7f154af7d788c0543b
 526c7d326_cgraph.pdf used on input line 118.
-(pdftex.def)             Requested size: 350.0pt x 141.95038pt.
+(pdftex.def)             Requested size: 350.0pt x 141.38173pt.
 
-Underfull \vbox (badness 4832) has occurred while \output is active []
+Underfull \vbox (badness 1320) has occurred while \output is active []
 
- [28 <./class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph.
+ [30 <./class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e996677670_cgraph.
 pdf>]
 <class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph.pdf, id
-=2008, 375.4025pt x 293.095pt>
+=2192, 375.4025pt x 371.3875pt>
 File: class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph.pd
 f Graphic file (type pdf)
 
@@ -1614,120 +1699,134 @@ f Graphic file (type pdf)
 >
 Package pdftex.def Info: class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7
 e9e9881b3_cgraph.pdf used on input line 142.
-(pdftex.def)             Requested size: 350.0pt x 273.27766pt.
- [29 <./class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph.
+(pdftex.def)             Requested size: 350.0pt x 346.2765pt.
+ [31 <./class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph.
 pdf> <./class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph.
-pdf>]) (./classprioqueue.tex) (./class_random_num_gen.tex [30]
+pdf>]) (./classnode.tex) (./classprioqueue.tex [32])
+(./class_random_num_gen.tex
 Underfull \vbox (badness 10000) detected at line 40
  []
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 47.
+<class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f_cgraph.pdf, id=2241, 34
+5.29pt x 100.375pt>
+File: class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f_cgraph.pdf Graphic
+ file (type pdf)
+
+<use class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f_cgraph.pdf>
+Package pdftex.def Info: class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f
+_cgraph.pdf used on input line 48.
+(pdftex.def)             Requested size: 344.0pt x 100.00102pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 47.
+(hyperref)                removing `math shift' on input line 59.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 47.
+(hyperref)                removing `\sim' on input line 59.
 
-) (./class_road_segment.tex
-<class_road_segment__coll__graph.pdf, id=2066, 158.5925pt x 184.69pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 59.
+
+[33 <./class_random_num_gen_ac98ff22efa3b9c23e6b6ba1cf6a6097f_cgraph.pdf>])
+(./class_road_segment.tex
+<class_road_segment__coll__graph.pdf, id=2274, 158.5925pt x 184.69pt>
 File: class_road_segment__coll__graph.pdf Graphic file (type pdf)
 
 <use class_road_segment__coll__graph.pdf>
 Package pdftex.def Info: class_road_segment__coll__graph.pdf used on input line
  10.
 (pdftex.def)             Requested size: 158.0pt x 184.01599pt.
- [31 <./class_road_segment__coll__graph.pdf>]
-<class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf, id=2093, 397.
+ [34 <./class_road_segment__coll__graph.pdf>]
+<class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf, id=2305, 397.
 485pt x 139.52126pt>
 File: class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf Graphic f
 ile (type pdf)
 
 <use class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf>
 Package pdftex.def Info: class_road_segment_a86d7460856feadb6faa86e130b090479_c
-graph.pdf used on input line 58.
+graph.pdf used on input line 57.
 (pdftex.def)             Requested size: 350.0pt x 122.85783pt.
- [32 <./class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf>])
+)
 (./class_simulator.tex
-<class_simulator__coll__graph.pdf, id=2118, 196.735pt x 102.3825pt>
+<class_simulator__coll__graph.pdf, id=2307, 196.735pt x 102.3825pt>
 File: class_simulator__coll__graph.pdf Graphic file (type pdf)
 
 <use class_simulator__coll__graph.pdf>
 Package pdftex.def Info: class_simulator__coll__graph.pdf used on input line 10
 .
 (pdftex.def)             Requested size: 196.0pt x 101.9995pt.
+ [35 <./class_road_segment_a86d7460856feadb6faa86e130b090479_cgraph.pdf>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 7.19995pt on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
- [33 <./class_simulator__coll__graph.pdf>]
-<class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf, id=2166, 341.275
+ [36 <./class_simulator__coll__graph.pdf>]
+<class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf, id=2372, 341.275
 pt x 139.52126pt>
 File: class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf Graphic file
  (type pdf)
 
 <use class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf>
 Package pdftex.def Info: class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgra
-ph.pdf used on input line 94.
+ph.pdf used on input line 93.
 (pdftex.def)             Requested size: 340.0pt x 139.00783pt.
 
-<class_simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgraph.pdf, id=2168, 341.275
+<class_simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgraph.pdf, id=2374, 341.275
 pt x 139.52126pt>
 File: class_simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgraph.pdf Graphic file
  (type pdf)
 
 <use class_simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgraph.pdf>
 Package pdftex.def Info: class_simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgra
-ph.pdf used on input line 119.
+ph.pdf used on input line 117.
 (pdftex.def)             Requested size: 340.0pt x 139.00783pt.
- [34 <./class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf> <./class_
+ [37 <./class_simulator_ae9f1c5a28f2fc0d42ccead5d7d2a642d_cgraph.pdf> <./class_
 simulator_a0d67931f9d55c1f284f6467b9015c1c4_cgraph.pdf>]
-<class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf, id=2198, 341.275
+<class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf, id=2405, 341.275
 pt x 139.52126pt>
 File: class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf Graphic file
  (type pdf)
 
 <use class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf>
 Package pdftex.def Info: class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgra
-ph.pdf used on input line 145.
+ph.pdf used on input line 142.
 (pdftex.def)             Requested size: 340.0pt x 139.00783pt.
 
-<class_simulator_a2a00f7c57e142e06046f4df091f0173b_cgraph.pdf, id=2200, 341.275
+<class_simulator_a2a00f7c57e142e06046f4df091f0173b_cgraph.pdf, id=2407, 341.275
 pt x 139.52126pt>
 File: class_simulator_a2a00f7c57e142e06046f4df091f0173b_cgraph.pdf Graphic file
  (type pdf)
 
 <use class_simulator_a2a00f7c57e142e06046f4df091f0173b_cgraph.pdf>
 Package pdftex.def Info: class_simulator_a2a00f7c57e142e06046f4df091f0173b_cgra
-ph.pdf used on input line 172.
+ph.pdf used on input line 168.
 (pdftex.def)             Requested size: 340.0pt x 139.00783pt.
- [35 <./class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf> <./class_
+ [38 <./class_simulator_a5dc207907f17173964ca9a04d7d4b8fe_cgraph.pdf> <./class_
 simulator_a2a00f7c57e142e06046f4df091f0173b_cgraph.pdf>]
-<class_simulator_a4bbb179ecbac8adfee23bd49d19746c0_cgraph.pdf, id=2229, 471.762
+<class_simulator_a4bbb179ecbac8adfee23bd49d19746c0_cgraph.pdf, id=2436, 471.762
 5pt x 178.6675pt>
 File: class_simulator_a4bbb179ecbac8adfee23bd49d19746c0_cgraph.pdf Graphic file
  (type pdf)
 
 <use class_simulator_a4bbb179ecbac8adfee23bd49d19746c0_cgraph.pdf>
 Package pdftex.def Info: class_simulator_a4bbb179ecbac8adfee23bd49d19746c0_cgra
-ph.pdf used on input line 198.
+ph.pdf used on input line 193.
 (pdftex.def)             Requested size: 350.0pt x 132.55537pt.
 )
-(./class_traffic_light.tex [36 <./class_simulator_a4bbb179ecbac8adfee23bd49d197
+(./class_traffic_light.tex [39 <./class_simulator_a4bbb179ecbac8adfee23bd49d197
 46c0_cgraph.pdf>]
-<class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf, id=2271, 131
-8.9275pt x 439.6425pt>
+<class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf, id=2478, 132
+2.9425pt x 413.545pt>
 File: class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf Graphic 
 file (type pdf)
 
 <use class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf>
 Package pdftex.def Info: class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_
 cgraph.pdf used on input line 64.
-(pdftex.def)             Requested size: 350.0pt x 116.6657pt.
+(pdftex.def)             Requested size: 350.0pt x 109.4059pt.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1742,16 +1841,16 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 75.
 
 
-<class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.pdf, id=2272, 116
-2.3425pt x 398.48875pt>
+<class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.pdf, id=2479, 116
+6.3575pt x 407.5225pt>
 File: class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.pdf Graphic 
 file (type pdf)
 
 <use class_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.pdf>
 Package pdftex.def Info: class_traffic_light_a43310868b8badae122a037d85f009a0f_
 cgraph.pdf used on input line 93.
-(pdftex.def)             Requested size: 350.0pt x 119.99141pt.
- [37 <./class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf> <./cl
+(pdftex.def)             Requested size: 350.0pt x 122.28877pt.
+ [40 <./class_traffic_light_a7ed32935d0b40a941a56d74cbec790fd_cgraph.pdf> <./cl
 ass_traffic_light_a43310868b8badae122a037d85f009a0f_cgraph.pdf>])
 (./class_vehicle_class.tex
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
@@ -1759,79 +1858,76 @@ LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
 (Font)              scaled to size 8.09995pt on input line 12.
 
-<class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf, id=2325, 216
+<class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf, id=2533, 216
 .81pt x 118.4425pt>
 File: class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf Graphic 
 file (type pdf)
 
 <use class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf>
 Package pdftex.def Info: class_vehicle_class_ae4291311ac5253a754310588100c494a_
-cgraph.pdf used on input line 61.
+cgraph.pdf used on input line 60.
 (pdftex.def)             Requested size: 216.0pt x 118.00664pt.
- [38]
+ [41]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 72.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sim' on input line 72.
+(hyperref)                removing `math shift' on input line 71.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 72.
+(hyperref)                removing `\sim' on input line 71.
 
-[39 <./class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf>])
-(./class_vehicle_queue.tex [40]
-Underfull \vbox (badness 10000) detected at line 107
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 71.
+
+[42 <./class_vehicle_class_ae4291311ac5253a754310588100c494a_cgraph.pdf>])
+(./class_vehicle_queue.tex [43]
+Underfull \vbox (badness 10000) detected at line 127
  []
 
 
-Underfull \vbox (badness 1173) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41])
-[42]
+ [44])
+[45] [46
+
+]
 Chapter 5.
 (./calender__queue_8h.tex
-<calender__queue_8h__incl.pdf, id=2410, 304.13625pt x 277.035pt>
+<calender__queue_8h__incl.pdf, id=2628, 304.13625pt x 277.035pt>
 File: calender__queue_8h__incl.pdf Graphic file (type pdf)
 
 <use calender__queue_8h__incl.pdf>
 Package pdftex.def Info: calender__queue_8h__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 303.0pt x 276.0071pt.
 
-<calender__queue_8h__dep__incl.pdf, id=2411, 664.4825pt x 626.34pt>
+<calender__queue_8h__dep__incl.pdf, id=2629, 911.405pt x 638.385pt>
 File: calender__queue_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use calender__queue_8h__dep__incl.pdf>
 Package pdftex.def Info: calender__queue_8h__dep__incl.pdf used on input line 2
 5.
-(pdftex.def)             Requested size: 350.0pt x 329.91338pt.
+(pdftex.def)             Requested size: 350.0pt x 245.16042pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [43
-
- <./calender__queue_8h__incl.pdf>] [44 <./calender__queue_8h__dep__incl.pdf>])
-(./_common_defs_8h.tex
-<_common_defs_8h__incl.pdf, id=2458, 164.615pt x 160.6pt>
+ [47 <./calender__queue_8h__incl.pdf>]) (./_common_defs_8h.tex [48 <./calender_
+_queue_8h__dep__incl.pdf>] <_common_defs_8h__incl.pdf, id=2677, 164.615pt x 160
+.6pt>
 File: _common_defs_8h__incl.pdf Graphic file (type pdf)
 
 <use _common_defs_8h__incl.pdf>
 Package pdftex.def Info: _common_defs_8h__incl.pdf used on input line 9.
 (pdftex.def)             Requested size: 164.0pt x 160.0041pt.
 
-<_common_defs_8h__dep__incl.pdf, id=2459, 753.81625pt x 684.5575pt>
+<_common_defs_8h__dep__incl.pdf, id=2678, 899.36pt x 696.6025pt>
 File: _common_defs_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _common_defs_8h__dep__incl.pdf>
 Package pdftex.def Info: _common_defs_8h__dep__incl.pdf used on input line 17.
-(pdftex.def)             Requested size: 350.0pt x 317.83545pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45 <./_common_defs_8h__incl.pdf>] [46 <./_common_defs_8h__dep__incl.pdf>]
-<_common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph.pdf, id=2516, 110.412
+(pdftex.def)             Requested size: 350.0pt x 271.08926pt.
+ [49 <./_common_defs_8h__incl.pdf> <./_common_defs_8h__dep__incl.pdf>] [50]
+<_common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph.pdf, id=2733, 110.412
 5pt x 118.4425pt>
 File: _common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph.pdf Graphic file
  (type pdf)
@@ -1840,8 +1936,8 @@ File: _common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph.pdf Graphic file
 Package pdftex.def Info: _common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgra
 ph.pdf used on input line 118.
 (pdftex.def)             Requested size: 110.0pt x 118.00482pt.
- [47]
-<_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph.pdf, id=2521, 114.427
+
+<_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph.pdf, id=2734, 114.427
 5pt x 118.4425pt>
 File: _common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph.pdf Graphic file
  (type pdf)
@@ -1851,254 +1947,253 @@ Package pdftex.def Info: _common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgra
 ph.pdf used on input line 140.
 (pdftex.def)             Requested size: 114.0pt x 118.00482pt.
 )
-(./_events_8h.tex <_events_8h__incl.pdf, id=2522, 388.45125pt x 218.8175pt>
+(./_events_8h.tex [51 <./_common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgra
+ph.pdf> <./_common_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph.pdf>]
+<_events_8h__incl.pdf, id=2765, 388.45125pt x 218.8175pt>
 File: _events_8h__incl.pdf Graphic file (type pdf)
 
 <use _events_8h__incl.pdf>
 Package pdftex.def Info: _events_8h__incl.pdf used on input line 17.
 (pdftex.def)             Requested size: 350.0pt x 197.16096pt.
 
-Underfull \vbox (badness 5637) has occurred while \output is active []
-
- [48 <./_common_defs_8h_aee7862becfb6aef94f34e882348eb275_cgraph.pdf> <./_commo
-n_defs_8h_ab16114155cb6c7b1080dc8f52f1f8f7a_cgraph.pdf>]
-<_events_8h__dep__incl.pdf, id=2551, 653.44125pt x 626.34pt>
+<_events_8h__dep__incl.pdf, id=2766, 653.44125pt x 638.385pt>
 File: _events_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _events_8h__dep__incl.pdf>
 Package pdftex.def Info: _events_8h__dep__incl.pdf used on input line 25.
-(pdftex.def)             Requested size: 350.0pt x 335.47565pt.
- [49 <./_events_8h__incl.pdf> <./_events_8h__dep__incl.pdf>]) (./_intersection_
-8h.tex
-<_intersection_8h__incl.pdf, id=2587, 583.17876pt x 451.6875pt>
-File: _intersection_8h__incl.pdf Graphic file (type pdf)
-
-<use _intersection_8h__incl.pdf>
-Package pdftex.def Info: _intersection_8h__incl.pdf used on input line 14.
-(pdftex.def)             Requested size: 350.0pt x 271.0904pt.
-
-<_intersection_8h__dep__incl.pdf, id=2588, 348.30125pt x 335.2525pt>
-File: _intersection_8h__dep__incl.pdf Graphic file (type pdf)
-
-<use _intersection_8h__dep__incl.pdf>
-Package pdftex.def Info: _intersection_8h__dep__incl.pdf used on input line 22.
-
-(pdftex.def)             Requested size: 347.0pt x 334.01372pt.
+(pdftex.def)             Requested size: 350.0pt x 341.9271pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50 <./_intersection_8h__incl.pdf>]) (./_intersectionwith_signal_8h.tex
-<_intersectionwith_signal_8h__incl.pdf, id=2608, 659.46375pt x 509.905pt>
+ [52 <./_events_8h__incl.pdf>]) (./_intersection_8h.tex
+<_intersection_8h__incl.pdf, id=2789, 583.17876pt x 451.6875pt>
+File: _intersection_8h__incl.pdf Graphic file (type pdf)
+
+<use _intersection_8h__incl.pdf>
+Package pdftex.def Info: _intersection_8h__incl.pdf used on input line 13.
+(pdftex.def)             Requested size: 350.0pt x 271.0904pt.
+ [53 <./_events_8h__dep__incl.pdf>]
+<_intersection_8h__dep__incl.pdf, id=2807, 348.30125pt x 335.2525pt>
+File: _intersection_8h__dep__incl.pdf Graphic file (type pdf)
+
+<use _intersection_8h__dep__incl.pdf>
+Package pdftex.def Info: _intersection_8h__dep__incl.pdf used on input line 20.
+
+(pdftex.def)             Requested size: 347.0pt x 334.01372pt.
+ [54 <./_intersection_8h__incl.pdf> <./_intersection_8h__dep__incl.pdf>]) (./_i
+ntersectionwith_signal_8h.tex
+<_intersectionwith_signal_8h__incl.pdf, id=2839, 659.46375pt x 509.905pt>
 File: _intersectionwith_signal_8h__incl.pdf Graphic file (type pdf)
 
 <use _intersectionwith_signal_8h__incl.pdf>
 Package pdftex.def Info: _intersectionwith_signal_8h__incl.pdf used on input li
-ne 13.
+ne 12.
 (pdftex.def)             Requested size: 350.0pt x 270.62961pt.
 
-Underfull \vbox (badness 1259) has occurred while \output is active []
-
- [51 <./_intersection_8h__dep__incl.pdf>]
-<_intersectionwith_signal_8h__dep__incl.pdf, id=2628, 247.92625pt x 277.035pt>
+<_intersectionwith_signal_8h__dep__incl.pdf, id=2840, 247.92625pt x 277.035pt>
 File: _intersectionwith_signal_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _intersectionwith_signal_8h__dep__incl.pdf>
 Package pdftex.def Info: _intersectionwith_signal_8h__dep__incl.pdf used on inp
-ut line 21.
+ut line 19.
 (pdftex.def)             Requested size: 247.0pt x 276.00287pt.
- [52 <./_intersectionwith_signal_8h__incl.pdf> <./_intersectionwith_signal_8h__
-dep__incl.pdf>])
-(./_intersectionwo_signal_8h.tex
-<_intersectionwo_signal_8h__incl.pdf, id=2661, 679.53876pt x 509.905pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55 <./_intersectionwith_signal_8h__incl.pdf>]) (./_intersectionwo_signal_8h.t
+ex
+<_intersectionwo_signal_8h__incl.pdf, id=2862, 679.53876pt x 509.905pt>
 File: _intersectionwo_signal_8h__incl.pdf Graphic file (type pdf)
 
 <use _intersectionwo_signal_8h__incl.pdf>
 Package pdftex.def Info: _intersectionwo_signal_8h__incl.pdf used on input line
- 12.
+ 11.
 (pdftex.def)             Requested size: 350.0pt x 262.63123pt.
 
-<_intersectionwo_signal_8h__dep__incl.pdf, id=2662, 245.91875pt x 277.035pt>
+Underfull \vbox (badness 7925) has occurred while \output is active []
+
+ [56 <./_intersectionwith_signal_8h__dep__incl.pdf>]
+<_intersectionwo_signal_8h__dep__incl.pdf, id=2880, 245.91875pt x 277.035pt>
 File: _intersectionwo_signal_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _intersectionwo_signal_8h__dep__incl.pdf>
 Package pdftex.def Info: _intersectionwo_signal_8h__dep__incl.pdf used on input
- line 20.
+ line 18.
 (pdftex.def)             Requested size: 245.0pt x 276.01132pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [53 <./_intersectionwo_signal_8h__incl.pdf>]) (./main_8cpp.tex
-<main_8cpp__incl.pdf, id=2682, 764.8575pt x 684.5575pt>
+ [57 <./_intersectionwo_signal_8h__incl.pdf>]) (./main_8cpp.tex
+<main_8cpp__incl.pdf, id=2901, 766.865pt x 684.5575pt>
 File: main_8cpp__incl.pdf Graphic file (type pdf)
 
 <use main_8cpp__incl.pdf>
-Package pdftex.def Info: main_8cpp__incl.pdf used on input line 18.
-(pdftex.def)             Requested size: 350.0pt x 313.24988pt.
+Package pdftex.def Info: main_8cpp__incl.pdf used on input line 19.
+(pdftex.def)             Requested size: 350.0pt x 312.43513pt.
 
-Underfull \vbox (badness 2065) has occurred while \output is active []
+Underfull \vbox (badness 1127) has occurred while \output is active []
 
- [54 <./_intersectionwo_signal_8h__dep__incl.pdf>]) (./_post_processing_8h.tex
-<_post_processing_8h__incl.pdf, id=2702, 521.95pt x 451.6875pt>
+ [58 <./_intersectionwo_signal_8h__dep__incl.pdf>]) (./_post_processing_8h.tex
+<_post_processing_8h__incl.pdf, id=2921, 531.9875pt x 451.6875pt>
 File: _post_processing_8h__incl.pdf Graphic file (type pdf)
 
 <use _post_processing_8h__incl.pdf>
-Package pdftex.def Info: _post_processing_8h__incl.pdf used on input line 10.
-(pdftex.def)             Requested size: 350.0pt x 302.89095pt.
+Package pdftex.def Info: _post_processing_8h__incl.pdf used on input line 11.
+(pdftex.def)             Requested size: 350.0pt x 297.17732pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [55 <./main_8cpp__incl.pdf>]
-<_post_processing_8h__dep__incl.pdf, id=2724, 172.645pt x 160.6pt>
+ [59 <./main_8cpp__incl.pdf>]
+<_post_processing_8h__dep__incl.pdf, id=2942, 172.645pt x 160.6pt>
 File: _post_processing_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _post_processing_8h__dep__incl.pdf>
 Package pdftex.def Info: _post_processing_8h__dep__incl.pdf used on input line 
 18.
 (pdftex.def)             Requested size: 172.0pt x 160.00165pt.
- [56 <./_post_processing_8h__incl.pdf> <./_post_processing_8h__dep__incl.pdf>]
-Underfull \vbox (badness 10000) detected at line 58
+ [60 <./_post_processing_8h__incl.pdf> <./_post_processing_8h__dep__incl.pdf>]
+Underfull \vbox (badness 10000) detected at line 59
  []
 
 
-<_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph.pdf, id=2757, 341
+<_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_cgraph.pdf, id=2977, 341
 .275pt x 335.2525pt>
-File: _post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph.pdf Graphic 
+File: _post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_cgraph.pdf Graphic 
 file (type pdf)
 
-<use _post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph.pdf>
-Package pdftex.def Info: _post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_
-cgraph.pdf used on input line 66.
+<use _post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_cgraph.pdf>
+Package pdftex.def Info: _post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_
+cgraph.pdf used on input line 67.
 (pdftex.def)             Requested size: 340.0pt x 334.01883pt.
 )
+(./_random_num_8cc.tex
+<_random_num_8cc__incl.pdf, id=2978, 433.62pt x 160.6pt>
+File: _random_num_8cc__incl.pdf Graphic file (type pdf)
+
+<use _random_num_8cc__incl.pdf>
+Package pdftex.def Info: _random_num_8cc__incl.pdf used on input line 14.
+(pdftex.def)             Requested size: 350.0pt x 129.63683pt.
+
+Underfull \vbox (badness 3623) has occurred while \output is active []
+
+ [61 <./_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_cgraph.pdf>])
 (./_random_num_8h.tex
-<_random_num_8h__dep__incl.pdf, id=2758, 180.675pt x 218.8175pt>
+<_random_num_8h__dep__incl.pdf, id=2996, 287.0725pt x 218.8175pt>
 File: _random_num_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _random_num_8h__dep__incl.pdf>
 Package pdftex.def Info: _random_num_8h__dep__incl.pdf used on input line 9.
-(pdftex.def)             Requested size: 180.0pt x 218.00226pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [57 <./_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph.pdf>])
-(./_road_segment_8h.tex [58 <./_random_num_8h__dep__incl.pdf>])
-(./schedule_vehicles_8h.tex
-<schedule_vehicles_8h__incl.pdf, id=2806, 738.76pt x 626.34pt>
+(pdftex.def)             Requested size: 286.0pt x 218.0056pt.
+ [62 <./_random_num_8cc__incl.pdf> <./_random_num_8h__dep__incl.pdf>]) (./_road
+_segment_8h.tex) (./schedule_vehicles_8h.tex <schedule_vehicles_8h__incl.pdf, i
+d=3036, 738.76pt x 626.34pt>
 File: schedule_vehicles_8h__incl.pdf Graphic file (type pdf)
 
 <use schedule_vehicles_8h__incl.pdf>
-Package pdftex.def Info: schedule_vehicles_8h__incl.pdf used on input line 11.
+Package pdftex.def Info: schedule_vehicles_8h__incl.pdf used on input line 10.
 (pdftex.def)             Requested size: 350.0pt x 296.74045pt.
-
-<schedule_vehicles_8h__dep__incl.pdf, id=2807, 180.675pt x 160.6pt>
+ [63]
+<schedule_vehicles_8h__dep__incl.pdf, id=3047, 180.675pt x 160.6pt>
 File: schedule_vehicles_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use schedule_vehicles_8h__dep__incl.pdf>
 Package pdftex.def Info: schedule_vehicles_8h__dep__incl.pdf used on input line
- 19.
+ 17.
 (pdftex.def)             Requested size: 180.0pt x 160.00165pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [59 <./schedule_vehicles_8h__incl.pdf>]
-Underfull \vbox (badness 10000) detected at line 47
+ [64 <./schedule_vehicles_8h__incl.pdf> <./schedule_vehicles_8h__dep__incl.pdf>
+]
+Underfull \vbox (badness 10000) detected at line 45
  []
 
 
-<schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518_cgraph.pdf, id=2827, 49
-7.86pt x 190.7125pt>
+<schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518_cgraph.pdf, id=3081, 49
+7.86pt x 247.92625pt>
 File: schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518_cgraph.pdf Graphic
  file (type pdf)
 
 <use schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518_cgraph.pdf>
 Package pdftex.def Info: schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518
-_cgraph.pdf used on input line 55.
-(pdftex.def)             Requested size: 350.0pt x 134.074pt.
+_cgraph.pdf used on input line 53.
+(pdftex.def)             Requested size: 350.0pt x 174.29623pt.
 )
 (./_simulator_8h.tex
-<_simulator_8h__incl.pdf, id=2828, 419.5675pt x 277.035pt>
+<_simulator_8h__incl.pdf, id=3082, 419.5675pt x 277.035pt>
 File: _simulator_8h__incl.pdf Graphic file (type pdf)
 
 <use _simulator_8h__incl.pdf>
-Package pdftex.def Info: _simulator_8h__incl.pdf used on input line 13.
+Package pdftex.def Info: _simulator_8h__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 231.10147pt.
 
-Underfull \vbox (badness 4608) has occurred while \output is active []
-
- [60 <./schedule_vehicles_8h__dep__incl.pdf> <./schedule_vehicles_8h_a6fddfc876
-62e222a887bd35b5ba69518_cgraph.pdf>]
-<_simulator_8h__dep__incl.pdf, id=2861, 615.29875pt x 509.905pt>
+<_simulator_8h__dep__incl.pdf, id=3083, 615.29875pt x 509.905pt>
 File: _simulator_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _simulator_8h__dep__incl.pdf>
-Package pdftex.def Info: _simulator_8h__dep__incl.pdf used on input line 21.
+Package pdftex.def Info: _simulator_8h__dep__incl.pdf used on input line 19.
 (pdftex.def)             Requested size: 350.0pt x 290.04976pt.
- [61 <./_simulator_8h__incl.pdf> <./_simulator_8h__dep__incl.pdf>]) (./_topolog
-y_8h.tex
-<_topology_8h__incl.pdf, id=2893, 738.76pt x 568.1225pt>
+ [65 <./schedule_vehicles_8h_a6fddfc87662e222a887bd35b5ba69518_cgraph.pdf> <./_
+simulator_8h__incl.pdf>]) (./_topology_8h.tex <_topology_8h__incl.pdf, id=3116,
+ 738.76pt x 568.1225pt>
 File: _topology_8h__incl.pdf Graphic file (type pdf)
 
 <use _topology_8h__incl.pdf>
-Package pdftex.def Info: _topology_8h__incl.pdf used on input line 14.
+Package pdftex.def Info: _topology_8h__incl.pdf used on input line 13.
 (pdftex.def)             Requested size: 350.0pt x 269.1588pt.
 
-<_topology_8h__dep__incl.pdf, id=2894, 201.75375pt x 218.8175pt>
+Underfull \vbox (badness 2644) has occurred while \output is active []
+
+ [66 <./_simulator_8h__dep__incl.pdf>]
+<_topology_8h__dep__incl.pdf, id=3136, 201.75375pt x 218.8175pt>
 File: _topology_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _topology_8h__dep__incl.pdf>
-Package pdftex.def Info: _topology_8h__dep__incl.pdf used on input line 22.
+Package pdftex.def Info: _topology_8h__dep__incl.pdf used on input line 20.
 (pdftex.def)             Requested size: 201.0pt x 218.00226pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [62 <./_topology_8h__incl.pdf>]) (./_traffic_light_8h.tex
-<_traffic_light_8h__incl.pdf, id=2915, 493.845pt x 393.47pt>
+) (./_traffic_light_8h.tex [67 <./_topology_8h__incl.pdf> <./_topology_8h__dep_
+_incl.pdf>]
+<_traffic_light_8h__incl.pdf, id=3167, 493.845pt x 393.47pt>
 File: _traffic_light_8h__incl.pdf Graphic file (type pdf)
 
 <use _traffic_light_8h__incl.pdf>
-Package pdftex.def Info: _traffic_light_8h__incl.pdf used on input line 17.
+Package pdftex.def Info: _traffic_light_8h__incl.pdf used on input line 16.
 (pdftex.def)             Requested size: 350.0pt x 278.86131pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [63 <./_topology_8h__dep__incl.pdf>]
-<_traffic_light_8h__dep__incl.pdf, id=2934, 395.4775pt x 393.47pt>
+<_traffic_light_8h__dep__incl.pdf, id=3168, 395.4775pt x 393.47pt>
 File: _traffic_light_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _traffic_light_8h__dep__incl.pdf>
-Package pdftex.def Info: _traffic_light_8h__dep__incl.pdf used on input line 25
+Package pdftex.def Info: _traffic_light_8h__dep__incl.pdf used on input line 23
 .
 (pdftex.def)             Requested size: 350.0pt x 348.22992pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [64 <./_traffic_light_8h__incl.pdf>]) (./_vehicle_class_8h.tex
-<_vehicle_class_8h__incl.pdf, id=2954, 521.95pt x 335.2525pt>
+ [68 <./_traffic_light_8h__incl.pdf>]) (./_vehicle_class_8h.tex
+<_vehicle_class_8h__incl.pdf, id=3187, 521.95pt x 335.2525pt>
 File: _vehicle_class_8h__incl.pdf Graphic file (type pdf)
 
 <use _vehicle_class_8h__incl.pdf>
-Package pdftex.def Info: _vehicle_class_8h__incl.pdf used on input line 13.
+Package pdftex.def Info: _vehicle_class_8h__incl.pdf used on input line 12.
 (pdftex.def)             Requested size: 350.0pt x 224.8124pt.
- [65 <./_traffic_light_8h__dep__incl.pdf>]
-<_vehicle_class_8h__dep__incl.pdf, id=2974, 516.93124pt x 451.6875pt>
+ [69 <./_traffic_light_8h__dep__incl.pdf>]
+<_vehicle_class_8h__dep__incl.pdf, id=3209, 516.93124pt x 451.6875pt>
 File: _vehicle_class_8h__dep__incl.pdf Graphic file (type pdf)
 
 <use _vehicle_class_8h__dep__incl.pdf>
-Package pdftex.def Info: _vehicle_class_8h__dep__incl.pdf used on input line 21
+Package pdftex.def Info: _vehicle_class_8h__dep__incl.pdf used on input line 19
 .
 (pdftex.def)             Requested size: 350.0pt x 305.83391pt.
- [66 <./_vehicle_class_8h__incl.pdf> <./_vehicle_class_8h__dep__incl.pdf>]) (./
-refman.ind [67] [68
+ [70 <./_vehicle_class_8h__incl.pdf> <./_vehicle_class_8h__dep__incl.pdf>]) (./
+refman.ind [71] [72
 
-] [69] [70] [71])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 110.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 110.
+] [73] [74] [75])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 112.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 
 (./refman.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 110.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 110.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: 7622C985BB821FEEF8E6D50FBBEE6E32;34955.
+(rerunfilecheck)             Checksum: A4EF3C98A5FD9E1B2F458B5C965F4A8E;38513.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -2106,16 +2201,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 110.
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 12928 strings out of 493633
- 207354 string characters out of 3143378
+ 13044 strings out of 493633
+ 210995 string characters out of 3143378
  284735 words of memory out of 3000000
- 15253 multiletter control sequences out of 15000+200000
+ 15311 multiletter control sequences out of 15000+200000
  92342 words of font info for 151 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 41i,13n,58p,528b,417s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,13n,58p,528b,415s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2011/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2011/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -2125,10 +2223,10 @@ live/2011/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/201
 fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/local/texlive/2011/texmf-dist/fonts
 /type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2011/texmf-dist/fonts/type1/
 urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (81 pages, 1062667 bytes).
+Output written on refman.pdf (85 pages, 1113445 bytes).
 PDF statistics:
- 3475 PDF objects out of 3580 (max. 8388607)
- 3151 compressed objects within 32 object streams
- 594 named destinations out of 1000 (max. 500000)
- 2160 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3737 PDF objects out of 4296 (max. 8388607)
+ 3398 compressed objects within 34 object streams
+ 645 named destinations out of 1000 (max. 500000)
+ 2375 words of extra memory for PDF output out of 10000 (max. 10000000)
 

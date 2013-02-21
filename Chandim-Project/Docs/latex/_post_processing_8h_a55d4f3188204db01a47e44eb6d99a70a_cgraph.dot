@@ -1,0 +1,21 @@
+digraph "PostProcStats"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="PostProcStats",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="VehicleQueue::empty",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#a9c22a63f1c7562bc14be172a38cffcb9"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="VehicleQueue::front",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#aff7fef0dc6401e38a26bc34ee0e78f2a"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="VehicleQueue::pop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_queue.html#ad4f16ccf1a5990172e28b7782051b50a"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="VehicleClass::getSource",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#aa1e4f513ff1cf84e577f3c6e8bcd681f"];
+  Node1 -> Node6 [color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="VehicleClass::getDestination",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="VehicleClass::EndTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33"];
+  Node1 -> Node8 [color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="VehicleClass::StartTime",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99"];
+}

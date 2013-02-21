@@ -1,6 +1,7 @@
 \hypertarget{_post_processing_8h}{\section{Post\-Processing.\-h File Reference}
 \label{_post_processing_8h}\index{Post\-Processing.\-h@{Post\-Processing.\-h}}
 }
+{\ttfamily \#include $<$fstream$>$}\\*
 {\ttfamily \#include \char`\"{}Vehicle\-Queue.\-h\char`\"{}}\\*
 Include dependency graph for Post\-Processing.\-h\-:
 \nopagebreak
@@ -10,8 +11,7 @@ Include dependency graph for Post\-Processing.\-h\-:
 \includegraphics[width=350pt]{_post_processing_8h__incl}
 \end{center}
 \end{figure}
-This graph shows which files directly or indirectly include this file\-:
-\nopagebreak
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,7 +21,7 @@ This graph shows which files directly or indirectly include this file\-:
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}{Post\-Proc\-Stats} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$E\-Q, double timeval, int buckets, int source, int dest)
+void \hyperlink{_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a}{Post\-Proc\-Stats} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$Ex\-Q, double timeval, int buckets, int source, int dest, ofstream \&fh)
 \end{DoxyCompactItemize}
 
 
@@ -32,17 +32,18 @@ Takes Exit Queue As Argument and print Various following things
 \end{DoxyEnumerate}
 
 \subsection{Function Documentation}
-\hypertarget{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}{\index{Post\-Processing.\-h@{Post\-Processing.\-h}!Post\-Proc\-Stats@{Post\-Proc\-Stats}}
+\hypertarget{_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a}{\index{Post\-Processing.\-h@{Post\-Processing.\-h}!Post\-Proc\-Stats@{Post\-Proc\-Stats}}
 \index{Post\-Proc\-Stats@{Post\-Proc\-Stats}!PostProcessing.h@{Post\-Processing.\-h}}
 \subsubsection[{Post\-Proc\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}void Post\-Proc\-Stats (
 \begin{DoxyParamCaption}
-\item[{{\bf Vehicle\-Queue} $\ast$}]{E\-Q, }
+\item[{{\bf Vehicle\-Queue} $\ast$}]{Ex\-Q, }
 \item[{double}]{timeval, }
 \item[{int}]{buckets, }
 \item[{int}]{source, }
-\item[{int}]{dest}
+\item[{int}]{dest, }
+\item[{ofstream \&}]{fh}
 \end{DoxyParamCaption}
-)}}\label{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149}
+)}}\label{_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a}
 Takes exit queue and prints histogram of time takes to cover between source and destination Also prints stats like, average time , standard deviation etc. 
 \begin{DoxyParams}{Parameters}
 {\em E\-Q} & is exit Q \\
@@ -63,7 +64,7 @@ Here is the call graph for this function\-:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=340pt]{_post_processing_8h_ac24b1a08fda9a7da584a853831ae3149_cgraph}
+\includegraphics[width=340pt]{_post_processing_8h_a55d4f3188204db01a47e44eb6d99a70a_cgraph}
 \end{center}
 \end{figure}
 
