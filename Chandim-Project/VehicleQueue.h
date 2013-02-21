@@ -17,7 +17,9 @@ private:
 
 public:
 
-    std::queue<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
+    //std::queue<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
+    
+	std::deque<VehicleClass* > Q1;	/**< std::Queue for holding the vehicle queue */
 
     int busy;						/**< to check if the queue is busy/not */
     double LastSentCar;				/**< Holds time for vehicle that was sent last */

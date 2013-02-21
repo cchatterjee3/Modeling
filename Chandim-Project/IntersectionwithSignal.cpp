@@ -251,7 +251,10 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
 	}
 	else //no other case is acceptable
     {
-		printf("error inside QCanGo, unexpected condition.\n");
+		printf("error inside QCanGo, 1, unexpected condition.\n");
+		printf("Intersection ID: %d, vehID: %d, sdest: %d, fdest: %d .\n", ID, Q->front()->getID(), Q->front()->getSource(), Q->front()->getDestination());
+		printf("Turn=%d, local destination=%d , direction=%d, lane=%d .\n", Turn, dest, Qdirection, lane);
+		cin.get();
 		exit(1); //exit with error
     }
 

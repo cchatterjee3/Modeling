@@ -53,11 +53,11 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
     if(joinqueue->GetLen() == 1) //(debug)
     {
         //cout << "joinqueue has only 1 car, evictQ called" << endl ;
-       if(joinqueue->LastSentCar==-1) // send the car now
-        {
+      // if(joinqueue->LastSentCar==-1) // send the car now
+      //  {
 			//cout << "did not wait" << endl;
             this->EvictQ(joinqueue);
-        }
+/*        }
         else // send the car in the future
 		{
             
@@ -66,6 +66,7 @@ void IntersectionwithoutSignal::addVehicletoQueue(VehicleQueue* joinqueue, Vehic
 			sim->Schedule( max( BurstTime - (sim->getNow() - joinqueue->LastSentCar)  , 0.0 ), 
                     &IntersectionwithoutSignal::EvictQ, this, joinqueue ); //(debug)
 		}
+*/
     }
 	else if(joinqueue->GetLen() > 1)
 	{
@@ -116,7 +117,8 @@ int IntersectionwithoutSignal::QCanGo (int Qdirection, int lane) //Improved Vers
         }
         else
         {
-            printf("error inside QCanGo, unexpected condition.\n");
+            printf("error inside QCanGo, 2 , unexpected condition.\n");
+    		cin.get();
             exit(1); //exit with error
         }
     }
@@ -156,7 +158,8 @@ int IntersectionwithoutSignal::QCanGo (int Qdirection, int lane) //Improved Vers
         }
         else
         {
-            printf("error inside QCanGo, unexpected condition.\n");
+            printf("error inside QCanGo, 3 , unexpected condition.\n");
+    		cin.get();
             exit(1); //exit with error
         }
     }

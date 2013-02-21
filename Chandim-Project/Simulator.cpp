@@ -1,4 +1,3 @@
-
 #include "Simulator.h"
 #include <iostream>
 
