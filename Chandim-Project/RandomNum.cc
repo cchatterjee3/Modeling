@@ -281,6 +281,7 @@ int main(int argc, char const *argv[])
 	chi_square_test(&R1,1000,10000000);
 	chi_square_test(&R1,10000,10000000);
 	chi_square_test(&R1,100000,10000000);
+	chi_square_test(&R1,1000000,10000000);
 
 	unittest_hist(&R1,10,1000000);
 	printf("Cycle is %lu \n", find_cycle(&R1));

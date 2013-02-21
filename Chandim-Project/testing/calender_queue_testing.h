@@ -15,9 +15,11 @@
 #include "../Events.h"
 
 #define TOTAL_TIME 120*60                          /**< Total time of the simulation */
-#define BUCKET_COUNT 1000                         /**< Number of Buckets for Calender Queue */
+#define BUCKET_COUNT 10000                         /**< Number of Buckets for Calender Queue */
 #define BUCKET_SIZE 0.1
 #define CALENDER_PERIOD BUCKET_COUNT*BUCKET_SIZE   /**< how much is a "year" for this calender */
+
+
 class node;
 using namespace std;
 
@@ -55,16 +57,36 @@ private:
     std::vector<bucket>  buckets; /**< buckets are vectors of event */
     int Qsize;                   /**< Number of events in the priority queue */
     int bucket_count;            /**< Number of buckets in the calender queue */
+    double bucket_size;           /**< size of the bucket */
+    double interval_width;       /**< total length of the interval */
+
+    double calender_period;      
     double time_frame_size;      /**< Size of the time frame which defines a window */
     int cur_time_frame;          /**< It keeps index of bucket, from which last event was popped */
 
+    int MaxBuckets;             /**< Number of maximum number of buckets */
+
+    bool resizeEnabled;          /**< to dynamically resize the queue */
+
 
 public:
+    /**
+    *    Initilizes the queue with num buckets
+    *
+    */
+    void init(int num,double wid,double earliest);
     /**
     *    Inserts an event into the priority list
     *    @param  E1 is the even to be inserted into the list
     *
     */
+
+    /**
+    *    Resizes the calender queue based on
+    *
+    */
+    void resize();
+
     void insert(node* E1); 
 
     /**
@@ -110,9 +132,10 @@ public:
 
     /**
     *    Default constructor
+    *      constructs an calender queue with buck_count number of buckets
     *
     */
-    calender_queue(); 
+    calender_queue(int bk,double int_width,double bk_sz);
 
     /**
     *    Returns number of element in the Q
