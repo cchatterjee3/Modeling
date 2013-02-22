@@ -34,7 +34,6 @@ int main()
     sim->Run();
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
-    cin.get() ;
     
     ofstream fh0("CollectedData//1_5.csv", fstream::app), fh1("CollectedData//1_6.csv", fstream::app), fh2("CollectedData//1_7.csv", fstream::app), fh3("CollectedData//0_5.csv", fstream::app),
     fh4("CollectedData//0_6.csv", fstream::app), fh5("CollectedData//0_7.csv", fstream::app), fh6("CollectedData//11_5.csv", fstream::app), fh7("CollectedData//11_6.csv", fstream::app), 
@@ -92,7 +91,6 @@ int main()
     fh16.close();
     fh17.close();
     
-    cin.get();
     
     
 
@@ -126,8 +124,6 @@ int main()
             
         }
     }
-    
-    cin.get();
 
     return 0;
 }
