@@ -36,11 +36,11 @@ int main()
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
     cin.get() ;
     
-    ofstream fh0("1_5.csv", fstream::app), fh1("1_6.csv", fstream::app), fh2("1_7.csv", fstream::app), fh3("0_5.csv", fstream::app),
-    fh4("0_6.csv", fstream::app), fh5("0_7.csv", fstream::app), fh6("11_5.csv", fstream::app), fh7("11_6.csv", fstream::app), 
-    fh8("11_7.csv", fstream::app), fh9("5_1.csv", fstream::app), fh10("5_0.csv", fstream::app), fh11("5_11.csv", fstream::app), 
-    fh12("6_1.csv", fstream::app), fh13("6_0.csv", fstream::app), fh14("6_11.csv", fstream::app), fh15("7_1.csv", fstream::app), 
-    fh16("7_0.csv", fstream::app), fh17("7_11.csv", fstream::app);
+    ofstream fh0("CollectedData//1_5.csv", fstream::app), fh1("CollectedData//1_6.csv", fstream::app), fh2("CollectedData//1_7.csv", fstream::app), fh3("CollectedData//0_5.csv", fstream::app),
+    fh4("CollectedData//0_6.csv", fstream::app), fh5("CollectedData//0_7.csv", fstream::app), fh6("CollectedData//11_5.csv", fstream::app), fh7("CollectedData//11_6.csv", fstream::app), 
+    fh8("CollectedData//11_7.csv", fstream::app), fh9("CollectedData//5_1.csv", fstream::app), fh10("CollectedData//5_0.csv", fstream::app), fh11("CollectedData//5_11.csv", fstream::app), 
+    fh12("CollectedData//6_1.csv", fstream::app), fh13("CollectedData//6_0.csv", fstream::app), fh14("CollectedData//6_11.csv", fstream::app), fh15("CollectedData//7_1.csv", fstream::app), 
+    fh16("CollectedData//7_0.csv", fstream::app), fh17("CollectedData//7_11.csv", fstream::app);
     
     
     /*for (int sender = 0; sender<12; sender++)
