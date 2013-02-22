@@ -37,7 +37,7 @@ void PostProcStats(VehicleQueue* ExQ, double TimeInterval, int buckets,int sourc
 			NumVehicle++;
 			double Temp;
 			Temp = V1->EndTime()-V1->StartTime();
-			cout << "Temp=" << Temp  << endl;
+			fh << Temp  <<  ", ";
             if (Temp<0)
 			{
 				printf("Possibly some error/bug occured with Simulation\n");
@@ -65,7 +65,7 @@ void PostProcStats(VehicleQueue* ExQ, double TimeInterval, int buckets,int sourc
 	printf("Maximum time %lf Minimum time %lf Std Dev %lf seconds\n",TMax,TMin,StdDev );
     */
     
-    fh<<"Average time taken for crossing from "<<source<<" to "<<dest<<" is "<<Avg<<endl;
+    /*fh<<"Average time taken for crossing from "<<source<<" to "<<dest<<" is "<<Avg<<endl;
     fh<<"Maximum time: "<<TMax<<endl;
     fh<<"Minimum time: "<<TMin<<endl;
     fh<<"Standard Deviation: "<<StdDev<<endl;
@@ -78,8 +78,8 @@ void PostProcStats(VehicleQueue* ExQ, double TimeInterval, int buckets,int sourc
 		//printf("%d, ",Hist[i] );
 		fh<<Hist[i]<<", ";
 	}
-
-    fh<<endl<<endl;
+    */
+    fh<<endl;
     delete[] Hist;
     delete EQ;
 	//printf("\n");

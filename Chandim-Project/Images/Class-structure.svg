@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -165,22 +165,25 @@
          x="540.35278"
          y="725.40399"
          style="font-size:18px;font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:start;line-height:125%;writing-mode:lr-tb;text-anchor:start;font-family:Sans;-inkscape-font-specification:Sans Italic">VehicleClass</tspan></text>
-    <rect
-       style="fill:#ffe680;fill-opacity:0.98823529;stroke:#000000;stroke-width:1.41499996;stroke-miterlimit:8.91900826;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:11.11199998"
-       id="rect3805"
-       width="143.36874"
-       height="74.44146"
-       x="-26.495621"
-       y="817.83984"
-       ry="11.028364" />
-    <rect
-       ry="11.028364"
-       y="817.83984"
-       x="227.84604"
-       height="74.44146"
-       width="143.36874"
-       id="rect3807"
-       style="fill:#ffe680;fill-opacity:0.98823529;stroke:#000000;stroke-width:1.41499996;stroke-miterlimit:8.91900826;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:11.11199998" />
+    <g
+       id="g3130">
+      <rect
+         ry="11.028364"
+         y="817.83984"
+         x="-26.495621"
+         height="74.44146"
+         width="143.36874"
+         id="rect3805"
+         style="fill:#ffe680;fill-opacity:0.98823529;stroke:#000000;stroke-width:1.41499996;stroke-miterlimit:8.91900826;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:11.11199998" />
+      <rect
+         style="fill:#ffe680;fill-opacity:0.98823529;stroke:#000000;stroke-width:1.41499996;stroke-miterlimit:8.91900826;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:11.11199998"
+         id="rect3807"
+         width="143.36874"
+         height="74.44146"
+         x="227.84604"
+         y="817.83984"
+         ry="11.028364" />
+    </g>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -357,17 +360,17 @@
     <text
        xml:space="preserve"
        style="font-size:14.61397362px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-       x="327.3338"
+       x="319.20807"
        y="521.65698"
        id="text3775"
        sodipodi:linespacing="125%"
        transform="scale(1.0279375,0.97282179)"><tspan
          sodipodi:role="line"
          id="tspan3777"
-         x="327.3338"
+         x="319.20807"
          y="521.65698">Calendar</tspan><tspan
          sodipodi:role="line"
-         x="327.3338"
+         x="319.20807"
          y="539.92444"
          id="tspan3779">Queue</tspan></text>
     <text
