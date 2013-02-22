@@ -9,10 +9,10 @@
 #define __COMMON_DEFS_H__
 
 //variables
-#define PassTime  5.0 		/**< service time to go straight in seconds */
+#define PassTime  4.0 		/**< service time to go straight in seconds */
 #define startToPass  2.0 	/**< when a queue is empty and a vehicle arrives, it takes this much to depart */
 #define LPassTime  3.0 		/**< service time to turn left in seconds (debug) */
-#define roadSegTime  36.0 	/**< time to travel one road segment */
+#define roadSegTime  12.0 	/**< time to travel one road segment */
 #define checkQinterval 2.0 	/**< if the next Q is full, check again in this amout of time */
 #define BurstTime 2.0 		/**< time for the next vehicle to depart when cars are going in groups */
 
