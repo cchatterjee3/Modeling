@@ -129,8 +129,16 @@ void Intersection::VehiclePass(VehicleClass* vehicle, int Turn) //Vehicle passes
 #endif
     //send one more car
     if(vehicle->getLastQ()!=NULL)
-        EvictQ(vehicle->getLastQ());
-
+    {
+        if(vehicle->out_of_line == false)
+        {
+            EvictQ(vehicle->getLastQ());
+        }
+        else
+        {
+            vehicle->out_of_line = false;
+        }
+    }
 }
 
 void Intersection::VehicleDeparture (VehicleClass* vehicle) //Depart

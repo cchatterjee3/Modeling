@@ -32,7 +32,9 @@ class VehicleClass
          dir currentDirection;  /**< //current direction */
          VehicleQueue* LastQ;
   public:
-         Time_t startTime;  /**< Time when a car comes into existance */
+      bool out_of_line;
+      
+      Time_t startTime;  /**< Time when a car comes into existance */
          Time_t endTime;    /**< Time when a car exits out of the system */
 
 #ifdef test

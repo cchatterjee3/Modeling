@@ -44,7 +44,8 @@ int VehicleClass::getSource ()
 
 VehicleClass::VehicleClass(int id, int start, int Dest, Time_t starttime)
 {
-	ID=id;
+    out_of_line=false;
+    ID=id;
 	sDestination = start;
 	fDestination=Dest;
 	startTime = starttime;

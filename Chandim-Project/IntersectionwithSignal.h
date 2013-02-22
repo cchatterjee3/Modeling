@@ -40,6 +40,11 @@ class IntersectionwithSignal : public Intersection
          *
          */
 		 virtual int QCanGo (int direction, int lane);
+         /**
+         *    If the queue can go in "direction,lane", for a specific vehicle
+         *
+         */
+		 virtual int QCanGo2 (int direction, int lane);
 		 
 		 /**
          *    Evict for left direction

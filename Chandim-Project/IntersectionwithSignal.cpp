@@ -10,6 +10,13 @@
 #include "VehicleQueue.h"
 #include "Simulator.h"
 
+#include<list>
+using namespace std;
+
+#define useEvictL
+
+
+
 extern Simulator* sim ;
 
 IntersectionwithSignal::IntersectionwithSignal(){
@@ -85,13 +92,115 @@ IntersectionwithSignal::~IntersectionwithSignal(void)
 
 void IntersectionwithSignal::EvictL (VehicleQueue* joinqueue)
 {
-  int Qdirection=getQdirection(this, joinqueue);
-  int Qlane=getQlane(this, joinqueue);      
-  
-  Intersection * NextInter = NULL;
-  VehicleQueue * futureQ = NULL;
-  bool isfull=false;
-  int Turn;
+//	cout << "evictL called, Qdirection is " << getQdirection(this, joinqueue) << " Q lane is "<< getQlane(this, joinqueue) << 
+//					" Inter ID=" << ID << " time=" << sim->getNow() << endl;
+    //cin.get();
+    
+	int Qdirection=getQdirection(this, joinqueue);
+    int Qlane=getQlane(this, joinqueue);
+        
+    int QState = QCanGo2 (Qdirection, 1);
+    
+    bool sendcar = false;
+    bool carExists = false;
+    
+    list<VehicleClass*>::iterator it;
+ 
+	dir dest;
+	int Turn;
+    
+    
+	if (QState==2) //Queue is not empty, and the light is green, intersection not busy
+	{
+        //find next candidate vehicle
+        
+        carExists = false;
+        for (it = joinqueue->Q1.begin() ; it != joinqueue->Q1.end() ; ++it )
+        {
+            if( it != joinqueue->Q1.begin() )
+            {
+                dest = this->routingtable[(*it)->getDestination()];
+                Turn = turn(dest, Qdirection);
+                if(Turn == -1)
+                {
+                    carExists = true;
+                    break;
+                }
+            }
+        }
+        if (!carExists )
+        {
+        	sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+            return;
+        }
+        
+        Intersection * NextInter = NULL;
+        VehicleQueue * futureQ = NULL;
+        bool isfull=false;
+        int Turn;
+		// getting info about the next Queue and next intersection
+        NextQInfo(joinqueue, (*it), NextInter, futureQ, isfull, Turn);
+
+        if( futureQ==NULL ) //There is no next Queue
+        {
+
+#ifdef test
+    eventDsc E1;
+    E1.type = PSC;
+    E1.InterID =ID;
+    E1.QDir = getQdirection(this, joinqueue);
+    E1.QLane = 1;
+    E1.timetag = sim->getNow();
+    (*it)->EventList.push_back(E1);
+#endif
+
+            sim->Schedule( startToPass, &Intersection::VehiclePass, this, (*it), Turn);//(debug)
+            (*it)->out_of_line = true;
+        	sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+			if((*it)->getLastQ() != NULL)
+				(*it)->getLastQ()->LastSentCar=sim->getNow(); //set the time that the queue last sent a car
+			joinqueue->Q1.erase(it);
+        }
+        else if( !isfull ) // next queue is not full
+        {
+
+#ifdef test
+    eventDsc E2;
+    E2.type = PSC;
+    E2.InterID =ID;
+    E2.QDir = getQdirection(this, joinqueue);
+    E2.QLane = 1;
+    E2.timetag = sim->getNow();
+    (*it)->EventList.push_back(E2);
+#endif
+
+            sim->Schedule( startToPass, &Intersection::VehiclePass, this, (*it), Turn);//(debug)
+            (*it)->out_of_line = true;
+        	sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+			if((*it)->getLastQ() != NULL)
+				(*it)->getLastQ()->LastSentCar=sim->getNow(); //set the time that the queue last sent a car
+			joinqueue->Q1.erase(it);
+			//futureQ->length ++ ;
+        }
+        else // next Q is full, a check will be scheduled for future
+        {
+    		sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+        }
+	}
+    else if(QState == +1) //Queue is not empty, and the light is green, but intersection IS BUSY
+    {   //scheduling a check for future
+        
+    	sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+    }
+    else if(QState == -1) // Q is empty, set the flag to send the first car arriving
+    {
+        sim->Schedule( checkQinterval, &IntersectionwithSignal::EvictL, this, joinqueue ); //(debug)
+    }
+    else if(QState == 0) // light is red
+    {
+        //stops checking
+    }
+    
 }
 
 void IntersectionwithSignal::changeSignalTrigger( int LightID, int leftorthru) //checks its own signals 
@@ -110,6 +219,11 @@ void IntersectionwithSignal::changeSignalTrigger( int LightID, int leftorthru) /
     	{
             //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
     		this->EvictQ( Qu[LightID][1]);
+            #ifdef useEvictL
+                this->EvictL( Qu[LightID][1]);
+            #endif         
+            
+            
     	}
         else
         {
@@ -135,6 +249,9 @@ void IntersectionwithSignal::changeSignalTrigger( int LightID, int leftorthru) /
             	{
                     //cout << "state:GLT , ID=" << this->getID() << " light: " << LightID << endl;
             		this->EvictQ( Qu[LightID][1]);
+                    #ifdef useEvictL
+                        this->EvictL( Qu[LightID][1]);
+                    #endif         
             	}
             	
            }
@@ -267,6 +384,66 @@ int IntersectionwithSignal::QCanGo (int Qdirection, int lane) //Improved Version
 		printf("Turn=%d, local destination=%d , direction=%d, lane=%d .\n", Turn, dest, Qdirection, lane);
 		cin.get();
 		exit(1); //exit with error
+    }
+
+	return canGo;
+
+}
+
+
+
+
+
+
+
+
+int IntersectionwithSignal::QCanGo2 (int Qdirection, int lane) //Improved Version
+	//checks its signals for a specific Queue
+{
+
+	//test whether a certain queue can start sending vehicles out
+	//-1: Q is empty
+	// 0: Light is not green for the direction of the first member of Queue
+	//+1: The queue is not empty, the traffic light is OK, But the intersection is busy
+	//+2: The queue is not empty, the traffic light is OK, and the intersection is not busy
+
+    lane=1;
+	
+	int canGo;
+	VehicleQueue* Q = Qu[Qdirection][lane];
+
+	if(Q->empty())
+		return -1;
+
+    // turning left from left lane
+    if(TLight[Qdirection]->getType()==1 ) // 6states
+    {
+        if(TLight[Qdirection]->getState()==GLT)
+            canGo=+2;
+        else
+            canGo= 0;
+    }
+    else if(TLight[Qdirection]->getType()==2) 
+    {
+        if(TLight[Qdirection]->getLeftState()==GLT)
+            canGo=+2;
+        else
+            canGo= 0;
+     }
+    else //3 states
+    {
+        if(TLight[Qdirection]->getState()==GTR)
+        {
+        canGo=+2; // light is OK, But:
+        if(! (!(Qu[reg(Qdirection+1)][0])->isBusy() 
+            && (!(Qu[reg(Qdirection+1)][1])->isBusy()) 
+            && (!(Qu[reg(Qdirection-1)][1])->isBusy()) 
+            && (!(Qu[reg(Qdirection+2)][0])->isBusy()) 
+            && (!(Qu[reg(Qdirection+2)][1])->isBusy())) )
+            canGo=+1; //light is OK,but intersection is busy
+        }
+        else
+            canGo= 0; //light is NOT OK
     }
 
 	return canGo;
