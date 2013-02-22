@@ -32,7 +32,7 @@ void PostProcStats(VehicleQueue* ExQ, double TimeInterval, int buckets,int sourc
 	{
 		VehicleClass* V1 = EQ->front();
 		EQ->pop();
-		if (V1->getSource()==source && V1->getDestination()==dest)
+		if (V1->getSource()==source && V1->getDestination()==dest && V1->startTime>900)
 		{
 			NumVehicle++;
 			double Temp;

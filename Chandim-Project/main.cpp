@@ -25,12 +25,12 @@ int main()
 	//Temporary Initialization Place
 	_Topology *Topology = new _Topology();
 
-	scheduleVehicles(Topology, 7200.0);
+	scheduleVehicles(Topology, 8100.0);
 
 //    unittest(6000, 6000, Topology);
 
 
-    sim->StopAt(7200);
+    sim->StopAt(8100);
     sim->Run();
     cout << "post processing" << endl;
     cout << "ExitQ has " << Topology->ExitQ->Q1.size() << " members";
