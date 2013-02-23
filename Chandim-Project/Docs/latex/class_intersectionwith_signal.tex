@@ -28,6 +28,10 @@ virtual void \hyperlink{class_intersectionwith_signal_aa918c9a3033c16fac6bfa0e99
 \item 
 virtual int \hyperlink{class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3}{Q\-Can\-Go} (int direction, int lane)
 \item 
+virtual int \hyperlink{class_intersectionwith_signal_ab0fcf7dc880fef1175ce0a71c969875f}{Q\-Can\-Go2} (int direction, int lane)
+\item 
+void \hyperlink{class_intersectionwith_signal_ad0d48a37799feebd59959014adb042ee}{Evict\-L} (\hyperlink{class_vehicle_queue}{Vehicle\-Queue} $\ast$joinqueue)
+\item 
 \hyperlink{class_intersectionwith_signal_a2895da2acf740a52a4f8dd0673d3f46e}{Intersectionwith\-Signal} ()
 \item 
 \hyperlink{class_intersectionwith_signal_ab5eccdd602e1d9c0f6d39b5be79173d1}{Intersectionwith\-Signal} (int)
@@ -90,8 +94,7 @@ Implements \hyperlink{class_intersection_a6e55e3add20e9d49e5751ccf47832c12}{Inte
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -110,12 +113,29 @@ Here is the call graph for this function\-:
 )}}\label{class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326}
 checks its own signals leftortur=1\-: left 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_intersectionwith_signal_a78fbf7f154af7d788c0543b526c7d326_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_intersectionwith_signal_ad0d48a37799feebd59959014adb042ee}{\index{Intersectionwith\-Signal@{Intersectionwith\-Signal}!Evict\-L@{Evict\-L}}
+\index{Evict\-L@{Evict\-L}!IntersectionwithSignal@{Intersectionwith\-Signal}}
+\subsubsection[{Evict\-L}]{\setlength{\rightskip}{0pt plus 5cm}void Intersectionwith\-Signal\-::\-Evict\-L (
+\begin{DoxyParamCaption}
+\item[{{\bf Vehicle\-Queue} $\ast$}]{joinqueue}
+\end{DoxyParamCaption}
+)}}\label{class_intersectionwith_signal_ad0d48a37799feebd59959014adb042ee}
+Evict for left direction 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_intersectionwith_signal_ad0d48a37799feebd59959014adb042ee_cgraph}
 \end{center}
 \end{figure}
 
@@ -134,12 +154,30 @@ Implements \hyperlink{class_intersection_ade54ec591355782db542061623096a2f}{Inte
 
 
 
-Here is the call graph for this function\-:
-\nopagebreak
+Here is the call graph for this function\-:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[width=350pt]{class_intersectionwith_signal_a3b2a6f1e258fcd15828ffb7e9e9881b3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{class_intersectionwith_signal_ab0fcf7dc880fef1175ce0a71c969875f}{\index{Intersectionwith\-Signal@{Intersectionwith\-Signal}!Q\-Can\-Go2@{Q\-Can\-Go2}}
+\index{Q\-Can\-Go2@{Q\-Can\-Go2}!IntersectionwithSignal@{Intersectionwith\-Signal}}
+\subsubsection[{Q\-Can\-Go2}]{\setlength{\rightskip}{0pt plus 5cm}int Intersectionwith\-Signal\-::\-Q\-Can\-Go2 (
+\begin{DoxyParamCaption}
+\item[{int}]{direction, }
+\item[{int}]{lane}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_intersectionwith_signal_ab0fcf7dc880fef1175ce0a71c969875f}
+If the queue can go in \char`\"{}direction,lane\char`\"{}, for a specific vehicle 
+
+Here is the call graph for this function\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_intersectionwith_signal_ab0fcf7dc880fef1175ce0a71c969875f_cgraph}
 \end{center}
 \end{figure}
 

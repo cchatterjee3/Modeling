@@ -114,40 +114,42 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;         dir currentDirection;  </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;         <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* LastQ;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">   35</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">startTime</a>;  </div>
-<div class="line"><a name="l00036"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">   36</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">endTime</a>;    </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef test</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor"></span>      std::list&lt;eventDsc&gt; EventList;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif      </span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5">setEndTime</a>(<a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> t);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#a8f00863bdcac1822d486c3d119ff1340">getID</a>();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;         <span class="comment">//VehicleClass(int ID, int sDestination...)     !!Constructor</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;         <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#a7070e6f4e7814a6f81292a54aa3c58b5" title="!Constructor">updateDirection</a> (dir Direction);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;         dir <a class="code" href="class_vehicle_class.html#a107f9787110e3a575facf1975e40a7b2">getDirection</a> ();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;         <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f">setLastQ</a> (<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;         <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351">getLastQ</a> ();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;         </div>
-<div class="line"><a name="l00083"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99">   83</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99">StartTime</a>(){<span class="keywordflow">return</span> <a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">startTime</a>;};</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33">   88</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33">EndTime</a>(){<span class="keywordflow">return</span> <a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">endTime</a>;};</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;         </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;         <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d">getDestination</a> ();</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;         <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#aa1e4f513ff1cf84e577f3c6e8bcd681f">getSource</a> ();</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;         </div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;         <a class="code" href="class_vehicle_class.html">VehicleClass</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> start, <span class="keywordtype">int</span> Dest, <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> starttime);</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;         <a class="code" href="class_vehicle_class.html">VehicleClass</a>();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;         <a class="code" href="class_vehicle_class.html#a5e06ff66b19ecd516f549e7f78feeb44">~VehicleClass</a>();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;      <span class="keywordtype">bool</span> out_of_line;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;      </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">   37</a></span>&#160;      <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">startTime</a>;  </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">   38</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">endTime</a>;    </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef test</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor"></span>      std::list&lt;eventDsc&gt; EventList;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif      </span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#a127372b94980fa045c648af412856fd5">setEndTime</a>(<a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> t);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#a8f00863bdcac1822d486c3d119ff1340">getID</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;         <span class="comment">//VehicleClass(int ID, int sDestination...)     !!Constructor</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;         <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#a7070e6f4e7814a6f81292a54aa3c58b5" title="!Constructor">updateDirection</a> (dir Direction);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;         dir <a class="code" href="class_vehicle_class.html#a107f9787110e3a575facf1975e40a7b2">getDirection</a> ();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;         <span class="keywordtype">void</span> <a class="code" href="class_vehicle_class.html#af0e593cd2608561e6596ae61bbc0b62f">setLastQ</a> (<a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* Q);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;         <a class="code" href="class_vehicle_queue.html">VehicleQueue</a>* <a class="code" href="class_vehicle_class.html#a2d35acee350ca16bbadd8ff048956351">getLastQ</a> ();</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;         </div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99">   85</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#a53459527cf013f8e9fac5543c9817b99">StartTime</a>(){<span class="keywordflow">return</span> <a class="code" href="class_vehicle_class.html#acafc6e10e1f8b5181fbed411d7a57f35">startTime</a>;};</div>
+<div class="line"><a name="l00090"></a><span class="lineno"><a class="code" href="class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33">   90</a></span>&#160;         <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> <a class="code" href="class_vehicle_class.html#a91a7fa343d550e90de5e921550ec0c33">EndTime</a>(){<span class="keywordflow">return</span> <a class="code" href="class_vehicle_class.html#ae11f41b18fa726d81c0156162b4554d0">endTime</a>;};</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;         </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;         <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#a2158372213aad34b03a4d8021e1dbd1d">getDestination</a> ();</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;         <span class="keywordtype">int</span> <a class="code" href="class_vehicle_class.html#aa1e4f513ff1cf84e577f3c6e8bcd681f">getSource</a> ();</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;         </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;         <a class="code" href="class_vehicle_class.html">VehicleClass</a>(<span class="keywordtype">int</span> <span class="keywordtype">id</span>, <span class="keywordtype">int</span> start, <span class="keywordtype">int</span> Dest, <a class="code" href="_common_defs_8h.html#a80b23eab88362163e2edd1a8b8238ef1">Time_t</a> starttime);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;         <a class="code" href="class_vehicle_class.html">VehicleClass</a>();</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;         <a class="code" href="class_vehicle_class.html#a5e06ff66b19ecd516f549e7f78feeb44">~VehicleClass</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 21 2013 16:58:53 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 22 2013 22:05:02 for CSE6730 Modeling & Simulation : Project-1 by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>
